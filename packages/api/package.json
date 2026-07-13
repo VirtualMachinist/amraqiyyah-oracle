@@ -1,0 +1,18 @@
+{
+  "name": "@amraqiyyah/api",
+  "version": "0.1.0",
+  "description": "HTTP API exposing /oracle-inputs (Calendar §14) and /reading",
+  "type": "module",
+  "main": "./dist/server.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "@amraqiyyah/engine": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0"
+  }
+}
