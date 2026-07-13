@@ -27,12 +27,13 @@ const PLANET: Record<string, { glyph: string; color: string }> = {
 };
 
 const SALAH: Record<string, { label: string; short: string; color: string }> = {
-  tahajjud: { label: 'Tahajjud', short: 'Tah', color: '#3a4a8f' },
+  tahajjud: { label: 'Tahajjud', short: 'Tah', color: '#2f3c78' },
   fajr: { label: 'Fajr', short: 'Fajr', color: '#b87333' },
   duha: { label: 'Duha', short: 'Duha', color: '#d4af6a' },
   dhuhr_asr: { label: 'Dhuhr–Asr', short: 'Ẓuhr', color: '#caa23f' },
   asr_maghrib: { label: 'Asr–Maghrib', short: 'Aṣr', color: '#c98a3f' },
   maghrib_isha: { label: 'Maghrib–Isha', short: 'Mag', color: '#7a5aa0' },
+  isha: { label: 'Isha', short: 'Isha', color: '#4a5bb0' },
 };
 
 // ---- geometry ----

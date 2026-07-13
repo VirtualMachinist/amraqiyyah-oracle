@@ -7,9 +7,29 @@
  */
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Svg, { Circle, Path } from 'react-native-svg';
+import Svg, { Circle, Path, Text as SvgText } from 'react-native-svg';
 import { COLORS } from '../theme';
 import type { OracleInputs } from '@amraqiyyah/engine';
+
+interface Moon { illumination: number; waxing: boolean }
+
+/** Name the lunar phase from illumination + waxing/waning. */
+function phaseName(m: Moon): string {
+  const i = m.illumination;
+  if (i < 0.03) return 'New';
+  if (i > 0.97) return 'Full';
+  if (Math.abs(i - 0.5) < 0.06) return m.waxing ? 'First Quarter' : 'Last Quarter';
+  if (i < 0.5) return m.waxing ? 'Waxing Crescent' : 'Waning Crescent';
+  return m.waxing ? 'Waxing Gibbous' : 'Waning Gibbous';
+}
+
+/** SVG path for the lit area of a moon disc (northern convention: waxing lit on the right). */
+function moonLitPath(cx: number, cy: number, r: number, illum: number, waxing: boolean): string {
+  const rx = r * Math.abs(1 - 2 * illum);
+  const limbSweep = waxing ? 1 : 0;
+  const termSweep = illum < 0.5 ? (waxing ? 0 : 1) : (waxing ? 1 : 0);
+  return `M ${cx} ${cy - r} A ${r} ${r} 0 0 ${limbSweep} ${cx} ${cy + r} A ${rx.toFixed(2)} ${r} 0 0 ${termSweep} ${cx} ${cy - r} Z`;
+}
 
 const SZ = 104;
 const CC = SZ / 2;
@@ -45,9 +65,32 @@ function Meter({
   );
 }
 
+/** The lunar-month meter, with a true drawn moon phase at its heart. */
+function MoonMeter({ day, monthName, fraction, moon }: { day: number; monthName: string; fraction: number; moon: Moon }) {
+  const MR = 15; // moon radius
+  return (
+    <View style={styles.meter}>
+      <Text style={styles.label}>LUNAR MONTH</Text>
+      <View style={styles.dial}>
+        <Svg viewBox={`0 0 ${SZ} ${SZ}`} width="100%" height="100%">
+          <Circle cx={CC} cy={CC} r={R} fill="none" stroke={COLORS.line} strokeWidth={5} />
+          <Path d={arc(fraction)} fill="none" stroke={COLORS.lapisLight} strokeWidth={5} strokeLinecap="round" opacity={0.95} />
+          {/* moon disc */}
+          <Circle cx={CC} cy={CC - 8} r={MR} fill="#23263a" stroke={COLORS.line} strokeWidth={0.75} />
+          <Path d={moonLitPath(CC, CC - 8, MR, moon.illumination, moon.waxing)} fill="#eae7f2" />
+          <SvgText x={CC} y={CC + 22} fill={COLORS.text} fontSize={13} fontWeight="700" textAnchor="middle">
+            {`day ${day}`}
+          </SvgText>
+        </Svg>
+      </View>
+      <Text style={styles.moonSub} numberOfLines={1}>{monthName} · {phaseName(moon)}</Text>
+    </View>
+  );
+}
+
 const WEEKDAYS = ['al-Ahad', 'al-Ithnayn', 'al-Thulatha', 'al-Arbiʿa', 'al-Khamis', 'al-Jumuʿa', 'al-Sabt'];
 
-export function CycleMeters({ inputs, now, tz }: { inputs: OracleInputs; now: Date; tz: string }) {
+export function CycleMeters({ inputs, now, tz, moon }: { inputs: OracleInputs; now: Date; tz: string; moon: Moon }) {
   const L = inputs.layers;
 
   // weekday index 0=Sun..6=Sat in the location's timezone
@@ -71,12 +114,11 @@ export function CycleMeters({ inputs, now, tz }: { inputs: OracleInputs; now: Da
         sub={L.mansion.name_ar}
         color={COLORS.copperLight}
       />
-      <Meter
-        label="LUNAR MONTH"
+      <MoonMeter
+        day={L.hijri.day}
+        monthName={L.hijri.month_name}
         fraction={(L.hijri.day - 1) / 29.53}
-        center={`☾ ${L.hijri.day}`}
-        sub={L.hijri.month_name}
-        color={COLORS.text}
+        moon={moon}
       />
       <Meter
         label="SEASON"
@@ -111,4 +153,5 @@ const styles = StyleSheet.create({
   dialCenter: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, alignItems: 'center', justifyContent: 'center' },
   centerText: { fontSize: 15, fontWeight: '700' },
   subText: { color: COLORS.dim, fontSize: 9, marginTop: 2, maxWidth: 90, textAlign: 'center' },
+  moonSub: { color: COLORS.dim, fontSize: 9, marginTop: 2, maxWidth: 104, textAlign: 'center' },
 });

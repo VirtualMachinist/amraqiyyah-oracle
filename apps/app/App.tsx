@@ -20,6 +20,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import {
   oracleInputs,
   daySchedule,
+  moonPhaseInfo,
   performReading,
   PLATONIC_KEY_CARDS,
   DRAWABLE_FIELD_CARDS,
@@ -102,17 +103,22 @@ function NowView({
   }, []);
   const minuteKey = Math.floor(now.getTime() / 60000);
 
-  const { inputs, schedule, error } = useMemo(() => {
+  const { inputs, schedule, moon, error } = useMemo(() => {
     try {
       const at = new Date(minuteKey * 60000);
-      return { inputs: oracleInputs(at, location), schedule: daySchedule(location, at), error: null as string | null };
+      return {
+        inputs: oracleInputs(at, location),
+        schedule: daySchedule(location, at),
+        moon: moonPhaseInfo(at),
+        error: null as string | null,
+      };
     } catch (e) {
-      return { inputs: null, schedule: null, error: e instanceof Error ? e.message : String(e) };
+      return { inputs: null, schedule: null, moon: null, error: e instanceof Error ? e.message : String(e) };
     }
   }, [location, minuteKey]);
 
   if (error) return <Text style={styles.error}>{error}</Text>;
-  if (!inputs || !schedule) return <Text style={styles.dim}>Calculating the heavens…</Text>;
+  if (!inputs || !schedule || !moon) return <Text style={styles.dim}>Calculating the heavens…</Text>;
 
   const L = inputs.layers;
   return (
@@ -120,7 +126,7 @@ function NowView({
       <Text style={styles.dateLine}>{inputs.amraqiyyah_date}</Text>
       <LocationRow location={location} onChange={onLocationChange} />
       <SacredClock schedule={schedule} now={now} tz={location.tz} />
-      <CycleMeters inputs={inputs} now={now} tz={location.tz} />
+      <CycleMeters inputs={inputs} now={now} tz={location.tz} moon={moon} />
       <Text style={styles.sectionLabel}>All nine layers — in full</Text>
       <View style={styles.grid}>
         <LayerCard title="Planetary Hour" name={L.planetary_hour.divine_name}

@@ -13,11 +13,18 @@ import { nextSunrise, nextSunset } from '../astro/ephemeris.js';
 import { planetaryDaySunrise, weekdayInTz } from './planetaryHours.js';
 import {
   prayerTimesForDay,
-  currentSalahWindow,
   DEFAULT_METHOD,
   type SalahMethod,
   type DayPrayerTimes,
 } from './salah.js';
+
+/**
+ * Display windows on the clock. The reading engine only ever knows the six
+ * ratified SalahWindows (Calendar §4); 'isha' is a DISPLAY-ONLY subdivision of
+ * the Line-1 night — Isha (the night) before its final third (Tahajjud). It
+ * never carries its own line: both halves of the night read as Line 1.
+ */
+export type ClockWindow = SalahWindow | 'isha';
 
 export interface PlanetaryHourSlot {
   /** 0–23 across the planetary day (0 = first daylight hour). */
@@ -31,7 +38,7 @@ export interface PlanetaryHourSlot {
 }
 
 export interface SalahArc {
-  window: SalahWindow;
+  window: ClockWindow;
   line: number;
   start: Date;
   end: Date;
@@ -48,7 +55,7 @@ export interface DaySchedule {
   salahArcs: SalahArc[]; // 6, spanning sunrise → nextSunrise
   prayers: DayPrayerTimes;
   currentHourIndex: number;
-  currentSalahWindow: SalahWindow;
+  currentSalahWindow: ClockWindow;
   currentSalahLine: number;
 }
 
@@ -85,21 +92,40 @@ export function daySchedule(
   // Next dawn/sunrise close the Tahajjud → Fajr tail of the dial.
   const nextPrayers = prayerTimesForDay(loc, new Date(next.getTime() + 3600_000), method);
 
-  const arcSpans: { window: SalahWindow; start: Date; end: Date }[] = [
+  // Traditional night reckoning: sunset → next dawn; Tahajjud is its final third,
+  // Isha the earlier night. DISPLAY ONLY — the reading still treats the whole
+  // night as one Tahajjud window (Line 1) per Calendar §4.
+  const nightStart = prayers.maghrib;
+  const nightEnd = nextPrayers.fajrDawn;
+  const lastThirdStart = new Date(nightStart.getTime() + (2 / 3) * (nightEnd.getTime() - nightStart.getTime()));
+
+  const arcSpans: { window: ClockWindow; start: Date; end: Date }[] = [
     { window: 'duha', start: sunrise, end: prayers.dhuhr },
     { window: 'dhuhr_asr', start: prayers.dhuhr, end: prayers.asr },
     { window: 'asr_maghrib', start: prayers.asr, end: prayers.maghrib },
     { window: 'maghrib_isha', start: prayers.maghrib, end: prayers.isha },
-    { window: 'tahajjud', start: prayers.isha, end: nextPrayers.fajrDawn },
-    { window: 'fajr', start: nextPrayers.fajrDawn, end: next },
   ];
-  const salahArcs: SalahArc[] = arcSpans.map((a) => ({ ...a, line: SALAH_WINDOW_LINES[a.window] }));
+  if (lastThirdStart.getTime() > prayers.isha.getTime()) {
+    arcSpans.push({ window: 'isha', start: prayers.isha, end: lastThirdStart });
+    arcSpans.push({ window: 'tahajjud', start: lastThirdStart, end: nightEnd });
+  } else {
+    // Degenerate high-latitude night: keep the single Tahajjud window.
+    arcSpans.push({ window: 'tahajjud', start: prayers.isha, end: nightEnd });
+  }
+  arcSpans.push({ window: 'fajr', start: nextPrayers.fajrDawn, end: next });
+
+  const salahArcs: SalahArc[] = arcSpans.map((a) => ({
+    ...a,
+    line: a.window === 'isha' ? 1 : SALAH_WINDOW_LINES[a.window],
+  }));
 
   const t = date.getTime();
   let currentHourIndex = hours.findIndex((h) => t >= h.start.getTime() && t < h.end.getTime());
   if (currentHourIndex < 0) currentHourIndex = t < sunrise.getTime() ? 0 : 23;
 
-  const salah = currentSalahWindow(loc, date, method);
+  // Current display window: which drawn arc holds the moment (Isha vs Tahajjud
+  // resolves here for the clock; readings resolve it as Tahajjud upstream).
+  const currentArc = salahArcs.find((a) => t >= a.start.getTime() && t < a.end.getTime());
 
   return {
     sunrise,
@@ -110,7 +136,7 @@ export function daySchedule(
     salahArcs,
     prayers,
     currentHourIndex,
-    currentSalahWindow: salah.window,
-    currentSalahLine: salah.line,
+    currentSalahWindow: currentArc?.window ?? 'tahajjud',
+    currentSalahLine: currentArc?.line ?? 1,
   };
 }
