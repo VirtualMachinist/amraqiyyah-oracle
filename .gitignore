@@ -6,3 +6,6 @@ web-build/
 *.log
 .DS_Store
 coverage/
+apps/app/dist-native/
+apps/desktop/release/
+apps/desktop/web/
