@@ -2,6 +2,7 @@
   "name": "@amraqiyyah/desktop",
   "version": "0.1.0",
   "description": "Amraqiyyah Oracle — desktop shell (Electron wrapping the web export)",
+  "author": "Al-Tariqa Amraqiyyah",
   "main": "main.cjs",
   "scripts": {
     "prepare:web": "test -d ../app/dist || (echo 'Run: npm run build:web in apps/app first' && exit 1)",
@@ -10,12 +11,14 @@
     "dist": "npm run prepare:web && electron-builder"
   },
   "devDependencies": {
-    "electron": "^33.0.0",
+    "electron": "33.4.11",
     "electron-builder": "^25.0.0"
   },
   "build": {
     "appId": "org.amraqiyyah.oracle",
     "productName": "Amraqiyyah Oracle",
+    "npmRebuild": false,
+    "nodeGypRebuild": false,
     "files": [
       "main.cjs",
       "web/**"
