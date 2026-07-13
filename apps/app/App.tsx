@@ -32,20 +32,8 @@ import {
   type Veil,
   type Hexagram,
 } from '@amraqiyyah/engine';
-
-const COLORS = {
-  bg: '#0b0b12',
-  panel: '#14141f',
-  panelSoft: '#1b1b2a',
-  line: '#2b2b40',
-  text: '#e8e6f0',
-  dim: '#9a96b8',
-  gold: '#d4af6a',
-  teal: '#5ac8c8',
-  crimson: '#c85a6e',
-  yang: '#d4af6a',
-  yin: '#5a6ac8',
-};
+import { COLORS } from './src/theme';
+import { TextsView, type TextTarget } from './src/screens/TextsView';
 
 const DEFAULT_LOCATION: GeoLocation = {
   lat: 41.885,
@@ -53,11 +41,24 @@ const DEFAULT_LOCATION: GeoLocation = {
   tz: Intl.DateTimeFormat().resolvedOptions().timeZone || 'America/Chicago',
 };
 
-type Tab = 'now' | 'reading' | 'journal';
+type Tab = 'now' | 'reading' | 'texts' | 'journal';
+
+const TAB_LABELS: Record<Tab, string> = {
+  now: 'Now',
+  reading: 'Reading',
+  texts: 'Texts',
+  journal: 'Journal',
+};
 
 export default function App() {
   const [tab, setTab] = useState<Tab>('now');
   const [location, setLocation] = useState<GeoLocation>(DEFAULT_LOCATION);
+  const [textTarget, setTextTarget] = useState<TextTarget | null>(null);
+
+  const openText = (t: TextTarget) => {
+    setTextTarget(t);
+    setTab('texts');
+  };
 
   return (
     <View style={styles.root}>
@@ -67,16 +68,15 @@ export default function App() {
         <Text style={styles.subtitle}>An instrument of directed dhikr — deterministic, transparent</Text>
       </View>
       <View style={styles.tabs}>
-        {(['now', 'reading', 'journal'] as Tab[]).map((t) => (
+        {(['now', 'reading', 'texts', 'journal'] as Tab[]).map((t) => (
           <Pressable key={t} onPress={() => setTab(t)} style={[styles.tab, tab === t && styles.tabActive]}>
-            <Text style={[styles.tabText, tab === t && styles.tabTextActive]}>
-              {t === 'now' ? 'Now' : t === 'reading' ? 'Reading' : 'Journal'}
-            </Text>
+            <Text style={[styles.tabText, tab === t && styles.tabTextActive]}>{TAB_LABELS[t]}</Text>
           </Pressable>
         ))}
       </View>
       {tab === 'now' && <NowView location={location} onLocationChange={setLocation} />}
-      {tab === 'reading' && <ReadingView location={location} />}
+      {tab === 'reading' && <ReadingView location={location} onOpenText={openText} />}
+      {tab === 'texts' && <TextsView target={textTarget} onConsumeTarget={() => setTextTarget(null)} />}
       {tab === 'journal' && <JournalView />}
     </View>
   );
@@ -201,7 +201,7 @@ function drawModeB(): Draws {
   };
 }
 
-function ReadingView({ location }: { location: GeoLocation }) {
+function ReadingView({ location, onOpenText }: { location: GeoLocation; onOpenText: (t: TextTarget) => void }) {
   const [mode, setMode] = useState<ReadingMode>('A');
   const [veil, setVeil] = useState<Veil>(5);
   const [question, setQuestion] = useState('');
@@ -261,9 +261,15 @@ function ReadingView({ location }: { location: GeoLocation }) {
         </Pressable>
         {error ? <Text style={styles.error}>{error}</Text> : null}
       </View>
-      {result && <ReadingResultView result={result} />}
+      {result && <ReadingResultView result={result} onOpenText={onOpenText} />}
     </ScrollView>
   );
+}
+
+/** Turn a reading's Quranic coordinate into a Texts destination. */
+function quranTarget(q: ReadingResult['coordinates']['quranic']): TextTarget {
+  if (q.muqattaatSurah) return { book: 'quran', kind: 'surah', n: q.muqattaatSurah };
+  return { book: 'quran', kind: 'hizb', n: q.hizb };
 }
 
 const VEIL_LABELS: Record<number, string> = {
@@ -278,8 +284,10 @@ const VEIL_LABELS: Record<number, string> = {
   9: 'The civilizational question — Al-Baqi',
 };
 
-function ReadingResultView({ result }: { result: ReadingResult }) {
+function ReadingResultView({ result, onOpenText }: { result: ReadingResult; onOpenText: (t: TextTarget) => void }) {
   const [saved, setSaved] = useState(false);
+  const z = result.coordinates.zabur;
+  const q = result.coordinates.quranic;
   const save = async () => {
     const raw = (await AsyncStorage.getItem('journal')) ?? '[]';
     const journal = JSON.parse(raw) as unknown[];
@@ -304,8 +312,12 @@ function ReadingResultView({ result }: { result: ReadingResult }) {
         <Text style={[styles.panelTitle, { color: COLORS.gold }]}>State 3 — The Unmoved Axis</Text>
         <Text style={styles.text}>Both gates are open. Hold position. Do not act. Witness.</Text>
         <Text style={styles.dim}>No hexagram is named. No lines move. The texts speak where geometry has gone still:</Text>
-        <Text style={styles.mono}>Quranic: Juz {result.coordinates.quranic.juz}, Hizb {result.coordinates.quranic.hizb}</Text>
-        <Text style={styles.mono}>Zabur: Psalm {result.coordinates.zabur.psalm}:{result.coordinates.zabur.verse}</Text>
+        <Pressable onPress={() => onOpenText(quranTarget(q))}>
+          <Text style={styles.monoLink}>Quranic: Juz {q.juz}, Hizb {q.hizb} ›</Text>
+        </Pressable>
+        <Pressable onPress={() => onOpenText({ book: 'zabur', kind: 'psalm', n: z.psalm, verse: z.verse })}>
+          <Text style={styles.monoLink}>Zabur: Psalm {z.psalm}:{z.verse} ›</Text>
+        </Pressable>
       </View>
     );
   }
@@ -376,16 +388,25 @@ function ReadingResultView({ result }: { result: ReadingResult }) {
         <Text style={styles.panelTitle}>The six coordinates</Text>
         <Text style={styles.mono}>1 · Hexagram: {hex.number} {hex.name} → {result.transformed?.number} {result.transformed?.name}</Text>
         <Text style={styles.mono}>2 · Divine Names: {result.activeNames.map((n) => n.name).join(' · ')}</Text>
-        <Text style={styles.mono}>
-          3 · Quranic: {result.coordinates.quranic.muqattaatSurah
-            ? `Surah ${result.coordinates.quranic.muqattaatSurah} (Muqatta'at override)`
-            : `Juz ${result.coordinates.quranic.juz}, Hizb ${result.coordinates.quranic.hizb}`}
-        </Text>
-        <Text style={styles.mono}>
-          4 · Zabur: Psalm {result.coordinates.zabur.psalm}:{result.coordinates.zabur.verse}
-          {result.coordinates.zabur.royalPsalm ? ` (royal: ${result.coordinates.zabur.royalPsalm})` : ''}
-          {result.coordinates.zabur.sabtPsalm ? ` · Sabt standing: Psalm ${result.coordinates.zabur.sabtPsalm}` : ''}
-        </Text>
+        <Pressable onPress={() => onOpenText(quranTarget(q))}>
+          <Text style={styles.monoLink}>
+            3 · Quranic: {q.muqattaatSurah
+              ? `Surah ${q.muqattaatSurah} (Muqatta'at override)`
+              : `Juz ${q.juz}, Hizb ${q.hizb}`} — read ›
+          </Text>
+        </Pressable>
+        <Pressable onPress={() => onOpenText({ book: 'zabur', kind: 'psalm', n: z.psalm, verse: z.verse })}>
+          <Text style={styles.monoLink}>
+            4 · Zabur: Psalm {z.psalm}:{z.verse}
+            {z.royalPsalm ? ` (royal: ${z.royalPsalm})` : ''}
+            {z.sabtPsalm ? ` · Sabt standing: Psalm ${z.sabtPsalm}` : ''} — read ›
+          </Text>
+        </Pressable>
+        {z.royalPsalm && z.royalPsalm !== z.psalm ? (
+          <Pressable onPress={() => onOpenText({ book: 'zabur', kind: 'psalm', n: z.royalPsalm! })}>
+            <Text style={styles.monoLinkDim}>   ↳ read the royal psalm {z.royalPsalm} ›</Text>
+          </Pressable>
+        ) : null}
         <Text style={styles.mono}>
           5 · Abjad: mansion letter {result.coordinates.abjad.mansionLetter} ({result.coordinates.abjad.mansionAbjad}) → standing line {result.coordinates.abjad.standingLine}
           {result.coordinates.abjad.natal ? ` · natal mansion ${result.coordinates.abjad.natal.mansionNumber}${result.coordinates.abjad.natal.natalTransit ? ' — NATAL TRANSIT' : ''}` : ''}
@@ -543,6 +564,8 @@ const styles = StyleSheet.create({
   dim: { color: COLORS.dim, padding: 16 },
   dimSmall: { color: COLORS.dim, fontSize: 11, marginTop: 4 },
   mono: { color: COLORS.teal, fontFamily: 'monospace' as never, fontSize: 12, marginTop: 2 },
+  monoLink: { color: COLORS.copperLight, fontFamily: 'monospace' as never, fontSize: 12, marginTop: 4, textDecorationLine: 'underline' },
+  monoLinkDim: { color: COLORS.dim, fontFamily: 'monospace' as never, fontSize: 11, marginTop: 2 },
   error: { color: COLORS.crimson, padding: 12 },
   row: { flexDirection: 'row', gap: 8, flexWrap: 'wrap' },
   rowWrap: { flexDirection: 'row', gap: 6, flexWrap: 'wrap', marginBottom: 4 },
