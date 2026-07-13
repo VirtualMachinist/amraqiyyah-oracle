@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "mcp__eb2b0bae-c3f4-4f3b-9193-f47579a2f4ec__read_file_content",
+      "Bash(python3 -c ' *)"
+    ]
+  }
+}

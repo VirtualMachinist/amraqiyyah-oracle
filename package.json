@@ -1,0 +1,14 @@
+{
+  "name": "amraqiyyah",
+  "private": true,
+  "version": "0.1.0",
+  "description": "The Amraqiyyah Oracle — deterministic instrument of directed dhikr (web, mobile, desktop)",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "test": "npm run test -w @amraqiyyah/engine",
+    "build": "npm run build --workspaces --if-present"
+  }
+}
