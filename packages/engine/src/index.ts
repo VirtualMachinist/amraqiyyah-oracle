@@ -23,6 +23,7 @@ export {
 } from './astro/ephemeris.js';
 export * from './calendar/planetaryHours.js';
 export * from './calendar/salah.js';
+export * from './calendar/daySchedule.js';
 export * from './calendar/hijri.js';
 export * from './calendar/seasons.js';
 export * from './calendar/harmonic.js';

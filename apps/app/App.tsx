@@ -19,6 +19,7 @@ import { StatusBar } from 'expo-status-bar';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {
   oracleInputs,
+  daySchedule,
   performReading,
   PLATONIC_KEY_CARDS,
   DRAWABLE_FIELD_CARDS,
@@ -34,6 +35,8 @@ import {
 } from '@amraqiyyah/engine';
 import { COLORS } from './src/theme';
 import { TextsView, type TextTarget } from './src/screens/TextsView';
+import { SacredClock } from './src/screens/SacredClock';
+import { CycleMeters } from './src/screens/CycleMeters';
 
 const DEFAULT_LOCATION: GeoLocation = {
   lat: 41.885,
@@ -91,26 +94,34 @@ function NowView({
   location: GeoLocation;
   onLocationChange: (l: GeoLocation) => void;
 }) {
-  const [inputs, setInputs] = useState<OracleInputs | null>(null);
-  const [error, setError] = useState<string | null>(null);
-
+  // The needle ticks each second; the heavier layers recompute each minute.
+  const [now, setNow] = useState(() => new Date());
   useEffect(() => {
+    const id = setInterval(() => setNow(new Date()), 1000);
+    return () => clearInterval(id);
+  }, []);
+  const minuteKey = Math.floor(now.getTime() / 60000);
+
+  const { inputs, schedule, error } = useMemo(() => {
     try {
-      setInputs(oracleInputs(new Date(), location));
-      setError(null);
+      const at = new Date(minuteKey * 60000);
+      return { inputs: oracleInputs(at, location), schedule: daySchedule(location, at), error: null as string | null };
     } catch (e) {
-      setError(e instanceof Error ? e.message : String(e));
+      return { inputs: null, schedule: null, error: e instanceof Error ? e.message : String(e) };
     }
-  }, [location]);
+  }, [location, minuteKey]);
 
   if (error) return <Text style={styles.error}>{error}</Text>;
-  if (!inputs) return <Text style={styles.dim}>Calculating the heavens…</Text>;
+  if (!inputs || !schedule) return <Text style={styles.dim}>Calculating the heavens…</Text>;
 
   const L = inputs.layers;
   return (
     <ScrollView style={styles.body} contentContainerStyle={{ paddingBottom: 48 }}>
       <Text style={styles.dateLine}>{inputs.amraqiyyah_date}</Text>
       <LocationRow location={location} onChange={onLocationChange} />
+      <SacredClock schedule={schedule} now={now} tz={location.tz} />
+      <CycleMeters inputs={inputs} now={now} tz={location.tz} />
+      <Text style={styles.sectionLabel}>All nine layers — in full</Text>
       <View style={styles.grid}>
         <LayerCard title="Planetary Hour" name={L.planetary_hour.divine_name}
           main={`${L.planetary_hour.planet} — hour ${L.planetary_hour.hour_number} (${L.planetary_hour.is_day ? 'day' : 'night'})`} />
@@ -549,6 +560,7 @@ const styles = StyleSheet.create({
   tabTextActive: { color: COLORS.bg },
   body: { flex: 1, paddingHorizontal: 16, marginTop: 12 },
   dateLine: { color: COLORS.text, fontSize: 16, fontWeight: '600', marginBottom: 8 },
+  sectionLabel: { color: COLORS.dim, fontSize: 11, letterSpacing: 1.5, textTransform: 'uppercase', marginTop: 20, marginBottom: 4 },
   grid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10 },
   layerCard: {
     backgroundColor: COLORS.panel, borderRadius: 12, padding: 12, minWidth: 240, flexGrow: 1, flexBasis: '45%',
