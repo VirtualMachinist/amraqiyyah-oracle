@@ -65,6 +65,13 @@ export interface ReadingRequest {
   querentNameArabic?: string | undefined;
   /** Required for Modes B and C. */
   draws?: ModeBDraws | undefined;
+  /**
+   * Optional precomputed Stellar Court status — for replaying a recorded
+   * moment or demonstrating a rare state. Production callers omit it; the
+   * status is then computed live from the ephemeris. Still a deterministic
+   * input, never randomness.
+   */
+  courtOverride?: StellarCourtStatus | undefined;
 }
 
 export interface ActiveName {
@@ -137,7 +144,7 @@ export interface ReadingResult {
 
 export function performReading(req: ReadingRequest): ReadingResult {
   const calendar = oracleInputs(req.timestamp, req.location);
-  const court = stellarCourtState(req.timestamp, req.location);
+  const court = req.courtOverride ?? stellarCourtState(req.timestamp, req.location);
   const isSabt = calendar.layers.week.is_sabt;
 
   // Step 2 — the Platonic Key is ALWAYS drawn (never suspended; hard constraint #4).

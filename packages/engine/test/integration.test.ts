@@ -154,6 +154,18 @@ describe('complete readings — all six coordinates', () => {
     }
   });
 
+  it('Stellar Court conjunctions are reachable: Moon passes within 1° longitude of Sirius monthly', async () => {
+    const { moonStarLongitudeSeparation } = await import('../src/astro/ephemeris.js');
+    const { SIRIUS } = await import('../src/astro/ephemeris.js');
+    // Scan one synodic month hourly; the Moon must cross Sirius' longitude once.
+    let minSep = 360;
+    for (let h = 0; h < 24 * 30; h++) {
+      const t = new Date(Date.UTC(2026, 6, 1) + h * 3600_000);
+      minSep = Math.min(minSep, moonStarLongitudeSeparation(SIRIUS, t));
+    }
+    expect(minSep).toBeLessThan(1);
+  });
+
   it('chiral bridge (card 22) gets deterministic handedness from lunar illumination', () => {
     const r = performReading({
       mode: 'B',

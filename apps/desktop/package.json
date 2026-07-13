@@ -1,0 +1,34 @@
+{
+  "name": "@amraqiyyah/desktop",
+  "version": "0.1.0",
+  "description": "Amraqiyyah Oracle — desktop shell (Electron wrapping the web export)",
+  "main": "main.cjs",
+  "scripts": {
+    "prepare:web": "test -d ../app/dist || (echo 'Run: npm run build:web in apps/app first' && exit 1)",
+    "start": "electron .",
+    "build": "npm run prepare:web && electron-builder --dir",
+    "dist": "npm run prepare:web && electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "org.amraqiyyah.oracle",
+    "productName": "Amraqiyyah Oracle",
+    "files": [
+      "main.cjs",
+      "web/**"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "extraMetadata": {
+      "main": "main.cjs"
+    },
+    "mac": {
+      "target": "dir",
+      "category": "public.app-category.lifestyle"
+    }
+  }
+}

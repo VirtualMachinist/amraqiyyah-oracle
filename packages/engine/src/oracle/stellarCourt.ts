@@ -10,7 +10,7 @@ import {
   ALCYONE,
   SIRIUS,
   bodyAltitude,
-  moonStarSeparation,
+  moonStarLongitudeSeparation,
   nextSunrise,
   sunAltitudeTime,
 } from '../astro/ephemeris.js';
@@ -73,8 +73,12 @@ function visibleAtDawn(star: Body, loc: GeoLocation, date: Date): boolean {
 }
 
 export function stellarCourtState(date: Date, loc: GeoLocation): StellarCourtStatus {
-  const sepSirius = moonStarSeparation(SIRIUS, date);
-  const sepAlcyone = moonStarSeparation(ALCYONE, date);
+  // Conjunction = ecliptic-longitude separation ≤ 1° (see ephemeris.ts note:
+  // the Moon can never come within 1° of Sirius in 3D angle — longitude
+  // conjunction is the classical and physically realizable trigger, and its
+  // ~3.7-hour monthly window matches the spec's "~2–4 hours duration").
+  const sepSirius = moonStarLongitudeSeparation(SIRIUS, date);
+  const sepAlcyone = moonStarLongitudeSeparation(ALCYONE, date);
   const conjSirius = sepSirius <= CONJUNCTION_ORB_DEG;
   const conjAlcyone = sepAlcyone <= CONJUNCTION_ORB_DEG;
   const heliacalSirius = heliacalRisingActive(SIRIUS, loc, date);

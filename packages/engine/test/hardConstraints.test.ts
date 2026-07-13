@@ -130,9 +130,9 @@ describe('Hard constraint #5 — stellar triggers are conjunction/heliacal, neve
     );
     const source = fs.readFileSync(p, 'utf8');
     // The Stellar Court engine takes no mansion data as input — triggers are
-    // pure angular separation to the physical stars + heliacal visibility.
+    // pure conjunction with the physical stars + heliacal visibility.
     expect(source.includes("from '../data/mansions")).toBe(false);
-    expect(source).toMatch(/moonStarSeparation/);
+    expect(source).toMatch(/moonStarLongitudeSeparation/);
     expect(source).toMatch(/CONJUNCTION_ORB_DEG = 1/);
   });
 });

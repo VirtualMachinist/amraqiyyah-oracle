@@ -15,6 +15,11 @@ export {
   previousNewMoon,
   nextNewMoon,
   seasonBoundaries,
+  moonStarLongitudeSeparation,
+  moonStarAngularSeparation,
+  starEclipticLongitude,
+  SIRIUS,
+  ALCYONE,
 } from './astro/ephemeris.js';
 export * from './calendar/planetaryHours.js';
 export * from './calendar/salah.js';

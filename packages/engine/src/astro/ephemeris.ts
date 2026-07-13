@@ -9,6 +9,7 @@ import {
   AstroTime,
   Body,
   DefineStar,
+  Ecliptic,
   EclipticGeoMoon,
   Equator,
   GeoVector,
@@ -129,12 +130,33 @@ export function sunAltitudeTime(
   return t.date;
 }
 
-/** Angular separation in degrees between the Moon and a defined star body. */
-export function moonStarSeparation(star: Body, date: Date): number {
+/** 3D angular separation in degrees between the Moon and a defined star body. */
+export function moonStarAngularSeparation(star: Body, date: Date): number {
   const t = toTime(date);
   const moon = GeoVector(Body.Moon, t, true);
   const starVec = GeoVector(star, t, true);
   return AngleBetween(moon, starVec);
+}
+
+/** A star's geocentric ecliptic longitude of date (true ecliptic, degrees). */
+export function starEclipticLongitude(star: Body, date: Date): number {
+  const t = toTime(date);
+  const vec = GeoVector(star, t, true); // EQJ frame
+  return Ecliptic(vec).elon; // converted to true ecliptic of date
+}
+
+/**
+ * Conjunction separation: |Δ ecliptic longitude| between the Moon and a star,
+ * wrapped to ≤180°. The classical (and physically realizable) conjunction
+ * measure — Sirius sits ~39.6° below the ecliptic, so a 3D separation of 1°
+ * can never occur; the spec's "~2–4 hours duration" for monthly triggers
+ * matches the Moon crossing a ±1° longitude window (~0.55°/hour).
+ */
+export function moonStarLongitudeSeparation(star: Body, date: Date): number {
+  const moonLon = EclipticGeoMoon(toTime(date)).lon;
+  const starLon = starEclipticLongitude(star, date);
+  const diff = Math.abs(moonLon - starLon) % 360;
+  return diff > 180 ? 360 - diff : diff;
 }
 
 /** Altitude of a body above the horizon (degrees), equatorial→horizontal of date. */
