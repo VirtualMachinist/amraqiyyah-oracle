@@ -38,12 +38,17 @@ import { COLORS } from './src/theme';
 import { TextsView, type TextTarget } from './src/screens/TextsView';
 import { SacredClock } from './src/screens/SacredClock';
 import { CycleMeters } from './src/screens/CycleMeters';
+import { LocationPicker } from './src/screens/LocationPicker';
+import { cityForTz, cityLabel } from './src/geo';
 
-const DEFAULT_LOCATION: GeoLocation = {
-  lat: 41.885,
-  lon: -87.627,
-  tz: Intl.DateTimeFormat().resolvedOptions().timeZone || 'America/Chicago',
-};
+/** A coherent starting place: the largest city in the device's own timezone. */
+function deviceDefault(): { loc: GeoLocation; label: string } {
+  const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || 'America/Chicago';
+  const c = cityForTz(tz);
+  if (c) return { loc: { lat: c.lat, lon: c.lon, tz: c.tz }, label: cityLabel(c) };
+  return { loc: { lat: 41.8781, lon: -87.6298, tz: 'America/Chicago' }, label: 'Chicago, United States' };
+}
+const DEVICE_DEFAULT = deviceDefault();
 
 type Tab = 'now' | 'reading' | 'texts' | 'journal';
 
@@ -56,8 +61,14 @@ const TAB_LABELS: Record<Tab, string> = {
 
 export default function App() {
   const [tab, setTab] = useState<Tab>('now');
-  const [location, setLocation] = useState<GeoLocation>(DEFAULT_LOCATION);
+  const [location, setLocation] = useState<GeoLocation>(DEVICE_DEFAULT.loc);
+  const [locationLabel, setLocationLabel] = useState<string>(DEVICE_DEFAULT.label);
   const [textTarget, setTextTarget] = useState<TextTarget | null>(null);
+
+  const setPlace = (loc: GeoLocation, label: string) => {
+    setLocation(loc);
+    setLocationLabel(label);
+  };
 
   const openText = (t: TextTarget) => {
     setTextTarget(t);
@@ -78,7 +89,7 @@ export default function App() {
           </Pressable>
         ))}
       </View>
-      {tab === 'now' && <NowView location={location} onLocationChange={setLocation} />}
+      {tab === 'now' && <NowView location={location} locationLabel={locationLabel} onLocationChange={setPlace} />}
       {tab === 'reading' && <ReadingView location={location} onOpenText={openText} />}
       {tab === 'texts' && <TextsView target={textTarget} onConsumeTarget={() => setTextTarget(null)} />}
       {tab === 'journal' && <JournalView />}
@@ -90,10 +101,12 @@ export default function App() {
 
 function NowView({
   location,
+  locationLabel,
   onLocationChange,
 }: {
   location: GeoLocation;
-  onLocationChange: (l: GeoLocation) => void;
+  locationLabel: string;
+  onLocationChange: (l: GeoLocation, label: string) => void;
 }) {
   // The needle ticks each second; the heavier layers recompute each minute.
   const [now, setNow] = useState(() => new Date());
@@ -124,7 +137,7 @@ function NowView({
   return (
     <ScrollView style={styles.body} contentContainerStyle={{ paddingBottom: 48 }}>
       <Text style={styles.dateLine}>{inputs.amraqiyyah_date}</Text>
-      <LocationRow location={location} onChange={onLocationChange} />
+      <LocationPicker label={locationLabel} onChange={onLocationChange} />
       <SacredClock schedule={schedule} now={now} tz={location.tz} />
       <CycleMeters inputs={inputs} now={now} tz={location.tz} moon={moon} />
       <Text style={styles.sectionLabel}>All nine layers — in full</Text>
@@ -161,27 +174,6 @@ function NowView({
         <Text style={styles.mono}>Stellar Court: {inputs.oracle_inputs.stellar_court}</Text>
       </View>
     </ScrollView>
-  );
-}
-
-function LocationRow({ location, onChange }: { location: GeoLocation; onChange: (l: GeoLocation) => void }) {
-  const [lat, setLat] = useState(String(location.lat));
-  const [lon, setLon] = useState(String(location.lon));
-  return (
-    <View style={styles.locationRow}>
-      <Text style={styles.dim}>Location</Text>
-      <TextInput style={styles.input} value={lat} onChangeText={setLat} placeholder="lat" placeholderTextColor={COLORS.dim} />
-      <TextInput style={styles.input} value={lon} onChangeText={setLon} placeholder="lon" placeholderTextColor={COLORS.dim} />
-      <Pressable
-        style={styles.buttonSmall}
-        onPress={() => {
-          const la = Number(lat), lo = Number(lon);
-          if (Number.isFinite(la) && Number.isFinite(lo)) onChange({ ...location, lat: la, lon: lo });
-        }}>
-        <Text style={styles.buttonText}>Set</Text>
-      </Pressable>
-      <Text style={styles.dimSmall}>{location.tz}</Text>
-    </View>
   );
 }
 
