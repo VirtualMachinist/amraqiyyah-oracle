@@ -39,6 +39,7 @@ import { TextsView, type TextTarget } from './src/screens/TextsView';
 import { SacredClock } from './src/screens/SacredClock';
 import { CycleMeters } from './src/screens/CycleMeters';
 import { LocationPicker } from './src/screens/LocationPicker';
+import { NatalView } from './src/screens/NatalView';
 import { cityForTz, cityLabel } from './src/geo';
 
 /** A coherent starting place: the largest city in the device's own timezone. */
@@ -50,12 +51,14 @@ function deviceDefault(): { loc: GeoLocation; label: string } {
 }
 const DEVICE_DEFAULT = deviceDefault();
 
-type Tab = 'now' | 'reading' | 'texts' | 'journal';
+type Tab = 'now' | 'reading' | 'texts' | 'natal' | 'journal';
 
+const TAB_ORDER: Tab[] = ['now', 'reading', 'texts', 'natal', 'journal'];
 const TAB_LABELS: Record<Tab, string> = {
   now: 'Now',
   reading: 'Reading',
   texts: 'Texts',
+  natal: 'Natal',
   journal: 'Journal',
 };
 
@@ -82,16 +85,17 @@ export default function App() {
         <Text style={styles.title}>The Amraqiyyah Oracle</Text>
         <Text style={styles.subtitle}>An instrument of directed dhikr — deterministic, transparent</Text>
       </View>
-      <View style={styles.tabs}>
-        {(['now', 'reading', 'texts', 'journal'] as Tab[]).map((t) => (
+      <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.tabs} contentContainerStyle={styles.tabsContent}>
+        {TAB_ORDER.map((t) => (
           <Pressable key={t} onPress={() => setTab(t)} style={[styles.tab, tab === t && styles.tabActive]}>
             <Text style={[styles.tabText, tab === t && styles.tabTextActive]}>{TAB_LABELS[t]}</Text>
           </Pressable>
         ))}
-      </View>
+      </ScrollView>
       {tab === 'now' && <NowView location={location} locationLabel={locationLabel} onLocationChange={setPlace} />}
       {tab === 'reading' && <ReadingView location={location} onOpenText={openText} />}
       {tab === 'texts' && <TextsView target={textTarget} onConsumeTarget={() => setTextTarget(null)} />}
+      {tab === 'natal' && <NatalView />}
       {tab === 'journal' && <JournalView />}
     </View>
   );
@@ -551,7 +555,8 @@ const styles = StyleSheet.create({
   header: { paddingHorizontal: 20, paddingBottom: 8 },
   title: { color: COLORS.gold, fontSize: 24, fontWeight: '700', letterSpacing: 0.5 },
   subtitle: { color: COLORS.dim, fontSize: 12, marginTop: 2 },
-  tabs: { flexDirection: 'row', paddingHorizontal: 16, gap: 8, marginTop: 8 },
+  tabs: { marginTop: 8, flexGrow: 0 },
+  tabsContent: { flexDirection: 'row', paddingHorizontal: 16, gap: 8, alignItems: 'center' },
   tab: { paddingVertical: 8, paddingHorizontal: 16, borderRadius: 20, backgroundColor: COLORS.panel },
   tabActive: { backgroundColor: COLORS.gold },
   tabText: { color: COLORS.dim, fontWeight: '600' },

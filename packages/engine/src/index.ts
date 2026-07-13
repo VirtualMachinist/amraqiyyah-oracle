@@ -32,3 +32,4 @@ export * from './oracle/stellarCourt.js';
 export * from './oracle/movingLines.js';
 export * from './oracle/coordinates.js';
 export * from './oracle/reading.js';
+export * from './oracle/natal.js';

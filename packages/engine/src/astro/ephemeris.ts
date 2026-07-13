@@ -22,9 +22,10 @@ import {
   SearchMoonPhase,
   SearchRiseSet,
   Seasons,
+  SiderealTime,
   SunPosition,
 } from 'astronomy-engine';
-import type { GeoLocation, MoonPhaseInfo } from '../types.js';
+import type { GeoLocation, MoonPhaseInfo, Planet } from '../types.js';
 
 // Fixed stars (J2000): Sirius and Alcyone — the Stellar Court triggers fire on
 // actual conjunction with these physical stars, never on mansion transit
@@ -47,6 +48,26 @@ export function moonTropicalLongitude(date: Date): number {
 /** Sun geocentric apparent ecliptic longitude of date (tropical), degrees 0–360. */
 export function sunTropicalLongitude(date: Date): number {
   return SunPosition(toTime(date)).elon;
+}
+
+const PLANET_BODY: Record<'Mercury' | 'Venus' | 'Mars' | 'Jupiter' | 'Saturn', Body> = {
+  Mercury: Body.Mercury,
+  Venus: Body.Venus,
+  Mars: Body.Mars,
+  Jupiter: Body.Jupiter,
+  Saturn: Body.Saturn,
+};
+
+/** Any Chaldean planet's geocentric ecliptic longitude of date (tropical), 0–360. */
+export function planetTropicalLongitude(planet: Planet, date: Date): number {
+  if (planet === 'Moon') return moonTropicalLongitude(date);
+  if (planet === 'Sun') return sunTropicalLongitude(date);
+  return Ecliptic(GeoVector(PLANET_BODY[planet], toTime(date), true)).elon;
+}
+
+/** Greenwich apparent sidereal time, in hours (0–24). */
+export function siderealTimeHours(date: Date): number {
+  return SiderealTime(toTime(date));
 }
 
 /** Moon illumination fraction and waxing flag. */
