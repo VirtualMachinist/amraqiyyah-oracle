@@ -6,7 +6,7 @@
  */
 import React, { useState } from 'react';
 import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
-import { COLORS } from '../theme';
+import { COLORS, FONTS } from '../theme';
 import { searchCities, cityLabel, type City } from '../geo';
 import type { GeoLocation } from '@amraqiyyah/engine';
 
@@ -93,14 +93,14 @@ export function LocationPicker({
 const styles = StyleSheet.create({
   wrap: { marginBottom: 12 },
   row: { flexDirection: 'row', alignItems: 'center', gap: 8 },
-  current: { flex: 1, color: COLORS.text, fontSize: 14, fontWeight: '600' },
+  current: { flex: 1, color: COLORS.text, fontFamily: FONTS.bodySemi, fontSize: 15 },
   gpsBtn: { backgroundColor: COLORS.panelSoft, borderRadius: 8, paddingVertical: 6, paddingHorizontal: 10, borderWidth: 1, borderColor: COLORS.copper },
-  gpsText: { color: COLORS.copperLight, fontSize: 12, fontWeight: '600' },
-  input: { backgroundColor: COLORS.panelSoft, color: COLORS.text, borderRadius: 8, paddingHorizontal: 12, paddingVertical: 9, marginTop: 8, borderWidth: 1, borderColor: COLORS.line },
-  err: { color: COLORS.crimson, fontSize: 12, marginTop: 6 },
+  gpsText: { color: COLORS.copperLight, fontFamily: FONTS.monoMed, fontSize: 11, letterSpacing: 0.3 },
+  input: { backgroundColor: COLORS.panelSoft, color: COLORS.text, fontFamily: FONTS.body, fontSize: 15, borderRadius: 8, paddingHorizontal: 12, paddingVertical: 9, marginTop: 8, borderWidth: 1, borderColor: COLORS.line },
+  err: { color: COLORS.crimson, fontFamily: FONTS.body, fontSize: 13, marginTop: 6 },
   dropdown: { backgroundColor: COLORS.panel, borderRadius: 10, borderWidth: 1, borderColor: COLORS.line, marginTop: 6, overflow: 'hidden' },
   item: { paddingHorizontal: 12, paddingVertical: 10, borderBottomWidth: 1, borderBottomColor: COLORS.line, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
-  itemCity: { color: COLORS.text, fontSize: 14, flex: 1 },
-  itemCountry: { color: COLORS.dim, fontSize: 13 },
-  itemTz: { color: COLORS.copperLight, fontSize: 10 },
+  itemCity: { color: COLORS.text, fontFamily: FONTS.body, fontSize: 15, flex: 1 },
+  itemCountry: { color: COLORS.dim, fontFamily: FONTS.body, fontSize: 13 },
+  itemTz: { color: COLORS.copperLight, fontFamily: FONTS.mono, fontSize: 10 },
 });

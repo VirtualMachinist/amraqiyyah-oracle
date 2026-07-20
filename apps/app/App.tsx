@@ -17,6 +17,11 @@ import {
 } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useFonts } from 'expo-font';
+import { CrimsonPro_400Regular, CrimsonPro_600SemiBold, CrimsonPro_700Bold } from '@expo-google-fonts/crimson-pro';
+import { EBGaramond_400Regular, EBGaramond_500Medium, EBGaramond_600SemiBold } from '@expo-google-fonts/eb-garamond';
+import { IBMPlexMono_400Regular, IBMPlexMono_500Medium, IBMPlexMono_600SemiBold } from '@expo-google-fonts/ibm-plex-mono';
+import { Amiri_400Regular, Amiri_700Bold } from '@expo-google-fonts/amiri';
 import {
   oracleInputs,
   daySchedule,
@@ -34,7 +39,7 @@ import {
   type Veil,
   type Hexagram,
 } from '@amraqiyyah/engine';
-import { COLORS } from './src/theme';
+import { COLORS, FONTS, TRACK } from './src/theme';
 import { TextsView, type TextTarget } from './src/screens/TextsView';
 import { SacredClock } from './src/screens/SacredClock';
 import { CycleMeters } from './src/screens/CycleMeters';
@@ -63,6 +68,12 @@ const TAB_LABELS: Record<Tab, string> = {
 };
 
 export default function App() {
+  const [fontsLoaded] = useFonts({
+    CrimsonPro_400Regular, CrimsonPro_600SemiBold, CrimsonPro_700Bold,
+    EBGaramond_400Regular, EBGaramond_500Medium, EBGaramond_600SemiBold,
+    IBMPlexMono_400Regular, IBMPlexMono_500Medium, IBMPlexMono_600SemiBold,
+    Amiri_400Regular, Amiri_700Bold,
+  });
   const [tab, setTab] = useState<Tab>('now');
   const [location, setLocation] = useState<GeoLocation>(DEVICE_DEFAULT.loc);
   const [locationLabel, setLocationLabel] = useState<string>(DEVICE_DEFAULT.label);
@@ -77,6 +88,16 @@ export default function App() {
     setTextTarget(t);
     setTab('texts');
   };
+
+  if (!fontsLoaded) {
+    return (
+      <View style={[styles.root, { alignItems: 'center', justifyContent: 'center' }]}>
+        <StatusBar style="light" />
+        <Text style={styles.title}>The Amraqiyyah Oracle</Text>
+        <Text style={[styles.subtitle, { marginTop: 8 }]}>Lighting the lamps…</Text>
+      </View>
+    );
+  }
 
   return (
     <View style={styles.root}>
@@ -553,47 +574,47 @@ function JournalView() {
 const styles = StyleSheet.create({
   root: { flex: 1, backgroundColor: COLORS.bg, paddingTop: 48 },
   header: { paddingHorizontal: 20, paddingBottom: 8 },
-  title: { color: COLORS.gold, fontSize: 24, fontWeight: '700', letterSpacing: 0.5 },
-  subtitle: { color: COLORS.dim, fontSize: 12, marginTop: 2 },
+  title: { color: COLORS.gold, fontFamily: FONTS.displayBold, fontSize: 27, letterSpacing: 0.3 },
+  subtitle: { color: COLORS.dim, fontFamily: FONTS.body, fontSize: 14, marginTop: 3 },
   tabs: { marginTop: 8, flexGrow: 0 },
   tabsContent: { flexDirection: 'row', paddingHorizontal: 16, gap: 8, alignItems: 'center' },
-  tab: { paddingVertical: 8, paddingHorizontal: 16, borderRadius: 20, backgroundColor: COLORS.panel },
-  tabActive: { backgroundColor: COLORS.gold },
-  tabText: { color: COLORS.dim, fontWeight: '600' },
-  tabTextActive: { color: COLORS.bg },
+  tab: { paddingVertical: 8, paddingHorizontal: 16, borderRadius: 20, backgroundColor: COLORS.panel, borderWidth: 1, borderColor: COLORS.line },
+  tabActive: { backgroundColor: COLORS.gold, borderColor: COLORS.gold },
+  tabText: { color: COLORS.dim, fontFamily: FONTS.monoMed, fontSize: 12, letterSpacing: 0.5 },
+  tabTextActive: { color: COLORS.bg, fontFamily: FONTS.monoSemi },
   body: { flex: 1, paddingHorizontal: 16, marginTop: 12 },
-  dateLine: { color: COLORS.text, fontSize: 16, fontWeight: '600', marginBottom: 8 },
-  sectionLabel: { color: COLORS.dim, fontSize: 11, letterSpacing: 1.5, textTransform: 'uppercase', marginTop: 20, marginBottom: 4 },
+  dateLine: { color: COLORS.text, fontFamily: FONTS.displaySemi, fontSize: 18, marginBottom: 8 },
+  sectionLabel: { color: COLORS.dim, fontFamily: FONTS.mono, fontSize: 11, letterSpacing: TRACK.eyebrow, textTransform: 'uppercase', marginTop: 20, marginBottom: 4 },
   grid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10 },
   layerCard: {
     backgroundColor: COLORS.panel, borderRadius: 12, padding: 12, minWidth: 240, flexGrow: 1, flexBasis: '45%',
     borderWidth: 1, borderColor: COLORS.line,
   },
-  layerTitle: { color: COLORS.dim, fontSize: 11, textTransform: 'uppercase', letterSpacing: 1 },
-  layerMain: { color: COLORS.text, fontSize: 15, fontWeight: '600', marginTop: 4 },
-  layerSub: { color: COLORS.dim, fontSize: 12, marginTop: 2 },
-  layerName: { color: COLORS.gold, fontSize: 12, marginTop: 6 },
+  layerTitle: { color: COLORS.dim, fontFamily: FONTS.mono, fontSize: 11, textTransform: 'uppercase', letterSpacing: TRACK.eyebrow },
+  layerMain: { color: COLORS.text, fontFamily: FONTS.bodySemi, fontSize: 16, marginTop: 4 },
+  layerSub: { color: COLORS.dim, fontFamily: FONTS.body, fontSize: 13, marginTop: 2 },
+  layerName: { color: COLORS.gold, fontFamily: FONTS.displaySemi, fontSize: 14, marginTop: 6 },
   panel: { backgroundColor: COLORS.panel, borderRadius: 12, padding: 14, marginTop: 12, borderWidth: 1, borderColor: COLORS.line },
-  panelTitle: { color: COLORS.text, fontWeight: '700', marginBottom: 6 },
-  text: { color: COLORS.text, marginTop: 2 },
-  dim: { color: COLORS.dim, padding: 16 },
-  dimSmall: { color: COLORS.dim, fontSize: 11, marginTop: 4 },
-  mono: { color: COLORS.teal, fontFamily: 'monospace' as never, fontSize: 12, marginTop: 2 },
-  monoLink: { color: COLORS.copperLight, fontFamily: 'monospace' as never, fontSize: 12, marginTop: 4, textDecorationLine: 'underline' },
-  monoLinkDim: { color: COLORS.dim, fontFamily: 'monospace' as never, fontSize: 11, marginTop: 2 },
-  error: { color: COLORS.crimson, padding: 12 },
+  panelTitle: { color: COLORS.text, fontFamily: FONTS.displaySemi, fontSize: 16, marginBottom: 6 },
+  text: { color: COLORS.text, fontFamily: FONTS.body, fontSize: 15, lineHeight: 22, marginTop: 2 },
+  dim: { color: COLORS.dim, fontFamily: FONTS.body, fontSize: 15, padding: 16 },
+  dimSmall: { color: COLORS.dim, fontFamily: FONTS.mono, fontSize: 11, marginTop: 4 },
+  mono: { color: COLORS.teal, fontFamily: FONTS.mono, fontSize: 12, lineHeight: 18, marginTop: 2 },
+  monoLink: { color: COLORS.copperLight, fontFamily: FONTS.monoMed, fontSize: 12, lineHeight: 18, marginTop: 4, textDecorationLine: 'underline' },
+  monoLinkDim: { color: COLORS.dim, fontFamily: FONTS.mono, fontSize: 11, marginTop: 2 },
+  error: { color: COLORS.crimson, fontFamily: FONTS.body, fontSize: 14, padding: 12 },
   row: { flexDirection: 'row', gap: 8, flexWrap: 'wrap' },
   rowWrap: { flexDirection: 'row', gap: 6, flexWrap: 'wrap', marginBottom: 4 },
-  choice: { paddingVertical: 8, paddingHorizontal: 12, borderRadius: 8, backgroundColor: COLORS.panelSoft, marginBottom: 8 },
-  choiceActive: { backgroundColor: COLORS.gold },
-  choiceText: { color: COLORS.dim, fontSize: 13, fontWeight: '600' },
-  choiceTextActive: { color: COLORS.bg },
-  veil: { width: 36, height: 36, borderRadius: 18, backgroundColor: COLORS.panelSoft, alignItems: 'center', justifyContent: 'center' },
-  input: { backgroundColor: COLORS.panelSoft, color: COLORS.text, borderRadius: 8, paddingHorizontal: 10, paddingVertical: 6, width: 90 },
-  inputWide: { backgroundColor: COLORS.panelSoft, color: COLORS.text, borderRadius: 8, paddingHorizontal: 12, paddingVertical: 10, marginTop: 8 },
-  button: { backgroundColor: COLORS.gold, borderRadius: 10, paddingVertical: 12, alignItems: 'center', marginTop: 12 },
+  choice: { paddingVertical: 8, paddingHorizontal: 12, borderRadius: 8, backgroundColor: COLORS.panelSoft, marginBottom: 8, borderWidth: 1, borderColor: COLORS.line },
+  choiceActive: { backgroundColor: COLORS.panelSoft, borderColor: COLORS.copper },
+  choiceText: { color: COLORS.dim, fontFamily: FONTS.monoMed, fontSize: 12, letterSpacing: 0.3 },
+  choiceTextActive: { color: COLORS.copperLight },
+  veil: { width: 38, height: 38, borderRadius: 19, backgroundColor: COLORS.panelSoft, alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: COLORS.line },
+  input: { backgroundColor: COLORS.panelSoft, color: COLORS.text, fontFamily: FONTS.mono, borderRadius: 8, paddingHorizontal: 10, paddingVertical: 6, width: 90 },
+  inputWide: { backgroundColor: COLORS.panelSoft, color: COLORS.text, fontFamily: FONTS.body, fontSize: 15, borderRadius: 8, paddingHorizontal: 12, paddingVertical: 10, marginTop: 8, borderWidth: 1, borderColor: COLORS.line },
+  button: { backgroundColor: COLORS.gold, borderRadius: 10, paddingVertical: 13, alignItems: 'center', marginTop: 12 },
   buttonSmall: { backgroundColor: COLORS.gold, borderRadius: 8, paddingVertical: 6, paddingHorizontal: 12 },
-  buttonText: { color: COLORS.bg, fontWeight: '700' },
+  buttonText: { color: COLORS.bg, fontFamily: FONTS.monoSemi, fontSize: 13, letterSpacing: 0.8, textTransform: 'uppercase' },
   locationRow: { flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 10 },
   cardsRow: { flexDirection: 'row', gap: 12, marginTop: 12, flexWrap: 'wrap' },
   cardSlot: { alignItems: 'center', width: 110 },
@@ -604,12 +625,12 @@ const styles = StyleSheet.create({
   cardFace: { flex: 1, alignItems: 'center', justifyContent: 'center' },
   cardGlyph: { color: COLORS.gold, fontSize: 30 },
   cardHalf: { flex: 1, alignItems: 'center', justifyContent: 'center' },
-  cardHalfText: { color: COLORS.dim, fontSize: 10, textTransform: 'uppercase', letterSpacing: 2 },
-  cardLabel: { color: COLORS.text, fontSize: 12, fontWeight: '600', marginTop: 6, textAlign: 'center' },
-  cardSub: { color: COLORS.dim, fontSize: 10, textAlign: 'center' },
+  cardHalfText: { color: COLORS.dim, fontFamily: FONTS.mono, fontSize: 10, textTransform: 'uppercase', letterSpacing: 2 },
+  cardLabel: { color: COLORS.text, fontFamily: FONTS.bodySemi, fontSize: 13, marginTop: 6, textAlign: 'center' },
+  cardSub: { color: COLORS.dim, fontFamily: FONTS.mono, fontSize: 10, textAlign: 'center' },
   hexRow: { flexDirection: 'row', gap: 16, marginTop: 12, flexWrap: 'wrap' },
   hexFigure: { backgroundColor: COLORS.panel, borderRadius: 12, padding: 14, borderWidth: 1, borderColor: COLORS.line, minWidth: 220, flexGrow: 1 },
-  hexTitle: { color: COLORS.text, fontWeight: '700', marginBottom: 8 },
+  hexTitle: { color: COLORS.text, fontFamily: FONTS.displaySemi, fontSize: 16, marginBottom: 8 },
   hexLineRow: { flexDirection: 'row', alignItems: 'center', marginVertical: 3, height: 12 },
   yangLine: { width: 120, height: 8, backgroundColor: COLORS.yang, borderRadius: 2 },
   yinRow: { flexDirection: 'row', width: 120 },

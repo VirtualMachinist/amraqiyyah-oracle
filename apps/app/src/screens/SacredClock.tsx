@@ -13,7 +13,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Svg, { Circle, Path, G, Line, Text as SvgText, Defs, RadialGradient, Stop } from 'react-native-svg';
-import { COLORS } from '../theme';
+import { COLORS, FONTS } from '../theme';
 import type { DaySchedule } from '@amraqiyyah/engine';
 
 const PLANET: Record<string, { glyph: string; color: string }> = {
@@ -184,8 +184,8 @@ export function SacredClock({ schedule, now, tz }: { schedule: DaySchedule; now:
 const styles = StyleSheet.create({
   wrap: { width: '100%', aspectRatio: 1, maxWidth: 400, alignSelf: 'center', marginTop: 4 },
   center: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, alignItems: 'center', justifyContent: 'center' },
-  clock: { color: COLORS.text, fontSize: 40, fontWeight: '200', letterSpacing: 2, fontVariant: ['tabular-nums'] },
-  hour: { fontSize: 15, fontWeight: '600', marginTop: 2 },
-  salah: { fontSize: 12, marginTop: 4 },
-  lord: { color: COLORS.dim, fontSize: 11, marginTop: 6 },
+  clock: { color: COLORS.text, fontFamily: FONTS.mono, fontSize: 42, letterSpacing: 1, fontVariant: ['tabular-nums'] },
+  hour: { fontFamily: FONTS.bodySemi, fontSize: 16, marginTop: 4 },
+  salah: { fontFamily: FONTS.body, fontSize: 13, marginTop: 4 },
+  lord: { color: COLORS.dim, fontFamily: FONTS.mono, fontSize: 11, marginTop: 6 },
 });

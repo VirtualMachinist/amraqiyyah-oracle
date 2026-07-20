@@ -10,7 +10,7 @@
  */
 import React, { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
-import { COLORS } from '../theme';
+import { COLORS, FONTS } from '../theme';
 import { LocationPicker } from './LocationPicker';
 import { natalChart, type GeoLocation, type NatalChart } from '@amraqiyyah/engine';
 
@@ -175,24 +175,24 @@ function NatalResult({ chart }: { chart: NatalChart }) {
 const styles = StyleSheet.create({
   body: { flex: 1, paddingHorizontal: 16, marginTop: 12 },
   panel: { backgroundColor: COLORS.panel, borderRadius: 12, padding: 14, marginTop: 12, borderWidth: 1, borderColor: COLORS.line },
-  panelTitle: { color: COLORS.text, fontWeight: '700', marginBottom: 8 },
-  fieldLabel: { color: COLORS.dim, fontSize: 12, marginTop: 8, marginBottom: 4 },
+  panelTitle: { color: COLORS.text, fontFamily: FONTS.displaySemi, fontSize: 16, marginBottom: 8 },
+  fieldLabel: { color: COLORS.dim, fontFamily: FONTS.mono, fontSize: 11, letterSpacing: 1.4, textTransform: 'uppercase', marginTop: 8, marginBottom: 4 },
   dtRow: { flexDirection: 'row', alignItems: 'center', gap: 6 },
-  dtField: { backgroundColor: COLORS.panelSoft, color: COLORS.text, borderRadius: 8, paddingHorizontal: 8, paddingVertical: 8, borderWidth: 1, borderColor: COLORS.line, textAlign: 'center' },
+  dtField: { backgroundColor: COLORS.panelSoft, color: COLORS.text, fontFamily: FONTS.mono, borderRadius: 8, paddingHorizontal: 8, paddingVertical: 8, borderWidth: 1, borderColor: COLORS.line, textAlign: 'center' },
   dtSep: { color: COLORS.dim, fontSize: 18 },
-  input: { backgroundColor: COLORS.panelSoft, color: COLORS.text, borderRadius: 8, paddingHorizontal: 12, paddingVertical: 10, marginTop: 8, borderWidth: 1, borderColor: COLORS.line },
-  button: { backgroundColor: COLORS.gold, borderRadius: 10, paddingVertical: 12, alignItems: 'center', marginTop: 12 },
-  buttonText: { color: COLORS.bg, fontWeight: '700' },
-  error: { color: COLORS.crimson, paddingTop: 10 },
-  hexBig: { color: COLORS.gold, fontSize: 20, fontWeight: '700' },
-  text: { color: COLORS.text, marginTop: 4 },
-  dim: { color: COLORS.dim, marginTop: 4 },
-  dimSmall: { color: COLORS.dim, fontSize: 11, marginTop: 6 },
-  mono: { color: COLORS.teal, fontFamily: 'monospace' as never, fontSize: 12, marginTop: 3 },
-  placeRow: { flexDirection: 'row', alignItems: 'center', paddingVertical: 5, borderBottomWidth: 1, borderBottomColor: COLORS.line },
+  input: { backgroundColor: COLORS.panelSoft, color: COLORS.text, fontFamily: FONTS.body, fontSize: 15, borderRadius: 8, paddingHorizontal: 12, paddingVertical: 10, marginTop: 8, borderWidth: 1, borderColor: COLORS.line },
+  button: { backgroundColor: COLORS.gold, borderRadius: 10, paddingVertical: 13, alignItems: 'center', marginTop: 12 },
+  buttonText: { color: COLORS.bg, fontFamily: FONTS.monoSemi, fontSize: 13, letterSpacing: 0.8, textTransform: 'uppercase' },
+  error: { color: COLORS.crimson, fontFamily: FONTS.body, fontSize: 14, paddingTop: 10 },
+  hexBig: { color: COLORS.gold, fontFamily: FONTS.displayBold, fontSize: 22 },
+  text: { color: COLORS.text, fontFamily: FONTS.body, fontSize: 15, lineHeight: 22, marginTop: 4 },
+  dim: { color: COLORS.dim, fontFamily: FONTS.body, fontSize: 14, marginTop: 4 },
+  dimSmall: { color: COLORS.dim, fontFamily: FONTS.mono, fontSize: 11, marginTop: 6 },
+  mono: { color: COLORS.teal, fontFamily: FONTS.mono, fontSize: 12, lineHeight: 18, marginTop: 3 },
+  placeRow: { flexDirection: 'row', alignItems: 'center', paddingVertical: 6, borderBottomWidth: 1, borderBottomColor: COLORS.line },
   placeGlyph: { color: COLORS.gold, fontSize: 16, width: 22 },
-  placePlanet: { color: COLORS.text, fontSize: 13, width: 66 },
-  placeHouse: { color: COLORS.lapisLight, fontSize: 12, width: 92 },
-  placeMansion: { color: COLORS.text, fontSize: 12, flex: 1 },
-  placeDeg: { color: COLORS.dim, fontSize: 11 },
+  placePlanet: { color: COLORS.text, fontFamily: FONTS.bodySemi, fontSize: 13, width: 66 },
+  placeHouse: { color: COLORS.lapisLight, fontFamily: FONTS.mono, fontSize: 12, width: 92 },
+  placeMansion: { color: COLORS.text, fontFamily: FONTS.body, fontSize: 13, flex: 1 },
+  placeDeg: { color: COLORS.dim, fontFamily: FONTS.mono, fontSize: 11 },
 });

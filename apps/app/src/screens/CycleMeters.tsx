@@ -8,7 +8,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Svg, { Circle, Path, Text as SvgText } from 'react-native-svg';
-import { COLORS } from '../theme';
+import { COLORS, FONTS } from '../theme';
 import type { OracleInputs } from '@amraqiyyah/engine';
 
 interface Moon { illumination: number; waxing: boolean }
@@ -148,10 +148,10 @@ export function CycleMeters({ inputs, now, tz, moon }: { inputs: OracleInputs; n
 const styles = StyleSheet.create({
   grid: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', marginTop: 16 },
   meter: { width: '31%', alignItems: 'center', marginBottom: 16 },
-  label: { color: COLORS.dim, fontSize: 9, letterSpacing: 1, marginBottom: 4 },
+  label: { color: COLORS.dim, fontFamily: FONTS.mono, fontSize: 9, letterSpacing: 1.4, marginBottom: 4 },
   dial: { width: '100%', aspectRatio: 1 },
   dialCenter: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, alignItems: 'center', justifyContent: 'center' },
-  centerText: { fontSize: 15, fontWeight: '700' },
-  subText: { color: COLORS.dim, fontSize: 9, marginTop: 2, maxWidth: 90, textAlign: 'center' },
-  moonSub: { color: COLORS.dim, fontSize: 9, marginTop: 2, maxWidth: 104, textAlign: 'center' },
+  centerText: { fontFamily: FONTS.displaySemi, fontSize: 16 },
+  subText: { color: COLORS.dim, fontFamily: FONTS.body, fontSize: 10, marginTop: 2, maxWidth: 90, textAlign: 'center' },
+  moonSub: { color: COLORS.dim, fontFamily: FONTS.body, fontSize: 10, marginTop: 2, maxWidth: 104, textAlign: 'center' },
 });

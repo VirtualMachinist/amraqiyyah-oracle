@@ -5,7 +5,7 @@
  */
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { FlatList, Pressable, StyleSheet, Text, View } from 'react-native';
-import { COLORS } from '../theme';
+import { COLORS, FONTS } from '../theme';
 import {
   QURAN_SURAHS,
   PSALM_COUNT,
@@ -263,37 +263,37 @@ const styles = StyleSheet.create({
   segment: { flexDirection: 'row', gap: 8, paddingHorizontal: 16, paddingVertical: 12 },
   segBtn: { flex: 1, paddingVertical: 10, borderRadius: 10, backgroundColor: COLORS.panel, alignItems: 'center', borderWidth: 1, borderColor: COLORS.line },
   segBtnActive: { backgroundColor: COLORS.panelSoft, borderColor: COLORS.copper },
-  segText: { color: COLORS.dim, fontWeight: '600' },
-  segTextActive: { color: COLORS.copperLight },
+  segText: { color: COLORS.dim, fontFamily: FONTS.monoMed, fontSize: 13, letterSpacing: 0.3 },
+  segTextActive: { color: COLORS.copperLight, fontFamily: FONTS.monoSemi },
 
   indexRow: { flexDirection: 'row', alignItems: 'center', gap: 12, paddingHorizontal: 16, paddingVertical: 12, borderBottomWidth: 1, borderBottomColor: COLORS.line },
   numMedallion: { width: 40, height: 40, borderRadius: 20, borderWidth: 1, borderColor: COLORS.copper, alignItems: 'center', justifyContent: 'center', backgroundColor: COLORS.panel },
-  numMedallionText: { color: COLORS.gold, fontWeight: '700', fontSize: 13 },
-  indexTitle: { color: COLORS.text, fontSize: 15, fontWeight: '600' },
-  indexTr: { color: COLORS.dim, fontWeight: '400', fontSize: 13 },
-  indexSub: { color: COLORS.dim, fontSize: 12, marginTop: 2 },
-  indexArabic: { color: COLORS.lapisLight, fontSize: 20, writingDirection: 'rtl' },
+  numMedallionText: { color: COLORS.gold, fontFamily: FONTS.monoSemi, fontSize: 13 },
+  indexTitle: { color: COLORS.text, fontFamily: FONTS.displaySemi, fontSize: 16 },
+  indexTr: { color: COLORS.dim, fontFamily: FONTS.body, fontSize: 13 },
+  indexSub: { color: COLORS.dim, fontFamily: FONTS.mono, fontSize: 11, marginTop: 2 },
+  indexArabic: { color: COLORS.lapisLight, fontFamily: FONTS.arabic, fontSize: 22, writingDirection: 'rtl' },
 
-  zaburHint: { color: COLORS.dim, fontSize: 12, paddingHorizontal: 16, paddingVertical: 10 },
+  zaburHint: { color: COLORS.dim, fontFamily: FONTS.body, fontSize: 13, paddingHorizontal: 16, paddingVertical: 10 },
   psalmChip: { flex: 1, aspectRatio: 1, borderRadius: 10, backgroundColor: COLORS.panel, borderWidth: 1, borderColor: COLORS.line, alignItems: 'center', justifyContent: 'center' },
-  psalmChipText: { color: COLORS.text, fontWeight: '600' },
+  psalmChipText: { color: COLORS.text, fontFamily: FONTS.monoMed, fontSize: 14 },
 
   readerHeader: { paddingHorizontal: 16, paddingTop: 8, paddingBottom: 12, borderBottomWidth: 1, borderBottomColor: COLORS.line },
   backBtn: { paddingVertical: 6 },
-  backText: { color: COLORS.copperLight, fontSize: 14, fontWeight: '600' },
-  readerTitle: { color: COLORS.gold, fontSize: 20, fontWeight: '700', marginTop: 4 },
-  readerSub: { color: COLORS.dim, fontSize: 12, marginTop: 2 },
+  backText: { color: COLORS.copperLight, fontFamily: FONTS.monoMed, fontSize: 13 },
+  readerTitle: { color: COLORS.gold, fontFamily: FONTS.displayBold, fontSize: 22, marginTop: 4 },
+  readerSub: { color: COLORS.dim, fontFamily: FONTS.mono, fontSize: 12, marginTop: 2 },
 
   surahDivider: { alignItems: 'center', paddingVertical: 16, paddingHorizontal: 16 },
-  surahDividerAr: { color: COLORS.lapisLight, fontSize: 24, writingDirection: 'rtl' },
-  surahDividerEn: { color: COLORS.dim, fontSize: 12, marginTop: 4 },
+  surahDividerAr: { color: COLORS.lapisLight, fontFamily: FONTS.arabic, fontSize: 26, writingDirection: 'rtl' },
+  surahDividerEn: { color: COLORS.dim, fontFamily: FONTS.mono, fontSize: 12, marginTop: 4 },
 
   verse: { paddingHorizontal: 16, paddingVertical: 14, borderBottomWidth: 1, borderBottomColor: COLORS.line },
-  verseHighlight: { backgroundColor: 'rgba(212,175,106,0.08)', borderLeftWidth: 2, borderLeftColor: COLORS.gold },
+  verseHighlight: { backgroundColor: COLORS.highlightWash, borderLeftWidth: 2, borderLeftColor: COLORS.gold },
   verseHeadRow: { flexDirection: 'row', marginBottom: 8 },
   verseNum: { paddingHorizontal: 8, paddingVertical: 2, borderRadius: 10, borderWidth: 1, borderColor: COLORS.line, backgroundColor: COLORS.panel },
   verseNumHi: { borderColor: COLORS.gold },
-  verseNumText: { color: COLORS.gold, fontSize: 11, fontWeight: '700' },
-  arabic: { color: COLORS.text, fontSize: 26, lineHeight: 48, writingDirection: 'rtl', textAlign: 'right' },
-  english: { color: COLORS.dim, fontSize: 15, lineHeight: 23, marginTop: 10 },
+  verseNumText: { color: COLORS.gold, fontFamily: FONTS.mono, fontSize: 11 },
+  arabic: { color: COLORS.text, fontFamily: FONTS.arabic, fontSize: 28, lineHeight: 56, writingDirection: 'rtl', textAlign: 'right' },
+  english: { color: COLORS.dim, fontFamily: FONTS.body, fontSize: 16, lineHeight: 25, marginTop: 10 },
 });
