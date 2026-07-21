@@ -20,10 +20,10 @@
     { "form": "jumuʿa", "display": "Jumuʿa", "gloss": "Friday — day of gathering (Pillar; Calendar Layer 3)", "root": "j-m-ʿ" },
     { "form": "sabt", "display": "Sabt", "gloss": "Saturday — the axial day (Pillar; no line; Psalm 92)", "root": "š-b-t" },
     { "form": "ḥeḥ", "display": "ḥeḥ", "gloss": "infinity, the countless (Heh)", "root": null },
-    { "form": "allah", "display": "Allah", "gloss": "God — the frozen form of frozen forms", "root": null },
-    { "form": "bismillah", "display": "bismillah", "gloss": "in the name of God (opening formula)", "root": null },
-    { "form": "alḥamdulillah", "display": "alḥamdulillah", "gloss": "praise belongs to God (gratitude formula)", "root": null },
-    { "form": "ʾinšāʾallah", "display": "ʾin šāʾ Allah", "gloss": "God willing (future formula)", "root": null },
+    { "form": "allah", "display": "Allah", "gloss": "God — the frozen form of frozen forms", "root": null, "ajami": "الله" },
+    { "form": "bismillah", "display": "bismillah", "gloss": "in the name of God (opening formula)", "root": null, "ajami": "بسم الله" },
+    { "form": "alḥamdulillah", "display": "alḥamdulillah", "gloss": "praise belongs to God (gratitude formula)", "root": null, "ajami": "الحمد لله" },
+    { "form": "ʾinšāʾallah", "display": "ʾin šāʾ Allah", "gloss": "God willing (future formula)", "root": null, "ajami": "إن شاء الله" },
     { "form": "neḥeḥ", "display": "neḥeḥ", "gloss": "cyclical eternity — the returning forever; the Great Year runs in it", "root": null }
   ],
   "names99": "The 99 divine Names are frozen wholesale (R-022, R-040) with their al- article (R-012). Canonical enumeration BY REFERENCE to the Oracle's ratified 99 Names Registry (shared-table constitution — one table, consumed everywhere; docs/01-ORACLE-DECK-AND-99-NAMES.md §6). Native-gloss pairings grow in the lexicon: Al-Ḥayy~ʿanīḫ · Al-Wāsiʿ~wasīʿ · Al-Karīm~karīm · As-Salām~salām · Al-Ḥaqq~ḥaqq · Al-Quddūs~qadīs · Ar-Raḥīm~raḥīm · Al-Malik~malik · Al-ʿAlīm~ʿalīm · Al-Ḥakīm~ḥakīm (10 of 99)."
