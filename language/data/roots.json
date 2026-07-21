@@ -3560,6 +3560,326 @@
         "T-9",
         "skin-tone register — care note"
       ]
+    },
+    {
+      "skeleton": [
+        "n",
+        "m",
+        "ḥ"
+      ],
+      "gloss": "FREE; FREEDMAN — namiḥa to be free, nimeḥi freedom, nemaḥu freedman: na·pa·nemaḥwāt THE FREEDMEN",
+      "source": {
+        "lang": "Egyptian",
+        "word": "nmḥ(w) — the attested Egyptian word for a free person, a freedman",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-10",
+        "THE centerpiece: the Freedmen named from Egyptian's own freedman-word"
+      ]
+    },
+    {
+      "skeleton": [
+        "š",
+        "ʿ",
+        "b"
+      ],
+      "citation": "šaʿab",
+      "gloss": "people, nation (political) — na·šaʿab the people; vs ʿanakwāt persons",
+      "source": {
+        "lang": "Arabic",
+        "word": "šaʿb",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-10"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḫ",
+        "y",
+        "r"
+      ],
+      "gloss": "choose; vote — ḫayira to choose/vote, ḫiyeri choice/election (khayr: to choose is to seek the good — Doc A's H-R hunch honored)",
+      "source": {
+        "lang": "Arabic",
+        "word": "iḫtiyār / khayr",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-10",
+        "weak y — D-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "ṭ",
+        "l",
+        "b"
+      ],
+      "gloss": "seek, study — ṭaliba to seek/study, ṭelabu student/seeker (the ṭālib), ṭalebow school-of-seekers",
+      "source": {
+        "lang": "Arabic",
+        "word": "ṭalaba / ṭālib",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-10",
+        "pairs with sa·hakilu teacher (R-025 freebie)"
+      ]
+    },
+    {
+      "skeleton": [
+        "ṭ",
+        "b"
+      ],
+      "gloss": "heal — ṭaba to heal, ṭebu healer/doctor, ṭibi medicine, ṭabow clinic",
+      "source": {
+        "lang": "Arabic",
+        "word": "ṭibb",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-10"
+      ]
+    },
+    {
+      "skeleton": [
+        "b",
+        "n",
+        "y"
+      ],
+      "gloss": "build — baniya to build, benayu builder, boniyon building",
+      "source": {
+        "lang": "Arabic",
+        "word": "banā",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-10",
+        "weak y — D-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "t",
+        "j",
+        "r"
+      ],
+      "gloss": "trade — tajira to trade, tejaru merchant, tijeri commerce, tajerow market",
+      "source": {
+        "lang": "Arabic",
+        "word": "tājir",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-10"
+      ]
+    },
+    {
+      "skeleton": [
+        "ṣ",
+        "d",
+        "q"
+      ],
+      "gloss": "be true to; FRIEND — ṣadiqa to befriend/be sincere, ṣadīq friend, ṣideqi friendship/sincerity (a friend is the truthful one)",
+      "source": {
+        "lang": "Arabic",
+        "word": "ṣadīq / ṣidq",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-10"
+      ]
+    },
+    {
+      "skeleton": [
+        "ʿ",
+        "d",
+        "w"
+      ],
+      "gloss": "enmity — ʿadiwa to oppose, ʿedawu enemy",
+      "source": {
+        "lang": "Arabic",
+        "word": "ʿadūw",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-10",
+        "weak w — D-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "ġ",
+        "r",
+        "b"
+      ],
+      "gloss": "stranger; the West — ġarīb stranger/exile, ġirebi strangerhood/exile (gharb: the stranger and the west share the root — the People of the West carry both)",
+      "source": {
+        "lang": "Arabic",
+        "word": "ġarīb / ġarb",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-10",
+        "diaspora register"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḥ",
+        "r",
+        "b"
+      ],
+      "citation": "ḥarb",
+      "gloss": "war",
+      "source": {
+        "lang": "Arabic",
+        "word": "ḥarb",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-10",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "m",
+        "d",
+        "n"
+      ],
+      "citation": "madina",
+      "gloss": "city (metropolitan) — vs talwa town/community (Muskogean, intimate)",
+      "source": {
+        "lang": "Arabic",
+        "word": "madīna",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-10",
+        "primary noun",
+        "synonym scale with t-l-w"
+      ]
+    },
+    {
+      "skeleton": [
+        "ʿ",
+        "b",
+        "r"
+      ],
+      "gloss": "CROSS; the lesson of the crossing — ʿabira to cross, ʿiberi crossing/lesson (Arabic: ʿibra, the lesson IS the crossing)",
+      "source": {
+        "lang": "Arabic",
+        "word": "ʿabara / ʿibra",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-10",
+        "completes the sentence owed at T-9: Bin ni·ʿabira al·baḥar·a"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḥ",
+        "s"
+      ],
+      "gloss": "sing — ḥasa to sing, ḥisi song, ḥesu singer",
+      "source": {
+        "lang": "Egyptian",
+        "word": "ḥsj",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-10 music"
+      ]
+    },
+    {
+      "skeleton": [
+        "ṭ",
+        "b",
+        "l"
+      ],
+      "citation": "ṭabel",
+      "gloss": "drum — ṭabila to drum; one consonant from ṭaba to heal: the drum heals, and the lexicon agrees",
+      "source": {
+        "lang": "Arabic",
+        "word": "ṭabl",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-10 music"
+      ]
+    },
+    {
+      "skeleton": [
+        "w",
+        "z",
+        "n"
+      ],
+      "gloss": "weigh; RHYTHM — wazina to weigh/measure, wizeni rhythm/meter (meter as weight: the same scales that weigh the heart keep the time)",
+      "source": {
+        "lang": "Arabic",
+        "word": "wazn",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-10 music",
+        "the weighing resonance — Ma'at's scales"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḫ",
+        "b"
+      ],
+      "gloss": "dance — ḫaba to dance, ḫibi dance (n.)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "ḫbj",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-10 music"
+      ]
+    },
+    {
+      "skeleton": [
+        "ṣ",
+        "w",
+        "t"
+      ],
+      "citation": "ṣawt",
+      "gloss": "voice",
+      "source": {
+        "lang": "Arabic",
+        "word": "ṣawt",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-10 music",
+        "weak w — D-11"
+      ]
     }
   ]
 }
