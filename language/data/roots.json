@@ -451,7 +451,7 @@
         "r",
         "n"
       ],
-      "gloss": "name",
+      "gloss": "name; REN — the name as soul-part (rini): to speak a name is to keep a soul alive",
       "source": {
         "lang": "Egyptian",
         "word": "rn",
@@ -2601,6 +2601,394 @@
         "sacred rootless lexeme (OCP-exempt)",
         "also in frozen registry",
         "eternity pair neḥeḥ (cyclical) / ḏet (linear) flagged for T-7"
+      ]
+    },
+    {
+      "skeleton": [
+        "k",
+        "'"
+      ],
+      "citation": "ka",
+      "gloss": "life-force, the vital double (soul-part)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "kꜣ",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-7",
+        "soul-complex",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "b",
+        "'"
+      ],
+      "citation": "ba",
+      "gloss": "the traveling soul, personality-spirit (soul-part)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "bꜣ",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-7",
+        "soul-complex",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "'",
+        "ḫ"
+      ],
+      "citation": "aḫ",
+      "gloss": "transfigured spirit, the luminous dead (soul-part); PLURAL aḫāt = THE ANCESTORS, the transfigured ones",
+      "source": {
+        "lang": "Egyptian",
+        "word": "ꜣḫ / ꜣḫw",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-7",
+        "soul-complex",
+        "the ancestors' word — closes the T-2 deferral",
+        "kin to aḫet horizon (the akh dwells in the horizon, as in Egyptian)"
+      ]
+    },
+    {
+      "skeleton": [
+        "š",
+        "w",
+        "t"
+      ],
+      "citation": "šut",
+      "gloss": "shadow (soul-part; also plain shadow)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "šwt",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-7",
+        "soul-complex",
+        "dual duty with T-9",
+        "weak w — D-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḏ",
+        "t"
+      ],
+      "citation": "ḏet",
+      "gloss": "eternity (linear — the enduring forever: stone, the unchanging)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "ḏt",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-7",
+        "eternity pair with neḥeḥ"
+      ]
+    },
+    {
+      "skeleton": null,
+      "citation": "neḥeḥ",
+      "gloss": "eternity (cyclical — the returning forever: sunrises, seasons, the Great Year)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "nḥḥ",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-7",
+        "rootless sacred lexeme (OCP-exempt; kin to ḥeḥ infinity)",
+        "eternity pair with ḏet",
+        "Calendar interop: the Great Year runs in neḥeḥ"
+      ]
+    },
+    {
+      "skeleton": [
+        "'",
+        "l",
+        "h"
+      ],
+      "citation": "ʾilah",
+      "gloss": "deity, god (generic) — enables the shahada: La ʾilah illa Allah",
+      "source": {
+        "lang": "Arabic",
+        "word": "ʾilāh",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-7"
+      ]
+    },
+    {
+      "skeleton": [
+        "ṣ",
+        "l",
+        "w"
+      ],
+      "gloss": "pray (ritual) — ṣaliwa to pray, ṣilewi ritual prayer (the salah as act)",
+      "source": {
+        "lang": "Arabic",
+        "word": "ṣalāh",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-7",
+        "weak w — D-11",
+        "split with d-ʿ-w supplication"
+      ]
+    },
+    {
+      "skeleton": [
+        "d",
+        "ʿ",
+        "w"
+      ],
+      "gloss": "supplicate, call upon — daʿiwa, diʿewi personal supplication (duʿāʾ)",
+      "source": {
+        "lang": "Arabic",
+        "word": "duʿāʾ",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-7",
+        "weak w — D-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "ʿ",
+        "b",
+        "d"
+      ],
+      "gloss": "worship, serve — ʿabida to worship, ʿibedi worship, ʿebadu worshipper/servant",
+      "source": {
+        "lang": "Arabic",
+        "word": "ʿibāda",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-7"
+      ]
+    },
+    {
+      "skeleton": [
+        "r",
+        "w",
+        "ḥ"
+      ],
+      "citation": "ruḥ",
+      "gloss": "spirit (the breath-spirit)",
+      "source": {
+        "lang": "Arabic ∥ Hebrew",
+        "word": "rūḥ ∥ ruach",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-7",
+        "split with ṯaw plain breath/air",
+        "weak w — D-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "n",
+        "f",
+        "s"
+      ],
+      "citation": "nefes",
+      "gloss": "self, ego, the lower soul (the nafs of Sufi discipline)",
+      "source": {
+        "lang": "Arabic",
+        "word": "nafs",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-7"
+      ]
+    },
+    {
+      "skeleton": [
+        "m",
+        "l",
+        "k"
+      ],
+      "gloss": "sovereignty — malik king (~Al-Malik), malak angel (messenger of the Sovereign)",
+      "source": {
+        "lang": "Arabic",
+        "word": "m-l-k (malik / malak)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-7",
+        "one root, two words, vowel-distinct — as in Arabic itself"
+      ]
+    },
+    {
+      "skeleton": [
+        "n",
+        "b",
+        "y"
+      ],
+      "citation": "nabīy",
+      "gloss": "prophet",
+      "source": {
+        "lang": "Arabic",
+        "word": "nabī",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-7",
+        "weak y — D-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "w",
+        "ḥ",
+        "y"
+      ],
+      "citation": "waḥiy",
+      "gloss": "revelation",
+      "source": {
+        "lang": "Arabic",
+        "word": "waḥy",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-7",
+        "weak — D-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "q",
+        "d",
+        "s"
+      ],
+      "gloss": "holy, sacred — qadisa be holy, qidesi holiness, qadīs sacred (~Al-Quddūs)",
+      "source": {
+        "lang": "Arabic",
+        "word": "quds",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-7"
+      ]
+    },
+    {
+      "skeleton": [
+        "b",
+        "r",
+        "k"
+      ],
+      "gloss": "bless — barika to bless, bireki blessing/baraka",
+      "source": {
+        "lang": "Arabic",
+        "word": "baraka",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-7"
+      ]
+    },
+    {
+      "skeleton": [
+        "ʿ",
+        "h",
+        "d"
+      ],
+      "citation": "ʿahd",
+      "gloss": "covenant, oath",
+      "source": {
+        "lang": "Arabic",
+        "word": "ʿahd",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-7",
+        "Freedmen covenant-theology"
+      ]
+    },
+    {
+      "skeleton": [
+        "ẓ",
+        "l",
+        "m"
+      ],
+      "gloss": "oppress, wrong — ẓalima to oppress, ẓilemi oppression/injustice (the anti-maʿat)",
+      "source": {
+        "lang": "Arabic",
+        "word": "ẓulm",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-7",
+        "justice register"
+      ]
+    },
+    {
+      "skeleton": [
+        "r",
+        "ḥ",
+        "m"
+      ],
+      "gloss": "mercy — raḥima have mercy, riḥemi mercy, raḥīm merciful (~Ar-Raḥīm); raḥam womb — mercy and the womb share the root, as in Arabic",
+      "source": {
+        "lang": "Arabic",
+        "word": "raḥma / raḥim",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-7",
+        "womb gloss completes T-3"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḥ",
+        "k"
+      ],
+      "citation": "ḥeka",
+      "gloss": "the creative power of the sacred word — the potency of recitation (per the Oracle preamble: applied tawhid, not sorcery)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "ḥkꜣ",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-7",
+        "Doc B's lost root recovered",
+        "theological framing flag — Ali reviews the gloss"
       ]
     }
   ]
