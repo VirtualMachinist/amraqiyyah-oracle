@@ -351,7 +351,7 @@
         "s",
         "b"
       ],
-      "gloss": "reckon, count, compute",
+      "gloss": "reckon, count, compute; ḥosibon = a number, an account",
       "source": {
         "lang": "Egyptian ∥ Arabic",
         "word": "ḥsb ∥ ḥisāb",
@@ -603,7 +603,7 @@
         "k",
         "m"
       ],
-      "gloss": "judge, govern",
+      "gloss": "judge, govern; ḥakīm wise (~AL-ḤAKĪM — wisdom and judgment one root, as in Arabic)",
       "source": {
         "lang": "Arabic",
         "word": "ḥukm",
@@ -3331,7 +3331,7 @@
         "'"
       ],
       "citation": "seba",
-      "gloss": "star — also the teach/gate root (Eg. sbꜣ: star, teach, doorway; sebayt = the teachings)",
+      "gloss": "star (seba); TEACH, guide through the gate — sabiʾa to teach, sibeʾi the teachings (sebayt), sebaʾu master-teacher, sabeʾow ACADEMY, sibeʾan university (great-teaching)",
       "source": {
         "lang": "Egyptian",
         "word": "sbꜣ",
@@ -3341,7 +3341,8 @@
       "flags": [
         "T-9",
         "primary noun",
-        "T-11 preview: teaching = the star-root; the Oracle watches seba·āt"
+        "T-11 preview: teaching = the star-root; the Oracle watches seba·āt",
+        "T-11 extension: the education ladder — hakelow (understanding-place) → ṭalebow (seekers-place) → sabeʾow (academy)"
       ]
     },
     {
@@ -3879,6 +3880,245 @@
       "flags": [
         "T-10 music",
         "weak w — D-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "ʿ",
+        "l",
+        "m"
+      ],
+      "gloss": "know systematically; SCIENCE — ʿalima to know, ʿilemi science, ʿelamu scientist/scholar (the ʿālim), ʿalīm learned (~AL-ʿALĪM)",
+      "source": {
+        "lang": "Arabic",
+        "word": "ʿilm",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-11",
+        "epistemology pair: ʿilemi systematic vs ʿirefi gnostic",
+        "Name-pairing #9: Al-ʿAlīm"
+      ]
+    },
+    {
+      "skeleton": [
+        "ʿ",
+        "q",
+        "l"
+      ],
+      "gloss": "reason, intellect — ʿaqila to reason, ʿiqeli reason (the Mu'tazili keystone: reason as divinely sanctioned instrument, per the Way's aqeedah)",
+      "source": {
+        "lang": "Arabic",
+        "word": "ʿaql",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-11",
+        "theological keyword — the Oracle preamble's own doctrine"
+      ]
+    },
+    {
+      "skeleton": [
+        "n",
+        "ṭ",
+        "q"
+      ],
+      "gloss": "articulate formally; LOGIC — naṭiqa to reason formally, niṭeqi logic",
+      "source": {
+        "lang": "Arabic",
+        "word": "manṭiq",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "b",
+        "r",
+        "h",
+        "n"
+      ],
+      "citation": "burhan",
+      "gloss": "proof — barahina to prove (quad Pattern I)",
+      "source": {
+        "lang": "Arabic",
+        "word": "burhān",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-11",
+        "quad root — noun forms await D-4"
+      ]
+    },
+    {
+      "skeleton": [
+        "s",
+        "'",
+        "l"
+      ],
+      "gloss": "ask — saʾila to ask, siʾeli question",
+      "source": {
+        "lang": "Arabic",
+        "word": "saʾala",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "j",
+        "w",
+        "b"
+      ],
+      "gloss": "answer — jawiba to answer, jiwebi answer (n.)",
+      "source": {
+        "lang": "Arabic",
+        "word": "jawāb",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-11",
+        "weak w — D-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "q",
+        "y",
+        "s"
+      ],
+      "gloss": "measure — qayisa to measure, qiyesi measurement (wizeni remains weight/meter)",
+      "source": {
+        "lang": "Arabic",
+        "word": "qāsa / qiyās",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-11",
+        "weak y — D-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "h",
+        "n",
+        "d",
+        "s"
+      ],
+      "citation": "handasa",
+      "gloss": "geometry; engineering",
+      "source": {
+        "lang": "Arabic",
+        "word": "handasa",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-11",
+        "quad root",
+        "the Oracle's discipline gets its word"
+      ]
+    },
+    {
+      "skeleton": [
+        "j",
+        "r",
+        "b"
+      ],
+      "gloss": "test, try — jariba to experiment, jirebi experiment/trial",
+      "source": {
+        "lang": "Arabic",
+        "word": "jarraba",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "t",
+        "r",
+        "ḫ"
+      ],
+      "gloss": "chronicle; HISTORY — tariḫa to chronicle, tireḫi history",
+      "source": {
+        "lang": "Arabic",
+        "word": "taʾrīḫ",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-11",
+        "the people's history has its word"
+      ]
+    },
+    {
+      "skeleton": [
+        "n",
+        "ḥ",
+        "w"
+      ],
+      "gloss": "parse; GRAMMAR — naḥiwa to parse, niḥewi grammar (the textbook names itself: kitebi niḥewi·i)",
+      "source": {
+        "lang": "Arabic",
+        "word": "naḥw",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-11",
+        "weak w — D-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "q",
+        "m",
+        "s"
+      ],
+      "citation": "qamus",
+      "gloss": "DICTIONARY — the ocean of words (qāmūs ← Greek ōkeanos: the dictionary was an ocean before it was a book)",
+      "source": {
+        "lang": "Arabic ← Greek",
+        "word": "qāmūs ← ōkeanos",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-11",
+        "primary noun",
+        "the deliverable names itself"
+      ]
+    },
+    {
+      "skeleton": [
+        "k",
+        "l",
+        "m"
+      ],
+      "gloss": "WORD — kalima to word/phrase, kilemi a word, kilemiāt words",
+      "source": {
+        "lang": "Arabic",
+        "word": "kalima",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-11",
+        "essential meta-vocabulary"
       ]
     }
   ]
