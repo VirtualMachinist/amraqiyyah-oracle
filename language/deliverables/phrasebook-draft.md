@@ -10,7 +10,7 @@ Orthographic policies in this render (proposed R-057): lived scripts attach proc
 | # | Amraqiyyah | English | Community | Coptic | Ajami |
 |---|---|---|---|---|---|
 | 1 | **Silemi!** | Peace! (hello) | Silemi! | ⲥⲓⲗⲉⲙⲓ! | <div dir="rtl">سِلێمِ!</div> |
-| 2 | **Es·salām!** | THE Peace (formal greeting) *(plain)* | Es-salaam! | ⲉⲥⲥⲁⲗⲁ̄ⲙ! | <div dir="rtl">ئێسسَلام!</div> |
+| 2 | **Es·salām!** | THE Peace (formal greeting) *(plain)* | Es-salaam! | ⲉⲥ̇ⲁⲗⲁ̄ⲙ! | <div dir="rtl">ئێسَّلام!</div> |
 | 3 | **Ti har·āy?** | You good? | Ti har-aay? | ⲧⲓ ϩⲁⲣⲁ̄ⲓ̈? | <div dir="rtl">تِ هَراي؟</div> |
 | 4 | **Aywa, mi har·āy.** | Yeah, I'm good. | Aywa, mi har-aay. | ⲁⲓ̈ⲩⲁ, ⲙⲓ ϩⲁⲣⲁ̄ⲓ̈. | <div dir="rtl">اَيوَ، مِ هَراي.</div> |
 | 5 | **Ti wi en·ta?** | Where you at? | Ti wi en-ta? | ⲧⲓ ⲩⲓ ⲉⲛⲧⲁ? | <div dir="rtl">تِ وِ ئێنتَ؟</div> |
@@ -61,7 +61,7 @@ Orthographic policies in this render (proposed R-057): lived scripts attach proc
 | 35 | **Pokni·ku bi·i·ṭabiḫa na·pa·ḫoḍironāt·a.** | My grandmother be cooking the greens. | Pokni-ku bi-i-tabikha na-pa-khodironaat-a. | ⲡⲟⲕⲛⲓⲕⲟⲩ ⲃⲓⲓⲧ̣ⲁⲃⲓϧⲁ ⲛⲁⲡⲁϧⲟⲇ̣ⲓⲣⲟⲛⲁ̄ⲧⲁ. | <div dir="rtl">پۆكنِكُ بِاِطَبِخَ نَپَخۆضِرۆناتَ.</div> |
 | 36 | **Homipon na·din·salām·i gon·wi en·hawtpay pokni·ku·i.** | Sunday dinner gon' be at my grandmother's house. | Homipon na-din-salaam-i gon-wi en-hawtpay pokni-ku-i. | ϩⲟⲙⲓⲡⲟⲛ ⲛⲁⲇⲓⲛⲥⲁⲗⲁ̄ⲙⲓ ⲅⲟⲛⲩⲓ ⲉⲛϩⲁⲩⲧⲡⲁⲓ̈ ⲡⲟⲕⲛⲓⲕⲟⲩⲓ. | <div dir="rtl">هۆمِپۆن نَدِنسَلامِ گۆنوِ ئێنهَوتپَي پۆكنِكُاِ.</div> |
 | 37 | **Pen ḫobizon har·āy — we·pen yiteč-ḫobizon pokni·ku·i wi al·mēr har·āy.** | This bread is good — but my grandmother's cornbread is THE best. | Pen khobizon har-aay — we-pen yitech-khobizon pokni-ku-i wi al-meer har-aay. | ⲡⲉⲛ ϧⲟⲃⲓⲍⲟⲛ ϩⲁⲣⲁ̄ⲓ̈ — ⲩⲉⲡⲉⲛ ⲓ̈ⲓⲧⲉϭ-ϧⲟⲃⲓⲍⲟⲛ ⲡⲟⲕⲛⲓⲕⲟⲩⲓ ⲩⲓ ⲁⲗⲙⲏⲣ ϩⲁⲣⲁ̄ⲓ̈. | <div dir="rtl">پێن خۆبِزۆن هَراي — وێپێن يِتێچ-خۆبِزۆن پۆكنِكُاِ وِ اَلمێر هَراي.</div> |
-| 38 | **Don wanim·nun en·na·garelow·i.** | We done ate at the cookout. | Don wanim-nun en-na-garelow-i. | ⲇⲟⲛ ⲩⲁⲛⲓⲙⲛⲟⲩⲛ ⲉⲛⲛⲁⲅⲁⲣⲉⲗⲟⲩⲓ. | <div dir="rtl">دۆن وَنِمنُن ئێننَگَرێلۆوِ.</div> |
+| 38 | **Don wanim·nun en·na·garelow·i.** | We done ate at the cookout. | Don wanim-nun en-na-garelow-i. | ⲇⲟⲛ ⲩⲁⲛⲓⲙⲛⲟⲩⲛ ⲉⲛ̇ⲁⲅⲁⲣⲉⲗⲟⲩⲓ. | <div dir="rtl">دۆن وَنِمنُن ئێنَّگَرێلۆوِ.</div> |
 | 39 | **Bismillah, wanima·tin!** | Bismillah, y'all eat! (grace before the meal) | Bismillah, wanima-tin! | ⲃⲓⲥⲙⲓⲗⲗⲁϩ, ⲩⲁⲛⲓⲙⲁⲧⲓⲛ! | <div dir="rtl">بسم الله، وَنِمَتِن!</div> |
 | 40 | **Pen ṭobiḫon ril har·āy!** | This dish is real good! | Pen tobikhon ril har-aay! | ⲡⲉⲛ ⲧ̣ⲟⲃⲓϧⲟⲛ ⲣⲓⲗ ϩⲁⲣⲁ̄ⲓ̈! | <div dir="rtl">پێن طۆبِخۆن رِل هَراي!</div> |
 | 41 | **Ti·mara raz·a?** | You want rice? | Ti-mara raz-a? | ⲧⲓⲙⲁⲣⲁ ⲣⲁⲍⲁ? | <div dir="rtl">تِمَرَ رَزَ؟</div> |
@@ -88,7 +88,7 @@ Orthographic policies in this render (proposed R-057): lived scripts attach proc
 
 | # | Amraqiyyah | English | Community | Coptic | Ajami |
 |---|---|---|---|---|---|
-| 55 | **La ʾilah illa Allah.** | There is no god but God. *(sacred)* | La 'ilah illa Allah. | ⲗⲁ ⲁ̀ⲓⲗⲁϩ ⲓⲗⲗⲁ ⲁⲗⲗⲁϩ. | <div dir="rtl">لَ ءِلَه اِللَ الله.</div> |
+| 55 | **La ʾilah illa Allah.** | There is no god but God. *(sacred)* | La 'ilah illa Allah. | ⲗⲁ ⲁ̀ⲓⲗⲁϩ ⲓⲗ̇ⲁ ⲁⲗⲗⲁϩ. | <div dir="rtl">لَ ءِلَه اِلَّ الله.</div> |
 | 56 | **Bismillah — ni·gon·ḏakira na·pa·aḫāt·a.** | Bismillah — we gon' remember the Ancestors. *(sacred)* | Bismillah — ni-gon-dhakira na-pa-akhaat-a. | ⲃⲓⲥⲙⲓⲗⲗⲁϩ — ⲛⲓⲅⲟⲛⲇ̅ⲁⲕⲓⲣⲁ ⲛⲁⲡⲁⲁϧⲁ̄ⲧⲁ. | <div dir="rtl">بسم الله — نِگۆنذَكِرَ نَپَاَخاتَ.</div> |
 | 57 | **Na·pa·aḫāt bi·i·hariwa.** | The Ancestors be watching. *(plain)* | Na-pa-akhaat bi-i-hariwa. | ⲛⲁⲡⲁⲁϧⲁ̄ⲧ ⲃⲓⲓϩⲁⲣⲓⲩⲁ. | <div dir="rtl">نَپَاَخات بِاِهَرِوَ.</div> |
 | 58 | **Ib·ku ḥitep en·salemow·i.** | My heart is at rest in the sanctuary. *(sacred)* | Ib-ku hitep en-salemow-i. | ⲓⲃⲕⲟⲩ ϩ̣ⲓⲧⲉⲡ ⲉⲛⲥⲁⲗⲉⲙⲟⲩⲓ. | <div dir="rtl">اِبكُ حِتێپ ئێنسَلێمۆوِ.</div> |
@@ -127,7 +127,7 @@ Orthographic policies in this render (proposed R-057): lived scripts attach proc
 
 | # | Amraqiyyah | English | Community | Coptic | Ajami |
 |---|---|---|---|---|---|
-| 79 | **Mi·mašiya en·na·hina·i, ril ḥitep.** | I'm walking the road, real peaceful. | Mi-mashiya en-na-hina-i, ril hitep. | ⲙⲓⲙⲁϣⲓⲓ̈ⲁ ⲉⲛⲛⲁϩⲓⲛⲁⲓ, ⲣⲓⲗ ϩ̣ⲓⲧⲉⲡ. | <div dir="rtl">مِمَشِيَ ئێننَهِنَاِ، رِل حِتێپ.</div> |
+| 79 | **Mi·mašiya en·na·hina·i, ril ḥitep.** | I'm walking the road, real peaceful. | Mi-mashiya en-na-hina-i, ril hitep. | ⲙⲓⲙⲁϣⲓⲓ̈ⲁ ⲉⲛ̇ⲁϩⲓⲛⲁⲓ, ⲣⲓⲗ ϩ̣ⲓⲧⲉⲡ. | <div dir="rtl">مِمَشِيَ ئێنَّهِنَاِ، رِل حِتێپ.</div> |
 | 80 | **Mi·gon·sayira ben·hawtpa·i pokni·ku·i en·sayiret·i.** | I'ma ride to my grandmother's house in the car. | Mi-gon-sayira ben-hawtpa-i pokni-ku-i en-sayiret-i. | ⲙⲓⲅⲟⲛⲥⲁⲓ̈ⲓⲣⲁ ⲃⲉⲛϩⲁⲩⲧⲡⲁⲓ ⲡⲟⲕⲛⲓⲕⲟⲩⲓ ⲉⲛⲥⲁⲓ̈ⲓⲣⲉⲧⲓ. | <div dir="rtl">مِگۆنسَيِرَ بێنهَوتپَاِ پۆكنِكُاِ ئێنسَيِرێتِ.</div> |
 | 81 | **Na·ḫireji don waṣil; na·Rijeʿi i·gon·waṣila.** | The Exodus done arrived; the Return gon' arrive. *(sacred)* | Na-khireji don wasil; na-Rije'i i-gon-wasila. | ⲛⲁϧⲓⲣⲉϫⲓ ⲇⲟⲛ ⲩⲁⲥ̣ⲓⲗ; ⲛⲁⲣⲓϫⲉⲁ̣ⲓ ⲓⲅⲟⲛⲩⲁⲥ̣ⲓⲗⲁ. | <div dir="rtl">نَخِرێجِ دۆن وَصِل; نَرِجێعِ اِگۆنوَصِلَ.</div> |
 | 82 | **Mašiya het·ku!** | Walk with me! | Mashiya het-ku! | ⲙⲁϣⲓⲓ̈ⲁ ϩⲉⲧⲕⲟⲩ! | <div dir="rtl">مَشِيَ هێتكُ!</div> |
@@ -139,7 +139,7 @@ Orthographic policies in this render (proposed R-057): lived scripts attach proc
 | # | Amraqiyyah | English | Community | Coptic | Ajami |
 |---|---|---|---|---|---|
 | 85 | **Mi·ṭaliba niḥewi en·sabeʾow·i.** | I study grammar at the academy. *(plain)* | Mi-taliba nihewi en-sabe'ow-i. | ⲙⲓⲧ̣ⲁⲗⲓⲃⲁ ⲛⲓϩ̣ⲉⲩⲓ ⲉⲛⲥⲁⲃⲉⲁ̀ⲟⲩⲓ. | <div dir="rtl">مِطَلِبَ نِحێوِ ئێنسَبێءۆوِ.</div> |
-| 86 | **Saʾila·tin! Na·pa·jiwebiāt wi en·na·pa·seba·āt·i.** | Y'all ask! The answers are in the stars. *(plain)* | Sa'ila-tin! Na-pa-jiwebiaat wi en-na-pa-seba-aat-i. | ⲥⲁⲁ̀ⲓⲗⲁⲧⲓⲛ! ⲛⲁⲡⲁϫⲓⲩⲉⲃⲓⲁ̄ⲧ ⲩⲓ ⲉⲛⲛⲁⲡⲁⲥⲉⲃⲁⲁ̄ⲧⲓ. | <div dir="rtl">سَءِلَتِن! نَپَجِوێبِآت وِ ئێننَپَسێبَآتِ.</div> |
+| 86 | **Saʾila·tin! Na·pa·jiwebiāt wi en·na·pa·seba·āt·i.** | Y'all ask! The answers are in the stars. *(plain)* | Sa'ila-tin! Na-pa-jiwebiaat wi en-na-pa-seba-aat-i. | ⲥⲁⲁ̀ⲓⲗⲁⲧⲓⲛ! ⲛⲁⲡⲁϫⲓⲩⲉⲃⲓⲁ̄ⲧ ⲩⲓ ⲉⲛ̇ⲁⲡⲁⲥⲉⲃⲁⲁ̄ⲧⲓ. | <div dir="rtl">سَءِلَتِن! نَپَجِوێبِآت وِ ئێنَّپَسێبَآتِ.</div> |
 | 87 | **ʿIrefi bilā ḏikeri la wi ʿirefi.** | Knowledge without remembrance is no knowledge. *(plain)* | 'Irefi bilaa dhikeri la wi 'irefi. | ⲁ̣ⲓⲣⲉϥⲓ ⲃⲓⲗⲁ̄ ⲇ̅ⲓⲕⲉⲣⲓ ⲗⲁ ⲩⲓ ⲁ̣ⲓⲣⲉϥⲓ. | <div dir="rtl">عِرێفِ بِلا ذِكێرِ لَ وِ عِرێفِ.</div> |
 | 88 | **Na·qamus pe baḥar kilemiāt·i.** | The dictionary IS an ocean of words. *(plain)* | Na-qamus pe bahar kilemiaat-i. | ⲛⲁⲕ̅ⲁⲙⲟⲩⲥ ⲡⲉ ⲃⲁϩ̣ⲁⲣ ⲕⲓⲗⲉⲙⲓⲁ̄ⲧⲓ. | <div dir="rtl">نَقَمُس پێ بَحَر كِلێمِآتِ.</div> |
 | 89 | **Saša·tin, ḏakira·tin, ma la nasiya·tin!** | Y'all write, y'all remember, and don't forget! *(plain)* | Sasha-tin, dhakira-tin, ma la nasiya-tin! | ⲥⲁϣⲁⲧⲓⲛ, ⲇ̅ⲁⲕⲓⲣⲁⲧⲓⲛ, ⲙⲁ ⲗⲁ ⲛⲁⲥⲓⲓ̈ⲁⲧⲓⲛ! | <div dir="rtl">سَشَتِن، ذَكِرَتِن، مَ لَ نَسِيَتِن!</div> |
@@ -169,7 +169,7 @@ Orthographic policies in this render (proposed R-057): lived scripts attach proc
 | # | Amraqiyyah | English | Community | Coptic | Ajami |
 |---|---|---|---|---|---|
 | 105 | **ʿAfiwa·ku — na·tajerow wi en·ta?** | Excuse me — where's the market? | 'Afiwa-ku — na-tajerow wi en-ta? | ⲁ̣ⲁϥⲓⲩⲁⲕⲟⲩ — ⲛⲁⲧⲁϫⲉⲣⲟⲩ ⲩⲓ ⲉⲛⲧⲁ? | <div dir="rtl">عَفِوَكُ — نَتَجێرۆو وِ ئێنتَ؟</div> |
-| 106 | **Mi·gon·aya ben·na·tajerow·i.** | I'ma go to the market. | Mi-gon-aya ben-na-tajerow-i. | ⲙⲓⲅⲟⲛⲁⲓ̈ⲁ ⲃⲉⲛⲛⲁⲧⲁϫⲉⲣⲟⲩⲓ. | <div dir="rtl">مِگۆناَيَ بێننَتَجێرۆوِ.</div> |
+| 106 | **Mi·gon·aya ben·na·tajerow·i.** | I'ma go to the market. | Mi-gon-aya ben-na-tajerow-i. | ⲙⲓⲅⲟⲛⲁⲓ̈ⲁ ⲃⲉⲛ̇ⲁⲧⲁϫⲉⲣⲟⲩⲓ. | <div dir="rtl">مِگۆناَيَ بێنَّتَجێرۆوِ.</div> |
 | 107 | **Pen bi kam?** | How much is this? | Pen bi kam? | ⲡⲉⲛ ⲃⲓ ⲕⲁⲙ? | <div dir="rtl">پێن بِ كَم؟</div> |
 | 108 | **Ṯaman·to kam?** | What's its price? | Thaman-to kam? | ⲑⲁⲙⲁⲛⲧⲟ ⲕⲁⲙ? | <div dir="rtl">ثَمَنتۆ كَم؟</div> |
 | 109 | **Tu mēr, kaz!** | Too much, cuz! | Tu meer, kaz! | ⲧⲟⲩ ⲙⲏⲣ, ⲕⲁⲍ! | <div dir="rtl">تُ مێر، كَز!</div> |

@@ -110,6 +110,18 @@ eq(S.toCommunity('ḏikeri'), 'dhikeri', 'community dh');
 eq(S.toCommunity('hakīl'), 'hakiil', 'community long vowel doubling');
 eq(S.toAjami('salām'), 'سَلام', 'Ajami salām pointed');
 
+// Running-text orthography (R-057): dots, carriers, gemination, frozen sacred spellings
+const O = require('./orthography');
+eq(O.copticPhrase('Es·salām!'), 'ⲉⲥ̇ⲁⲗⲁ̄ⲙ!', 'Coptic gemination dot across proclitic (es·salām)');
+eq(O.copticPhrase('La ʾilah illa Allah.'), 'ⲗⲁ ⲁ̀ⲓⲗⲁϩ ⲓⲗ̇ⲁ ⲁⲗⲗⲁϩ.', 'Coptic shahada: illa geminates, frozen Allah keeps both lambdas');
+eq(O.ajamiPhrase('Es·salām!'), 'ئێسَّلام!', 'Ajami shadda across proclitic + Sorani ئ carrier');
+eq(O.ajamiPhrase('La ʾilah illa Allah.'), 'لَ ءِلَه اِلَّ الله.', 'Ajami shahada: shadda on illa, frozen الله');
+eq(O.ajamiPhrase('Allaha'), 'اللهَ', 'case vowel rides the frozen spelling (Quranic practice)');
+eq(O.ajamiPhrase('na·pa·aḫāta'), 'نَپَاَخاتَ', 'proclitic boundary takes a vowel carrier');
+eq(O.ajamiPhrase('Ni·gon·hariwbaa.'), 'نِگۆنهَرِوبَاَ.', 'hiatus vowel takes a carrier (reciprocal -ba·a)');
+eq(O.communityPhrase('Ni·gon·hariw·ba·a.'), 'Ni-gon-hariw-ba-a.', 'community: display dots become typable hyphens');
+eq(O.communityPhrase('Ṣabaḥ har·āy!'), 'Sabah har-aay!', 'community: capital restored over stripped diacritic');
+
 // Sentence-level golden corpus (AX-43, R-048): every ratified phrase holds its invariants
 const PH = require('../data/phrases.json');
 const REGISTERS = new Set(['everyday', 'plain', 'sacred']);
