@@ -3123,6 +3123,443 @@
         "T-8",
         "Doc B's WḌ kept and extended — closes the K-D code docket with zero new roots"
       ]
+    },
+    {
+      "skeleton": [
+        "'",
+        "m",
+        "b"
+      ],
+      "citation": "omba",
+      "gloss": "rain",
+      "source": {
+        "lang": "Choctaw",
+        "word": "omba",
+        "status": "pending"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-9",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "ʿ",
+        "ṣ",
+        "f"
+      ],
+      "gloss": "storm — ʿaṣifa to storm, ʿiṣefi storm",
+      "source": {
+        "lang": "Arabic",
+        "word": "ʿāṣifa",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-9"
+      ]
+    },
+    {
+      "skeleton": [
+        "s",
+        "ḥ",
+        "b"
+      ],
+      "citation": "saḥab",
+      "gloss": "cloud",
+      "source": {
+        "lang": "Arabic",
+        "word": "saḥāb",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-9",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "b",
+        "r",
+        "q"
+      ],
+      "citation": "barq",
+      "gloss": "lightning",
+      "source": {
+        "lang": "Arabic",
+        "word": "barq",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-9",
+        "primary noun",
+        "one apart from b-r-k blessing — lightning/blessing, accepted poetry"
+      ]
+    },
+    {
+      "skeleton": [
+        "r",
+        "ʿ",
+        "d"
+      ],
+      "citation": "raʿad",
+      "gloss": "thunder",
+      "source": {
+        "lang": "Arabic",
+        "word": "raʿd",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-9",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "ṯ",
+        "l",
+        "j"
+      ],
+      "citation": "ṯalej",
+      "gloss": "snow",
+      "source": {
+        "lang": "Arabic",
+        "word": "ṯalj",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-9",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "s",
+        "ḫ",
+        "n"
+      ],
+      "gloss": "hot, warm — saḫīn hot, siḫeni heat",
+      "source": {
+        "lang": "Arabic",
+        "word": "suḫn",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-9"
+      ]
+    },
+    {
+      "skeleton": [
+        "b",
+        "r",
+        "d"
+      ],
+      "gloss": "cold — barīd cold (adj), stative bired: mi·bired I'm cold",
+      "source": {
+        "lang": "Arabic",
+        "word": "bārid",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-9"
+      ]
+    },
+    {
+      "skeleton": [
+        "b",
+        "ḥ",
+        "r"
+      ],
+      "citation": "baḥar",
+      "gloss": "sea, ocean — al·baḥar THE Sea (the Middle Passage waters)",
+      "source": {
+        "lang": "Arabic",
+        "word": "baḥr",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-9",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": null,
+      "citation": "nanih",
+      "gloss": "mountain, mound (the sacred mound — Nanih Waiya resonance; the Moundbuilders' landscape)",
+      "source": {
+        "lang": "Choctaw",
+        "word": "nanih",
+        "status": "pending"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-9",
+        "rootless lexeme (n-n would violate OCP)"
+      ]
+    },
+    {
+      "skeleton": [
+        "y",
+        "n",
+        "r"
+      ],
+      "citation": "inar",
+      "gloss": "stone, rock",
+      "source": {
+        "lang": "Egyptian",
+        "word": "jnr",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-9",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "s",
+        "b",
+        "'"
+      ],
+      "citation": "seba",
+      "gloss": "star — also the teach/gate root (Eg. sbꜣ: star, teach, doorway; sebayt = the teachings)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "sbꜣ",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-9",
+        "primary noun",
+        "T-11 preview: teaching = the star-root; the Oracle watches seba·āt"
+      ]
+    },
+    {
+      "skeleton": [
+        "p",
+        "t"
+      ],
+      "citation": "pet",
+      "gloss": "sky",
+      "source": {
+        "lang": "Egyptian",
+        "word": "pt",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-9",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "f",
+        "s",
+        "w"
+      ],
+      "citation": "foswa",
+      "gloss": "bird",
+      "source": {
+        "lang": "Mvskoke",
+        "word": "fuswv",
+        "status": "pending"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-9",
+        "primary noun",
+        "weak w — D-11"
+      ]
+    },
+    {
+      "skeleton": null,
+      "citation": "lalo",
+      "gloss": "fish",
+      "source": {
+        "lang": "Mvskoke",
+        "word": "rvro (ɬ→l naturalized)",
+        "status": "pending"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-9",
+        "rootless lexeme (l-l would violate OCP)",
+        "fish/path/mound nani-pileup flagged for verification"
+      ]
+    },
+    {
+      "skeleton": [
+        "y",
+        "s",
+        "b"
+      ],
+      "citation": "isoba",
+      "gloss": "horse ('big-deer' — the Choctaw coining)",
+      "source": {
+        "lang": "Choctaw",
+        "word": "issoba",
+        "status": "pending"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-9",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "s",
+        "n",
+        "t"
+      ],
+      "citation": "sinti",
+      "gloss": "snake",
+      "source": {
+        "lang": "Choctaw",
+        "word": "sinti",
+        "status": "pending"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-9",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "n",
+        "t"
+      ],
+      "citation": "nita",
+      "gloss": "bear",
+      "source": {
+        "lang": "Choctaw",
+        "word": "nita",
+        "status": "pending"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-9",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "m",
+        "y",
+        "w"
+      ],
+      "citation": "miw",
+      "gloss": "cat (the divine onomatopoeia — Bastet's own)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "mjw",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-9",
+        "primary noun",
+        "weak — D-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "k",
+        "m"
+      ],
+      "gloss": "black — kamāy black (adj); the Kemet root: km, the Black Land",
+      "source": {
+        "lang": "Egyptian",
+        "word": "km (Kmt = Kemet)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-9",
+        "THE color: Black from Kemet itself",
+        "homophony advisories vs kama like / kam how-many — adjective form kamāy stays distinct"
+      ]
+    },
+    {
+      "skeleton": [
+        "d",
+        "š",
+        "r"
+      ],
+      "gloss": "red — dašīr red (the Red Land, dšrt)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "dšr",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-9"
+      ]
+    },
+    {
+      "skeleton": [
+        "z",
+        "r",
+        "q"
+      ],
+      "gloss": "blue — zarīq blue (the color; bluz remains the feeling)",
+      "source": {
+        "lang": "Arabic",
+        "word": "azraq",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-9"
+      ]
+    },
+    {
+      "skeleton": [
+        "ṣ",
+        "f",
+        "r"
+      ],
+      "gloss": "yellow — ṣafīr yellow",
+      "source": {
+        "lang": "Arabic",
+        "word": "aṣfar",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-9"
+      ]
+    },
+    {
+      "skeleton": [
+        "s",
+        "m",
+        "r"
+      ],
+      "gloss": "brown, warm-dark — samīr (as Arabic asmar: an endearing register, never a slur; skin-tone vocabulary handled with honor)",
+      "source": {
+        "lang": "Arabic",
+        "word": "asmar",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-9",
+        "skin-tone register — care note"
+      ]
     }
   ]
 }
