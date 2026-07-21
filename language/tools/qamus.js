@@ -223,10 +223,13 @@ body { background:var(--bg); color:var(--text); font-family:var(--font-body); li
 .colophon .charge { font-family:var(--font-display); font-style:italic; margin-top:10px; }
 
 @media print {
-  body { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
-  @page { margin:14mm; }
+  @page { size:378pt 522pt; margin:0; }
+  html, body { background:var(--bg) !important; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .wrap { max-width:none; padding:26pt 24pt 34pt; }
+  .cover { min-height:440pt; display:flex; flex-direction:column; justify-content:center; align-items:center; border-bottom:none; page-break-after:always; }
+  .index-grid { columns:2; }
   .root-entry { page-break-inside:avoid; }
-  .letter-section { page-break-before:always; }
+  .letter-section { page-break-before:always; margin-top:0; padding-top:10pt; }
   .letter-section:first-of-type { page-break-before:auto; }
 }
 </style>

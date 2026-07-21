@@ -69,10 +69,14 @@ body { background:var(--bg); color:var(--text); font-family:var(--font-body); li
 .colophon .charge { font-family:var(--font-display); font-style:italic; margin-top:10px; }
 
 @media print {
-  body { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
-  @page { margin:14mm; }
+  @page { size:378pt 522pt; margin:0; }
+  html, body { background:var(--bg) !important; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .wrap { max-width:none; padding:26pt 24pt 34pt; }
+  .cover { min-height:440pt; display:flex; flex-direction:column; justify-content:center; align-items:center; border-bottom:none; page-break-after:always; }
+  .scripts { grid-template-columns:1fr; gap:4px; }
+  .ajami { text-align:left; }
   .entry { page-break-inside:avoid; }
-  .chapter { page-break-before:always; }
+  .chapter { page-break-before:always; margin-top:0; padding-top:10pt; }
   .chapter:first-of-type { page-break-before:auto; }
 }
 </style>

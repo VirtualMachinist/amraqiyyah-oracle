@@ -16,7 +16,7 @@
 
 ## Housekeeping
 
-- The phrasebook went to print same-day: `deliverables/kitebi-kilemiat.pdf` — 31 pages, five typefaces embedded (Playwright Chromium; no local Chrome).
+- **R-062 print fidelity (Ali's catch)**: the first PDF pass printed colored text on white — the Playwright CLI's background-less default. Repaired with `tools/print-pdf.js` (Playwright API: printBackground, CSS page size, fonts awaited) and booklet CSS in both generators: **378×522pt, the Companion Book's own trim, full-bleed night, full-page covers**. Reprinted and raster-verified: `kitebi-kilemiat.pdf` 50pp · `qamus.pdf` 194pp.
 - 87/87 tests green. Next per HANDOFF §5: **kitebi niḥewi·i** (the grammar textbook — ~20 lessons, Optimize-pass sequencing, Leipzig glosses from the corpus; spec/01 orthography bank folds in), then the Optimize sweeps.
 
 *Na·qamus pe baḥar kilemiāt·i. Ḏakira, saša, ma la nasiya.*
