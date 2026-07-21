@@ -32,13 +32,11 @@ import {
   DRAWABLE_FIELD_CARDS,
   BRIDGE_CARDS,
   COUNCIL_CARDS,
-  hexagramByNumber,
   type GeoLocation,
   type OracleInputs,
   type ReadingResult,
   type ReadingMode,
   type Veil,
-  type Hexagram,
 } from '@amraqiyyah/engine';
 import { COLORS, FONTS, TRACK } from './src/theme';
 import { TextsView, type TextTarget } from './src/screens/TextsView';
@@ -48,6 +46,8 @@ import { LocationPicker } from './src/screens/LocationPicker';
 import { NatalView } from './src/screens/NatalView';
 import { AqField } from './src/components/AqField';
 import { DeckCard } from './src/screens/DeckCard';
+import { Ceremony } from './src/screens/Ceremony';
+import { HexagramFigure } from './src/components/HexagramFigure';
 import { cityForTz, cityLabel } from './src/geo';
 
 /** A coherent starting place: the largest city in the device's own timezone. */
@@ -259,66 +259,113 @@ function drawModeB(): Draws {
 }
 
 function ReadingView({ location, onOpenText }: { location: GeoLocation; onOpenText: (t: TextTarget) => void }) {
-  const [mode, setMode] = useState<ReadingMode>('A');
+  const [mode, setMode] = useState<ReadingMode>('B');
   const [veil, setVeil] = useState<Veil>(5);
   const [question, setQuestion] = useState('');
   const [querentName, setQuerentName] = useState('');
+  const [phase, setPhase] = useState<'setup' | 'ceremony' | 'result'>('setup');
   const [result, setResult] = useState<ReadingResult | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   const run = () => {
     try {
-      const draws = mode === 'A' ? undefined : drawModeB();
-      const r = performReading({
+      const req = {
         mode,
         timestamp: new Date(),
         location,
         veil,
         question: question || undefined,
         querentNameArabic: querentName || undefined,
-        draws,
-      });
+      };
+      let r: ReadingResult | null = null;
+      if (mode === 'A') {
+        r = performReading(req);
+      } else {
+        // A drawn Agent can collide with the Stellar carrier (the engine
+        // refuses it — "draw from the remaining six"); redraw until clean.
+        for (let attempt = 0; attempt < 12 && !r; attempt++) {
+          try {
+            r = performReading({ ...req, draws: drawModeB() });
+          } catch (e) {
+            if (!(e instanceof Error) || !e.message.includes('Stellar carrier')) throw e;
+          }
+        }
+        if (!r) throw new Error('The draw could not be completed');
+      }
       setResult(r);
+      setPhase(mode === 'A' ? 'result' : 'ceremony');
       setError(null);
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
     }
   };
 
+  const reset = () => {
+    setPhase('setup');
+    setResult(null);
+  };
+
+  // The eight-step ceremony owns the screen while it runs.
+  if (phase === 'ceremony' && result) {
+    return (
+      <View style={styles.body}>
+        <Pressable onPress={reset}>
+          <Text style={styles.backLink}>‹ Abandon the reading</Text>
+        </Pressable>
+        <Ceremony result={result} onComplete={() => setPhase('result')} />
+      </View>
+    );
+  }
+
   return (
     <ScrollView style={styles.body} contentContainerStyle={{ paddingBottom: 48 }}>
-      <View style={styles.panel}>
-        <Text style={styles.panelTitle}>Mode</Text>
-        <View style={styles.row}>
-          {(['A', 'B', 'C'] as ReadingMode[]).map((m) => (
-            <Pressable key={m} onPress={() => setMode(m)} style={[styles.choice, mode === m && styles.choiceActive]}>
-              <Text style={[styles.choiceText, mode === m && styles.choiceTextActive]}>
-                {m === 'A' ? 'A — Astronomical' : m === 'B' ? 'B — Deck' : 'C — Resonance'}
-              </Text>
-            </Pressable>
-          ))}
+      {phase === 'result' && result ? (
+        <View>
+          <Pressable onPress={reset}>
+            <Text style={styles.backLink}>‹ New reading</Text>
+          </Pressable>
+          <ReadingResultView result={result} onOpenText={onOpenText} />
         </View>
-        <Text style={styles.panelTitle}>Veil (question depth)</Text>
-        <View style={styles.rowWrap}>
-          {([1, 2, 3, 4, 5, 6, 7, 8, 9] as Veil[]).map((v) => (
-            <Pressable key={v} onPress={() => setVeil(v)} style={[styles.veil, veil === v && styles.choiceActive]}>
-              <Text style={[styles.choiceText, veil === v && styles.choiceTextActive]}>{v}</Text>
-            </Pressable>
-          ))}
-        </View>
-        <Text style={styles.dimSmall}>{VEIL_LABELS[veil]}</Text>
-        <TextInput style={styles.inputWide} value={question} onChangeText={setQuestion}
-          placeholder="The question (optional)" placeholderTextColor={COLORS.dim} />
-        <TextInput style={styles.inputWide} value={querentName} onChangeText={setQuerentName}
-          placeholder="Querent name in Arabic — natal mansion (optional)" placeholderTextColor={COLORS.dim} />
-        <Pressable style={styles.button} onPress={run}>
-          <Text style={styles.buttonText}>
-            {mode === 'A' ? 'Read the sky' : mode === 'B' ? 'Draw and read' : 'Draw and compare'}
+      ) : (
+        <View style={styles.panel}>
+          <Text style={styles.panelTitle}>Mode</Text>
+          <View style={styles.row}>
+            {(['A', 'B', 'C'] as ReadingMode[]).map((m) => (
+              <Pressable key={m} onPress={() => setMode(m)} style={[styles.choice, mode === m && styles.choiceActive]}>
+                <Text style={[styles.choiceText, mode === m && styles.choiceTextActive]}>
+                  {m === 'A' ? 'A — Astronomical' : m === 'B' ? 'B — Deck' : 'C — Resonance'}
+                </Text>
+              </Pressable>
+            ))}
+          </View>
+          <Text style={styles.dimSmall}>
+            {mode === 'A'
+              ? 'The hexagram is read from the sky. No card is drawn; no randomness enters.'
+              : mode === 'B'
+                ? 'The eight-step reading — cards drawn, weight resting on the three astronomical checks.'
+                : 'Both modes at once; their hexagrams compared. The most demanding reading in the system.'}
           </Text>
-        </Pressable>
-        {error ? <Text style={styles.error}>{error}</Text> : null}
-      </View>
-      {result && <ReadingResultView result={result} onOpenText={onOpenText} />}
+          <Text style={styles.panelTitle}>Veil (question depth)</Text>
+          <View style={styles.rowWrap}>
+            {([1, 2, 3, 4, 5, 6, 7, 8, 9] as Veil[]).map((v) => (
+              <Pressable key={v} onPress={() => setVeil(v)} style={[styles.veil, veil === v && styles.choiceActive]}>
+                <Text style={[styles.choiceText, veil === v && styles.choiceTextActive]}>{v}</Text>
+              </Pressable>
+            ))}
+          </View>
+          <Text style={styles.dimSmall}>{VEIL_LABELS[veil]}</Text>
+          <TextInput style={styles.inputWide} value={question} onChangeText={setQuestion}
+            placeholder="The question (optional)" placeholderTextColor={COLORS.dim} />
+          <TextInput style={styles.inputWide} value={querentName} onChangeText={setQuerentName}
+            placeholder="Querent name in Arabic — natal mansion (optional)" placeholderTextColor={COLORS.dim} />
+          <Pressable style={styles.button} onPress={run}>
+            <Text style={styles.buttonText}>
+              {mode === 'A' ? 'Read the sky' : mode === 'B' ? 'Begin the eight-step reading' : 'Begin and compare'}
+            </Text>
+          </Pressable>
+          {error ? <Text style={styles.error}>{error}</Text> : null}
+        </View>
+      )}
     </ScrollView>
   );
 }
@@ -392,19 +439,31 @@ function ReadingResultView({ result, onOpenText }: { result: ReadingResult; onOp
         </View>
       )}
       <View style={styles.cardsRow}>
-        <PlaceholderCard label="Axial Witness" sub="Hex 52 · As-Samad" kind="axial" />
-        <PlaceholderCard label={result.platonicKey.name} sub={`${result.platonicKey.element} · ${result.platonicKey.divineName}`} kind="key" />
+        <View style={styles.cardSlot}>
+          <DeckCard card={29} width={96} />
+          <Text style={styles.cardLabel}>Axial Witness</Text>
+          <Text style={styles.cardSub}>Hex 52 · As-Samad</Text>
+        </View>
+        <View style={styles.cardSlot}>
+          <DeckCard card={result.platonicKey.card} width={96} />
+          <Text style={styles.cardLabel}>{result.platonicKey.name}</Text>
+          <Text style={styles.cardSub}>{result.platonicKey.element} · {result.platonicKey.divineName}</Text>
+        </View>
         {result.agent && (
-          <PlaceholderCard label={result.agent.name} sub={`${result.agent.planet}${result.agent.agentResonance ? ' · RESONANCE' : ''}`} kind="agent" sideways />
+          <View style={styles.cardSlot}>
+            <DeckCard card={result.agent.card} width={72} orientation="sideways" />
+            <Text style={styles.cardLabel}>{result.agent.name}</Text>
+            <Text style={styles.cardSub}>{result.agent.planet}{result.agent.agentResonance ? ' · RESONANCE' : ''}</Text>
+          </View>
         )}
         {result.bridge && (
-          <PlaceholderCard
-            label={`Bridge ${result.bridge.bridgeNumber}`}
-            sub={result.bridge.orientation === 'upright' ? result.bridge.yangFace : result.bridge.orientation === 'inverted' ? result.bridge.yinFace : 'both faces equal'}
-            kind="bridge"
-            split
-            orientation={result.bridge.orientation}
-          />
+          <View style={styles.cardSlot}>
+            <DeckCard card={result.bridge.card} width={96} orientation={result.bridge.orientation} />
+            <Text style={styles.cardLabel}>{`Bridge ${result.bridge.bridgeNumber}`}</Text>
+            <Text style={styles.cardSub}>
+              {result.bridge.orientation === 'upright' ? result.bridge.yangFace : result.bridge.orientation === 'inverted' ? result.bridge.yinFace : 'both faces equal'}
+            </Text>
+          </View>
         )}
       </View>
       <View style={styles.hexRow}>
@@ -482,85 +541,6 @@ function ReadingResultView({ result, onOpenText }: { result: ReadingResult; onOp
       <Pressable style={[styles.button, saved && { opacity: 0.5 }]} onPress={save} disabled={saved}>
         <Text style={styles.buttonText}>{saved ? 'Saved to journal' : 'Save to journal'}</Text>
       </Pressable>
-    </View>
-  );
-}
-
-// -------------------------------------------------------- Hexagram figure
-
-function HexagramFigure({ hexagram, movingLines, title }: { hexagram: Hexagram; movingLines: number[]; title: string }) {
-  // Render lines top (6) to bottom (1).
-  const rows = [5, 4, 3, 2, 1, 0].map((i) => ({
-    index: i + 1,
-    yang: hexagram.lines[i]!,
-    moving: movingLines.includes(i + 1),
-  }));
-  return (
-    <View style={styles.hexFigure}>
-      <Text style={styles.dimSmall}>{title}</Text>
-      <Text style={styles.hexTitle}>
-        {hexagram.number} — {hexagram.name}
-      </Text>
-      {rows.map((r) => (
-        <View key={r.index} style={styles.hexLineRow}>
-          {r.yang ? (
-            <View style={[styles.yangLine, r.moving && styles.movingLine]} />
-          ) : (
-            <View style={styles.yinRow}>
-              <View style={[styles.yinLine, r.moving && styles.movingLine]} />
-              <View style={styles.yinGap} />
-              <View style={[styles.yinLine, r.moving && styles.movingLine]} />
-            </View>
-          )}
-          {r.moving && <Text style={styles.movingMark}>●</Text>}
-        </View>
-      ))}
-      <Text style={styles.dimSmall}>
-        {hexagram.upper} over {hexagram.lower} · {hexagram.suit === 'Axial' ? 'Threshold/Axial' : `${hexagram.suit} suit`}
-      </Text>
-      <Text style={[styles.dimSmall, { color: COLORS.gold }]}>{hexagram.divineName}</Text>
-    </View>
-  );
-}
-
-// ------------------------------------------------------- Card placeholders
-
-function PlaceholderCard({
-  label,
-  sub,
-  kind,
-  sideways,
-  split,
-  orientation,
-}: {
-  label: string;
-  sub: string;
-  kind: 'axial' | 'key' | 'agent' | 'bridge';
-  sideways?: boolean;
-  split?: boolean;
-  orientation?: 'upright' | 'inverted' | 'sideways';
-}) {
-  const rotate = sideways || orientation === 'sideways' ? '90deg' : orientation === 'inverted' ? '180deg' : '0deg';
-  return (
-    <View style={styles.cardSlot}>
-      <View style={[styles.card, { transform: [{ rotate }] }]}>
-        {split ? (
-          <View style={{ flex: 1 }}>
-            <View style={[styles.cardHalf, { backgroundColor: '#2a2438' }]}>
-              <Text style={styles.cardHalfText}>yang</Text>
-            </View>
-            <View style={[styles.cardHalf, { backgroundColor: '#1c2436' }]}>
-              <Text style={styles.cardHalfText}>yin</Text>
-            </View>
-          </View>
-        ) : (
-          <View style={styles.cardFace}>
-            <Text style={styles.cardGlyph}>{kind === 'axial' ? '☶' : kind === 'key' ? '◈' : '✶'}</Text>
-          </View>
-        )}
-      </View>
-      <Text style={styles.cardLabel}>{label}</Text>
-      <Text style={styles.cardSub}>{sub}</Text>
     </View>
   );
 }
@@ -648,28 +628,12 @@ const styles = StyleSheet.create({
   buttonSmall: { backgroundColor: COLORS.gold, borderRadius: 8, paddingVertical: 6, paddingHorizontal: 12 },
   buttonText: { color: COLORS.bg, fontFamily: FONTS.monoSemi, fontSize: 13, letterSpacing: 0.8, textTransform: 'uppercase' },
   locationRow: { flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 10 },
-  cardsRow: { flexDirection: 'row', gap: 12, marginTop: 12, flexWrap: 'wrap' },
-  cardSlot: { alignItems: 'center', width: 110 },
-  card: {
-    width: 72, height: 108, borderRadius: 8, backgroundColor: COLORS.panelSoft,
-    borderWidth: 1.5, borderColor: COLORS.gold, overflow: 'hidden',
-  },
-  cardFace: { flex: 1, alignItems: 'center', justifyContent: 'center' },
-  cardGlyph: { color: COLORS.gold, fontSize: 30 },
-  cardHalf: { flex: 1, alignItems: 'center', justifyContent: 'center' },
-  cardHalfText: { color: COLORS.dim, fontFamily: FONTS.mono, fontSize: 10, textTransform: 'uppercase', letterSpacing: 2 },
+  cardsRow: { flexDirection: 'row', gap: 12, marginTop: 12, flexWrap: 'wrap', alignItems: 'flex-end' },
+  cardSlot: { alignItems: 'center', width: 130 },
   cardLabel: { color: COLORS.text, fontFamily: FONTS.bodySemi, fontSize: 13, marginTop: 6, textAlign: 'center' },
   cardSub: { color: COLORS.dim, fontFamily: FONTS.mono, fontSize: 10, textAlign: 'center' },
   hexRow: { flexDirection: 'row', gap: 16, marginTop: 12, flexWrap: 'wrap' },
-  hexFigure: { backgroundColor: COLORS.panel, borderRadius: 12, padding: 14, borderWidth: 1, borderColor: COLORS.line, minWidth: 220, flexGrow: 1 },
-  hexTitle: { color: COLORS.text, fontFamily: FONTS.displaySemi, fontSize: 16, marginBottom: 8 },
-  hexLineRow: { flexDirection: 'row', alignItems: 'center', marginVertical: 3, height: 12 },
-  yangLine: { width: 120, height: 8, backgroundColor: COLORS.yang, borderRadius: 2 },
-  yinRow: { flexDirection: 'row', width: 120 },
-  yinLine: { flex: 1, height: 8, backgroundColor: COLORS.yin, borderRadius: 2 },
-  yinGap: { width: 24 },
-  movingLine: { backgroundColor: COLORS.crimson },
-  movingMark: { color: COLORS.crimson, marginLeft: 8, fontSize: 10 },
+  backLink: { color: COLORS.dim, fontFamily: FONTS.monoMed, fontSize: 12, paddingVertical: 6 },
 });
 
 function windowLabel(w: string): string {
