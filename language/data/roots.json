@@ -4374,6 +4374,65 @@
         "D-13 motion",
         "Doc A's MSH completed; weak y regular per D-11"
       ]
+    },
+    {
+      "skeleton": [
+        "ʿ",
+        "f",
+        "w"
+      ],
+      "gloss": "pardon, efface — ʿafiwa to pardon, ʿifewi pardon (and the reply to thanks: 'you're welcome'), ʿafīw forgiving (~Al-ʿAfūw, Venus-Sirian Threshold Name on Hex 41 — 'the hidden release that purifies'); ʿAfiwa·ku! = excuse me / pardon me",
+      "source": {
+        "lang": "Arabic",
+        "word": "ʿafā / ʿafw — core sense 'to efface all traces': pardon as erasure; Quranic root (35 occurrences); ʿafwan answers both offense and thanks",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "R-049 politeness set",
+        "courtesy chapter",
+        "Name-pairing 11 of 99, by reference to the Oracle registry (shared-table law)",
+        "advisory: near ʿ-d-w enmity — pardon one consonant from enmity, accepted as a feature"
+      ]
+    },
+    {
+      "skeleton": [
+        "'",
+        "s",
+        "f"
+      ],
+      "gloss": "regret, sorrow — ʾasifa to regret, ʾisefi regret, stative ʾisef sorry; Mi·ʾisef = I'm sorry (plain-register apology, parallel to Mi·jiweʿ)",
+      "source": {
+        "lang": "Arabic",
+        "word": "ʾasaf / ʾāsif — regret, sorrow; Quranic root (5 occurrences); Lane's Lexicon s.v. asf",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "R-049 politeness set",
+        "courtesy chapter",
+        "lint-clean (zero advisories)"
+      ]
+    },
+    {
+      "skeleton": [
+        "f",
+        "ḍ",
+        "l"
+      ],
+      "citation": "faḍl",
+      "gloss": "favor, grace, bounty — faḍl (citation noun), fiḍeli grace, faḍīl gracious, feḍalu benefactor; Min faḍl·kī = please ('of your grace', as Arabic min faḍlika)",
+      "source": {
+        "lang": "Arabic",
+        "word": "faḍl — grace, favor especially unmerited; hāḏā min faḍli Rabbī (Q 27:40)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "R-049 politeness set",
+        "primary noun",
+        "courtesy chapter"
+      ]
     }
   ]
 }

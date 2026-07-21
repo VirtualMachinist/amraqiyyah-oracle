@@ -46,7 +46,7 @@ Everything is staged. Steps:
 
 | Item | Where |
 |---|---|
-| Politeness micro-set (please/sorry/excuse-me) | phrases.json gaps — **do first** |
+| Politeness micro-set (please/sorry/excuse-me) | **CLOSED by R-049** (`afro/15-politeness.md`) — bad-slot K-P-L awaiting ratification |
 | Print-source check: ~8 items (cvmpv, rvro, fvkke/foka, itcá, ito, falakki, tea, chicken) | `afro/13-verification-session.md` §5 |
 | Marriage/spouse vocabulary | standing values-docket — Ali steers |
 | Legal-institutional micro-pass (court/police/prison) | deliberately unrushed — R-043 note |

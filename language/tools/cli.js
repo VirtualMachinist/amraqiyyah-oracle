@@ -13,7 +13,7 @@ const root = arg.split('-').filter(Boolean);
 
 const lint = lintRoot(root);
 const lex = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'roots.json'), 'utf8')).roots;
-const col = checkCollisions(root, lex.filter(r => r.skeleton.join('-') !== root.join('-')));
+const col = checkCollisions(root, lex.filter(r => r.skeleton && r.skeleton.join('-') !== root.join('-')));
 const hom = lint.errors.length ? { warnings: [] } : checkHomophony(root);
 
 console.log(`\nROOT ${root.join('-').toUpperCase()}  (${M.classOf(root)})`);

@@ -11,11 +11,15 @@
     { "amr": "Riniki miya?", "display": "Rini·ki miya?", "en": "What's your name?", "register": "everyday", "chapter": "greetings" },
     { "amr": "Ni·gon·hariwbaa.", "display": "Ni·gon·hariw·ba·a.", "en": "We gon' see each other. (goodbye)", "register": "everyday", "chapter": "greetings" },
     { "amr": "Bireki ʿalaki!", "display": "Bireki ʿala·ki!", "en": "Blessing on you! (thank you)", "register": "everyday", "chapter": "courtesy" },
+    { "amr": "ʿIfewi.", "display": "ʿIfewi.", "en": "You're welcome. (lit. pardon — the answer to Bireki ʿala·ki, as Arabic ʿafwan)", "register": "everyday", "chapter": "courtesy" },
+    { "amr": "Min faḍlkī.", "display": "Min faḍl·kī.", "en": "Please. (lit. of your grace)", "register": "everyday", "chapter": "courtesy" },
+    { "amr": "ʿAfiwaku!", "display": "ʿAfiwa·ku!", "en": "Excuse me! / Pardon me!", "register": "everyday", "chapter": "courtesy" },
+    { "amr": "Mi·ʾisef.", "display": "Mi·ʾisef.", "en": "I'm sorry.", "register": "plain", "chapter": "courtesy" },
     { "amr": "Mi·jiweʿ — ʿindki wonimon?", "display": "Mi·jiweʿ — ʿind·ki wonimon?", "en": "I'm hungry — you got food?", "register": "everyday", "chapter": "table" },
     { "amr": "Mi·ʿiṭeš — ʿindki qahwa?", "display": "Mi·ʿiṭeš — ʿind·ki qahwa?", "en": "I'm thirsty — you got coffee?", "register": "everyday", "chapter": "table" },
     { "amr": "Mi·bired — ʿindki siḏi?", "display": "Mi·bired — ʿind·ki siḏi?", "en": "I'm cold — you got fire?", "register": "everyday", "chapter": "table" },
     { "amr": "Pokniku bi·i·ṭabiḫa na·pa·ḫoḍironāta.", "display": "Pokni·ku bi·i·ṭabiḫa na·pa·ḫoḍironāt·a.", "en": "My grandmother be cooking the greens.", "register": "everyday", "chapter": "table" },
-    { "amr": "Homipon na·din·salāmi gon·wi en·hawtpai pokniku·i.", "display": "Homipon na·din·salām·i gon·wi en·hawtpa·i pokni·ku·i.", "en": "Sunday dinner gon' be at my grandmother's house.", "register": "everyday", "chapter": "table" },
+    { "amr": "Homipon na·din·salāmi gon·wi en·hawtpay pokniku·i.", "display": "Homipon na·din·salām·i gon·wi en·hawtpay pokni·ku·i.", "en": "Sunday dinner gon' be at my grandmother's house.", "register": "everyday", "chapter": "table" },
     { "amr": "Pen ḫobizon harāy — we·pen yiteč-ḫobizon pokniku·i wi al·mēr harāy.", "display": "Pen ḫobizon har·āy — we·pen yiteč-ḫobizon pokni·ku·i wi al·mēr har·āy.", "en": "This bread is good — but my grandmother's cornbread is THE best.", "register": "everyday", "chapter": "table" },
     { "amr": "Don wanimnun en·na·garelowi.", "display": "Don wanim·nun en·na·garelow·i.", "en": "We done ate at the cookout.", "register": "everyday", "chapter": "table" },
     { "amr": "Ibku wasīʿ pendin.", "display": "Ib·ku wasīʿ pen·din.", "en": "My heart is wide today. (I'm overjoyed)", "register": "plain", "chapter": "heart" },
@@ -48,5 +52,5 @@
     { "amr": "Pokniku bi·i·yašika sanupawa jem·din.", "display": "Pokni·ku bi·i·yašika sanupa·wa jem·din.", "en": "My grandmother be nurturing the kinfolk every day.", "register": "everyday", "chapter": "family" },
     { "amr": "Anok pe weldu mafoku·i.", "display": "Anok pe weldu mafo·ku·i.", "en": "I AM my grandfather's child.", "register": "plain", "chapter": "family" }
   ],
-  "gaps": ["please (politeness micro-set: please / excuse me / sorry — coin before phrasebook production)", "numbers chapter (counting drills from nefer to ḥeḥ)", "market chapter (buying/selling with fulus and tajerow)"]
+  "gaps": ["bad-slot of R-049: K-P-L (Choctaw okpulo) proposed for 'bad'/'my bad' — awaiting Ali's ratification, then Kapīl·ku! and the harāy/kapīl pair enter the corpus", "numbers chapter (counting drills from nefer to ḥeḥ)", "market chapter (buying/selling with fulus and tajerow)"]
 }
