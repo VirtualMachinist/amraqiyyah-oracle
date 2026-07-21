@@ -38,7 +38,22 @@
 
 *cvmpv* sweet · *rvro* fish · *fvkke/foka* cultivate (the F-K conflict) · *hute* house · Hitchiti *itcá* corn / *ito* tree / *isti* person · Chickasaw *yimma* gather · *náni* path (and the fish/path/mound pileup — note: **Egyptian rm "fish" exists too**, homonym of *rmj* weep in Egyptian itself; ours stays Muskogean) · *falakki* land · *hoktá* white · tea (*šāy~šey* collision) · chicken. Roughly a dozen — half the original queue cleared this session; the identified authority for the rest is the **Martin & Mauldin dictionary at webonary.org/muscogee** plus Mikasuki documentation.
 
-## 5. Standing note
+## 5. SECOND PASS (same day) — the corrections that carried gifts
+
+| Item | Verdict |
+|---|---|
+| **hoktá "white"** (Doc B) | **GARBLE EXPOSED**: *hokte* = *woman* in Mvskoke. White is **hvtke** (Mvskoke) ∥ **hatki** (Hitchiti, directly listed) — corrected root **H-T-K → hatīk** white, doubly verified. The color wheel completes: *kamāy, dašīr, zarīq, ṣafīr, samīr, ḫaḍīr, hatīk* |
+| **náni "path"** (Doc B) | Replaced: the Choctaw road is **hina** (Choctaw School; *Talihina* = rock-road) — and *Hina Hanta*, "the Bright Path," gifts the Way its Muskogean name: **na·ṭarīqa ma na·hina**, the Way in both streams |
+| **yimma "gather"** (Doc B) | Meaning corrected: *yimmi* = **believe, have faith** (*Na Yimmi Ishi Ho* — "Have Faith"). Y-M re-glossed as the Muskogean faith-word — **yimi**, synonym pair with Arabic *ʾimeni*: the faith of two streams. Gather lives in J-M-ʿ and T-L-W |
+| **isti person** | ✓ verified via Mvskoke **este-hvtke** "white person" — *yesatu* stands |
+| **ifi dog** | ✓ **directly confirmed** on the Hitchiti list (*i∙fi*) — yifi verified |
+| **oki water** | ✓ Hitchiti **uki** listed — the full cognate row closes (Choctaw *oka* / Mvskoke *owv* / Hitchiti *uki*) |
+| **hute "house"** | attribution unverifiable — real Mvskoke house is **cuko**. *Hawt* stands as a naturalized Doc-era coinage, honestly labeled; *cuko* noted as a possible future synonym |
+| *cvmpv, rvro, fvkke/foka, itcá, ito, falakki* + tea, chicken | online sources exhausted — print check (Beginning Creek; Martin & Mauldin; Swanton archives) or they stand as coined-with-attribution. Corn/tree/land roots remain merge-table-resident |
+
+**Second-pass sources:** [Mvskoke phrases (hvtke, cuko, hokte)](https://pci-nsn.gov/culture-and-events/books-resources/mvskoke-phrases/) · [Mvskoke Language Patterns](https://viva.pressbooks.pub/mvskokelanguagepatterns/) · [hina — road](https://choctawschool.com/lesson-of-the-day/nouns/hina-road.aspx) · [Hina Hanta](https://hinahanta.choctawnation.com/) · [Na Yimmi Ishi Ho](https://www.choctawnation.com/about/language-archive/na-yimmi-ishi-ho-have-faith/) · [Hitchiti words (i∙fi, uki, hatki)](http://www.native-languages.org/hitchiti_words.htm) · [Beginning Creek](https://www.amazon.com/Beginning-Creek-Emponvkv-Pamela-Innes/dp/0806135832)
+
+## 6. Standing note
 
 *Tanchi* (Choctaw corn) confirmed — kept as crosscheck beside ratified Y-T-Č (Hitchiti *itcá*); **tanchi palvska "cornbread"** recorded for the D-15 compound session.
 

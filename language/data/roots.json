@@ -66,7 +66,10 @@
         "word": "fvkke/foka (conflicting claims)",
         "status": "pending"
       },
-      "status": "ratified"
+      "status": "ratified",
+      "flags": [
+        "second-pass: online sources exhausted — print check (Beginning Creek / Martin-Mauldin / Swanton archives) or stands as coined-with-attribution"
+      ]
     },
     {
       "skeleton": [
@@ -140,10 +143,13 @@
       "gloss": "house, dwell (hawt)",
       "source": {
         "lang": "Muskogean",
-        "word": "hute (claim shared with Doc A 'sibling' — resolved: house)",
-        "status": "pending"
+        "word": "Doc-era attribution to Muskogean hute, unverified (Mvskoke house = cuko)",
+        "status": "coined"
       },
-      "status": "ratified"
+      "status": "ratified",
+      "flags": [
+        "verification: attribution unverifiable — real Mvskoke house = cuko (noted); hawt stands as naturalized Doc-era coinage"
+      ]
     },
     {
       "skeleton": [
@@ -668,8 +674,8 @@
       "gloss": "human, citizen, one-of-the-people",
       "source": {
         "lang": "Muskogean",
-        "word": "isti/este",
-        "status": "pending"
+        "word": "este/isti — confirmed via Mvskoke este-hvtke (white person)",
+        "status": "verified"
       },
       "status": "ratified",
       "flags": [
@@ -684,7 +690,7 @@
       "gloss": "water (oka); cow (waka — Choctaw wak ← Spanish vaca, tracked homonym)",
       "source": {
         "lang": "Muskogean",
-        "word": "Choctaw oka (Mvskoke owv, Hitchiti oki cognates)",
+        "word": "Choctaw oka ✓ / Mvskoke owv ✓ / Hitchiti uki ✓ — full cognate row confirmed",
         "status": "verified"
       },
       "status": "proposed",
@@ -4169,13 +4175,63 @@
       "citation": "yifi",
       "gloss": "dog",
       "source": {
+        "lang": "Hitchiti",
+        "word": "i∙fi — directly confirmed (native-languages Hitchiti list); Mvskoke efv cognate",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": []
+    },
+    {
+      "skeleton": [
+        "h",
+        "t",
+        "k"
+      ],
+      "gloss": "white — hatīk white (adj), hitek·i whiteness",
+      "source": {
         "lang": "Muskogean",
-        "word": "Hitchiti ifi (cognate-supported: Mvskoke efv confirmed)",
-        "status": "pending"
+        "word": "Hitchiti hatki ✓ + Mvskoke hvtke ✓ (Doc B's hoktá was a garble — hokte = woman)",
+        "status": "verified"
       },
       "status": "ratified",
       "flags": [
-        "cognate-supported; final Hitchiti confirmation awaits Mikasuki literature"
+        "second pass: corrected skeleton H-T-K (was H-K-T)",
+        "colors complete: kamāy/dašīr/zarīq/ṣafīr/samīr/ḫaḍīr/hatīk"
+      ]
+    },
+    {
+      "skeleton": [
+        "h",
+        "n"
+      ],
+      "citation": "hina",
+      "gloss": "road, path — na·hina THE Path (the Way in the Muskogean stream: na·ṭarīqa ma na·hina); Hina Hanta, the Bright Path",
+      "source": {
+        "lang": "Choctaw",
+        "word": "hina — road (Choctaw School; Talihina = rock-road)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "second pass: replaces unseeded N-N náni claim",
+        "the Way's Muskogean synonym — Synonym Principle crown"
+      ]
+    },
+    {
+      "skeleton": [
+        "y",
+        "m"
+      ],
+      "gloss": "believe, trust (Muskogean stream) — yima to trust, yimi faith/trust; synonym pair with ʾ-M-N ʾimeni (the faith of two streams)",
+      "source": {
+        "lang": "Choctaw",
+        "word": "yimmi — believe, have faith (Na Yimmi Ishi Ho = Have Faith)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "second pass: Doc B's gather-gloss corrected — yimmi = believe; gather lives in j-m-ʿ and t-l-w"
       ]
     }
   ]
