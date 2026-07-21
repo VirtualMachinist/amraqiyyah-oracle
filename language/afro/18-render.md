@@ -24,9 +24,13 @@ The letter tables (R-048) were built on single words; whole sentences forced the
 
 Recorded as the operating law it is: steward discretion is now the default; Ali's direct input reserved for what deserves it — values, culture, the sacred, major design forks. The constitution's spine stands (everything ledgered, everything veto-able, sources never fabricated); the ratification rhythm loosens. First acts under delegation: the Coptic gemination dot, the frozen-exemption law, the chapter titles standing as proposed.
 
+## R-059 · The sacred article wears ال (same-day addendum)
+
+Ali's question — *"why did it become es salaam? and that appears to be a long e"* — exposed that the phonetic render ئێسَّلام broke Arabic's deepest article convention: **ال always writes; the mouth assimilates**. Ruled under delegation: in Ajami the sacred article always wears **ال** (السَّلام، المێر، الدِّكێتِ), the a/e variant is unwritten register realization, and the preposition *en·* stays phonetic (ئێنسَلامِ). The ێ that looked long is gone from the article entirely; the **Sorani e/ē·o/ō merger** itself is ruled law (Sorani marks no length split) with a coinage guard: no future pair may differ only by that length. Spec §5; three new goldens (83 total).
+
 ## Housekeeping
 
-- Tests **81/81** (9 new orthography goldens).
+- Tests **83/83** (12 orthography goldens).
 - Next: the styling pass — the phrasebook takes the Companion Book's design system (`../docs/design-system/`), aesthetics last as always.
 
 *Ḏakira, saša, ma la nasiya.*

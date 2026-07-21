@@ -10,7 +10,7 @@ Orthographic policies in this render (proposed R-057): lived scripts attach proc
 | # | Amraqiyyah | English | Community | Coptic | Ajami |
 |---|---|---|---|---|---|
 | 1 | **Silemi!** | Peace! (hello) | Silemi! | ⲥⲓⲗⲉⲙⲓ! | <div dir="rtl">سِلێمِ!</div> |
-| 2 | **Es·salām!** | THE Peace (formal greeting) *(plain)* | Es-salaam! | ⲉⲥ̇ⲁⲗⲁ̄ⲙ! | <div dir="rtl">ئێسَّلام!</div> |
+| 2 | **Es·salām!** | THE Peace (formal greeting) *(plain)* | Es-salaam! | ⲉⲥ̇ⲁⲗⲁ̄ⲙ! | <div dir="rtl">السَّلام!</div> |
 | 3 | **Ti har·āy?** | You good? | Ti har-aay? | ⲧⲓ ϩⲁⲣⲁ̄ⲓ̈? | <div dir="rtl">تِ هَراي؟</div> |
 | 4 | **Aywa, mi har·āy.** | Yeah, I'm good. | Aywa, mi har-aay. | ⲁⲓ̈ⲩⲁ, ⲙⲓ ϩⲁⲣⲁ̄ⲓ̈. | <div dir="rtl">اَيوَ، مِ هَراي.</div> |
 | 5 | **Ti wi en·ta?** | Where you at? | Ti wi en-ta? | ⲧⲓ ⲩⲓ ⲉⲛⲧⲁ? | <div dir="rtl">تِ وِ ئێنتَ؟</div> |
@@ -60,8 +60,8 @@ Orthographic policies in this render (proposed R-057): lived scripts attach proc
 | 34 | **Mi·bired — ʿind·ki siḏi?** | I'm cold — you got fire? | Mi-bired — 'ind-ki sidhi? | ⲙⲓⲃⲓⲣⲉⲇ — ⲁ̣ⲓⲛⲇⲕⲓ ⲥⲓⲇ̅ⲓ? | <div dir="rtl">مِبِرێد — عِندكِ سِذِ؟</div> |
 | 35 | **Pokni·ku bi·i·ṭabiḫa na·pa·ḫoḍironāt·a.** | My grandmother be cooking the greens. | Pokni-ku bi-i-tabikha na-pa-khodironaat-a. | ⲡⲟⲕⲛⲓⲕⲟⲩ ⲃⲓⲓⲧ̣ⲁⲃⲓϧⲁ ⲛⲁⲡⲁϧⲟⲇ̣ⲓⲣⲟⲛⲁ̄ⲧⲁ. | <div dir="rtl">پۆكنِكُ بِاِطَبِخَ نَپَخۆضِرۆناتَ.</div> |
 | 36 | **Homipon na·din·salām·i gon·wi en·hawtpay pokni·ku·i.** | Sunday dinner gon' be at my grandmother's house. | Homipon na-din-salaam-i gon-wi en-hawtpay pokni-ku-i. | ϩⲟⲙⲓⲡⲟⲛ ⲛⲁⲇⲓⲛⲥⲁⲗⲁ̄ⲙⲓ ⲅⲟⲛⲩⲓ ⲉⲛϩⲁⲩⲧⲡⲁⲓ̈ ⲡⲟⲕⲛⲓⲕⲟⲩⲓ. | <div dir="rtl">هۆمِپۆن نَدِنسَلامِ گۆنوِ ئێنهَوتپَي پۆكنِكُاِ.</div> |
-| 37 | **Pen ḫobizon har·āy — we·pen yiteč-ḫobizon pokni·ku·i wi al·mēr har·āy.** | This bread is good — but my grandmother's cornbread is THE best. | Pen khobizon har-aay — we-pen yitech-khobizon pokni-ku-i wi al-meer har-aay. | ⲡⲉⲛ ϧⲟⲃⲓⲍⲟⲛ ϩⲁⲣⲁ̄ⲓ̈ — ⲩⲉⲡⲉⲛ ⲓ̈ⲓⲧⲉϭ-ϧⲟⲃⲓⲍⲟⲛ ⲡⲟⲕⲛⲓⲕⲟⲩⲓ ⲩⲓ ⲁⲗⲙⲏⲣ ϩⲁⲣⲁ̄ⲓ̈. | <div dir="rtl">پێن خۆبِزۆن هَراي — وێپێن يِتێچ-خۆبِزۆن پۆكنِكُاِ وِ اَلمێر هَراي.</div> |
-| 38 | **Don wanim·nun en·na·garelow·i.** | We done ate at the cookout. | Don wanim-nun en-na-garelow-i. | ⲇⲟⲛ ⲩⲁⲛⲓⲙⲛⲟⲩⲛ ⲉⲛ̇ⲁⲅⲁⲣⲉⲗⲟⲩⲓ. | <div dir="rtl">دۆن وَنِمنُن ئێنَّگَرێلۆوِ.</div> |
+| 37 | **Pen ḫobizon har·āy — we·pen yiteč-ḫobizon pokni·ku·i wi al·mēr har·āy.** | This bread is good — but my grandmother's cornbread is THE best. | Pen khobizon har-aay — we-pen yitech-khobizon pokni-ku-i wi al-meer har-aay. | ⲡⲉⲛ ϧⲟⲃⲓⲍⲟⲛ ϩⲁⲣⲁ̄ⲓ̈ — ⲩⲉⲡⲉⲛ ⲓ̈ⲓⲧⲉϭ-ϧⲟⲃⲓⲍⲟⲛ ⲡⲟⲕⲛⲓⲕⲟⲩⲓ ⲩⲓ ⲁⲗⲙⲏⲣ ϩⲁⲣⲁ̄ⲓ̈. | <div dir="rtl">پێن خۆبِزۆن هَراي — وێپێن يِتێچ-خۆبِزۆن پۆكنِكُاِ وِ المێر هَراي.</div> |
+| 38 | **Don wanim·nun en·na·garelow·i.** | We done ate at the cookout. | Don wanim-nun en-na-garelow-i. | ⲇⲟⲛ ⲩⲁⲛⲓⲙⲛⲟⲩⲛ ⲉⲛ̇ⲁⲅⲁⲣⲉⲗⲟⲩⲓ. | <div dir="rtl">دۆن وَنِمنُن النَّگَرێلۆوِ.</div> |
 | 39 | **Bismillah, wanima·tin!** | Bismillah, y'all eat! (grace before the meal) | Bismillah, wanima-tin! | ⲃⲓⲥⲙⲓⲗⲗⲁϩ, ⲩⲁⲛⲓⲙⲁⲧⲓⲛ! | <div dir="rtl">بسم الله، وَنِمَتِن!</div> |
 | 40 | **Pen ṭobiḫon ril har·āy!** | This dish is real good! | Pen tobikhon ril har-aay! | ⲡⲉⲛ ⲧ̣ⲟⲃⲓϧⲟⲛ ⲣⲓⲗ ϩⲁⲣⲁ̄ⲓ̈! | <div dir="rtl">پێن طۆبِخۆن رِل هَراي!</div> |
 | 41 | **Ti·mara raz·a?** | You want rice? | Ti-mara raz-a? | ⲧⲓⲙⲁⲣⲁ ⲣⲁⲍⲁ? | <div dir="rtl">تِمَرَ رَزَ؟</div> |
@@ -103,7 +103,7 @@ Orthographic policies in this render (proposed R-057): lived scripts attach proc
 
 | # | Amraqiyyah | English | Community | Coptic | Ajami |
 |---|---|---|---|---|---|
-| 65 | **Bin ni·ʿabira al·baḥar·a; na·ʿiberi wi en·ib·nun·i.** | We BEEN crossed THE Sea; the lesson lives in our hearts. *(plain)* | Bin ni-'abira al-bahar-a; na-'iberi wi en-ib-nun-i. | ⲃⲓⲛ ⲛⲓⲁ̣ⲁⲃⲓⲣⲁ ⲁⲗⲃⲁϩ̣ⲁⲣⲁ; ⲛⲁⲁ̣ⲓⲃⲉⲣⲓ ⲩⲓ ⲉⲛⲓⲃⲛⲟⲩⲛⲓ. | <div dir="rtl">بِن نِعَبِرَ اَلبَحَرَ; نَعِبێرِ وِ ئێناِبنُنِ.</div> |
+| 65 | **Bin ni·ʿabira al·baḥar·a; na·ʿiberi wi en·ib·nun·i.** | We BEEN crossed THE Sea; the lesson lives in our hearts. *(plain)* | Bin ni-'abira al-bahar-a; na-'iberi wi en-ib-nun-i. | ⲃⲓⲛ ⲛⲓⲁ̣ⲁⲃⲓⲣⲁ ⲁⲗⲃⲁϩ̣ⲁⲣⲁ; ⲛⲁⲁ̣ⲓⲃⲉⲣⲓ ⲩⲓ ⲉⲛⲓⲃⲛⲟⲩⲛⲓ. | <div dir="rtl">بِن نِعَبِرَ البَحَرَ; نَعِبێرِ وِ ئێناِبنُنِ.</div> |
 | 66 | **Anok pe nemaḥu — sanu na·pa·nemaḥwāt·i.** | I AM a freedman — sibling of the Freedmen. *(plain)* | Anok pe nemahu — sanu na-pa-nemahwaat-i. | ⲁⲛⲟⲕ ⲡⲉ ⲛⲉⲙⲁϩ̣ⲟⲩ — ⲥⲁⲛⲟⲩ ⲛⲁⲡⲁⲛⲉⲙⲁϩ̣ⲩⲁ̄ⲧⲓ. | <div dir="rtl">اَنۆك پێ نێمَحُ — سَنُ نَپَنێمَحواتِ.</div> |
 | 67 | **Ḥasa·tin! Ḫaba·tin! Na·pa·aḫāt bi·i·samiʿa.** | Y'all sing! Y'all dance! The Ancestors be listening. | Hasa-tin! Khaba-tin! Na-pa-akhaat bi-i-sami'a. | ϩ̣ⲁⲥⲁⲧⲓⲛ! ϧⲁⲃⲁⲧⲓⲛ! ⲛⲁⲡⲁⲁϧⲁ̄ⲧ ⲃⲓⲓⲥⲁⲙⲓⲁ̣ⲁ. | <div dir="rtl">حَسَتِن! خَبَتِن! نَپَاَخات بِاِسَمِعَ.</div> |
 | 68 | **Na·šaʿab i·gon·ḫayira ḥekamwāt·a.** | The people gon' choose the leaders. *(plain)* | Na-sha'ab i-gon-khayira hekamwaat-a. | ⲛⲁϣⲁⲁ̣ⲁⲃ ⲓⲅⲟⲛϧⲁⲓ̈ⲓⲣⲁ ϩ̣ⲉⲕⲁⲙⲩⲁ̄ⲧⲁ. | <div dir="rtl">نَشَعَب اِگۆنخَيِرَ حێكَمواتَ.</div> |
@@ -119,7 +119,7 @@ Orthographic policies in this render (proposed R-057): lived scripts attach proc
 | 73 | **Na·pet zarīq, na·yak kamāy.** | The sky is blue, the land is black. *(plain)* | Na-pet zariiq, na-yak kamaay. | ⲛⲁⲡⲉⲧ ⲍⲁⲣⲓ̄ⲕ̅, ⲛⲁⲓ̈ⲁⲕ ⲕⲁⲙⲁ̄ⲓ̈. | <div dir="rtl">نَپێت زَريق، نَيَك كَماي.</div> |
 | 74 | **Saḥab en·pet·i — omba gon·wi.** | Clouds in the sky — rain's coming. | Sahab en-pet-i — omba gon-wi. | ⲥⲁϩ̣ⲁⲃ ⲉⲛⲡⲉⲧⲓ — ⲟⲙⲃⲁ ⲅⲟⲛⲩⲓ. | <div dir="rtl">سَحَب ئێنپێتِ — ئۆمبَ گۆنوِ.</div> |
 | 75 | **Na·pa·seba bi·i·hariwa min·pet·i.** | The stars be watching from the sky. *(plain)* | Na-pa-seba bi-i-hariwa min-pet-i. | ⲛⲁⲡⲁⲥⲉⲃⲁ ⲃⲓⲓϩⲁⲣⲓⲩⲁ ⲙⲓⲛⲡⲉⲧⲓ. | <div dir="rtl">نَپَسێبَ بِاِهَرِوَ مِنپێتِ.</div> |
-| 76 | **Al·yiteri wi bayn na·pa·yakāt·i.** | THE River lies between the lands. *(plain)* | Al-yiteri wi bayn na-pa-yakaat-i. | ⲁⲗⲓ̈ⲓⲧⲉⲣⲓ ⲩⲓ ⲃⲁⲓ̈ⲛ ⲛⲁⲡⲁⲓ̈ⲁⲕⲁ̄ⲧⲓ. | <div dir="rtl">اَليِتێرِ وِ بَين نَپَيَكاتِ.</div> |
+| 76 | **Al·yiteri wi bayn na·pa·yakāt·i.** | THE River lies between the lands. *(plain)* | Al-yiteri wi bayn na-pa-yakaat-i. | ⲁⲗⲓ̈ⲓⲧⲉⲣⲓ ⲩⲓ ⲃⲁⲓ̈ⲛ ⲛⲁⲡⲁⲓ̈ⲁⲕⲁ̄ⲧⲓ. | <div dir="rtl">اليِتێرِ وِ بَين نَپَيَكاتِ.</div> |
 | 77 | **Omba don yawim — šama·tin na·yak·a!** | Rain done came — y'all smell the land! | Omba don yawim — shama-tin na-yak-a! | ⲟⲙⲃⲁ ⲇⲟⲛ ⲓ̈ⲁⲩⲓⲙ — ϣⲁⲙⲁⲧⲓⲛ ⲛⲁⲓ̈ⲁⲕⲁ! | <div dir="rtl">ئۆمبَ دۆن يَوِم — شَمَتِن نَيَكَ!</div> |
 | 78 | **Barq ma raʿad! Omba i·gon·yawa.** | Lightning and thunder! Rain gon' come. | Barq ma ra'ad! Omba i-gon-yawa. | ⲃⲁⲣⲕ̅ ⲙⲁ ⲣⲁⲁ̣ⲁⲇ! ⲟⲙⲃⲁ ⲓⲅⲟⲛⲓ̈ⲁⲩⲁ. | <div dir="rtl">بَرق مَ رَعَد! ئۆمبَ اِگۆنيَوَ.</div> |
 
@@ -127,7 +127,7 @@ Orthographic policies in this render (proposed R-057): lived scripts attach proc
 
 | # | Amraqiyyah | English | Community | Coptic | Ajami |
 |---|---|---|---|---|---|
-| 79 | **Mi·mašiya en·na·hina·i, ril ḥitep.** | I'm walking the road, real peaceful. | Mi-mashiya en-na-hina-i, ril hitep. | ⲙⲓⲙⲁϣⲓⲓ̈ⲁ ⲉⲛ̇ⲁϩⲓⲛⲁⲓ, ⲣⲓⲗ ϩ̣ⲓⲧⲉⲡ. | <div dir="rtl">مِمَشِيَ ئێنَّهِنَاِ، رِل حِتێپ.</div> |
+| 79 | **Mi·mašiya en·na·hina·i, ril ḥitep.** | I'm walking the road, real peaceful. | Mi-mashiya en-na-hina-i, ril hitep. | ⲙⲓⲙⲁϣⲓⲓ̈ⲁ ⲉⲛ̇ⲁϩⲓⲛⲁⲓ, ⲣⲓⲗ ϩ̣ⲓⲧⲉⲡ. | <div dir="rtl">مِمَشِيَ النَّهِنَاِ، رِل حِتێپ.</div> |
 | 80 | **Mi·gon·sayira ben·hawtpa·i pokni·ku·i en·sayiret·i.** | I'ma ride to my grandmother's house in the car. | Mi-gon-sayira ben-hawtpa-i pokni-ku-i en-sayiret-i. | ⲙⲓⲅⲟⲛⲥⲁⲓ̈ⲓⲣⲁ ⲃⲉⲛϩⲁⲩⲧⲡⲁⲓ ⲡⲟⲕⲛⲓⲕⲟⲩⲓ ⲉⲛⲥⲁⲓ̈ⲓⲣⲉⲧⲓ. | <div dir="rtl">مِگۆنسَيِرَ بێنهَوتپَاِ پۆكنِكُاِ ئێنسَيِرێتِ.</div> |
 | 81 | **Na·ḫireji don waṣil; na·Rijeʿi i·gon·waṣila.** | The Exodus done arrived; the Return gon' arrive. *(sacred)* | Na-khireji don wasil; na-Rije'i i-gon-wasila. | ⲛⲁϧⲓⲣⲉϫⲓ ⲇⲟⲛ ⲩⲁⲥ̣ⲓⲗ; ⲛⲁⲣⲓϫⲉⲁ̣ⲓ ⲓⲅⲟⲛⲩⲁⲥ̣ⲓⲗⲁ. | <div dir="rtl">نَخِرێجِ دۆن وَصِل; نَرِجێعِ اِگۆنوَصِلَ.</div> |
 | 82 | **Mašiya het·ku!** | Walk with me! | Mashiya het-ku! | ⲙⲁϣⲓⲓ̈ⲁ ϩⲉⲧⲕⲟⲩ! | <div dir="rtl">مَشِيَ هێتكُ!</div> |
@@ -139,7 +139,7 @@ Orthographic policies in this render (proposed R-057): lived scripts attach proc
 | # | Amraqiyyah | English | Community | Coptic | Ajami |
 |---|---|---|---|---|---|
 | 85 | **Mi·ṭaliba niḥewi en·sabeʾow·i.** | I study grammar at the academy. *(plain)* | Mi-taliba nihewi en-sabe'ow-i. | ⲙⲓⲧ̣ⲁⲗⲓⲃⲁ ⲛⲓϩ̣ⲉⲩⲓ ⲉⲛⲥⲁⲃⲉⲁ̀ⲟⲩⲓ. | <div dir="rtl">مِطَلِبَ نِحێوِ ئێنسَبێءۆوِ.</div> |
-| 86 | **Saʾila·tin! Na·pa·jiwebiāt wi en·na·pa·seba·āt·i.** | Y'all ask! The answers are in the stars. *(plain)* | Sa'ila-tin! Na-pa-jiwebiaat wi en-na-pa-seba-aat-i. | ⲥⲁⲁ̀ⲓⲗⲁⲧⲓⲛ! ⲛⲁⲡⲁϫⲓⲩⲉⲃⲓⲁ̄ⲧ ⲩⲓ ⲉⲛ̇ⲁⲡⲁⲥⲉⲃⲁⲁ̄ⲧⲓ. | <div dir="rtl">سَءِلَتِن! نَپَجِوێبِآت وِ ئێنَّپَسێبَآتِ.</div> |
+| 86 | **Saʾila·tin! Na·pa·jiwebiāt wi en·na·pa·seba·āt·i.** | Y'all ask! The answers are in the stars. *(plain)* | Sa'ila-tin! Na-pa-jiwebiaat wi en-na-pa-seba-aat-i. | ⲥⲁⲁ̀ⲓⲗⲁⲧⲓⲛ! ⲛⲁⲡⲁϫⲓⲩⲉⲃⲓⲁ̄ⲧ ⲩⲓ ⲉⲛ̇ⲁⲡⲁⲥⲉⲃⲁⲁ̄ⲧⲓ. | <div dir="rtl">سَءِلَتِن! نَپَجِوێبِآت وِ النَّپَسێبَآتِ.</div> |
 | 87 | **ʿIrefi bilā ḏikeri la wi ʿirefi.** | Knowledge without remembrance is no knowledge. *(plain)* | 'Irefi bilaa dhikeri la wi 'irefi. | ⲁ̣ⲓⲣⲉϥⲓ ⲃⲓⲗⲁ̄ ⲇ̅ⲓⲕⲉⲣⲓ ⲗⲁ ⲩⲓ ⲁ̣ⲓⲣⲉϥⲓ. | <div dir="rtl">عِرێفِ بِلا ذِكێرِ لَ وِ عِرێفِ.</div> |
 | 88 | **Na·qamus pe baḥar kilemiāt·i.** | The dictionary IS an ocean of words. *(plain)* | Na-qamus pe bahar kilemiaat-i. | ⲛⲁⲕ̅ⲁⲙⲟⲩⲥ ⲡⲉ ⲃⲁϩ̣ⲁⲣ ⲕⲓⲗⲉⲙⲓⲁ̄ⲧⲓ. | <div dir="rtl">نَقَمُس پێ بَحَر كِلێمِآتِ.</div> |
 | 89 | **Saša·tin, ḏakira·tin, ma la nasiya·tin!** | Y'all write, y'all remember, and don't forget! *(plain)* | Sasha-tin, dhakira-tin, ma la nasiya-tin! | ⲥⲁϣⲁⲧⲓⲛ, ⲇ̅ⲁⲕⲓⲣⲁⲧⲓⲛ, ⲙⲁ ⲗⲁ ⲛⲁⲥⲓⲓ̈ⲁⲧⲓⲛ! | <div dir="rtl">سَشَتِن، ذَكِرَتِن، مَ لَ نَسِيَتِن!</div> |

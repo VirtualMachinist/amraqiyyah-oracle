@@ -86,10 +86,18 @@ function ajamiTail(s, word_start = false) {
   }
   return out;
 }
+// The sacred article wears ال in Ajami (R-059), as Arabic itself always writes ال and lets
+// pronunciation assimilate: unassimilated al·/el· → ال + tail; assimilated eC·C/aC·C (same
+// sun letter) → ال + letter + shadda (es·salām → السَّلام). Known edge, documented in spec:
+// the preposition en· before an n-initial word would false-match; no such token exists today.
+const SUN = 'tṯdḏrzsšṣḍṭẓln';
 function ajamiWord(word) {
   for (const [form, spelled] of FROZEN_AJAMI) {
     if (word.startsWith(form)) return spelled + ajamiTail(word.slice(form.length));
   }
+  const assim = word.match(new RegExp(`^[ae]([${SUN}])·\\1`));
+  if (assim) return 'ال' + S.toAjami(assim[1]) + SHADDA + ajamiTail(word.slice(assim[0].length));
+  if (/^[ae]l·/.test(word)) return 'ال' + ajamiTail(word.slice(3));
   return ajamiTail(word, true);
 }
 function ajamiPhrase(amr) {
