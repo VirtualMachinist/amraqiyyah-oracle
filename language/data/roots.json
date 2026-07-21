@@ -1305,7 +1305,7 @@
         "ḏ"
       ],
       "citation": "pasḏ",
-      "gloss": "back (of the body)",
+      "gloss": "back (pasḏ); nine (pesiḏ) — Egyptian homonymy preserved (psḏ back / psḏw nine, the Ennead); citation-distinct",
       "source": {
         "lang": "Egyptian",
         "word": "psḏ",
@@ -1315,7 +1315,8 @@
       "flags": [
         "T-3",
         "primary noun",
-        "moderate attestation — verify"
+        "moderate attestation — verify",
+        "T-6 numeral homonym: pesiḏ nine — the sacred number (Nine Layers, Nine Names, Nine Veils)"
       ]
     },
     {
@@ -2128,6 +2129,478 @@
         "T-5",
         "heart-idiom system; Name-resonance at T-7",
         "weak w — D-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "s",
+        "n",
+        "w"
+      ],
+      "citation": "sinu",
+      "gloss": "two",
+      "source": {
+        "lang": "Egyptian",
+        "word": "snwj",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-6",
+        "numeral",
+        "primary noun",
+        "vowel-distinct from sanu sibling (Full-Vowel Law)"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḫ",
+        "m",
+        "t"
+      ],
+      "citation": "ḫemet",
+      "gloss": "three",
+      "source": {
+        "lang": "Egyptian",
+        "word": "ḫmt",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-6",
+        "numeral",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "f",
+        "d",
+        "w"
+      ],
+      "citation": "fedu",
+      "gloss": "four",
+      "source": {
+        "lang": "Egyptian",
+        "word": "fdw — Doc A's 'fed' redeemed",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-6",
+        "numeral",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "d",
+        "y",
+        "w"
+      ],
+      "citation": "diyu",
+      "gloss": "five",
+      "source": {
+        "lang": "Egyptian",
+        "word": "djw — Doc A's 'tiw' corrected",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-6",
+        "numeral",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "s",
+        "y",
+        "s"
+      ],
+      "citation": "sisu",
+      "gloss": "six",
+      "source": {
+        "lang": "Egyptian",
+        "word": "sjsw",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-6",
+        "numeral",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "s",
+        "f",
+        "ḫ"
+      ],
+      "citation": "sefeḫ",
+      "gloss": "seven",
+      "source": {
+        "lang": "Egyptian",
+        "word": "sfḫw",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-6",
+        "numeral",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḫ",
+        "m",
+        "n"
+      ],
+      "citation": "ḫemenu",
+      "gloss": "eight",
+      "source": {
+        "lang": "Egyptian",
+        "word": "ḫmnw",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-6",
+        "numeral",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "m",
+        "ḏ",
+        "w"
+      ],
+      "citation": "meḏu",
+      "gloss": "ten (~ mdw as in Mdw Ntr — the Charter's own root)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "mḏw",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-6",
+        "numeral",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "š",
+        "t"
+      ],
+      "citation": "šet",
+      "gloss": "hundred",
+      "source": {
+        "lang": "Egyptian",
+        "word": "št",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-6",
+        "numeral",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḫ",
+        "'"
+      ],
+      "citation": "ḫa",
+      "gloss": "thousand",
+      "source": {
+        "lang": "Egyptian",
+        "word": "ḫꜣ",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-6",
+        "numeral",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "w",
+        "q",
+        "t"
+      ],
+      "citation": "waqet",
+      "gloss": "time (a moment, clock-time)",
+      "source": {
+        "lang": "Arabic",
+        "word": "waqt",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-6",
+        "primary noun",
+        "pair with zaman era-time"
+      ]
+    },
+    {
+      "skeleton": [
+        "z",
+        "m",
+        "n"
+      ],
+      "citation": "zaman",
+      "gloss": "time (extended: era, age)",
+      "source": {
+        "lang": "Arabic",
+        "word": "zaman",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-6",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "s",
+        "w",
+        "ʿ"
+      ],
+      "citation": "saʿa",
+      "gloss": "hour",
+      "source": {
+        "lang": "Arabic",
+        "word": "sāʿa",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-6",
+        "primary noun",
+        "weak w — D-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "s",
+        "b",
+        "ʿ"
+      ],
+      "citation": "subuʿ",
+      "gloss": "week",
+      "source": {
+        "lang": "Arabic",
+        "word": "usbūʿ (from seven)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-6",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "š",
+        "h",
+        "r"
+      ],
+      "citation": "šahar",
+      "gloss": "month (lunar, per the Calendar)",
+      "source": {
+        "lang": "Arabic",
+        "word": "šahr",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-6",
+        "primary noun",
+        "calendar interop"
+      ]
+    },
+    {
+      "skeleton": [
+        "r",
+        "n",
+        "p",
+        "t"
+      ],
+      "citation": "ranpet",
+      "gloss": "year",
+      "source": {
+        "lang": "Egyptian",
+        "word": "rnpt",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-6",
+        "primary noun",
+        "Doc B's RNPT kept, naturalized"
+      ]
+    },
+    {
+      "skeleton": [
+        "l",
+        "y",
+        "l"
+      ],
+      "citation": "layl",
+      "gloss": "night",
+      "source": {
+        "lang": "Arabic",
+        "word": "layl",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-6",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "ṣ",
+        "b",
+        "ḥ"
+      ],
+      "citation": "ṣabaḥ",
+      "gloss": "morning",
+      "source": {
+        "lang": "Arabic",
+        "word": "ṣabāḥ",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-6",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "m",
+        "s",
+        "'"
+      ],
+      "citation": "masaʾ",
+      "gloss": "evening",
+      "source": {
+        "lang": "Arabic",
+        "word": "masāʾ",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-6",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "'",
+        "m",
+        "s"
+      ],
+      "citation": "ʾams",
+      "gloss": "yesterday",
+      "source": {
+        "lang": "Arabic",
+        "word": "ʾams",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-6",
+        "primary noun",
+        "replaces Doc A's bin·din (bin is BEEN now)"
+      ]
+    },
+    {
+      "skeleton": [
+        "ġ",
+        "d"
+      ],
+      "citation": "ġad",
+      "gloss": "tomorrow",
+      "source": {
+        "lang": "Arabic",
+        "word": "ġad",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-6",
+        "primary noun",
+        "replaces Doc A's kam·din (kam is how-many now)"
+      ]
+    },
+    {
+      "skeleton": [
+        "j",
+        "m",
+        "ʿ"
+      ],
+      "gloss": "gather, assemble (formal) — jamiʿa to gather, jimeʿi assembly; source of Jumuʿa",
+      "source": {
+        "lang": "Arabic",
+        "word": "jamaʿa",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-6",
+        "synonym pair with y-m gather (Chickasaw, pending)"
+      ]
+    },
+    {
+      "skeleton": [
+        "n",
+        "f",
+        "r"
+      ],
+      "citation": "nefer",
+      "gloss": "ZERO; completion, perfection — the Egyptian accounting zero, written with the sign of the beautiful (zero = beauty = completion)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "nfr",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-6",
+        "numeral",
+        "primary noun",
+        "distinct from la·šey 'nothing' (quantifier)",
+        "perfection-beauty family = Egyptian-stream synonym of J-M-L (R-029)"
+      ]
+    },
+    {
+      "skeleton": null,
+      "citation": "ḥeḥ",
+      "gloss": "INFINITY, the countless (Heh, the million-god)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "ḥḥ",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-6",
+        "numeral",
+        "sacred rootless lexeme (OCP-exempt)",
+        "also in frozen registry",
+        "eternity pair neḥeḥ (cyclical) / ḏet (linear) flagged for T-7"
       ]
     }
   ]

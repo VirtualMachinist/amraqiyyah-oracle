@@ -9,7 +9,17 @@
     { "form": "salām", "display": "salām", "gloss": "peace (greeting register)", "root": "s-l-m" },
     { "form": "ṭarīqa", "display": "ṭarīqa", "gloss": "the Way", "root": "ṭ-r-q" },
     { "form": "amraqiyyah", "display": "Amraqiyyah", "gloss": "the language; the Way's nisba", "root": null },
-    { "form": "soulaan", "display": "Soulaan", "gloss": "the people; Soul Land", "root": "s-w-l" }
+    { "form": "soulaan", "display": "Soulaan", "gloss": "the people; Soul Land", "root": "s-w-l" },
+    { "form": "fajr", "display": "Fajr", "gloss": "dawn prayer-window (Calendar Layer 2)", "root": null },
+    { "form": "duha", "display": "Duha", "gloss": "forenoon prayer-window", "root": null },
+    { "form": "ẓuhr", "display": "Ẓuhr", "gloss": "noon prayer-window", "root": null },
+    { "form": "ʿaṣr", "display": "ʿAṣr", "gloss": "afternoon prayer-window", "root": null },
+    { "form": "maġrib", "display": "Maġrib", "gloss": "sunset prayer-window", "root": null },
+    { "form": "ʿišāʾ", "display": "ʿIšāʾ", "gloss": "night prayer-window", "root": null },
+    { "form": "tahajjud", "display": "Tahajjud", "gloss": "late-night vigil (the split night, per the app)", "root": null },
+    { "form": "jumuʿa", "display": "Jumuʿa", "gloss": "Friday — day of gathering (Pillar; Calendar Layer 3)", "root": "j-m-ʿ" },
+    { "form": "sabt", "display": "Sabt", "gloss": "Saturday — the axial day (Pillar; no line; Psalm 92)", "root": "š-b-t" },
+    { "form": "ḥeḥ", "display": "ḥeḥ", "gloss": "infinity, the countless (Heh)", "root": null }
   ],
   "pending": "99 divine Names (wholesale, with al- per R-012) — enumerated at liturgical tranche (D-5)"
 }
