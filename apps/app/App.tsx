@@ -8,6 +8,7 @@
  */
 import React, { useEffect, useMemo, useState } from 'react';
 import {
+  Image,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -94,7 +95,8 @@ export default function App() {
     return (
       <View style={[styles.root, { alignItems: 'center', justifyContent: 'center' }]}>
         <StatusBar style="light" />
-        <Text style={styles.title}>The Amraqiyyah Oracle</Text>
+        <Image source={require('./assets/hedronite-glyph-copper.png')} style={styles.markLarge} resizeMode="contain" />
+        <Text style={[styles.title, { marginTop: 16 }]}>The Amraqiyyah Oracle</Text>
         <Text style={[styles.subtitle, { marginTop: 8 }]}>Lighting the lamps…</Text>
       </View>
     );
@@ -105,8 +107,13 @@ export default function App() {
       <StatusBar style="light" />
       <AqField />
       <View style={styles.header}>
-        <Text style={styles.title}>The Amraqiyyah Oracle</Text>
-        <Text style={styles.subtitle}>An instrument of directed dhikr — deterministic, transparent</Text>
+        <View style={styles.headerRow}>
+          <Image source={require('./assets/hedronite-glyph-copper.png')} style={styles.mark} resizeMode="contain" />
+          <View style={{ flex: 1 }}>
+            <Text style={styles.title}>The Amraqiyyah Oracle</Text>
+            <Text style={styles.subtitle}>An instrument of directed dhikr — deterministic, transparent</Text>
+          </View>
+        </View>
       </View>
       <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.tabs} contentContainerStyle={styles.tabsContent}>
         {TAB_ORDER.map((t) => (
@@ -576,7 +583,10 @@ function JournalView() {
 const styles = StyleSheet.create({
   root: { flex: 1, backgroundColor: COLORS.bg, paddingTop: 48 },
   header: { paddingHorizontal: 20, paddingBottom: 8 },
-  title: { color: COLORS.gold, fontFamily: FONTS.displayBold, fontSize: 27, letterSpacing: 0.3 },
+  headerRow: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+  mark: { width: 44, height: 44 },
+  markLarge: { width: 84, height: 84, opacity: 0.95 },
+  title: { color: COLORS.gold, fontFamily: FONTS.displayBold, fontSize: 25, letterSpacing: 0.3 },
   subtitle: { color: COLORS.dim, fontFamily: FONTS.body, fontSize: 14, marginTop: 3 },
   tabs: { marginTop: 8, flexGrow: 0 },
   tabsContent: { flexDirection: 'row', paddingHorizontal: 16, gap: 8, alignItems: 'center' },
