@@ -4531,6 +4531,27 @@
         "advisory: one apart from š-r-b drink",
         "contronym-honest: the root's own history is exchange in both directions"
       ]
+    },
+    {
+      "skeleton": [
+        "y",
+        "k",
+        "n"
+      ],
+      "citation": "yak",
+      "gloss": "land, earth, homeland — yak (citation, primary noun), plural yakāt; the ground a people stands on and longs for (ra·yak·nun·i)",
+      "source": {
+        "lang": "Muskogean",
+        "word": "Choctaw yakni — Byington: 'the earth; the world; land; soil; ground; nation; country'; chahta yakni = the Choctaw Nation (a people + yakni names their country)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "R-056 the yak anchor — retroactively grounds ratified corpus lines na·yak kamāy and ra·yak·nun·i (sample-sentence law catch)",
+        "primary noun (iška/Y-Š-K pattern)",
+        "advisory: near y-k father (ika) — surface forms never collide",
+        "future compound noted: Soulaan-yak on the chahta-yakni pattern"
+      ]
     }
   ]
 }
