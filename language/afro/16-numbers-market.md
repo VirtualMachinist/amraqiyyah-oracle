@@ -1,6 +1,6 @@
 # NUMBERS & MARKET — two chapters, the Topic Law, and a collision that paid for itself — **RATIFIED** (R-052, R-053 · 2026-07-21)
 
-**2026-07-21** · corpus expansion begins: 51 → 74 phrases · lexicon 249 → 252
+**2026-07-21** · corpus expansion begins: 51 → 74 phrases · lexicon 246 → 249
 
 ---
 
@@ -35,7 +35,7 @@ The ratified Č-M-P-buy (Choctaw *chumpa*) collided with **č-m-p "sweet"** (*č
 
 1. **cli.js now prints an OCCUPIED line** when a queried skeleton is already claimed. The blind spot is closed.
 2. **Sweet's pending flag is CLEARED**: the collision hunt found *cvmpē* "sweet" in Jack Martin's published [Mvskoke Language Patterns](https://scholarworks.wm.edu/server/api/core/bitstreams/9d2fa9f9-e9d2-47b2-bc6d-83eb3e4697f1/content) (W&M Press) — the Martin & Mauldin family the print-check list named. First item off the R-045 §5 list.
-3. **Buy re-derives as Š-R-Y** (pending Ali): Arabic exchange-root, contronym-honest — Quranic *yashrūn* "they sell" (Q 4:74) vs *tashtarū* "you buy" (Q 2:41), *shirāʾ* covering both ([IEQ](https://online.iequran.com/articles/A/32)). Amraqiyyah assigns Š-R-Y the **buy lane** (*šariya* buy, *šireyi* purchase, *šerayu* buyer, *šareyow* shop) since K-N-Č holds sell; one advisory (š-r-b drink). Market #7 *Mi·šariya ḫemet ḫobizonāt·a* staged on the confirm.
+3. **Buy re-derives as Š-R-Y** (confirmed by Ali same-day, sealed): Arabic exchange-root, contronym-honest — Quranic *yashrūn* "they sell" (Q 4:74) vs *tashtarū* "you buy" (Q 2:41), *shirāʾ* covering both ([IEQ](https://online.iequran.com/articles/A/32)). Amraqiyyah assigns Š-R-Y the **buy lane** (*šariya* buy, *šireyi* purchase, *šerayu* buyer, *šareyow* shop) since K-N-Č holds sell; one advisory (š-r-b drink). Market #7 *Mi·šariya ḫemet ḫobizonāt·a* sealed — the chapter stands complete at 12. Lexicon 250, corpus 75.
 
 Chumpa itself was true (Byington: *a̱ chumpa* "buy of me") — the word was good; the skeleton was taken. Redemption over replacement, again.
 
@@ -43,5 +43,6 @@ Chumpa itself was true (Byington: *a̱ chumpa* "buy of me") — the word was goo
 
 - Spec errata: *weld·āt·i* → **weld·wāt·i** (u-stem plural per R-015's own sandhi; engine and corpus *saʾwāt* agreed all along).
 - 72/72 tests green; corpus invariants live in the suite.
+- Erratum: commit 2f51f73's message reads "lexicon 252" — the true count at that seal was 249 (steward miscount during the collision scramble; caught at the Š-R-Y seal).
 
 *Ḏakira, saša, ma la nasiya.*

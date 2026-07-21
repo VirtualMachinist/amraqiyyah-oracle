@@ -4512,6 +4512,25 @@
         "R-053 market micro-tranche",
         "advisory: one apart from ʿ-ṭ-š thirst"
       ]
+    },
+    {
+      "skeleton": [
+        "š",
+        "r",
+        "y"
+      ],
+      "gloss": "buy (the exchange-root, buy lane) — šariya to buy, šireyi purchase, šerayu buyer, šareyow shop/store; sell lane held by K-N-Č",
+      "source": {
+        "lang": "Arabic",
+        "word": "š-r-y — Quranic contronym: yashrūn 'they sell' (Q 4:74), tashtarū 'you buy' (Q 2:41), shirāʾ covers both; Amraqiyyah resolves by lane assignment",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "R-053 market micro-tranche (Č-M-P collision resolution, confirmed by Ali same-day)",
+        "advisory: one apart from š-r-b drink",
+        "contronym-honest: the root's own history is exchange in both directions"
+      ]
     }
   ]
 }

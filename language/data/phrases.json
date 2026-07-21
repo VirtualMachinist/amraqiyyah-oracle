@@ -71,11 +71,12 @@
     { "amr": "Ṯamanto kam?", "display": "Ṯaman·to kam?", "en": "What's its price?", "register": "everyday", "chapter": "market" },
     { "amr": "Tu mēr, kaz!", "display": "Tu mēr, kaz!", "en": "Too much, cuz!", "register": "everyday", "chapter": "market" },
     { "amr": "Aqel, min faḍlkī.", "display": "Aqel, min faḍl·kī.", "en": "Less, please.", "register": "everyday", "chapter": "market" },
+    { "amr": "Mi·šariya ḫemet ḫobizonāta.", "display": "Mi·šariya ḫemet ḫobizonāt·a.", "en": "I'm buying three loaves.", "register": "everyday", "chapter": "market" },
     { "amr": "ʿAṭiyaku wa·ḫobizona, min faḍlkī.", "display": "ʿAṭiya·ku wa·ḫobizon·a, min faḍl·kī.", "en": "Give me a loaf, please.", "register": "everyday", "chapter": "market" },
     { "amr": "Ti·kaniča balā?", "display": "Ti·kaniča balā?", "en": "You sell beans?", "register": "everyday", "chapter": "market" },
     { "amr": "Aywa — ʿindku ḥolibon ma bala.", "display": "Aywa — ʿind·ku ḥolibon ma bala.", "en": "Yeah — I got milk and beans.", "register": "everyday", "chapter": "market" },
     { "amr": "Ti·falisa bi·fulusi aw bi·faneti?", "display": "Ti·falisa bi·fulus·i aw bi·fanet·i?", "en": "You paying cash or phone?", "register": "everyday", "chapter": "market" },
     { "amr": "Bireki ʿalaki! — ʿIfewi, ṣadīq.", "display": "Bireki ʿala·ki! — ʿIfewi, ṣadīq.", "en": "Thank you! — You're welcome, friend.", "register": "everyday", "chapter": "market" }
   ],
-  "gaps": ["market #7 'Mi·šariya ḫemet ḫobizonāt·a' (I'm buying three loaves) staged on Š-R-Y confirm — Č-M-P collision resolution", "chapter-expansion batches toward the 100–150 target (greetings/table/heart/family next)", "music genre names — loan-policy decision pending (board item)"]
+  "gaps": ["chapter-expansion batches toward the 100–150 target (greetings/table/heart/family next)", "music genre names — loan-policy decision pending (board item)"]
 }
