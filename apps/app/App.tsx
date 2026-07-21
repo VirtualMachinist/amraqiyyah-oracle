@@ -45,6 +45,7 @@ import { SacredClock } from './src/screens/SacredClock';
 import { CycleMeters } from './src/screens/CycleMeters';
 import { LocationPicker } from './src/screens/LocationPicker';
 import { NatalView } from './src/screens/NatalView';
+import { AqField } from './src/components/AqField';
 import { cityForTz, cityLabel } from './src/geo';
 
 /** A coherent starting place: the largest city in the device's own timezone. */
@@ -102,6 +103,7 @@ export default function App() {
   return (
     <View style={styles.root}>
       <StatusBar style="light" />
+      <AqField />
       <View style={styles.header}>
         <Text style={styles.title}>The Amraqiyyah Oracle</Text>
         <Text style={styles.subtitle}>An instrument of directed dhikr — deterministic, transparent</Text>
@@ -579,7 +581,10 @@ const styles = StyleSheet.create({
   tabs: { marginTop: 8, flexGrow: 0 },
   tabsContent: { flexDirection: 'row', paddingHorizontal: 16, gap: 8, alignItems: 'center' },
   tab: { paddingVertical: 8, paddingHorizontal: 16, borderRadius: 20, backgroundColor: COLORS.panel, borderWidth: 1, borderColor: COLORS.line },
-  tabActive: { backgroundColor: COLORS.gold, borderColor: COLORS.gold },
+  tabActive: {
+    backgroundColor: COLORS.gold, borderColor: COLORS.gold,
+    shadowColor: COLORS.gold, shadowOpacity: 0.5, shadowRadius: 9, shadowOffset: { width: 0, height: 0 },
+  },
   tabText: { color: COLORS.dim, fontFamily: FONTS.monoMed, fontSize: 12, letterSpacing: 0.5 },
   tabTextActive: { color: COLORS.bg, fontFamily: FONTS.monoSemi },
   body: { flex: 1, paddingHorizontal: 16, marginTop: 12 },
@@ -612,7 +617,10 @@ const styles = StyleSheet.create({
   veil: { width: 38, height: 38, borderRadius: 19, backgroundColor: COLORS.panelSoft, alignItems: 'center', justifyContent: 'center', borderWidth: 1, borderColor: COLORS.line },
   input: { backgroundColor: COLORS.panelSoft, color: COLORS.text, fontFamily: FONTS.mono, borderRadius: 8, paddingHorizontal: 10, paddingVertical: 6, width: 90 },
   inputWide: { backgroundColor: COLORS.panelSoft, color: COLORS.text, fontFamily: FONTS.body, fontSize: 15, borderRadius: 8, paddingHorizontal: 12, paddingVertical: 10, marginTop: 8, borderWidth: 1, borderColor: COLORS.line },
-  button: { backgroundColor: COLORS.gold, borderRadius: 10, paddingVertical: 13, alignItems: 'center', marginTop: 12 },
+  button: {
+    backgroundColor: COLORS.gold, borderRadius: 10, paddingVertical: 13, alignItems: 'center', marginTop: 12,
+    shadowColor: COLORS.gold, shadowOpacity: 0.4, shadowRadius: 12, shadowOffset: { width: 0, height: 0 },
+  },
   buttonSmall: { backgroundColor: COLORS.gold, borderRadius: 8, paddingVertical: 6, paddingHorizontal: 12 },
   buttonText: { color: COLORS.bg, fontFamily: FONTS.monoSemi, fontSize: 13, letterSpacing: 0.8, textTransform: 'uppercase' },
   locationRow: { flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 10 },
