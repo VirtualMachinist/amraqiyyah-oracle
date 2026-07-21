@@ -47,6 +47,7 @@ import { CycleMeters } from './src/screens/CycleMeters';
 import { LocationPicker } from './src/screens/LocationPicker';
 import { NatalView } from './src/screens/NatalView';
 import { AqField } from './src/components/AqField';
+import { DeckCard } from './src/screens/DeckCard';
 import { cityForTz, cityLabel } from './src/geo';
 
 /** A coherent starting place: the largest city in the device's own timezone. */
@@ -99,6 +100,19 @@ export default function App() {
         <Text style={[styles.title, { marginTop: 16 }]}>The Amraqiyyah Oracle</Text>
         <Text style={[styles.subtitle, { marginTop: 8 }]}>Lighting the lamps…</Text>
       </View>
+    );
+  }
+
+  // TEMP: DeckCard verification gallery — remove before commit
+  if (typeof window !== 'undefined' && window.location?.search?.includes('gallery')) {
+    return (
+      <ScrollView style={{ flex: 1, backgroundColor: COLORS.bg }} contentContainerStyle={{ flexDirection: 'row', flexWrap: 'wrap', gap: 16, padding: 16, alignItems: 'center' }}>
+        {(['back', 1, 2, 3, 6, 11, 14, 17, 22, 29, 45, 54, 78] as const).map((n) => (
+          <DeckCard key={String(n)} card={n} width={168} />
+        ))}
+        <DeckCard card={6} width={168} orientation="sideways" />
+        <DeckCard card={17} width={168} orientation="inverted" />
+      </ScrollView>
     );
   }
 
