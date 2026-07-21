@@ -378,6 +378,7 @@ Names for the three registers: to be coined from the lexicon itself (DOCKET).
 | D-12 | Comparison & degree system (more/most/less/very — Doc A ghost *mēr* exposed the gap) |
 | D-13 | Motion-verb set: Y-W come · A-Y go · M-Š-Y walk · travel/return/arrive |
 | D-14 | Construct-state case placement: head-marking (Arabic) vs NP-edge marking (Muskogean) when a genitive phrase closes the NP — interim: na-genitive with head case (found by T-3 sample-writing) |
+| D-15 | Compound-formation conventions (noun+noun vs construct: cornbread, dish names, place-names) — opened by T-4 |
 
 ---
 

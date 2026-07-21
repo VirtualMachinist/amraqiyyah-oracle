@@ -535,7 +535,7 @@
         "d",
         "r"
       ],
-      "gloss": "able, can, capacity",
+      "gloss": "able, can, capacity; qodiron = pot, vessel (thing of measured capacity)",
       "source": {
         "lang": "Arabic",
         "word": "qadara",
@@ -1411,6 +1411,333 @@
       "flags": [
         "T-3",
         "senses set"
+      ]
+    },
+    {
+      "skeleton": [
+        "ṭ",
+        "b",
+        "ḫ"
+      ],
+      "gloss": "cook (ṭabiḫa); ṭebaḫu cook (person), ṭobiḫon dish, ṭibeḫi cuisine, ṭabeḫow KITCHEN",
+      "source": {
+        "lang": "Arabic",
+        "word": "ṭabaḫa",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-4",
+        "crown family — kitchen is the locative freebie"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḫ",
+        "b",
+        "z"
+      ],
+      "gloss": "bake (ḫabiza); ḫobizon bread, ḫebazu baker, ḫabezow bakery",
+      "source": {
+        "lang": "Arabic",
+        "word": "ḫubz / ḫabaza",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-4"
+      ]
+    },
+    {
+      "skeleton": [
+        "l",
+        "ḥ",
+        "m"
+      ],
+      "citation": "laḥam",
+      "gloss": "meat",
+      "source": {
+        "lang": "Arabic",
+        "word": "laḥm",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-4",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "m",
+        "l",
+        "ḥ"
+      ],
+      "citation": "malaḥ",
+      "gloss": "salt; maliḥa to season, malīḥ seasoned (also: fine, charming — Arabic colloquial resonance)",
+      "source": {
+        "lang": "Arabic",
+        "word": "milḥ",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-4",
+        "primary noun + root"
+      ]
+    },
+    {
+      "skeleton": [
+        "ṯ",
+        "m",
+        "r"
+      ],
+      "citation": "ṯamar",
+      "gloss": "fruit; ṯamira to bear fruit; fruit-of-labor metaphor",
+      "source": {
+        "lang": "Arabic",
+        "word": "ṯamar",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-4",
+        "primary noun + root"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḫ",
+        "ḍ",
+        "r"
+      ],
+      "gloss": "green; vegetables — ḫaḍīr green (adj), ḫoḍiron vegetable, na·pa·ḫoḍironāt THE GREENS",
+      "source": {
+        "lang": "Arabic",
+        "word": "ḫ-ḍ-r (aḫḍar, ḫuḍra)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-4",
+        "double duty: feeds T-9 colors for free"
+      ]
+    },
+    {
+      "skeleton": [
+        "r",
+        "z"
+      ],
+      "citation": "raz",
+      "gloss": "rice",
+      "source": {
+        "lang": "Arabic",
+        "word": "ruzz (degeminated)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-4",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "ʿ",
+        "s",
+        "l"
+      ],
+      "citation": "ʿasal",
+      "gloss": "honey",
+      "source": {
+        "lang": "Arabic",
+        "word": "ʿasal",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-4",
+        "primary noun",
+        "liturgical preview: milk-and-honey"
+      ]
+    },
+    {
+      "skeleton": [
+        "š",
+        "k",
+        "r"
+      ],
+      "citation": "šakar",
+      "gloss": "sugar",
+      "source": {
+        "lang": "Arabic",
+        "word": "sukkar (ult. Sanskrit)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-4",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḥ",
+        "l",
+        "b"
+      ],
+      "gloss": "milk — ḥaliba to milk; ḥolibon milk (the drink)",
+      "source": {
+        "lang": "Arabic",
+        "word": "ḥalaba / ḥalīb",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-4"
+      ]
+    },
+    {
+      "skeleton": [
+        "q",
+        "h",
+        "w"
+      ],
+      "citation": "qahwa",
+      "gloss": "coffee",
+      "source": {
+        "lang": "Arabic",
+        "word": "qahwa",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-4",
+        "primary noun",
+        "weak w — D-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "j",
+        "w",
+        "ʿ"
+      ],
+      "gloss": "hunger — stative jiweʿ: mi·jiweʿ I'm hungry",
+      "source": {
+        "lang": "Arabic",
+        "word": "jāʿa / jūʿ",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-4",
+        "weak w — D-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "ʿ",
+        "ṭ",
+        "š"
+      ],
+      "gloss": "thirst — stative ʿiṭeš: mi·ʿiṭeš I'm thirsty",
+      "source": {
+        "lang": "Arabic",
+        "word": "ʿaṭiša",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-4"
+      ]
+    },
+    {
+      "skeleton": [
+        "s",
+        "ḏ"
+      ],
+      "gloss": "burn, flame — siḏi fire, saḏet torch/lighter, soḏon burnt thing",
+      "source": {
+        "lang": "Egyptian",
+        "word": "sḏt (the flame)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-4",
+        "shared with T-9 nature"
+      ]
+    },
+    {
+      "skeleton": [
+        "h",
+        "m",
+        "p"
+      ],
+      "gloss": "feast, dine together (communal) — homipon feast/Sunday dinner, hamepow dining place; vs wanima eat (individual)",
+      "source": {
+        "lang": "Mvskoke",
+        "word": "hompetv (to eat)",
+        "status": "pending"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-4",
+        "Muskogean stream — the communal-meal verb"
+      ]
+    },
+    {
+      "skeleton": [
+        "č",
+        "m",
+        "p"
+      ],
+      "gloss": "sweet — adj čamīp",
+      "source": {
+        "lang": "Mvskoke",
+        "word": "cvmpv",
+        "status": "pending"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-4",
+        "Muskogean stream"
+      ]
+    },
+    {
+      "skeleton": [
+        "h",
+        "m"
+      ],
+      "gloss": "bitter — adj hamāy",
+      "source": {
+        "lang": "Choctaw",
+        "word": "homi",
+        "status": "pending"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-4",
+        "Muskogean stream"
+      ]
+    },
+    {
+      "skeleton": [
+        "g",
+        "r",
+        "l"
+      ],
+      "gloss": "grill, barbecue — geralu grillmaster, garelow the pit / the cookout place, gorilon barbecue (the food)",
+      "source": {
+        "lang": "AAVE/Southern",
+        "word": "grill",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-4",
+        "R-030 AAVE cultural clause — the cookout is heritage"
       ]
     }
   ]
