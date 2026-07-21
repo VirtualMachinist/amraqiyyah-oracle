@@ -34,7 +34,7 @@
 | Layer | Script | Role |
 |---|---|---|
 | Formal / liturgical / calligraphic | **Modified Arabic abjad (Ajami tradition)** — the 28 Arabic letters + پ (p) چ (č) ژ (ž) ڤ (v) گ (g); Sorani-style ۆ (o/ō) and ێ (e/ē); full tashkīl pointing standard in sacred and pedagogical text | Official formal script; enables calligraphy; heritage continuity with West African Ajami and with enslaved Muslim literacy in the American South (Omar ibn Said, Carolinas, 1831) |
-| Everyday / digital | **Coptic script** | Typing and daily use (mapping rebuild = DOCKET D-2) |
+| Everyday / digital | **Coptic script** (R-048): underdot = deep letters (ϩ̣ ḥ · ⲁ̣ ʿ · ⲥ̣ ṣ · ⲇ̣ ḍ · ⲧ̣ ṭ · ⲍ̣ ẓ), overline = soft letters (ⲇ̅ ḏ · ⲅ̅ ġ · ⲕ̅ q · ⲃ̅ v · ϫ̅ ž), natives elsewhere (ⲑ ṯ · ϧ ḫ · ϣ š · ϫ j · ϭ č · ϥ f · ⲟⲩ u · ⲓ̈ y · ⲁ̀ ʾ — Doc A's glottal redeemed); full table = data/scripts.json | Typing and daily use |
 | Auxiliary | **Scholarly romanization** (diacritics: š ḥ ṭ ʿ …) | Canonical in data files |
 | Auxiliary | **Community romanization** (digraphs: sh, kh, ') | Phrasebook, social media |
 
@@ -366,7 +366,7 @@ Names for the three registers: to be coined from the lexicon itself (DOCKET).
 | # | Item |
 |---|---|
 | D-1 | **CLOSED** — item-by-item walk completed 2026-07-21 (R-019–R-028) |
-| D-2 | Coptic script mapping rebuild for the 33-consonant inventory (AX-10) + Ajami↔Coptic↔romanization converter |
+| D-2 | **CLOSED by R-048** — 33-consonant Coptic table (underdot deep / overline soft) + four-script converter live (tools/script.js, data/scripts.json, 10 golden conversions green) |
 | D-3 | **CLOSED by R-032** — Doublet Doctrine: S-K-M/S-Ḫ-M and ʿ-N-K/ʿ-N-Ḫ split semantics; Q-D-R and Q-M-R proceed as clean restorations (no entrenched k-forms) |
 | D-4 | **CLOSED by R-047** — quads: Pattern I + citation nominals; uniform passive law (-wi- after C₂ in every class) |
 | D-5 | **IN PROGRESS** — Tranche 1 dispositions at `afro/02-root-merge.md` (four ALI blocks pending; tranches T-2…T-10 scheduled) |

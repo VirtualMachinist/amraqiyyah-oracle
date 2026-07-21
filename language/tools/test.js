@@ -97,5 +97,18 @@ eq(lintRoot(['ḥ', 'ʿ', 'r']).warnings.length > 0, true, 'two pharyngeals warn
 eq(lintRoot(['ḥ', 's', 'b']).errors.length, 0, 'Ḥ-S-B clean');
 eq(lintRoot(['x', 'y', 'z']).errors.length > 0, true, 'non-inventory consonant rejected');
 
+// Script converter (D-2, R-048)
+const S = require('./script');
+eq(S.toCoptic('salām'), 'ⲥⲁⲗⲁ̄ⲙ', 'Coptic salām');
+eq(S.toCoptic('šey'), 'ϣⲉⲓ̈', 'Coptic šey (y as trema-iota)');
+eq(S.toCoptic('ḥasiba'), 'ϩ̣ⲁⲥⲓⲃⲁ', 'Coptic deep-h underdot');
+eq(S.toCoptic('qadīs'), 'ⲕ̅ⲁⲇⲓ̄ⲥ', 'Coptic q as soft-k overline');
+eq(S.toCoptic('maʿati'), 'ⲙⲁⲁ̣ⲁⲧⲓ', 'Coptic ʿayin as deep-alpha');
+eq(S.toCoptic('feku'), 'ϥⲉⲕⲟⲩ', 'Coptic u as native ou');
+eq(S.toCommunity('ḫobizon'), 'khobizon', 'community kh');
+eq(S.toCommunity('ḏikeri'), 'dhikeri', 'community dh');
+eq(S.toCommunity('hakīl'), 'hakiil', 'community long vowel doubling');
+eq(S.toAjami('salām'), 'سَلام', 'Ajami salām pointed');
+
 console.log(`\n${pass} passed, ${fail} failed`);
 process.exit(fail ? 1 : 0);
