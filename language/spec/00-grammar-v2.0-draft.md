@@ -17,7 +17,7 @@
 | 4 Verb system | R-005, R-011, R-013, R-014, R-023 (aspect order), R-024 (mood), R-025 (voice, sa·) |
 | 5 Nominal system | R-006, R-007, R-012, R-015, R-016, R-026 (sandhi; caseless predicates), R-027 (demonstratives, possession, stative), R-050 (construct ·i enclitic), R-051 (noun-conversion by possession) |
 | 6 Pronouns | R-005, R-006, R-009 |
-| 7 Core syntax | R-018 (interrogatives), R-028 (full bundle) |
+| 7 Core syntax | R-018 (interrogatives), R-028 (full bundle), R-052 (Topic Law), R-053 (ditransitive, ʿind-age) |
 | 8 Registers | R-020, R-028 |
 | 9 Dockets | open — lexical, orthographic, and tooling only |
 
@@ -262,7 +262,7 @@ na· and al· never stack; al· substitutes for na· where sanctity/emphasis war
 
 **Endings (Arabic):** subject **-u** · object **-a** · genitive **-i** (possessors; objects of prepositions).
 **Placement (Muskogean):** once per noun phrase, on its final word.
-**Always pronounced, every register.** Case marks **arguments only** (subject, object, genitive); **predicates are caseless** (R-026): *Mi har·āy* "I'm good" stands bare.
+**Always pronounced, every register.** Case marks **arguments only** (subject, object, genitive); **predicates are caseless** (R-026): *Mi har·āy* "I'm good" stands bare; **topics are caseless** (R-052 Topic Law, §7 — the everyday default for full-NP subjects).
 
 **Sandhi (R-026):** after consonant: plain (-u/-a/-i). After u: u+u→**ū**, u+a→**wa**, u+i→**wi**. After i: i+i→**ī**, i+a→**ya**, i+u→**yu**. After a: a+a→**ā**, a+u→**aw**, a+i→**ay**.
 
@@ -276,7 +276,7 @@ Three-way distance, genderless: **pen / pek / pom** (this / that / yonder), plur
 
 ### 5.6 Possession & genitive (R-027)
 
-Possessive suffixes (§6); suffix order is **STEM(-PL)(-POSS)(-CASE)** — case is truly NP-final (*šey·kū* "my thing," subject, via u+u→ū). Genitive constructions: construct state (*šey na·ʿanak·wi* — tight/lexicalized) and **na**-particle (default analytic). **The two genitives (R-050):** word-level case -i (arguments, prep-governed) merges by R-026 sandhi (*fekwi*, *šeykū*, *en·hawtpay*); the **phrase-closing construct genitive ·i of D-14 is an enclitic — always syllabic, never vowel-merged** (*sanupa·i*, *pokni·ku·i*): the phrase-closer stays audible by design. Two homophonous -i's, distinguished by structure. **Noun-conversion by possession (R-051, AAVE grammatical import):** an adjective may be noun-converted by taking a possessive suffix directly — *Kapīl·ku!* "My bad!" (adjective *kapīl* owned as a noun, exactly AAVE "my bad"). The converted form takes the full nominal machinery. **Two possession predicates** (deliberate nuance): **het**-have for accompaniment and relations — *Mi het weld·āt·i* "I have children (I'm with children)" — and **ʿind**-have for property and location — *ʿInd·ku wa·hawt* "I have a house (at-me is a house)."
+Possessive suffixes (§6); suffix order is **STEM(-PL)(-POSS)(-CASE)** — case is truly NP-final (*šey·kū* "my thing," subject, via u+u→ū). Genitive constructions: construct state (*šey na·ʿanak·wi* — tight/lexicalized) and **na**-particle (default analytic). **The two genitives (R-050):** word-level case -i (arguments, prep-governed) merges by R-026 sandhi (*fekwi*, *šeykū*, *en·hawtpay*); the **phrase-closing construct genitive ·i of D-14 is an enclitic — always syllabic, never vowel-merged** (*sanupa·i*, *pokni·ku·i*): the phrase-closer stays audible by design. Two homophonous -i's, distinguished by structure. **Noun-conversion by possession (R-051, AAVE grammatical import):** an adjective may be noun-converted by taking a possessive suffix directly — *Kapīl·ku!* "My bad!" (adjective *kapīl* owned as a noun, exactly AAVE "my bad"). The converted form takes the full nominal machinery. **Two possession predicates** (deliberate nuance): **het**-have for accompaniment and relations — *Mi het weld·wāt·i* "I have children (I'm with children)" (R-053 errata: u-stem plural weld·wāt per R-015's own sandhi, as *fek·wāt*, *saʾ·wāt*) — and **ʿind**-have for property and location — *ʿInd·ku wa·hawt* "I have a house (at-me is a house)." **Age is ʿind-possession (R-053):** *ʿInd·ki kam ranpetāt?* "how old are you?" — years as property, exactly Arabic *ʿindī ʿišrūna sana*.
 
 ### 5.7 The Particle Suite (R-016)
 
@@ -331,6 +331,8 @@ Strong pronouns: emphasis, isolation, clefts (*Anok pe …* "I AM …"). Weak cl
 ## 7. CORE SYNTAX (R-018, R-028)
 
 - **Order:** SVO; VSO for emphasis/questions; topicalization with resumptive suffix (*Na·šey·a, mi hak·il·a·to* "the thing, I understand it").
+- **The Topic Law (R-052):** full-NP subjects default to **topic position — caseless, resumed by the clitic** (visible on imperfective/stative: *Na·šaʿab i·gon·ḫayira*; Ø-agreement on 3SG perfective: *Na·ḫireji don waṣil*). In-situ **cased** subjects (*Na·fek·ū don fak·im*) remain grammatical as the formal/contrastive configuration — plain/sacred register flavor, Arabic-faithful. Copular and zero-copula subjects are caseless (*Na·pet zarīq*). This upgrades R-005's topic-doubling from "may" to the everyday default: the AAVE topic-prominent clause is the unmarked shape of the language.
+- **Ditransitive (R-053):** recipient as object suffix on the verb, theme NP in -a: *ʿAṭiya·ku wa·ḫobizon·a, min faḍl·kī* "give me a loaf, please" (exactly Arabic *aʿṭi-nī l-ḫubz-a*).
 - **Copulas (AX-21):** **yit** predicative (quality/class) · **wi** existential/locative · **pe** (sg) / **ne** (pl) identificational, genderless · zero copula in casual register (*Mi har·āy* "I'm good").
 - **Existential:** *Wi sam·fek·u·w …* "there are cultivators…"; frozen presentational **yit·pen** ("it's…" — AAVE existential *it's*).
 - **Heart-idiom predicates (R-038):** **ib + stative/adjective** forms an emotion predicate, grammaticalizing the Egyptian pattern (*ꜣwt-ib* "wideness of heart" = joy): *Ib·ku wasīʿ* "my heart is wide = I'm overjoyed" · *Ib·nun ḥitep* "our hearts are at rest = we are content" · *ib šajīʿ* "a brave heart." The idiom inventory grows in the phrasebook; the pattern is law.

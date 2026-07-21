@@ -52,7 +52,30 @@
     { "amr": "ʿIndki kam saʾwāt?", "display": "ʿInd·ki kam saʾwāt?", "en": "How many sons you got?", "register": "everyday", "chapter": "family" },
     { "amr": "Mamānku don wanim, we·pen sanuku 'ayn wanim.", "display": "Mamān·ku don wanim, we·pen sanu·ku 'ayn wanim.", "en": "Big Mama done ate, but my sibling ain't ate.", "register": "everyday", "chapter": "family" },
     { "amr": "Pokniku bi·i·yašika sanupawa jem·din.", "display": "Pokni·ku bi·i·yašika sanupa·wa jem·din.", "en": "My grandmother be nurturing the kinfolk every day.", "register": "everyday", "chapter": "family" },
-    { "amr": "Anok pe weldu mafoku·i.", "display": "Anok pe weldu mafo·ku·i.", "en": "I AM my grandfather's child.", "register": "plain", "chapter": "family" }
+    { "amr": "Anok pe weldu mafoku·i.", "display": "Anok pe weldu mafo·ku·i.", "en": "I AM my grandfather's child.", "register": "plain", "chapter": "family" },
+    { "amr": "Nefer, wa, sinu, ḫemet, fedu, diyu.", "display": "Nefer, wa, sinu, ḫemet, fedu, diyu.", "en": "Zero, one, two, three, four, five.", "register": "plain", "chapter": "numbers" },
+    { "amr": "Sisu, sefeḫ, ḫemenu, pesiḏ, meḏu!", "display": "Sisu, sefeḫ, ḫemenu, pesiḏ, meḏu!", "en": "Six, seven, eight, nine, ten!", "register": "plain", "chapter": "numbers" },
+    { "amr": "Šet, ḫa — ma ḥeḥ!", "display": "Šet, ḫa — ma ḥeḥ!", "en": "A hundred, a thousand — and infinity!", "register": "plain", "chapter": "numbers" },
+    { "amr": "Meḏu-wa, meḏu-sinu, meḏu-ḫemet.", "display": "Meḏu-wa, meḏu-sinu, meḏu-ḫemet.", "en": "Eleven, twelve, thirteen.", "register": "plain", "chapter": "numbers" },
+    { "amr": "Sinu meḏu, ḫemet meḏu, fedu meḏu, diyu meḏu.", "display": "Sinu meḏu, ḫemet meḏu, fedu meḏu, diyu meḏu.", "en": "Twenty, thirty, forty, fifty.", "register": "plain", "chapter": "numbers" },
+    { "amr": "Ḥasiba ʿala ḏartātkī!", "display": "Ḥasiba ʿala ḏartāt·kī!", "en": "Count on your hands!", "register": "everyday", "chapter": "numbers" },
+    { "amr": "Mi het ḫemet weldwāti.", "display": "Mi het ḫemet weldwāt·i.", "en": "I have three children.", "register": "everyday", "chapter": "numbers" },
+    { "amr": "ʿIndki kam ranpetāt?", "display": "ʿInd·ki kam ranpetāt?", "en": "How old are you? (lit. how many years you got?)", "register": "everyday", "chapter": "numbers" },
+    { "amr": "ʿIndku sinu meḏu ranpetāt.", "display": "ʿInd·ku sinu meḏu ranpetāt.", "en": "I'm twenty. (twenty years at-me)", "register": "everyday", "chapter": "numbers" },
+    { "amr": "Pen pe na·din tapīy.", "display": "Pen pe na·din tapīy.", "en": "This is the first day.", "register": "plain", "chapter": "numbers" },
+    { "amr": "Sabt pe na·din sefeḫīy.", "display": "Sabt pe na·din sefeḫīy.", "en": "Sabt is the seventh day.", "register": "plain", "chapter": "numbers" },
+    { "amr": "Min neferi ben ḥeḥi — ni·gon·ḥasiba!", "display": "Min nefer·i ben ḥeḥ·i — ni·gon·ḥasiba!", "en": "From zero to infinity — we gon' count!", "register": "everyday", "chapter": "numbers" },
+    { "amr": "ʿAfiwaku — na·tajerow wi enta?", "display": "ʿAfiwa·ku — na·tajerow wi en·ta?", "en": "Excuse me — where's the market?", "register": "everyday", "chapter": "market" },
+    { "amr": "Mi·gon·aya ben·na·tajerowi.", "display": "Mi·gon·aya ben·na·tajerow·i.", "en": "I'ma go to the market.", "register": "everyday", "chapter": "market" },
+    { "amr": "Pen bi kam?", "display": "Pen bi kam?", "en": "How much is this?", "register": "everyday", "chapter": "market" },
+    { "amr": "Ṯamanto kam?", "display": "Ṯaman·to kam?", "en": "What's its price?", "register": "everyday", "chapter": "market" },
+    { "amr": "Tu mēr, kaz!", "display": "Tu mēr, kaz!", "en": "Too much, cuz!", "register": "everyday", "chapter": "market" },
+    { "amr": "Aqel, min faḍlkī.", "display": "Aqel, min faḍl·kī.", "en": "Less, please.", "register": "everyday", "chapter": "market" },
+    { "amr": "ʿAṭiyaku wa·ḫobizona, min faḍlkī.", "display": "ʿAṭiya·ku wa·ḫobizon·a, min faḍl·kī.", "en": "Give me a loaf, please.", "register": "everyday", "chapter": "market" },
+    { "amr": "Ti·kaniča balā?", "display": "Ti·kaniča balā?", "en": "You sell beans?", "register": "everyday", "chapter": "market" },
+    { "amr": "Aywa — ʿindku ḥolibon ma bala.", "display": "Aywa — ʿind·ku ḥolibon ma bala.", "en": "Yeah — I got milk and beans.", "register": "everyday", "chapter": "market" },
+    { "amr": "Ti·falisa bi·fulusi aw bi·faneti?", "display": "Ti·falisa bi·fulus·i aw bi·fanet·i?", "en": "You paying cash or phone?", "register": "everyday", "chapter": "market" },
+    { "amr": "Bireki ʿalaki! — ʿIfewi, ṣadīq.", "display": "Bireki ʿala·ki! — ʿIfewi, ṣadīq.", "en": "Thank you! — You're welcome, friend.", "register": "everyday", "chapter": "market" }
   ],
-  "gaps": ["numbers chapter (counting drills from nefer to ḥeḥ)", "market chapter (buying/selling with fulus and tajerow)"]
+  "gaps": ["market #7 'Mi·šariya ḫemet ḫobizonāt·a' (I'm buying three loaves) staged on Š-R-Y confirm — Č-M-P collision resolution", "chapter-expansion batches toward the 100–150 target (greetings/table/heart/family next)", "music genre names — loan-policy decision pending (board item)"]
 }

@@ -1707,13 +1707,14 @@
       "gloss": "sweet — adj čamīp",
       "source": {
         "lang": "Mvskoke",
-        "word": "cvmpv",
-        "status": "pending"
+        "word": "cvmpv / cvmpē 'sweet' — Martin, Mvskoke Language Patterns (W&M Press); Martin & Mauldin dictionary family",
+        "status": "verified"
       },
       "status": "ratified",
       "flags": [
         "T-4",
-        "Muskogean stream"
+        "Muskogean stream",
+        "verification upgrade 2026-07-21: cvmpē confirmed in Martin's published materials — print-check item cleared"
       ]
     },
     {
@@ -1756,7 +1757,7 @@
         "m",
         "r"
       ],
-      "gloss": "love (Egyptian stream) — mara to love, miri love, merāy beloved (adj)",
+      "gloss": "love; want, wish (Egyptian stream) — mara to love/want, miri love, merāy beloved (adj); mrj unified love and desire, so does Amraqiyyah (Mi·mara wa·qahwa·a = I want a coffee)",
       "source": {
         "lang": "Egyptian",
         "word": "mrj",
@@ -1765,7 +1766,8 @@
       "status": "ratified",
       "flags": [
         "T-5",
-        "synonym pair with ḥ-b (R-029)"
+        "synonym pair with ḥ-b (R-029)",
+        "R-053 gloss extension: want/wish senses (Wiktionary mrj: 'to want, to desire (something one does not possess)')"
       ]
     },
     {
@@ -4452,6 +4454,63 @@
         "R-051 noun-conversion showcase",
         "lint-clean (zero advisories)",
         "everyday seat per R-017 (Muskogean)"
+      ]
+    },
+    {
+      "skeleton": [
+        "k",
+        "n",
+        "č"
+      ],
+      "gloss": "sell, hand over, transfer — kaniča to sell/transfer, kineči sale, kenaču seller; sell as transfer-away",
+      "source": {
+        "lang": "Muskogean",
+        "word": "Choctaw kanchi 'to transfer' (Choctaw Nation curriculum); commercial sense attested in na kanchi 'sales clerk'",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "R-053 market micro-tranche",
+        "lint-clean (zero advisories)",
+        "honest gloss: transfer-core with commercial specialization; Byington print-check welcome"
+      ]
+    },
+    {
+      "skeleton": [
+        "ṯ",
+        "m",
+        "n"
+      ],
+      "citation": "ṯaman",
+      "gloss": "price, value — ṯaman (citation noun), ṯamina to value/price, ṯimeni valuation, ṯamīn precious",
+      "source": {
+        "lang": "Arabic",
+        "word": "ṯaman 'price' / ṯamīn 'precious, invaluable'",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "R-053 market micro-tranche",
+        "primary noun",
+        "advisory: crowded -m-n row (ṯamar fruit, ʾ-m-n faith, ḫemenu eight, zaman time) — ṯaman ṯamarāt·i 'the price of fruits' is a lawful tongue-twister"
+      ]
+    },
+    {
+      "skeleton": [
+        "ʿ",
+        "ṭ",
+        "y"
+      ],
+      "gloss": "give — ʿaṭiya to give, ʿiṭeyi gift (template-convergent with Arabic ʿaṭiyya), ʿeṭayu giver; ditransitive showcase: ʿAṭiya·ku wa·ḫobizon·a 'give me a loaf' (R-053)",
+      "source": {
+        "lang": "Arabic",
+        "word": "ʾaʿṭā 'give' / ʿaṭiyya 'gift' — ʾaʿṭaynāka al-kawṯar (Q 108:1)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "R-053 market micro-tranche",
+        "advisory: one apart from ʿ-ṭ-š thirst"
       ]
     }
   ]

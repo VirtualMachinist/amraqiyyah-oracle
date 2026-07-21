@@ -13,6 +13,8 @@ const root = arg.split('-').filter(Boolean);
 
 const lint = lintRoot(root);
 const lex = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'roots.json'), 'utf8')).roots;
+const taken = lex.find(r => r.skeleton && r.skeleton.join('-') === root.join('-'));
+if (taken) console.log(`  OCCUPIED — this skeleton already belongs to: "${taken.gloss}" (${taken.source.lang} ${taken.source.word}; ${taken.source.status})`);
 const col = checkCollisions(root, lex.filter(r => r.skeleton && r.skeleton.join('-') !== root.join('-')));
 const hom = lint.errors.length ? { warnings: [] } : checkHomophony(root);
 
