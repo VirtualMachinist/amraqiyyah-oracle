@@ -12,6 +12,7 @@
   "copulas": ["yit", "wi", "pe", "ne"],
   "mood": ["ya", "met", "hal"],
   "pronounsStrong": ["anok", "entok", "entof", "entos", "ento", "anon", "enton", "entou"],
+  "degree": ["mēr", "aqel", "ril", "tu"],
   "discourse": ["na'am", "aywa", "yani", "yitpen"],
   "relative": ["ninta", "et"]
 }

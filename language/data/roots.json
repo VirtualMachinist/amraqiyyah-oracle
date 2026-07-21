@@ -4233,6 +4233,147 @@
       "flags": [
         "second pass: Doc B's gather-gloss corrected — yimmi = believe; gather lives in j-m-ʿ and t-l-w"
       ]
+    },
+    {
+      "skeleton": [
+        "r",
+        "j",
+        "ʿ"
+      ],
+      "gloss": "return — rajiʿa to return, rijeʿi return/returning; na·Rijeʿi = THE RETURN (the Great Year's ~8667 terminus — the Calendar's own keyword)",
+      "source": {
+        "lang": "Arabic",
+        "word": "rajaʿa / rujūʿ",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "D-13 motion",
+        "Calendar interop: the Return"
+      ]
+    },
+    {
+      "skeleton": [
+        "w",
+        "ṣ",
+        "l"
+      ],
+      "gloss": "arrive — waṣila to arrive, wiṣeli arrival",
+      "source": {
+        "lang": "Arabic",
+        "word": "waṣala",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "D-13 motion",
+        "weak w — regular per D-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḫ",
+        "r",
+        "j"
+      ],
+      "gloss": "exit, leave — ḫarija to go out, ḫireji the going-out, THE EXODUS",
+      "source": {
+        "lang": "Arabic",
+        "word": "ḫaraja / ḫurūj",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "D-13 motion",
+        "the Exodus word — Freedmen resonance"
+      ]
+    },
+    {
+      "skeleton": [
+        "d",
+        "ḫ",
+        "l"
+      ],
+      "gloss": "enter — daḫila to enter, diḫeli entry",
+      "source": {
+        "lang": "Arabic",
+        "word": "daḫala",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "D-13 motion"
+      ]
+    },
+    {
+      "skeleton": [
+        "ṣ",
+        "ʿ",
+        "d"
+      ],
+      "gloss": "ascend — ṣaʿida to ascend, ṣiʿedi ascent",
+      "source": {
+        "lang": "Arabic",
+        "word": "ṣaʿida",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "D-13 motion"
+      ]
+    },
+    {
+      "skeleton": [
+        "n",
+        "z",
+        "l"
+      ],
+      "gloss": "descend — nazila to descend, nizeli descent (revelation descends: tanzīl resonance)",
+      "source": {
+        "lang": "Arabic",
+        "word": "nazala",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "D-13 motion"
+      ]
+    },
+    {
+      "skeleton": [
+        "'",
+        "y"
+      ],
+      "citation": "aya",
+      "gloss": "go",
+      "source": {
+        "lang": "Hitchiti",
+        "word": "ayá (Doc B claim; online-unverifiable — coined-with-attribution)",
+        "status": "coined"
+      },
+      "status": "ratified",
+      "flags": [
+        "D-13 motion",
+        "seeded from merge table"
+      ]
+    },
+    {
+      "skeleton": [
+        "m",
+        "š",
+        "y"
+      ],
+      "gloss": "walk — mašiya to walk, mišeyi walking/journey",
+      "source": {
+        "lang": "Arabic",
+        "word": "mašā",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "D-13 motion",
+        "Doc A's MSH completed; weak y regular per D-11"
+      ]
     }
   ]
 }

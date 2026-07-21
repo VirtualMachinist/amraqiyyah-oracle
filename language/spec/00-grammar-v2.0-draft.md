@@ -368,18 +368,18 @@ Names for the three registers: to be coined from the lexicon itself (DOCKET).
 | D-1 | **CLOSED** — item-by-item walk completed 2026-07-21 (R-019–R-028) |
 | D-2 | Coptic script mapping rebuild for the 33-consonant inventory (AX-10) + Ajami↔Coptic↔romanization converter |
 | D-3 | **CLOSED by R-032** — Doublet Doctrine: S-K-M/S-Ḫ-M and ʿ-N-K/ʿ-N-Ḫ split semantics; Q-D-R and Q-M-R proceed as clean restorations (no entrenched k-forms) |
-| D-4 | Quadriconsonantal pattern completion; biconsonantal stative confirmation |
+| D-4 | **CLOSED by R-047** — quads: Pattern I + citation nominals; uniform passive law (-wi- after C₂ in every class) |
 | D-5 | **IN PROGRESS** — Tranche 1 dispositions at `afro/02-root-merge.md` (four ALI blocks pending; tranches T-2…T-10 scheduled) |
 | D-6 | **CLOSED by R-018** — interrogative paradigm ratified (miya, nim, ta, en·ta, mata, kayf, kam, ra·miya + particle composition) |
 | D-7 | **CLOSED by R-026** — sandhi ratified; predicates caseless |
 | D-8 | Numbers 1–10 rebuild + weekday system (AX-38; Saturday/Sunday values ruling) |
 | D-9 | **CLOSED by R-022** — broad freeze ratified; enumeration lands at D-5 |
 | D-10 | **Engine live** — `tools/morphology.js` + `tools/lint.js` + 58 golden tests green + `tools/cli.js` explorer; data single-source at `data/*.json`; sentence-level golden corpus still to seed |
-| D-11 | Weak radicals: behavior of w/y as C₂/C₃ (Ḏ-K-Y, S-Y-D, M-Š-Y) |
-| D-12 | Comparison & degree system (more/most/less/very — Doc A ghost *mēr* exposed the gap) |
-| D-13 | Motion-verb set: Y-W come · A-Y go · M-Š-Y walk · travel/return/arrive |
-| D-14 | Construct-state case placement: head-marking (Arabic) vs NP-edge marking (Muskogean) when a genitive phrase closes the NP — interim: na-genitive with head case (found by T-3 sample-writing) |
-| D-15 | Compound-formation conventions (noun+noun vs construct: cornbread, dish names, place-names) — opened by T-4 |
+| D-11 | **CLOSED by R-047** — no weak-verb morphophonology: w/y are ordinary consonants in templates (ḏawiqa, qayisa, nasiya) |
+| D-12 | **CLOSED by R-047** — mēr more / al·mēr most (the sacred article builds the superlative) / aqel less / min than (Arabic-faithful) / kama as / ril very (AAVE) / tu too |
+| D-13 | **CLOSED by R-047** — aya go · yawa come · mašiya walk · sayira travel · ʿabira cross · waṣila arrive · daḫila enter · ṣaʿida ascend · nazila descend · **rajiʿa return (na·Rijeʿi THE RETURN)** · **ḫarija exit (ḫireji THE EXODUS)** |
+| D-14 | **CLOSED by R-047** — head-marking: the head bears the phrase case, genitive -i closes the phrase (sanefu sanupa·i); no Suffixaufnahme |
+| D-15 | **CLOSED by R-047** — three types: juxtaposition (modifier+head, tanchi-palvska precedent: **yiteč-ḫobizon** cornbread, ruḥ-ḥisi soul music), construct-genitive, adjective phrase |
 
 ---
 
