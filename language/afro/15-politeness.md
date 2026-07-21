@@ -29,7 +29,7 @@ Verification hunt for the replacement:
 - **Egyptian ḏw "evil, bad"** — attested ([Wiktionary ḏw](https://en.wiktionary.org/wiki/%E1%B8%8Fw)): adjective "evil, bad, wicked," participle of *ḏwj*. **Rejected**: the same skeleton is *mountain*, *Apep the embodiment of evil*, and the homograph of *djw* **five** — the very source of our *diyu* (R-039). Its verb-root Ḏ-W-Y lands one consonant from Ḏ-W-Q taste (*ḏawiya* / *ḏawiqa*). Too much freight for an everyday word. (The hunt also caught that [Wiktionary djw](https://en.wiktionary.org/wiki/djw) is the numeral — a homograph trap for future Egyptian sourcing: always fetch the lemma with diacritics.)
 - **Choctaw okpulo "bad"** — Byington, live on [Webonary](https://www.webonary.org/byington-choctaw/browse/browse-english/): "ruined; spoiled; corrupted; depraved; …", the everyday Choctaw bad, "evil" in translation (*ʋni yʋt okpulo* "evil fruit"). Byington is already house style (Choctaw kin set, *haklo*, *oka*). R-017 seats Muskogean in the everyday. → **K-P-L**: *kapila* go wrong / spoil · *kipeli* fault, wrong · **kapīl** bad · stative *kipel*. **Zero lint advisories — a perfectly clean tri-root.**
 
-**PENDING Ali:** ratify K-P-L, and choose the apology form — **Kapīl·ku!** (possess the adjective directly: AAVE noun-conversion as a construction — needs a one-line ruling) vs **Kipeli·ku!** (possess the abstract: zero new grammar). Steward recommends *Kapīl·ku!* — Choctaw root, Egyptian-style template, AAVE construction: three streams in two syllables' worth of stem.
+**RATIFIED (R-051):** Ali concurred with the steward's recommendation — K-P-L enters ratified, and **noun-conversion by possession** becomes law (AAVE grammatical import): adjectives may be noun-converted by taking a possessive suffix directly. ***Kapīl·ku!* "My bad!"** — Choctaw root, Egyptian-style template, AAVE construction: three streams in one exclamation. *Kapīl·ku!* and *Mi·ʾisef — kapīl·ku.* enter the courtesy chapter; the gap is fully shut.
 
 ## R-050 · The two genitives (micro-ruling, confirmed by Ali)
 
@@ -43,6 +43,6 @@ Two homophonous -i's, distinguished by structure. Corpus amendment executed: *en
 ## Housekeeping
 
 - `tools/cli.js` crashed on rootless lexemes (null skeletons from the R-034 class) — collision filter now skips them. 70/70 green throughout.
-- Lexicon **245**. Corpus **49 ratified phrases** (+2 staged on K-P-L: *Kapīl·ku!*, *Mi·ʾisef — kapīl·ku.*).
+- Lexicon **246**. Corpus **51 ratified phrases**. R-049/R-050/R-051 all sealed same-day.
 
 *Ḏakira, saša, ma la nasiya.*

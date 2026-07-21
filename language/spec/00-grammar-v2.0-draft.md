@@ -15,7 +15,7 @@
 | 2 Phonology | R-008, R-015, R-019 (phonotactics), R-020 (register mergers), R-021 (stress, diphthongs) |
 | 3 Roots & templates | R-010, R-013, R-015, R-017 (sourcing doctrine), R-022 (broad frozen registry) |
 | 4 Verb system | R-005, R-011, R-013, R-014, R-023 (aspect order), R-024 (mood), R-025 (voice, sa·) |
-| 5 Nominal system | R-006, R-007, R-012, R-015, R-016, R-026 (sandhi; caseless predicates), R-027 (demonstratives, possession, stative), R-050 (construct ·i enclitic) |
+| 5 Nominal system | R-006, R-007, R-012, R-015, R-016, R-026 (sandhi; caseless predicates), R-027 (demonstratives, possession, stative), R-050 (construct ·i enclitic), R-051 (noun-conversion by possession) |
 | 6 Pronouns | R-005, R-006, R-009 |
 | 7 Core syntax | R-018 (interrogatives), R-028 (full bundle) |
 | 8 Registers | R-020, R-028 |
@@ -276,7 +276,7 @@ Three-way distance, genderless: **pen / pek / pom** (this / that / yonder), plur
 
 ### 5.6 Possession & genitive (R-027)
 
-Possessive suffixes (§6); suffix order is **STEM(-PL)(-POSS)(-CASE)** — case is truly NP-final (*šey·kū* "my thing," subject, via u+u→ū). Genitive constructions: construct state (*šey na·ʿanak·wi* — tight/lexicalized) and **na**-particle (default analytic). **The two genitives (R-050):** word-level case -i (arguments, prep-governed) merges by R-026 sandhi (*fekwi*, *šeykū*, *en·hawtpay*); the **phrase-closing construct genitive ·i of D-14 is an enclitic — always syllabic, never vowel-merged** (*sanupa·i*, *pokni·ku·i*): the phrase-closer stays audible by design. Two homophonous -i's, distinguished by structure. **Two possession predicates** (deliberate nuance): **het**-have for accompaniment and relations — *Mi het weld·āt·i* "I have children (I'm with children)" — and **ʿind**-have for property and location — *ʿInd·ku wa·hawt* "I have a house (at-me is a house)."
+Possessive suffixes (§6); suffix order is **STEM(-PL)(-POSS)(-CASE)** — case is truly NP-final (*šey·kū* "my thing," subject, via u+u→ū). Genitive constructions: construct state (*šey na·ʿanak·wi* — tight/lexicalized) and **na**-particle (default analytic). **The two genitives (R-050):** word-level case -i (arguments, prep-governed) merges by R-026 sandhi (*fekwi*, *šeykū*, *en·hawtpay*); the **phrase-closing construct genitive ·i of D-14 is an enclitic — always syllabic, never vowel-merged** (*sanupa·i*, *pokni·ku·i*): the phrase-closer stays audible by design. Two homophonous -i's, distinguished by structure. **Noun-conversion by possession (R-051, AAVE grammatical import):** an adjective may be noun-converted by taking a possessive suffix directly — *Kapīl·ku!* "My bad!" (adjective *kapīl* owned as a noun, exactly AAVE "my bad"). The converted form takes the full nominal machinery. **Two possession predicates** (deliberate nuance): **het**-have for accompaniment and relations — *Mi het weld·āt·i* "I have children (I'm with children)" — and **ʿind**-have for property and location — *ʿInd·ku wa·hawt* "I have a house (at-me is a house)."
 
 ### 5.7 The Particle Suite (R-016)
 

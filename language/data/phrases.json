@@ -15,6 +15,8 @@
     { "amr": "Min faḍlkī.", "display": "Min faḍl·kī.", "en": "Please. (lit. of your grace)", "register": "everyday", "chapter": "courtesy" },
     { "amr": "ʿAfiwaku!", "display": "ʿAfiwa·ku!", "en": "Excuse me! / Pardon me!", "register": "everyday", "chapter": "courtesy" },
     { "amr": "Mi·ʾisef.", "display": "Mi·ʾisef.", "en": "I'm sorry.", "register": "plain", "chapter": "courtesy" },
+    { "amr": "Kapīlku!", "display": "Kapīl·ku!", "en": "My bad! (the noun-converted adjective, R-051)", "register": "everyday", "chapter": "courtesy" },
+    { "amr": "Mi·ʾisef — kapīlku.", "display": "Mi·ʾisef — kapīl·ku.", "en": "I'm sorry — my bad.", "register": "everyday", "chapter": "courtesy" },
     { "amr": "Mi·jiweʿ — ʿindki wonimon?", "display": "Mi·jiweʿ — ʿind·ki wonimon?", "en": "I'm hungry — you got food?", "register": "everyday", "chapter": "table" },
     { "amr": "Mi·ʿiṭeš — ʿindki qahwa?", "display": "Mi·ʿiṭeš — ʿind·ki qahwa?", "en": "I'm thirsty — you got coffee?", "register": "everyday", "chapter": "table" },
     { "amr": "Mi·bired — ʿindki siḏi?", "display": "Mi·bired — ʿind·ki siḏi?", "en": "I'm cold — you got fire?", "register": "everyday", "chapter": "table" },
@@ -48,9 +50,9 @@
     { "amr": "ʿIrefi bilā ḏikeri la wi ʿirefi.", "display": "ʿIrefi bilā ḏikeri la wi ʿirefi.", "en": "Knowledge without remembrance is no knowledge.", "register": "plain", "chapter": "the-academy" },
     { "amr": "Na·qamus pe baḥar kilemiāti.", "display": "Na·qamus pe baḥar kilemiāt·i.", "en": "The dictionary IS an ocean of words.", "register": "plain", "chapter": "the-academy" },
     { "amr": "ʿIndki kam saʾwāt?", "display": "ʿInd·ki kam saʾwāt?", "en": "How many sons you got?", "register": "everyday", "chapter": "family" },
-    { "amr": "Mamānku don wanim, we·pen sanuku ʾayn wanim.", "display": "Mamān·ku don wanim, we·pen sanu·ku 'ayn wanim.", "en": "Big Mama done ate, but my sibling ain't ate.", "register": "everyday", "chapter": "family" },
+    { "amr": "Mamānku don wanim, we·pen sanuku 'ayn wanim.", "display": "Mamān·ku don wanim, we·pen sanu·ku 'ayn wanim.", "en": "Big Mama done ate, but my sibling ain't ate.", "register": "everyday", "chapter": "family" },
     { "amr": "Pokniku bi·i·yašika sanupawa jem·din.", "display": "Pokni·ku bi·i·yašika sanupa·wa jem·din.", "en": "My grandmother be nurturing the kinfolk every day.", "register": "everyday", "chapter": "family" },
     { "amr": "Anok pe weldu mafoku·i.", "display": "Anok pe weldu mafo·ku·i.", "en": "I AM my grandfather's child.", "register": "plain", "chapter": "family" }
   ],
-  "gaps": ["bad-slot of R-049: K-P-L (Choctaw okpulo) proposed for 'bad'/'my bad' — awaiting Ali's ratification, then Kapīl·ku! and the harāy/kapīl pair enter the corpus", "numbers chapter (counting drills from nefer to ḥeḥ)", "market chapter (buying/selling with fulus and tajerow)"]
+  "gaps": ["numbers chapter (counting drills from nefer to ḥeḥ)", "market chapter (buying/selling with fulus and tajerow)"]
 }

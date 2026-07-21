@@ -4433,6 +4433,26 @@
         "primary noun",
         "courtesy chapter"
       ]
+    },
+    {
+      "skeleton": [
+        "k",
+        "p",
+        "l"
+      ],
+      "gloss": "bad, wrong, spoiled — kapila to go wrong/spoil, kipeli fault/wrong, kapīl bad (harāy's opposite), stative kipel; Kapīl·ku! = my bad! (R-051 noun-conversion: Choctaw root, Egyptian-style template, AAVE construction)",
+      "source": {
+        "lang": "Muskogean",
+        "word": "Choctaw okpulo — 'ruined, spoiled, corrupted, depraved' (Byington/Webonary); 'evil' in translation (ʋni yʋt okpulo 'evil fruit')",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "R-049 politeness set (bad-slot, re-sourced per Ali's amendment)",
+        "R-051 noun-conversion showcase",
+        "lint-clean (zero advisories)",
+        "everyday seat per R-017 (Muskogean)"
+      ]
     }
   ]
 }

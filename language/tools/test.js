@@ -110,5 +110,18 @@ eq(S.toCommunity('ḏikeri'), 'dhikeri', 'community dh');
 eq(S.toCommunity('hakīl'), 'hakiil', 'community long vowel doubling');
 eq(S.toAjami('salām'), 'سَلام', 'Ajami salām pointed');
 
+// Sentence-level golden corpus (AX-43, R-048): every ratified phrase holds its invariants
+const PH = require('../data/phrases.json');
+const REGISTERS = new Set(['everyday', 'plain', 'sacred']);
+const dotless = s => s.replace(/·/g, '');
+eq(PH.phrases.length >= 45, true, 'corpus holds at least the seeded 45');
+let phraseOk = true;
+for (const p of PH.phrases) {
+  if (!p.amr || !p.display || !p.en || !p.register || !p.chapter) { phraseOk = false; console.log(`FAIL phrase fields: ${p.amr || p.en}`); }
+  else if (!REGISTERS.has(p.register)) { phraseOk = false; console.log(`FAIL phrase register '${p.register}': ${p.amr}`); }
+  else if (dotless(p.amr) !== dotless(p.display)) { phraseOk = false; console.log(`FAIL amr/display drift: '${p.amr}' vs '${p.display}'`); }
+}
+eq(phraseOk, true, 'phrase corpus invariants (fields, register enum, dotless amr==display)');
+
 console.log(`\n${pass} passed, ${fail} failed`);
 process.exit(fail ? 1 : 0);
