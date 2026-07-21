@@ -10,11 +10,14 @@
       ],
       "gloss": "understand, hear-comprehend",
       "source": {
-        "lang": "Mvskoke",
-        "word": "hakolo",
-        "status": "pending"
+        "lang": "Muskogean",
+        "word": "Choctaw haklo / Mobilian hakolo < Proto-Muskogean *xaklo — the hakolo form is Mobilian Trade Jargon, the lingua franca of the old Southeast",
+        "status": "verified"
       },
-      "status": "ratified"
+      "status": "ratified",
+      "flags": [
+        "verification upgrade: Proto-Muskogean pedigree + Mobilian contact-language resonance"
+      ]
     },
     {
       "skeleton": [
@@ -678,15 +681,16 @@
         "w",
         "k"
       ],
-      "gloss": "water",
+      "gloss": "water (oka); cow (waka — Choctaw wak ← Spanish vaca, tracked homonym)",
       "source": {
         "lang": "Muskogean",
-        "word": "oka/oki (Choctaw/Hitchiti)",
-        "status": "pending"
+        "word": "Choctaw oka (Mvskoke owv, Hitchiti oki cognates)",
+        "status": "verified"
       },
       "status": "proposed",
       "flags": [
-        "Doc B's OK; skeleton W-K under y/w-prosthesis review"
+        "Doc B's OK; skeleton W-K under y/w-prosthesis review",
+        "verification: water confirmed; cow docket closed as W-K homonym"
       ]
     },
     {
@@ -699,8 +703,8 @@
       "citation": "iška",
       "source": {
         "lang": "Choctaw",
-        "word": "ishki",
-        "status": "pending"
+        "word": "ishki (Choctaw School of Language)",
+        "status": "verified"
       },
       "status": "ratified",
       "flags": [
@@ -718,8 +722,8 @@
       "citation": "ika",
       "source": {
         "lang": "Choctaw",
-        "word": "iki",
-        "status": "pending"
+        "word": "iki / aki my-father (Choctaw School)",
+        "status": "verified"
       },
       "status": "ratified",
       "flags": [
@@ -738,8 +742,8 @@
       "citation": "pokni",
       "source": {
         "lang": "Choctaw",
-        "word": "pokni",
-        "status": "pending"
+        "word": "pokni (Choctaw School)",
+        "status": "verified"
       },
       "status": "ratified",
       "flags": [
@@ -757,8 +761,8 @@
       "citation": "mafo",
       "source": {
         "lang": "Choctaw",
-        "word": "mafo",
-        "status": "pending"
+        "word": "mafo (Choctaw School)",
+        "status": "verified"
       },
       "status": "ratified",
       "flags": [
@@ -833,8 +837,8 @@
       "citation": "ala",
       "source": {
         "lang": "Choctaw",
-        "word": "alla (degeminated per OCP)",
-        "status": "pending"
+        "word": "alla — baby, child (alla tek girl, alla nakni boy); degeminated per OCP",
+        "status": "verified"
       },
       "status": "ratified",
       "flags": [
@@ -1230,8 +1234,8 @@
       "gloss": "skin",
       "source": {
         "lang": "Egyptian",
-        "word": "jnm",
-        "status": "pending"
+        "word": "jnm (Egyptian Swadesh list)",
+        "status": "verified"
       },
       "status": "ratified",
       "flags": [
@@ -1308,8 +1312,8 @@
       "gloss": "back (pasḏ); nine (pesiḏ) — Egyptian homonymy preserved (psḏ back / psḏw nine, the Ennead); citation-distinct",
       "source": {
         "lang": "Egyptian",
-        "word": "psḏ",
-        "status": "pending"
+        "word": "psḏ (Egyptian Swadesh list; also sꜣ, jꜣt)",
+        "status": "verified"
       },
       "status": "ratified",
       "flags": [
@@ -1349,8 +1353,8 @@
       "gloss": "arm, shoulder",
       "source": {
         "lang": "Egyptian",
-        "word": "rmn",
-        "status": "pending"
+        "word": "rmn — shoulder, arm (Wiktionary; rmnwj ꜥwj arms-and-hands)",
+        "status": "verified"
       },
       "status": "ratified",
       "flags": [
@@ -1679,8 +1683,8 @@
       "gloss": "feast, dine together (communal) — homipon feast/Sunday dinner, hamepow dining place; vs wanima eat (individual)",
       "source": {
         "lang": "Mvskoke",
-        "word": "hompetv (to eat)",
-        "status": "pending"
+        "word": "hompetv — to eat, food (Mvskoke, confirmed)",
+        "status": "verified"
       },
       "status": "ratified",
       "flags": [
@@ -1714,8 +1718,8 @@
       "gloss": "bitter — adj hamāy",
       "source": {
         "lang": "Choctaw",
-        "word": "homi",
-        "status": "pending"
+        "word": "homi — bitter, acrid, strong",
+        "status": "verified"
       },
       "status": "ratified",
       "flags": [
@@ -3134,8 +3138,8 @@
       "gloss": "rain",
       "source": {
         "lang": "Choctaw",
-        "word": "omba",
-        "status": "pending"
+        "word": "omba (Byington)",
+        "status": "verified"
       },
       "status": "ratified",
       "flags": [
@@ -3296,8 +3300,8 @@
       "gloss": "mountain, mound (the sacred mound — Nanih Waiya resonance; the Moundbuilders' landscape)",
       "source": {
         "lang": "Choctaw",
-        "word": "nanih",
-        "status": "pending"
+        "word": "nanih (as in Nanih Waiya, the sacred Mother Mound)",
+        "status": "verified"
       },
       "status": "ratified",
       "flags": [
@@ -3373,8 +3377,8 @@
       "gloss": "bird",
       "source": {
         "lang": "Mvskoke",
-        "word": "fuswv",
-        "status": "pending"
+        "word": "fuswv (Mvskoke, confirmed)",
+        "status": "verified"
       },
       "status": "ratified",
       "flags": [
@@ -3409,8 +3413,8 @@
       "gloss": "horse ('big-deer' — the Choctaw coining)",
       "source": {
         "lang": "Choctaw",
-        "word": "issoba",
-        "status": "pending"
+        "word": "issoba (Choctaw School)",
+        "status": "verified"
       },
       "status": "ratified",
       "flags": [
@@ -3428,8 +3432,8 @@
       "gloss": "snake",
       "source": {
         "lang": "Choctaw",
-        "word": "sinti",
-        "status": "pending"
+        "word": "sinti (Byington tradition)",
+        "status": "verified"
       },
       "status": "ratified",
       "flags": [
@@ -3446,8 +3450,8 @@
       "gloss": "bear",
       "source": {
         "lang": "Choctaw",
-        "word": "nita",
-        "status": "pending"
+        "word": "nita (Choctaw School)",
+        "status": "verified"
       },
       "status": "ratified",
       "flags": [
@@ -4119,6 +4123,59 @@
       "flags": [
         "T-11",
         "essential meta-vocabulary"
+      ]
+    },
+    {
+      "skeleton": [
+        "b",
+        "l"
+      ],
+      "citation": "bala",
+      "gloss": "beans (Bvla Okchi bean porridge, Bvla Hobbi boiled beans — the dishes came with the word)",
+      "source": {
+        "lang": "Choctaw",
+        "word": "bvla — confirmed via traditional dishes",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "verification session coin — the deferred beans land at last"
+      ]
+    },
+    {
+      "skeleton": [
+        "t",
+        "l",
+        "w"
+      ],
+      "citation": "talwa",
+      "gloss": "town, community (the tribal town — the Muscogee Confederacy civic unit); tilewi communion, talewow town-place",
+      "source": {
+        "lang": "Muskogean",
+        "word": "talwa / tvlwv (Hitchiti okla noted)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "verification session — Doc A TAL redeemed on a confirmed source",
+        "synonym scale with madina city"
+      ]
+    },
+    {
+      "skeleton": [
+        "y",
+        "f"
+      ],
+      "citation": "yifi",
+      "gloss": "dog",
+      "source": {
+        "lang": "Muskogean",
+        "word": "Hitchiti ifi (cognate-supported: Mvskoke efv confirmed)",
+        "status": "pending"
+      },
+      "status": "ratified",
+      "flags": [
+        "cognate-supported; final Hitchiti confirmation awaits Mikasuki literature"
       ]
     }
   ]
