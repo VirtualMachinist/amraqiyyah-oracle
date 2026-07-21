@@ -1,0 +1,47 @@
+<!-- @dsCard group="Components" viewport="700x460" name="Oracle — Meter · Hexagram · OracleCard · VerseRow" subtitle="Domain figures" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;background:var(--bg);padding:22px;font-family:var(--font-body)}.lbl{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin:0 0 10px}.row{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap}</style>
+</head>
+<body class="aq-field">
+<div id="root"></div>
+<script type="text/babel">
+const { Meter, Hexagram, OracleCard, VerseRow } = window.AmraqiyyahOracleDesignSystem_484c79;
+function Demo(){
+  return (<div>
+    <div className="lbl">Meter — slow temporal dials</div>
+    <div className="row" style={{marginBottom:18}}>
+      <Meter label="SEASON" fraction={40/91} center="40/91" sub="Spring" color="var(--gold)"/>
+      <Meter label="MANSION" fraction={9/28} center="9/28" sub="Al-Haq'a" color="var(--copper-light)"/>
+      <Meter label="GREAT YEAR" fraction={0.907} center="91%" sub="Age IV" color="var(--copper)"/>
+      <Meter label="HARMONIC" fraction={0.6} center="20/33" sub="cycle 61" color="var(--teal)"/>
+    </div>
+    <div className="row">
+      <Hexagram title="The situation" number={55} name="Abundance" lines={[true,true,false,true,false,false]} moving={[3,4]} upper="Thunder" lower="Fire" suit="Fire" divineName="Al-Muhyi"/>
+      <div>
+        <div className="lbl">OracleCard</div>
+        <div className="row" style={{gap:8}}>
+          <OracleCard kind="axial" label="Axial Witness" sub="Hex 52 · As-Samad"/>
+          <OracleCard kind="key" label="Platonic Key" sub="Fire · Al-Nur"/>
+          <OracleCard kind="agent" label="Mars" sub="RESONANCE" sideways/>
+          <OracleCard kind="bridge" label="Bridge 3" sub="yang face" split/>
+        </div>
+      </div>
+    </div>
+    <div style={{marginTop:18,maxWidth:420}}>
+      <div className="lbl">VerseRow — highlighted destination</div>
+      <VerseRow label="81:3" arabic="وَإِذَا ٱلْجِبَالُ سُيِّرَتْ" english="And when the mountains are set in motion." highlight/>
+    </div>
+  </div>);
+}
+ReactDOM.createRoot(document.getElementById("root")).render(<Demo/>);
+</script>
+</body>
+</html>

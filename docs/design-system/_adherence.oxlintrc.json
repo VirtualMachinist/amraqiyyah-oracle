@@ -1,0 +1,413 @@
+{
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "rules": {
+    "react/forbid-elements": [
+      "warn",
+      {
+        "forbid": []
+      }
+    ],
+    "no-restricted-imports": [
+      "warn",
+      {
+        "patterns": [
+          {
+            "group": [
+              "components/core/**",
+              "components/display/**",
+              "components/oracle/**",
+              "deck/**",
+              "ui_kits/oracle-app/**"
+            ],
+            "message": "Import design-system components from 'index.js', not component internals."
+          }
+        ]
+      }
+    ],
+    "no-restricted-syntax": [
+      "warn",
+      {
+        "selector": "Literal[value=/#[0-9a-fA-F]{3,8}\\b/]",
+        "message": "Raw hex color — use a design-system color token via var()."
+      },
+      {
+        "selector": "Literal[value=/\\b\\d+px\\b/]",
+        "message": "Raw px value — use a design-system spacing token via var()."
+      },
+      {
+        "selector": "Literal[value=/font-family\\s*:\\s*(?!['\\\"]?(?:Crimson Pro|EB Garamond|IBM Plex Mono|Amiri|Noto Sans Egyptian Hieroglyphs))/i]",
+        "message": "Font not provided by the design system. Available: Crimson Pro, EB Garamond, IBM Plex Mono, Amiri, Noto Sans Egyptian Hieroglyphs."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Button'] > JSXAttribute > JSXIdentifier[name!=/^(?:children|variant|size|disabled|full|onClick|style|key|ref|className|style|children)$/]",
+        "message": "<Button> doesn't accept that prop. Declared props: children, variant, size, disabled, full, onClick, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Button'] > JSXAttribute[name.name='variant'] > Literal[value!=/^(?:primary|ghost|sunken)$/]",
+        "message": "<Button> variant must be one of 'primary' | 'ghost' | 'sunken'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Button'] > JSXAttribute[name.name='size'] > Literal[value!=/^(?:sm|md)$/]",
+        "message": "<Button> size must be one of 'sm' | 'md'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='DeckCard'] > JSXAttribute > JSXIdentifier[name!=/^(?:card|width|orientation|backSrc|style|key|ref|className|style|children)$/]",
+        "message": "<DeckCard> doesn't accept that prop. Declared props: card, width, orientation, backSrc, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='DeckCard'] > JSXAttribute[name.name='orientation'] > Literal[value!=/^(?:upright|inverted|sideways)$/]",
+        "message": "<DeckCard> orientation must be one of 'upright' | 'inverted' | 'sideways'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='DivineName'] > JSXAttribute > JSXIdentifier[name!=/^(?:name|arabic|meaning|role|count|style|key|ref|className|style|children)$/]",
+        "message": "<DivineName> doesn't accept that prop. Declared props: name, arabic, meaning, role, count, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Field'] > JSXAttribute > JSXIdentifier[name!=/^(?:value|onChange|placeholder|width|align|style|key|ref|className|style|children)$/]",
+        "message": "<Field> doesn't accept that prop. Declared props: value, onChange, placeholder, width, align, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Field'] > JSXAttribute[name.name='align'] > Literal[value!=/^(?:left|center|right)$/]",
+        "message": "<Field> align must be one of 'left' | 'center' | 'right'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Hexagram'] > JSXAttribute > JSXIdentifier[name!=/^(?:number|name|lines|moving|upper|lower|suit|divineName|title|style|key|ref|className|style|children)$/]",
+        "message": "<Hexagram> doesn't accept that prop. Declared props: number, name, lines, moving, upper, lower, suit, divineName, title, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='LayerCard'] > JSXAttribute > JSXIdentifier[name!=/^(?:title|main|sub|name|style|key|ref|className|style|children)$/]",
+        "message": "<LayerCard> doesn't accept that prop. Declared props: title, main, sub, name, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Medallion'] > JSXAttribute > JSXIdentifier[name!=/^(?:children|size|style|key|ref|className|style|children)$/]",
+        "message": "<Medallion> doesn't accept that prop. Declared props: children, size, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Meter'] > JSXAttribute > JSXIdentifier[name!=/^(?:label|fraction|center|sub|color|size|style|key|ref|className|style|children)$/]",
+        "message": "<Meter> doesn't accept that prop. Declared props: label, fraction, center, sub, color, size, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='MonoLine'] > JSXAttribute > JSXIdentifier[name!=/^(?:children|link|dim|gold|onClick|style|key|ref|className|style|children)$/]",
+        "message": "<MonoLine> doesn't accept that prop. Declared props: children, link, dim, gold, onClick, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='OracleCard'] > JSXAttribute > JSXIdentifier[name!=/^(?:label|sub|kind|split|sideways|orientation|style|key|ref|className|style|children)$/]",
+        "message": "<OracleCard> doesn't accept that prop. Declared props: label, sub, kind, split, sideways, orientation, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='OracleCard'] > JSXAttribute[name.name='kind'] > Literal[value!=/^(?:axial|key|agent|bridge)$/]",
+        "message": "<OracleCard> kind must be one of 'axial' | 'key' | 'agent' | 'bridge'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='OracleCard'] > JSXAttribute[name.name='orientation'] > Literal[value!=/^(?:upright|inverted|sideways)$/]",
+        "message": "<OracleCard> orientation must be one of 'upright' | 'inverted' | 'sideways'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Panel'] > JSXAttribute > JSXIdentifier[name!=/^(?:title|accent|children|style|key|ref|className|style|children)$/]",
+        "message": "<Panel> doesn't accept that prop. Declared props: title, accent, children, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Panel'] > JSXAttribute[name.name='accent'] > Literal[value!=/^(?:gold|teal|copper|crimson)$/]",
+        "message": "<Panel> accent must be one of 'gold' | 'teal' | 'copper' | 'crimson'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SegmentedControl'] > JSXAttribute > JSXIdentifier[name!=/^(?:options|value|onChange|style|key|ref|className|style|children)$/]",
+        "message": "<SegmentedControl> doesn't accept that prop. Declared props: options, value, onChange, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SolidView'] > JSXAttribute > JSXIdentifier[name!=/^(?:solid|size|mirror|yaw|pitch|tone|label|style|key|ref|className|style|children)$/]",
+        "message": "<SolidView> doesn't accept that prop. Declared props: solid, size, mirror, yaw, pitch, tone, label, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='SolidView'] > JSXAttribute[name.name='tone'] > Literal[value!=/^(?:lapis|gold)$/]",
+        "message": "<SolidView> tone must be one of 'lapis' | 'gold'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='TabBar'] > JSXAttribute > JSXIdentifier[name!=/^(?:tabs|active|onChange|style|key|ref|className|style|children)$/]",
+        "message": "<TabBar> doesn't accept that prop. Declared props: tabs, active, onChange, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='VeilSelector'] > JSXAttribute > JSXIdentifier[name!=/^(?:value|onChange|style|key|ref|className|style|children)$/]",
+        "message": "<VeilSelector> doesn't accept that prop. Declared props: value, onChange, style."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='VerseRow'] > JSXAttribute > JSXIdentifier[name!=/^(?:label|arabic|english|highlight|style|key|ref|className|style|children)$/]",
+        "message": "<VerseRow> doesn't accept that prop. Declared props: label, arabic, english, highlight, style."
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/index.js"
+      ],
+      "rules": {
+        "no-restricted-imports": "off"
+      }
+    }
+  ],
+  "x-omelette": {
+    "components": {
+      "Button": {
+        "replaces": []
+      },
+      "DeckCard": {
+        "replaces": []
+      },
+      "DivineName": {
+        "replaces": []
+      },
+      "Field": {
+        "replaces": []
+      },
+      "Hexagram": {
+        "replaces": []
+      },
+      "LayerCard": {
+        "replaces": []
+      },
+      "Medallion": {
+        "replaces": []
+      },
+      "Meter": {
+        "replaces": []
+      },
+      "MonoLine": {
+        "replaces": []
+      },
+      "OracleCard": {
+        "replaces": []
+      },
+      "Panel": {
+        "replaces": []
+      },
+      "SegmentedControl": {
+        "replaces": []
+      },
+      "SolidView": {
+        "replaces": []
+      },
+      "TabBar": {
+        "replaces": []
+      },
+      "VeilSelector": {
+        "replaces": []
+      },
+      "VerseRow": {
+        "replaces": []
+      }
+    },
+    "tokens": [
+      "--accent",
+      "--accent-ink",
+      "--bg",
+      "--border",
+      "--border-focus",
+      "--border-hairline",
+      "--border-width",
+      "--border-width-strong",
+      "--copper",
+      "--copper-light",
+      "--core-1",
+      "--core-2",
+      "--crimson",
+      "--danger",
+      "--dim",
+      "--ease",
+      "--element-air",
+      "--element-earth",
+      "--element-ether",
+      "--element-fire",
+      "--element-water",
+      "--font-arabic",
+      "--font-body",
+      "--font-display",
+      "--font-hieroglyph",
+      "--font-mono",
+      "--glass-deep",
+      "--glass-edge",
+      "--glass-face",
+      "--glass-glow",
+      "--glow-gold",
+      "--glow-lapis",
+      "--gold",
+      "--highlight-wash",
+      "--lapis",
+      "--lapis-light",
+      "--leading-arabic",
+      "--leading-body",
+      "--leading-snug",
+      "--leading-tight",
+      "--line",
+      "--panel",
+      "--panel-soft",
+      "--planet-jupiter",
+      "--planet-mars",
+      "--planet-mercury",
+      "--planet-moon",
+      "--planet-saturn",
+      "--planet-sun",
+      "--planet-venus",
+      "--radius-full",
+      "--radius-lg",
+      "--radius-md",
+      "--radius-pill",
+      "--radius-sm",
+      "--shadow-card",
+      "--shadow-drop",
+      "--space-1",
+      "--space-10",
+      "--space-12",
+      "--space-16",
+      "--space-2",
+      "--space-3",
+      "--space-4",
+      "--space-5",
+      "--space-6",
+      "--space-7",
+      "--space-8",
+      "--surface-app",
+      "--surface-card",
+      "--surface-sunken",
+      "--teal",
+      "--text",
+      "--text-2xl",
+      "--text-3xl",
+      "--text-arabic",
+      "--text-base",
+      "--text-lg",
+      "--text-link",
+      "--text-md",
+      "--text-mono",
+      "--text-primary",
+      "--text-secondary",
+      "--text-sm",
+      "--text-title",
+      "--text-xl",
+      "--text-xs",
+      "--tracking-eyebrow",
+      "--tracking-normal",
+      "--tracking-tight",
+      "--tracking-wide",
+      "--transition",
+      "--weight-bold",
+      "--weight-light",
+      "--weight-medium",
+      "--weight-regular",
+      "--weight-semibold",
+      "--yang",
+      "--yin"
+    ],
+    "tokenKinds": {
+      "--bg": "color",
+      "--panel": "color",
+      "--panel-soft": "color",
+      "--line": "color",
+      "--core-1": "color",
+      "--core-2": "color",
+      "--text": "font",
+      "--dim": "color",
+      "--gold": "color",
+      "--copper": "color",
+      "--copper-light": "color",
+      "--lapis": "color",
+      "--lapis-light": "color",
+      "--teal": "color",
+      "--crimson": "color",
+      "--yang": "color",
+      "--yin": "color",
+      "--element-fire": "color",
+      "--element-earth": "color",
+      "--element-ether": "color",
+      "--element-air": "color",
+      "--element-water": "color",
+      "--glass-face": "color",
+      "--glass-deep": "color",
+      "--glass-edge": "color",
+      "--glass-glow": "color",
+      "--planet-saturn": "color",
+      "--planet-jupiter": "color",
+      "--planet-mars": "color",
+      "--planet-sun": "color",
+      "--planet-venus": "color",
+      "--planet-mercury": "color",
+      "--planet-moon": "color",
+      "--surface-app": "color",
+      "--surface-card": "color",
+      "--surface-sunken": "color",
+      "--border-hairline": "color",
+      "--border-focus": "color",
+      "--text-primary": "font",
+      "--text-secondary": "font",
+      "--text-title": "font",
+      "--text-link": "font",
+      "--text-mono": "font",
+      "--accent": "color",
+      "--accent-ink": "color",
+      "--danger": "color",
+      "--highlight-wash": "color",
+      "--font-display": "font",
+      "--font-body": "font",
+      "--font-mono": "font",
+      "--font-arabic": "font",
+      "--font-hieroglyph": "font",
+      "--text-xs": "font",
+      "--text-sm": "font",
+      "--text-base": "font",
+      "--text-md": "font",
+      "--text-lg": "font",
+      "--text-xl": "font",
+      "--text-2xl": "font",
+      "--text-3xl": "font",
+      "--text-arabic": "font",
+      "--weight-light": "font",
+      "--weight-regular": "font",
+      "--weight-medium": "font",
+      "--weight-semibold": "font",
+      "--weight-bold": "font",
+      "--leading-tight": "font",
+      "--leading-snug": "font",
+      "--leading-body": "font",
+      "--leading-arabic": "font",
+      "--tracking-tight": "font",
+      "--tracking-normal": "font",
+      "--tracking-wide": "font",
+      "--tracking-eyebrow": "font",
+      "--space-1": "spacing",
+      "--space-2": "spacing",
+      "--space-3": "spacing",
+      "--space-4": "spacing",
+      "--space-5": "spacing",
+      "--space-6": "spacing",
+      "--space-7": "spacing",
+      "--space-8": "spacing",
+      "--space-10": "spacing",
+      "--space-12": "spacing",
+      "--space-16": "spacing",
+      "--radius-sm": "radius",
+      "--radius-md": "radius",
+      "--radius-lg": "radius",
+      "--radius-pill": "radius",
+      "--radius-full": "radius",
+      "--border-width": "spacing",
+      "--border-width-strong": "spacing",
+      "--border": "color",
+      "--glow-gold": "shadow",
+      "--glow-lapis": "shadow",
+      "--shadow-card": "shadow",
+      "--shadow-drop": "shadow",
+      "--ease": "other",
+      "--transition": "other"
+    },
+    "fontFamilies": [
+      "Amiri",
+      "Crimson Pro",
+      "EB Garamond",
+      "IBM Plex Mono",
+      "Noto Sans Egyptian Hieroglyphs"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+/* ── Amraqiyyah Oracle — spacing, radii, borders, elevation ──
+   Radii and paddings taken verbatim from the Oracle app's StyleSheet. */
+:root {
+  /* Spacing scale (px) — the app's rhythm: 4 / 6 / 8 / 10 / 12 / 14 / 16 / 20 */
+  --space-1: 4px;
+  --space-2: 6px;
+  --space-3: 8px;
+  --space-4: 10px;
+  --space-5: 12px;
+  --space-6: 14px;   /* panel padding */
+  --space-7: 16px;   /* body horizontal gutter */
+  --space-8: 20px;   /* header gutter */
+  --space-10: 24px;
+  --space-12: 32px;
+  --space-16: 48px;  /* screen padding-top / scroll tail */
+
+  /* Corner radii — exact app values */
+  --radius-sm: 8px;    /* inputs, chips, cards (oracle card), segment buttons */
+  --radius-md: 10px;   /* buttons, dropdown */
+  --radius-lg: 12px;   /* panels, layer cards, hexagram figure */
+  --radius-pill: 20px; /* tab pills, verse-number pills, medallions */
+  --radius-full: 999px;
+
+  /* Borders */
+  --border-width: 1px;
+  --border-width-strong: 1.5px;  /* oracle card outline */
+  --border: var(--border-width) solid var(--line);
+  --border-focus: var(--border-width) solid var(--copper);
+
+  /* Elevation — the app is flat (RN); "elevation" here is glow, not shadow.
+     Metallic trim reads as light, so lift = a soft coloured halo. */
+  --glow-gold: 0 0 14px rgba(212, 175, 106, 0.35);
+  --glow-lapis: 0 0 14px rgba(128, 157, 175, 0.35);
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.02) inset;
+  --shadow-drop: 0 8px 30px rgba(0, 0, 0, 0.45);  /* modals / dropdowns over night */
+
+  /* Motion — quiet, contemplative; no bounce */
+  --ease: cubic-bezier(0.25, 0.1, 0.25, 1); /* @kind other */
+  --transition: all 0.25s var(--ease); /* @kind other */
+}

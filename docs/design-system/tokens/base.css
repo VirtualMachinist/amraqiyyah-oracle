@@ -1,0 +1,58 @@
+/* ── Amraqiyyah Oracle — base layer ──
+   Global resets, night background, sacred-geometry field, link defaults. */
+* { box-sizing: border-box; }
+
+html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  line-height: var(--leading-body);
+}
+
+/* The night is never flat: a faint concentric ripple (the app's dial motif,
+   the Hedronite flower-of-life kin) sits under everything at low opacity. */
+.aq-field {
+  position: relative;
+}
+.aq-field::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320' viewBox='0 0 320 320'%3E%3Cg fill='none' stroke='%2326418f' stroke-width='0.6' stroke-opacity='0.28'%3E%3Ccircle cx='160' cy='160' r='40'/%3E%3Ccircle cx='160' cy='160' r='80'/%3E%3Ccircle cx='160' cy='160' r='120'/%3E%3Ccircle cx='160' cy='160' r='158'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 320px 320px;
+}
+.aq-field > * { position: relative; z-index: 1; }
+
+/* Links — copper at rest, lit copper toward gold on hover (the app's monoLink) */
+a {
+  color: var(--text-link);
+  text-decoration: none;
+  transition: var(--transition);
+}
+a:hover { color: var(--gold); }
+
+/* Eyebrow — the wide uppercase mono label used above sections */
+.aq-eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--dim);
+}
+
+/* Arabic runs right-to-left in the sacred serif */
+.aq-arabic {
+  font-family: var(--font-arabic);
+  direction: rtl;
+  text-align: right;
+  line-height: var(--leading-arabic);
+}

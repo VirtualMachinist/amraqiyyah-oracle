@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles.css">
+<style>
+  html,body{margin:0}
+  .tile{width:1280px;height:854px;display:flex;overflow:hidden;background:var(--bg)}
+  .main{width:75%;height:100%;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:36px;position:relative}
+  .main::before{content:"";position:absolute;inset:0;opacity:.6;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320' viewBox='0 0 320 320'%3E%3Cg fill='none' stroke='%2326418f' stroke-width='0.8' stroke-opacity='0.35'%3E%3Ccircle cx='160' cy='160' r='50'/%3E%3Ccircle cx='160' cy='160' r='100'/%3E%3Ccircle cx='160' cy='160' r='150'/%3E%3C/g%3E%3C/svg%3E");background-repeat:repeat;background-size:320px 320px}
+  .mark{width:270px;height:270px;object-fit:contain;position:relative;filter:drop-shadow(0 0 40px rgba(184,115,51,.45))}
+  .name{position:relative;font-family:var(--font-display);font-weight:700;font-size:74px;color:var(--gold);text-align:center;line-height:1.05;letter-spacing:-0.01em}
+  .strip{width:25%;height:100%;display:flex;flex-direction:column}
+  .strip>div{flex:1}
+</style>
+</head>
+<body>
+<div class="tile">
+  <div class="main">
+    <img class="mark" src="assets/hedronite-glyph-copper.png" alt="Amraqiyyah mark" style="object-position:center 32%">
+    <div class="name">The Amraqiyyah<br>Oracle</div>
+  </div>
+  <div class="strip">
+    <div style="background:#d4af6a"></div>
+    <div style="background:#d99a5c"></div>
+    <div style="background:#b87333"></div>
+    <div style="background:#26418f"></div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!-- @dsCard group="Components" viewport="700x420" name="Display — Panel · LayerCard · Medallion · DivineName · MonoLine" subtitle="Content containers & readouts" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;background:var(--bg);padding:22px;font-family:var(--font-body)}.lbl{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin:0 0 10px}.cols{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}</style>
+</head>
+<body class="aq-field">
+<div id="root"></div>
+<script type="text/babel">
+const { Panel, LayerCard, Medallion, DivineName, MonoLine } = window.AmraqiyyahOracleDesignSystem_484c79;
+function Demo(){
+  return (<div className="cols">
+    <div>
+      <div className="lbl">Panel — default & accent</div>
+      <Panel title="The six coordinates" style={{marginBottom:12}}>
+        <MonoLine>1 · Hexagram: 55 Abundance → 24 Return</MonoLine>
+        <MonoLine link>3 · Quranic: Juz 17, Hizb 33 — read ›</MonoLine>
+        <MonoLine gold>Solar Threshold — Lines 6 and 1</MonoLine>
+      </Panel>
+      <Panel title="State 3 — The Unmoved Axis" accent="gold">
+        <div style={{color:"var(--text)"}}>Both gates are open. Hold position. Witness.</div>
+      </Panel>
+    </div>
+    <div>
+      <div className="lbl">LayerCard</div>
+      <LayerCard title="Salah Window" main="Duha → Line 3" sub="Hizb: 1" name="Al-Fattah" style={{marginBottom:12}}/>
+      <div className="lbl">Medallion</div>
+      <div style={{display:"flex",gap:10,marginBottom:14}}>
+        <Medallion>1</Medallion><Medallion>55</Medallion><Medallion size={32}>9</Medallion>
+      </div>
+      <div className="lbl">DivineName</div>
+      <Panel><DivineName name="Al-Qadir" arabic="القادر" meaning="The Able" role="hexagram" count={305}/></Panel>
+    </div>
+  </div>);
+}
+ReactDOM.createRoot(document.getElementById("root")).render(<Demo/>);
+</script>
+</body>
+</html>

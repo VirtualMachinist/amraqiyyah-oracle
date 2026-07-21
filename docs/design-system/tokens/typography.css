@@ -1,0 +1,39 @@
+/* ── Amraqiyyah Oracle — typography tokens ── */
+:root {
+  /* Families */
+  --font-display: "Crimson Pro", Georgia, "Times New Roman", serif; /* titles, headings, slogans */
+  --font-body: "EB Garamond", Georgia, serif;                        /* running prose */
+  --font-mono: "IBM Plex Mono", "SF Mono", ui-monospace, monospace;  /* deterministic readouts, coordinates */
+  --font-arabic: "Amiri", "Times New Roman", serif;                  /* Qur'an, Zabur, mansion names */
+  --font-hieroglyph: "Noto Sans Egyptian Hieroglyphs", serif;        /* Mdw Ntr deck accents */
+
+  /* Type scale — the app runs dense; keep steps tight */
+  --text-xs: 11px;    /* eyebrows, layer titles, card subs */
+  --text-sm: 12px;    /* mono readouts, captions */
+  --text-base: 15px;  /* default UI text */
+  --text-md: 16px;    /* body / date line */
+  --text-lg: 20px;    /* panel prose, section headers, reader title */
+  --text-xl: 24px;    /* app title */
+  --text-2xl: 32px;   /* display headings */
+  --text-3xl: 40px;   /* the clock numeral */
+  --text-arabic: 26px;/* Qur'an/Zabur verse Arabic */
+
+  /* Weights */
+  --weight-light: 200;   /* the clock numeral */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* Line heights */
+  --leading-tight: 1.15;
+  --leading-snug: 1.4;
+  --leading-body: 1.65;    /* Hedronite body measure */
+  --leading-arabic: 1.85;
+
+  /* Tracking — the app leans on wide uppercase eyebrows */
+  --tracking-tight: -0.012em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.08em;
+  --tracking-eyebrow: 0.18em;  /* uppercase mono eyebrows */
+}

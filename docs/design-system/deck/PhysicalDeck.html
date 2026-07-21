@@ -1,0 +1,62 @@
+<!-- @dsCard group="Deck" viewport="700x460" name="Physical deck — print file" subtitle="79 pages · 2.75×4.75in trim + 0.125in bleed (3×5in pages) · export to PDF" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Amraqiyyah Oracle — Physical Deck (print)</title>
+<link rel="stylesheet" href="../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../_ds_bundle.js"></script>
+<style>
+  doc-page:not(:defined){visibility:hidden}
+  .page{background:#0e0e18;display:flex;align-items:center;justify-content:center;position:relative}
+  .page::before{content:"";position:absolute;inset:0;opacity:.5;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill='none' stroke='%2326418f' stroke-opacity='0.3' stroke-width='0.5'%3E%3Ccircle cx='100' cy='100' r='36'/%3E%3Ccircle cx='100' cy='100' r='72'/%3E%3Ccircle cx='100' cy='100' r='108'/%3E%3C/g%3E%3C/svg%3E");background-size:200px 200px;background-position:center 30%}
+  .mount{position:relative}
+  /* Chrome's print engine rasterizes large-blur text/box shadows as solid
+     translucent rectangles (the "golden square" on the Court cards) — strip
+     all glow effects at print; the glyphs themselves stay gold. */
+  @media print{
+    .mount *{text-shadow:none !important;box-shadow:none !important}
+    .mount img{filter:none !important}
+  }
+</style>
+</head>
+<body>
+<doc-page width="3in" height="5in">
+<script>
+// 78 faces + 1 uniform back. Page = 3×5in bleed; the card's outer border sits at
+// the 2.75×4.75in trim line; the night background bleeds to the page edge.
+(function () {
+  var out = "";
+  for (var i = 1; i <= 78; i++) out += '<section class="page" data-screen-label="Card ' + i + '"><div class="mount" data-card="' + i + '"></div></section>';
+  out += '<section class="page" data-screen-label="Uniform back"><div class="mount" data-card="back"></div></section>';
+  document.write(out);
+})();
+</script>
+</doc-page>
+<script src="./doc-page.js"></script>
+<script type="text/babel">
+function mountAll() {
+  const ns = window.AmraqiyyahOracleDesignSystem_484c79;
+  const fresh = ns && ns.DeckCard && ns.DECK && ns.DECK[29] && ns.DECK[29].divineAr;
+  if (!fresh) {
+    const s = document.createElement("script");
+    s.src = "../_ds_bundle.js?v=" + Date.now();
+    s.onload = mountAll;
+    document.head.appendChild(s);
+    return;
+  }
+  const { DeckCard } = ns;
+  document.querySelectorAll(".mount").forEach((el) => {
+    const c = el.dataset.card;
+    ReactDOM.createRoot(el).render(
+      <DeckCard card={c === "back" ? "back" : Number(c)} width={264} backSrc="../assets/hedronite-glyph-copper.png" style={{ boxShadow: "none" }} />
+    );
+  });
+}
+mountAll();
+</script>
+</body>
+</html>

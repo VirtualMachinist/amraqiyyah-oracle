@@ -1,0 +1,71 @@
+/* ── Amraqiyyah Oracle — colour tokens ──
+   Verbatim from the Oracle app's src/theme.ts: "sacred, ancient, geometric —
+   copper metallic trim, lapis lazuli blue, gold leaf, on deep night." */
+:root {
+  /* Surfaces — the deep night the whole instrument sits on */
+  --bg: #0b0b12;          /* app background — deep night */
+  --panel: #14141f;       /* card / panel fill */
+  --panel-soft: #1b1b2a;  /* recessed field: inputs, inactive chips */
+  --line: #2b2b40;        /* hairline borders + dividers */
+  --core-1: #161428;      /* radial-gradient inner (dial core) */
+  --core-2: #0b0b12;      /* radial-gradient outer (dial core) */
+
+  /* Ink */
+  --text: #e8e6f0;        /* primary text — warm off-white */
+  --dim: #9a96b8;         /* secondary / muted — dusk violet-grey */
+
+  /* Metals — the sacred trim */
+  --gold: #d4af6a;        /* gold leaf — primary accent, active state, titles */
+  --copper: #b87333;      /* copper — borders on focus, day-fajr */
+  --copper-light: #d99a5c;/* lit copper — links, active segment text */
+
+  /* Lapis — the night sky */
+  --lapis: #26418f;       /* lapis lazuli — night arc, deep blue */
+  --lapis-light: #6d8fd8; /* lit lapis — Arabic text, moon meter, Jupiter */
+
+  /* Signal */
+  --teal: #5ac8c8;        /* deterministic mono readouts, harmonic cycle */
+  --crimson: #c85a6e;     /* moving lines, errors, discordance, Mars */
+
+  /* Yin / Yang — the hexagram lines */
+  --yang: #d4af6a;        /* solid (yang) line — gold */
+  --yin: #5a6ac8;         /* broken (yin) line — indigo */
+
+  /* Elemental suits (deck) — drawn from the planetary palette */
+  --element-fire: #c85a6e;   /* Jalal — Mars register */
+  --element-earth: #b87333;  /* Jalal — copper ground */
+  --element-ether: #d4af6a;  /* Kamal — solar gold */
+  --element-air: #5ac8c8;    /* Jamal — the breath */
+  --element-water: #6d8fd8;  /* Jamal — lit lapis */
+
+  /* Glass-polyhedron language (Hedronite canonical) */
+  --glass-face: #33468c;     /* lapis-tinted refractive glass */
+  --glass-deep: #1e3a8a;     /* attenuation colour */
+  --glass-edge: #9d684e;     /* copper tube edges */
+  --glass-glow: #5d7fd0;     /* vertex glow at φ */
+
+  /* Planetary sigils (Sacred Clock) */
+  --planet-saturn: #9a93a8;
+  --planet-jupiter: #6d8fd8;
+  --planet-mars: #c85a6e;
+  --planet-sun: #d4af6a;
+  --planet-venus: #7bbf9e;
+  --planet-mercury: #d99a5c;
+  --planet-moon: #c8ccda;
+
+  /* ── Semantic aliases — reference these in product code ── */
+  --surface-app: var(--bg);
+  --surface-card: var(--panel);
+  --surface-sunken: var(--panel-soft);
+  --border-hairline: var(--line);
+  --border-focus: var(--copper);
+  --text-primary: var(--text);
+  --text-secondary: var(--dim);
+  --text-title: var(--gold);
+  --text-link: var(--copper-light);
+  --text-mono: var(--teal);
+  --accent: var(--gold);
+  --accent-ink: var(--bg);        /* text on a gold fill */
+  --danger: var(--crimson);
+  --highlight-wash: rgba(212, 175, 106, 0.08); /* jumped-to verse halo */
+}

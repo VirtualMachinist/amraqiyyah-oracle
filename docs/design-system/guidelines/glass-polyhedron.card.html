@@ -1,0 +1,117 @@
+<!-- @dsCard group="Brand" viewport="700x420" name="Glass polyhedron — live" subtitle="WebGL port of hedronite.com's canonical recipe: lapis glass, copper edges, glass vertices" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body{margin:0;background:var(--bg);font-family:var(--font-body);color:var(--text)}
+  .wrap{position:relative;height:420px}
+  canvas{display:block}
+  .hud{position:absolute;top:14px;left:16px;pointer-events:none}
+  .hud .eyebrow{font-family:var(--font-mono);font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--dim)}
+  .hud h3{font-family:var(--font-display);font-weight:700;font-size:20px;color:var(--copper-light);margin:4px 0 0}
+  .picker{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);display:flex;gap:8px}
+  .picker button{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--copper-light);background:transparent;border:1px solid var(--copper);border-radius:4px;padding:6px 10px;cursor:pointer;transition:all .25s ease}
+  .picker button.on,.picker button:hover{color:var(--gold);border-color:var(--gold);box-shadow:0 0 12px rgba(212,175,106,.3)}
+</style>
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.170.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.170.0/examples/jsm/"}}</script>
+</head>
+<body>
+<div class="wrap">
+  <div id="stage" style="position:absolute;inset:0"></div>
+  <div class="hud"><div class="eyebrow">Hedronite · Visual Language</div><h3 id="label">Dodecahedron — The Cosmos</h3></div>
+  <div class="picker" id="picker"></div>
+</div>
+<script type="module">
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
+
+const SHAPES = {
+  tetrahedron: { label: "Tetrahedron — The Spark", geo: () => new THREE.TetrahedronGeometry(1.69) },
+  cube: { label: "Cube — The Foundation", geo: () => new THREE.BoxGeometry(1.63, 1.63, 1.63) },
+  octahedron: { label: "Octahedron — The Bridge", geo: () => new THREE.OctahedronGeometry(1.3) },
+  dodecahedron: { label: "Dodecahedron — The Cosmos", geo: () => new THREE.DodecahedronGeometry(1.3) },
+  icosahedron: { label: "Icosahedron — The Current", geo: () => new THREE.IcosahedronGeometry(1.3) },
+};
+
+const stage = document.getElementById("stage");
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+stage.appendChild(renderer.domElement);
+const scene = new THREE.Scene();
+scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new RoomEnvironment(), 0.04).texture;
+const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100);
+camera.position.set(0, 0, 4.4);
+scene.add(new THREE.AmbientLight(0xffffff, 0.35));
+const d1 = new THREE.DirectionalLight(0xffffff, 1.1); d1.position.set(3, 4, 2); scene.add(d1);
+const d2 = new THREE.DirectionalLight(0x5d7fd0, 0.4); d2.position.set(-3, -2, -2); scene.add(d2);
+
+// canonical materials (PolyhedronScene.tsx, verbatim params)
+const glass = new THREE.MeshPhysicalMaterial({
+  transmission: 1.0, ior: 1.5, thickness: 1.4, roughness: 0.08, metalness: 0,
+  transparent: true, color: 0x33468c, attenuationColor: 0x1e3a8a, attenuationDistance: 0.55,
+  envMapIntensity: 1.3, side: THREE.DoubleSide,
+});
+const copper = new THREE.MeshStandardMaterial({ color: 0x9d684e, metalness: 1.0, roughness: 0.3, envMapIntensity: 1.0 });
+const vertGlass = glass.clone(); vertGlass.thickness = 0.4; vertGlass.roughness = 0.06; vertGlass.envMapIntensity = 1.4;
+
+let group = null;
+function build(shape) {
+  if (group) scene.remove(group);
+  group = new THREE.Group();
+  const geo = SHAPES[shape].geo();
+  group.add(new THREE.Mesh(geo, glass));
+  const eg = new THREE.EdgesGeometry(geo, 1);
+  const pos = eg.attributes.position, up = new THREE.Vector3(0, 1, 0);
+  const seen = new Map();
+  for (let i = 0; i < pos.count; i += 2) {
+    const a = new THREE.Vector3().fromBufferAttribute(pos, i);
+    const b = new THREE.Vector3().fromBufferAttribute(pos, i + 1);
+    const dir = b.clone().sub(a);
+    const tube = new THREE.Mesh(new THREE.CylinderGeometry(0.029, 0.029, dir.length(), 20, 1), copper);
+    tube.position.copy(a.clone().add(b).multiplyScalar(0.5));
+    tube.quaternion.setFromUnitVectors(up, dir.clone().normalize());
+    group.add(tube);
+    for (const v of [a, b]) {
+      const k = `${v.x.toFixed(3)}|${v.y.toFixed(3)}|${v.z.toFixed(3)}`;
+      if (!seen.has(k)) { seen.set(k, 1);
+        const s = new THREE.Mesh(new THREE.SphereGeometry(0.078, 32, 32), vertGlass);
+        s.position.copy(v); group.add(s);
+      }
+    }
+  }
+  scene.add(group);
+  document.getElementById("label").textContent = SHAPES[shape].label;
+}
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enablePan = false; controls.enableZoom = false;
+controls.autoRotate = true; controls.autoRotateSpeed = 0.6;
+controls.minPolarAngle = Math.PI / 3; controls.maxPolarAngle = (2 * Math.PI) / 3;
+
+function resize() {
+  const w = stage.clientWidth, h = stage.clientHeight;
+  renderer.setSize(w, h); camera.aspect = w / h; camera.updateProjectionMatrix();
+}
+addEventListener("resize", resize); resize();
+
+const picker = document.getElementById("picker");
+for (const key of Object.keys(SHAPES)) {
+  const b = document.createElement("button");
+  b.textContent = key;
+  b.onclick = () => { build(key); picker.querySelectorAll("button").forEach((x) => x.classList.remove("on")); b.classList.add("on"); };
+  picker.appendChild(b);
+  if (key === "dodecahedron") { b.classList.add("on"); }
+}
+build("dodecahedron");
+
+renderer.setAnimationLoop((t) => {
+  if (group) { group.rotation.y += 0.0016; group.rotation.x = Math.sin(t / 1000 * 0.15) * 0.12; }
+  controls.update();
+  renderer.render(scene, camera);
+});
+</script>
+</body>
+</html>
