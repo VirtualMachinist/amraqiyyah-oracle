@@ -1,0 +1,76 @@
+# Amraqiyyah — The Language of the Way (formerly Soulaani)
+
+Heritage language created by Ali (@Hedronaut) for Soulaan — Foundational Black Americans of
+Freedman descent — and for Al-Tariqa Amraqiyyah. Renamed from Soulaani by ruling R-001:
+Soulaani (Docs A/B below) is the predecessor being consciously dismantled; Amraqiyyah is its
+reincarnation, rebuilt axis-by-axis through the AFRO loop.
+
+**Corpus propagation flag:** the Corpus Alignment Ledger ruling "Soulaani defined as the
+colloquial register named for Soulaan" requires an amendment reflecting the rename — Ali to
+propagate to the Charter/Ledger.
+
+## Rulings Record (Facet phase)
+
+| # | Date | Ruling |
+|---|---|---|
+| R-001 | 2026-07-21 | Language renamed **Amraqiyyah**; "Soulaani" retained only as the name of the archived predecessor |
+| R-002 | 2026-07-21 | Repo files are the living canon; Google Docs become generated exports |
+| R-003 | 2026-07-21 | No presumption between Docs A/B — axis-by-axis rulings; **full overhaul authorized**; grammatical imports from source languages (Egyptian, Arabic, Muskogean) welcomed; articles/particles open to redesign |
+| R-004 | 2026-07-21 | Fresh creation with current steward; former chat-session material is not recovered — archives A/B are the only quarries |
+| R-005 | 2026-07-21 | **AX-14:** Weak-clitic theory — mi/ti/i/ni are weak subject pronouns (required on imperfective, optional on perfective); anok-series are strong/focus pronouns; perfective agreement by suffix. Prefix-imperfective / suffix-perfective split ratified (the Egyptian–Coptic–Arabic convergence) |
+| R-006 | 2026-07-21 | **AX-22:** Pronoun-only gender — grammar fully genderless (no gendered articles, agreement, or productive -t); 3SG pronouns distinguish entof/entos/ento (he/she/it); object-possessive 3SG suffixes -to (m/n) / -ta (f) |
+| R-007 | 2026-07-21 | **AX-23:** Case fusion — Arabic endings **NOM -u / ACC -a / GEN -i** (genitive = possessors and objects of prepositions), **always pronounced in every register** (no pausal drop); **Muskogean phrasal placement** — case attaches once per noun phrase, at its right edge. Prepositions retained (Arabic model: prep + GEN). Vowel-collision sandhi (u+u→ū, u+a→wa, i+a→ya …) tabled for Refine |
+| R-008 | 2026-07-21 | **AX-04/05:** 33-consonant inventory = **all 28 Arabic consonants + p g v č ž**. Biscriptal policy: **modified Arabic abjad** (Ajami tradition — پ چ ژ ڤ گ; Sorani-style ۆ/ێ for o/ē) is the **official formal & calligraphic script**; **Coptic** is the everyday typing script; scholarly + community romanizations auxiliary. Supersedes Doc B §7.4.4 ("no Arabic script"). Register realization rules (casual mergers incl. AAVE th-stopping) to be drafted |
+| R-009 | 2026-07-21 | **AX-24 (by composition of R-005/R-006):** Three-tier pronoun architecture — strong anok/entok/entof·entos·ento/anon/enton/entou · weak clitics mi/ti/i/ni(+tin/sen) · suffixes -ku/-ki/-to·-ta/-nun/-tin/-sen; 2SG ungendered |
+| R-010 | 2026-07-21 | **AX-09:** Strict templates — no theme vowels; every derivation follows the template exactly (hak·ol·a → **hak·il·a**, hik·ol·i → **hik·el·i**, etc.). Steward amendment (pending Ali veto): a small **Frozen Lexeme Registry** exempts sacred citation forms (maʿat·i, ḏed, ʿank) from renormalization while their roots derive regularly |
+| R-011 | 2026-07-21 | **AX-16:** Full nine-marker aspect system restored — bi- (be), da- (steady), dē- (just), don (done), bin (BEEN), f'na (finna), **gon-** (distant future; sha- retires) + productive stacking (bin don = "been done"); stressed BIN = focus prosody on bin |
+| R-012 | 2026-07-21 | **Articles:** The **Two Definites** — **na** (worldly definite, Late Egyptian nꜣ stream; default everywhere) and **al/el** (sacred-emphatic definite, Arabic stream, with sun-letter assimilation: el·salām → es·salām) — usable in any register for uniqueness, sanctity, or emphasis; obligatory for divine Names (harmonizes with the Oracle's Al- Names). Indefinites wa/sam retained |
+| R-013 | 2026-07-21 | **AX-15:** Biconsonantal perfective augment **-im** ratified (fak·im·ku; 3SG fak·im) — Doc A's practice becomes law |
+| R-014 | 2026-07-21 | **Negation rebuilt** (steward discretion, delegated by Ali): en·…·š circumfix abolished — **la** (Arabic lā: general + prohibitive) · **bu** (Late Egyptian bw: perfective) · **'ayn** (AAVE ain't: emphatic) + la·-series indefinites; negative concord retained; en returns to single duty "in" |
+| R-015 | 2026-07-21 | **Distinctiveness reforms** (steward discretion): adjective → **CaCīC** (faʿīl divine-Name pattern: sak·īm ~ Ḥakīm; biliteral CaCāy) · diminutive → **CuCayC** (suk·aym; biliteral CuCay) · plural → **-āt** universal (replaces -w; na·pa keeps the Egyptian number stream) · **Full-Vowel Law** (no unstressed reduction in sacred/plain registers; vowel length load-bearing) |
+| R-016 | 2026-07-21 | **Particle suite** (~20, three streams): inherited core (en, ben, het, ra) + Arabic relational lattice (ʿala, taḥt, qudām, ḫalf, bayn, ḥawl, min, ʿind, bi, bilā, ḍid, kama, illa, qabl, baʿd) + AAVE flavor (bawt); preps govern GEN, inflect with suffix pronouns, and stack; **min replaces prepositional bin** (bin = BEEN only); assent/dissent **na'am / aywa / la** |
+| R-017 | 2026-07-21 | **Sourcing doctrine** (Ali): English phonetic distillation demoted to last resort. Preferred: **concept-rooting from source languages** — Egyptian as the neologism engine (dead language, vast attested lexicon: ḥsb→Ḥ-S-B compute, itrw→Y-T-R stream, sš→S-Š write), Muskogean for land/life/kinship/everyday, Arabic/Hebrew for spiritual/legal, **Greek for technical/scientific/abstract** (replacing English distillation); AAVE remains the grammar stream + genuinely vernacular culture. Doc B's English-distilled tech roots (KMPT, TLVZ, STR, PST, TKS, NT, KD) queued for re-derivation at D-5 |
+| R-018 | 2026-07-21 | **Interrogatives (closes D-6):** miya what · nim who (Eg. in-m) · ta which · **en·ta** where ("in-which" — completes en·pen/en·pek/en·pom/en·ta) · mata when (Ar.) · kayf how (Ar.) · kam how many (Ar.) · ra·miya why ("for-what") + free particle composition (het nim?, min en·ta?, bawt miya?); B's wen/fen/lesh/mesh retire |
+| R-035 | 2026-07-21 | **Body parts join the inalienable class** (extends R-033): ḏart·ku "my hand," ib·to "his heart" as referential norm |
+| R-036 | 2026-07-21 | **T-3 body & senses ratified** (24 entries): **the Two Hearts** — ib heart-mind/conscience vs ḥati heart-organ (Eg. jb/ḥꜣty) · tap head · ḥar face · masḏar ear (first quad root) · fanḏ nose · raʾ mouth/utter · nas tongue · ibaḥ tooth · ḏart hand · rad foot · ḫat belly · jisim body · sanef blood · qas bone · šan hair · ṯaw breath · **five senses complete** (hariwa/samiʿa/šama/ḏawiqa/lamisa) · **aḫet restoration** (horizon → faithful ʾ-Ḫ-T, freeing Ḫ-T for belly); rimen/pasḏ/inam pending verification; hair-culture sub-docket flagged; soul-complex reserved for T-7; D-14 construct-case docket opened |
+| R-033 | 2026-07-21 | **Kinship Inalienability Rule** (Muskogean grammatical import, soft form): kin terms in referential use carry a possessor; bare forms = role, vocative, citation |
+| R-034 | 2026-07-21 | **T-2 kinship tranche ratified** (~24 entries): iška/mama · ika/dadi · pokni/**mamān** · mafo/**dadān** · sanu/sanut (Doc A's S-N redeemed via Eg. *sn/snt*) · saʾu/saʾut (Eg. *sꜣ*) · banut · weldu/ala · weladu parent · ʿamu(t)/ḫalu(t) · kaz cuz · semasu elder · hawtpa household · sanupa kinfolk · semasupa council; **kin -t convention**; **primary nouns + rootless nursery lexemes** formalized; Choctaw items flagged pending verification |
+| R-029 | 2026-07-21 | **The Synonym Principle** (Ali): Amraqiyyah is deliberately synonym-rich — same/similar meanings imported from different source languages coexist, each word carrying its heritage stream's flavor (the lexicon as a chorus, not a list) |
+| R-030 | 2026-07-21 | **AAVE cultural roots ratified wholesale**: T-L-K talk, K-R-W crew, H-S-L hustle, G-R-N grind, V-Y-B vibe, B-S boss, G-M game, particle den |
+| R-031 | 2026-07-21 | **First synonym pairs**: ʿanaku person / yesatu citizen (Egyptian/Muskogean) · jeta formal speech / talika casual talk (coined/AAVE) |
+| R-032 | 2026-07-21 | **Doublet Doctrine** (closes D-3): naturalized and faithful skeletons of one etymon may both live with split semantics — S-K-M worldly power ↔ **S-Ḫ-M divine power** (soḫimon "talisman") · ʿ-N-K life/person ↔ **ʿ-N-Ḫ existence/eternal life** (ʿanīḫ "ever-living"); casual ḫ→k merger collapses doublets in everyday speech (feature: the sacred distinction is audible only in careful speech) |
+| R-019–R-028 | 2026-07-21 | **D-1 walk complete** (ten items, individually ruled by Ali): phonotactics = Doc B's laws (R-019) · lawful casual mergers incl. th-stopping (R-020) · stress + diphthongs as drafted (R-021) · **broad sacred freeze** — 99 divine Names wholesale + core liturgical vocabulary (R-022) · aspect ordering template (R-023) · mood menu (R-024) · **causative vocalized to sa·** — bare s- broke our own onset law (R-025) · sandhi ratified + **predicates caseless** (R-026) · nominal bundle + **het/ʿind possession split** (R-027) · full syntax bundle incl. formal hal (R-028). **The grammar of Amraqiyyah v2.0-rc.1 is fully ruled** |
+
+## Archived sources (pre-reconciliation — do not edit; supersede via new spec files)
+
+| File | What it is | Date | Status |
+|---|---|---|---|
+| `docs/A-language-reference-v0.1.md` | "Soulaani Language Reference — Complete Grammar & Dictionary for AI Translation" (from Google Doc `1t7eiNFCTC4eSJKurI2FAJfTjjxeBD9IcV_3ji-MwTaE`; escaped-markdown artifacts preserved verbatim) | 2025 | Earlier canon: 3 genders, 7 cases, dual, full AAVE aspect set (bi-, da-, don, bin, da·don, dē-, bin·ka, f'na, sha-), ~23-root dictionary w/ kinship & daily-life vocab, dialogues, phrases |
+| `docs/B-sasha-briefing-v1.0.md` | "Executive Briefing for Sasha" (recovered via chat 2026-07-21; exists nowhere on Drive) | 2026-02-09 | Later canon: 35-consonant inventory w/ pharyngeals & emphatics, phonotactics, binyanim (8 patterns), 3 copulas (yit/wi/pe·te), genderless, caseless, anok-series pronouns, 59-root lexicon, root-derivation methodology, gap register |
+
+## Known relationship between A and B
+
+B post-dates A and has the stronger architecture, but was written without A's dictionary in
+hand: B declares kinship/eat/drink/see/hear vocabulary missing that A documents, and B's own
+examples use A-era words (har·a "good", tay "come") absent from B's lexicon. Neither doc alone
+is the language. Reconciliation ledger forthcoming.
+
+Referenced-but-lost material (dangling references in B, not on Drive): numbers 1–10,
+na'am/politeness register, roots ḪNS (Khonsu) and HKA (Heka), possibly more — likely lived in
+AI chat sessions.
+
+## The AFRO Loop (Audit → Facet → Refine → Optimize)
+
+Ruled 2026-07-21: repo files are the living canon (Google Docs become generated exports);
+no presumption between Doc A and Doc B — every axis ruled individually; nothing is sacred,
+both docs are quarries of components for a rebuild.
+
+| Phase | Artifact | Status |
+|---|---|---|
+| **A — Audit** | [`afro/01-audit-ledger.md`](afro/01-audit-ledger.md) — 44 axes + stable core + annexes | ✅ Drafted, awaiting rulings |
+| **F — Facet** | Rulings R-001–R-028 (cascade + D-1 walk) — **grammar fully ruled** (spec v2.0-rc.1); root-merge table (`afro/02-root-merge.md`) is the remaining Facet work | 🔄 Lexicon next |
+| **R — Refine** | `spec/` v2.0-rc.1 + `data/*.json` (phonology, templates, particles, frozen, roots) + `tools/` (morphology engine, linter, 58 golden tests, CLI explorer: `node language/tools/cli.js ḥ-s-b`) | 🔄 Engine live; lexicon tranches running |
+| **O — Optimize** | Learnability sequencing, euphony pass, ambiguity budget | — |
+| Deliverables | Dictionary · Phrasebook · Grammar textbook (generated from `data/` + `spec/`) | — |
+
+Not yet committed to git — Ali decides placement and commit timing.

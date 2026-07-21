@@ -1,0 +1,15 @@
+{
+  "version": "2.0-rc.1",
+  "note": "Frozen Lexeme Registry (R-010, R-022 broad freeze). Lexical islands exempt from strict templates; their roots still derive regularly. The 99 divine Names enter wholesale at the liturgical tranche.",
+  "frozen": [
+    { "form": "maʿati", "display": "maʿat·i", "gloss": "truth, justice, cosmic order (Ma'at)", "root": "m-ʿ-t" },
+    { "form": "ḏed", "display": "ḏed", "gloss": "stability, endurance (Djed)", "root": "ḏ-d" },
+    { "form": "ʿank", "display": "ʿank", "gloss": "life-sign (Ankh)", "root": "ʿ-n-k" },
+    { "form": "ḥetep", "display": "ḥetep", "gloss": "peace, offering, rest (Hotep)", "root": "ḥ-t-p" },
+    { "form": "salām", "display": "salām", "gloss": "peace (greeting register)", "root": "s-l-m" },
+    { "form": "ṭarīqa", "display": "ṭarīqa", "gloss": "the Way", "root": "ṭ-r-q" },
+    { "form": "amraqiyyah", "display": "Amraqiyyah", "gloss": "the language; the Way's nisba", "root": null },
+    { "form": "soulaan", "display": "Soulaan", "gloss": "the people; Soul Land", "root": "s-w-l" }
+  ],
+  "pending": "99 divine Names (wholesale, with al- per R-012) — enumerated at liturgical tranche (D-5)"
+}

@@ -1,0 +1,1417 @@
+{
+  "version": "2.0-rc.1",
+  "note": "Root lexicon. status: ratified (sealed by usage in spec v2.0-rc.1 or by ruling) | proposed (awaiting Ali) | frozen-only (root exists to anchor frozen lexemes). Source status: verified | pending | coined.",
+  "roots": [
+    {
+      "skeleton": [
+        "h",
+        "k",
+        "l"
+      ],
+      "gloss": "understand, hear-comprehend",
+      "source": {
+        "lang": "Mvskoke",
+        "word": "hakolo",
+        "status": "pending"
+      },
+      "status": "ratified"
+    },
+    {
+      "skeleton": [
+        "s",
+        "k",
+        "m"
+      ],
+      "gloss": "power, strength, capability (worldly)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "sḫm, naturalized",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "doublet partner: s-ḫ-m divine power (R-032)"
+      ]
+    },
+    {
+      "skeleton": [
+        "s",
+        "ḫ",
+        "m"
+      ],
+      "gloss": "divine power, spiritual might (Sekhmet stream); soḫimon = talisman",
+      "source": {
+        "lang": "Egyptian",
+        "word": "sḫm, faithful skeleton",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "doublet partner: s-k-m worldly power (R-032)",
+        "semantic split = steward proposal, Ali may refine",
+        "casual register merges the doublet (ḫ→k)"
+      ]
+    },
+    {
+      "skeleton": [
+        "f",
+        "k"
+      ],
+      "gloss": "cultivate, farm",
+      "source": {
+        "lang": "Muskogean",
+        "word": "fvkke/foka (conflicting claims)",
+        "status": "pending"
+      },
+      "status": "ratified"
+    },
+    {
+      "skeleton": [
+        "š",
+        "y"
+      ],
+      "gloss": "thing, essence",
+      "source": {
+        "lang": "Arabic",
+        "word": "šayʾ",
+        "status": "verified"
+      },
+      "status": "ratified"
+    },
+    {
+      "skeleton": [
+        "ʿ",
+        "n",
+        "k"
+      ],
+      "gloss": "life, the living; person (ʿanak·u)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "ꜥnḫ, naturalized",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "doublet partner: ʿ-n-ḫ existence (R-032)"
+      ]
+    },
+    {
+      "skeleton": [
+        "ʿ",
+        "n",
+        "ḫ"
+      ],
+      "gloss": "existence, the life-principle, eternal life; ʿanīḫ = ever-living (epithet)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "ꜥnḫ, faithful skeleton",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "doublet partner: ʿ-n-k biological/social life (R-032)",
+        "ʿanīḫ candidate gloss for Al-Ḥayy at T-7",
+        "semantic split = steward proposal"
+      ]
+    },
+    {
+      "skeleton": [
+        "w",
+        "l",
+        "d"
+      ],
+      "gloss": "birth, child (weld·u)",
+      "source": {
+        "lang": "Arabic",
+        "word": "walada",
+        "status": "verified"
+      },
+      "status": "ratified"
+    },
+    {
+      "skeleton": [
+        "h",
+        "w",
+        "t"
+      ],
+      "gloss": "house, dwell (hawt)",
+      "source": {
+        "lang": "Muskogean",
+        "word": "hute (claim shared with Doc A 'sibling' — resolved: house)",
+        "status": "pending"
+      },
+      "status": "ratified"
+    },
+    {
+      "skeleton": [
+        "h",
+        "r"
+      ],
+      "gloss": "good, well (har·āy)",
+      "source": {
+        "lang": "coined",
+        "word": "Doc A (Ar. khayr resonance)",
+        "status": "coined"
+      },
+      "status": "ratified"
+    },
+    {
+      "skeleton": [
+        "k",
+        "y"
+      ],
+      "gloss": "work, plan",
+      "source": {
+        "lang": "Egyptian",
+        "word": "kꜣj",
+        "status": "verified"
+      },
+      "status": "ratified"
+    },
+    {
+      "skeleton": [
+        "d",
+        "n"
+      ],
+      "gloss": "day (din — frozen vowel i as lexical exception pending review)",
+      "source": {
+        "lang": "Arabic",
+        "word": "dīn (day/religion)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "citation form din, not *dana — review at D-5"
+      ]
+    },
+    {
+      "skeleton": [
+        "m",
+        "ʿ",
+        "t"
+      ],
+      "gloss": "truth, justice (root behind frozen maʿat·i)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "mꜣʿt",
+        "status": "verified"
+      },
+      "status": "ratified"
+    },
+    {
+      "skeleton": [
+        "s",
+        "l",
+        "m"
+      ],
+      "gloss": "peace, greet (root behind frozen salām)",
+      "source": {
+        "lang": "Arabic",
+        "word": "salām",
+        "status": "verified"
+      },
+      "status": "ratified"
+    },
+    {
+      "skeleton": [
+        "ḥ",
+        "t",
+        "p"
+      ],
+      "gloss": "peace, rest, offering (root behind frozen ḥetep)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "ḥtp",
+        "status": "verified"
+      },
+      "status": "ratified"
+    },
+    {
+      "skeleton": [
+        "t",
+        "l",
+        "k"
+      ],
+      "gloss": "talk, speak (casual register)",
+      "source": {
+        "lang": "AAVE",
+        "word": "talk",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "R-030 AAVE stream",
+        "register-synonym pair with j-t (R-031)"
+      ]
+    },
+    {
+      "skeleton": [
+        "k",
+        "r",
+        "w"
+      ],
+      "gloss": "crew, squad",
+      "source": {
+        "lang": "AAVE",
+        "word": "crew",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "R-030 AAVE stream"
+      ]
+    },
+    {
+      "skeleton": [
+        "h",
+        "s",
+        "l"
+      ],
+      "gloss": "hustle, enterprise",
+      "source": {
+        "lang": "AAVE",
+        "word": "hustle",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "R-030 AAVE stream"
+      ]
+    },
+    {
+      "skeleton": [
+        "g",
+        "r",
+        "n"
+      ],
+      "gloss": "grind, persist",
+      "source": {
+        "lang": "AAVE",
+        "word": "grind",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "R-030 AAVE stream"
+      ]
+    },
+    {
+      "skeleton": [
+        "v",
+        "y",
+        "b"
+      ],
+      "gloss": "vibe, feel, atmosphere",
+      "source": {
+        "lang": "AAVE",
+        "word": "vibe",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "R-030 AAVE stream",
+        "weak y — D-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "b",
+        "s"
+      ],
+      "gloss": "boss, lead",
+      "source": {
+        "lang": "AAVE",
+        "word": "boss",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "R-030 AAVE stream"
+      ]
+    },
+    {
+      "skeleton": [
+        "g",
+        "m"
+      ],
+      "gloss": "game, play",
+      "source": {
+        "lang": "AAVE/English",
+        "word": "game",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "R-030 AAVE stream"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḥ",
+        "s",
+        "b"
+      ],
+      "gloss": "reckon, count, compute",
+      "source": {
+        "lang": "Egyptian ∥ Arabic",
+        "word": "ḥsb ∥ ḥisāb",
+        "status": "verified"
+      },
+      "status": "proposed",
+      "flags": [
+        "R-017 showcase; replaces KMPT"
+      ]
+    },
+    {
+      "skeleton": [
+        "y",
+        "t",
+        "r"
+      ],
+      "gloss": "stream, flow, feed",
+      "source": {
+        "lang": "Egyptian",
+        "word": "itrw (river, the Nile)",
+        "status": "verified"
+      },
+      "status": "proposed",
+      "flags": [
+        "replaces STR"
+      ]
+    },
+    {
+      "skeleton": [
+        "s",
+        "š"
+      ],
+      "gloss": "write, text, document",
+      "source": {
+        "lang": "Egyptian",
+        "word": "sš (scribe; Seshat)",
+        "status": "verified"
+      },
+      "status": "proposed",
+      "flags": [
+        "absorbs TKS; KD pending"
+      ]
+    },
+    {
+      "skeleton": [
+        "d",
+        "k",
+        "t"
+      ],
+      "gloss": "network, web",
+      "source": {
+        "lang": "Greek",
+        "word": "diktyon (net)",
+        "status": "verified"
+      },
+      "status": "proposed",
+      "flags": [
+        "replaces NT"
+      ]
+    },
+    {
+      "skeleton": [
+        "y",
+        "r",
+        "t"
+      ],
+      "gloss": "eye",
+      "source": {
+        "lang": "Egyptian",
+        "word": "jrt",
+        "status": "verified"
+      },
+      "status": "proposed",
+      "flags": [
+        "frees har·iw·et (see-instrument) for screen/display"
+      ]
+    },
+    {
+      "skeleton": [
+        "h",
+        "r",
+        "w"
+      ],
+      "gloss": "see, light (Horus)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "ḥrw",
+        "status": "verified"
+      },
+      "status": "proposed",
+      "flags": [
+        "absorbs Doc A's PN see"
+      ]
+    },
+    {
+      "skeleton": [
+        "r",
+        "n"
+      ],
+      "gloss": "name",
+      "source": {
+        "lang": "Egyptian",
+        "word": "rn",
+        "status": "verified"
+      },
+      "status": "proposed",
+      "flags": [
+        "replaces Doc A's SHM"
+      ]
+    },
+    {
+      "skeleton": [
+        "w",
+        "n",
+        "m"
+      ],
+      "gloss": "eat",
+      "source": {
+        "lang": "Egyptian",
+        "word": "wnm",
+        "status": "verified"
+      },
+      "status": "proposed",
+      "flags": [
+        "fills Doc B gap; Muskogean alternative pending"
+      ]
+    },
+    {
+      "skeleton": [
+        "š",
+        "r",
+        "b"
+      ],
+      "gloss": "drink",
+      "source": {
+        "lang": "Arabic",
+        "word": "šariba",
+        "status": "verified"
+      },
+      "status": "proposed",
+      "flags": [
+        "re-skeleton of Doc A's SHR (restores the b)"
+      ]
+    },
+    {
+      "skeleton": [
+        "s",
+        "m",
+        "ʿ"
+      ],
+      "gloss": "hear, listen",
+      "source": {
+        "lang": "Arabic",
+        "word": "samiʿa",
+        "status": "verified"
+      },
+      "status": "proposed",
+      "flags": [
+        "re-skeleton of Doc A's SAMʿ"
+      ]
+    },
+    {
+      "skeleton": [
+        "h",
+        "b"
+      ],
+      "gloss": "send, post",
+      "source": {
+        "lang": "Egyptian",
+        "word": "hꜣb",
+        "status": "verified"
+      },
+      "status": "proposed",
+      "flags": [
+        "replaces PST; hob·on = post/sent-thing"
+      ]
+    },
+    {
+      "skeleton": [
+        "q",
+        "d",
+        "r"
+      ],
+      "gloss": "able, can, capacity",
+      "source": {
+        "lang": "Arabic",
+        "word": "qadara",
+        "status": "verified"
+      },
+      "status": "proposed",
+      "flags": [
+        "D-3 restoration of KDR"
+      ]
+    },
+    {
+      "skeleton": [
+        "q",
+        "m",
+        "r"
+      ],
+      "gloss": "moon (observational)",
+      "source": {
+        "lang": "Arabic",
+        "word": "qamar",
+        "status": "verified"
+      },
+      "status": "proposed",
+      "flags": [
+        "D-3 restoration of KMR"
+      ]
+    },
+    {
+      "skeleton": [
+        "j",
+        "m",
+        "l"
+      ],
+      "gloss": "beauty",
+      "source": {
+        "lang": "Arabic",
+        "word": "jamāl",
+        "status": "verified"
+      },
+      "status": "proposed",
+      "flags": [
+        "re-skeleton of Doc B's JM (restores the l)"
+      ]
+    },
+    {
+      "skeleton": [
+        "š",
+        "b",
+        "t"
+      ],
+      "gloss": "sabbath, rest",
+      "source": {
+        "lang": "Hebrew",
+        "word": "shabbat",
+        "status": "verified"
+      },
+      "status": "proposed",
+      "flags": [
+        "re-skeleton of Doc B's SB"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḥ",
+        "k",
+        "m"
+      ],
+      "gloss": "judge, govern",
+      "source": {
+        "lang": "Arabic",
+        "word": "ḥukm",
+        "status": "verified"
+      },
+      "status": "proposed",
+      "flags": [
+        "from Doc B; also anchors Doc A ghosts hikemi/mekopa"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḥ",
+        "q"
+      ],
+      "gloss": "right, legal truth",
+      "source": {
+        "lang": "Arabic",
+        "word": "ḥaqq",
+        "status": "verified"
+      },
+      "status": "proposed"
+    },
+    {
+      "skeleton": [
+        "ḏ",
+        "d"
+      ],
+      "gloss": "stability, endure (root behind frozen ḏed)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "ḏd",
+        "status": "verified"
+      },
+      "status": "proposed"
+    },
+    {
+      "skeleton": [
+        "j",
+        "t"
+      ],
+      "gloss": "speak, language (formal register; jit·i = speech/language)",
+      "source": {
+        "lang": "coined",
+        "word": "Doc A",
+        "status": "coined"
+      },
+      "status": "ratified",
+      "flags": [
+        "register-synonym pair with t-l-k (R-031)"
+      ]
+    },
+    {
+      "skeleton": [
+        "y",
+        "s",
+        "t"
+      ],
+      "gloss": "human, citizen, one-of-the-people",
+      "source": {
+        "lang": "Muskogean",
+        "word": "isti/este",
+        "status": "pending"
+      },
+      "status": "ratified",
+      "flags": [
+        "synonym pair with ʿ-n-k person (R-031)"
+      ]
+    },
+    {
+      "skeleton": [
+        "w",
+        "k"
+      ],
+      "gloss": "water",
+      "source": {
+        "lang": "Muskogean",
+        "word": "oka/oki (Choctaw/Hitchiti)",
+        "status": "pending"
+      },
+      "status": "proposed",
+      "flags": [
+        "Doc B's OK; skeleton W-K under y/w-prosthesis review"
+      ]
+    },
+    {
+      "skeleton": [
+        "y",
+        "š",
+        "k"
+      ],
+      "gloss": "mother (iška); to mother, nurture (yašika)",
+      "citation": "iška",
+      "source": {
+        "lang": "Choctaw",
+        "word": "ishki",
+        "status": "pending"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-2",
+        "primary noun",
+        "kin: inalienable (R-033)"
+      ]
+    },
+    {
+      "skeleton": [
+        "y",
+        "k"
+      ],
+      "gloss": "father (ika)",
+      "citation": "ika",
+      "source": {
+        "lang": "Choctaw",
+        "word": "iki",
+        "status": "pending"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-2",
+        "primary noun",
+        "kin"
+      ]
+    },
+    {
+      "skeleton": [
+        "p",
+        "k",
+        "n"
+      ],
+      "gloss": "grandmother (pokni)",
+      "citation": "pokni",
+      "source": {
+        "lang": "Choctaw",
+        "word": "pokni",
+        "status": "pending"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-2",
+        "primary noun",
+        "kin"
+      ]
+    },
+    {
+      "skeleton": [
+        "m",
+        "f"
+      ],
+      "gloss": "grandfather (mafo)",
+      "citation": "mafo",
+      "source": {
+        "lang": "Choctaw",
+        "word": "mafo",
+        "status": "pending"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-2",
+        "primary noun",
+        "kin"
+      ]
+    },
+    {
+      "skeleton": [
+        "s",
+        "n"
+      ],
+      "gloss": "sibling, brother (sanu); sister (sanut, kin-t)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "sn / snt",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-2",
+        "Doc A's SN redeemed — true Egyptian etymology",
+        "kin"
+      ]
+    },
+    {
+      "skeleton": [
+        "s",
+        "'"
+      ],
+      "gloss": "son (saʾu); daughter (saʾut, kin-t)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "sꜣ / sꜣt (sꜣ Rꜥ, son of Ra)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-2",
+        "kin",
+        "synonym pair: banut daughter (Ar.)"
+      ]
+    },
+    {
+      "skeleton": [
+        "b",
+        "n",
+        "t"
+      ],
+      "gloss": "daughter (banut)",
+      "citation": "banut",
+      "source": {
+        "lang": "Arabic",
+        "word": "bint",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-2",
+        "primary noun",
+        "kin",
+        "from Doc A"
+      ]
+    },
+    {
+      "skeleton": [
+        "'",
+        "l"
+      ],
+      "gloss": "child, little one, kid (ala)",
+      "citation": "ala",
+      "source": {
+        "lang": "Choctaw",
+        "word": "alla (degeminated per OCP)",
+        "status": "pending"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-2",
+        "primary noun",
+        "kin",
+        "synonym pair: weldu offspring"
+      ]
+    },
+    {
+      "skeleton": [
+        "ʿ",
+        "m"
+      ],
+      "gloss": "paternal uncle (ʿamu); paternal aunt (ʿamut)",
+      "source": {
+        "lang": "Arabic",
+        "word": "ʿamm / ʿamma (geminate simplified)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-2",
+        "kin"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḫ",
+        "l"
+      ],
+      "gloss": "maternal uncle (ḫalu); maternal aunt (ḫalut)",
+      "source": {
+        "lang": "Arabic",
+        "word": "ḫāl / ḫāla",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-2",
+        "kin"
+      ]
+    },
+    {
+      "skeleton": [
+        "k",
+        "z"
+      ],
+      "gloss": "cousin, cuz (also friendly address)",
+      "citation": "kaz",
+      "source": {
+        "lang": "AAVE",
+        "word": "cuz",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-2",
+        "primary noun",
+        "kin",
+        "R-030 AAVE stream"
+      ]
+    },
+    {
+      "skeleton": [
+        "s",
+        "m",
+        "s"
+      ],
+      "gloss": "elder (semasu); council of elders (semasupa)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "smsw (eldest)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-2"
+      ]
+    },
+    {
+      "skeleton": null,
+      "gloss": "mama (intimate); mamān = Big Mama, grandmother",
+      "citation": "mama",
+      "source": {
+        "lang": "AAVE/universal",
+        "word": "mama",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-2",
+        "rootless nursery lexeme — template-exempt, suffixes still apply (mamān, mamaku)",
+        "kin"
+      ]
+    },
+    {
+      "skeleton": null,
+      "gloss": "daddy (intimate); dadān = Big Daddy, grandfather",
+      "citation": "dadi",
+      "source": {
+        "lang": "AAVE",
+        "word": "daddy",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-2",
+        "rootless nursery lexeme — template-exempt, suffixes still apply (dadān, dadiku)",
+        "kin"
+      ]
+    },
+    {
+      "skeleton": [
+        "y",
+        "b"
+      ],
+      "citation": "ib",
+      "gloss": "heart-mind, conscience, will (the heart weighed against the feather)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "jb",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-3",
+        "primary noun",
+        "body-inalienable (R-035)",
+        "two-hearts doctrine with ḥati"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḥ",
+        "t"
+      ],
+      "citation": "ḥati",
+      "gloss": "heart (the organ)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "ḥꜣty",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-3",
+        "primary noun",
+        "body-inalienable",
+        "two-hearts doctrine with ib"
+      ]
+    },
+    {
+      "skeleton": [
+        "r",
+        "'"
+      ],
+      "citation": "raʾ",
+      "gloss": "mouth; raʾa = to utter",
+      "source": {
+        "lang": "Egyptian",
+        "word": "rꜣ (mouth, utterance)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-3",
+        "primary noun",
+        "body-inalienable"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḏ",
+        "r"
+      ],
+      "citation": "ḏart",
+      "gloss": "hand",
+      "source": {
+        "lang": "Egyptian",
+        "word": "ḏrt (kin-t style etymological t)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-3",
+        "primary noun",
+        "body-inalienable"
+      ]
+    },
+    {
+      "skeleton": [
+        "t",
+        "p"
+      ],
+      "citation": "tap",
+      "gloss": "head",
+      "source": {
+        "lang": "Egyptian",
+        "word": "tp",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-3",
+        "primary noun",
+        "body-inalienable"
+      ]
+    },
+    {
+      "skeleton": [
+        "r",
+        "d"
+      ],
+      "citation": "rad",
+      "gloss": "foot, leg",
+      "source": {
+        "lang": "Egyptian",
+        "word": "rd",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-3",
+        "primary noun",
+        "body-inalienable"
+      ]
+    },
+    {
+      "skeleton": [
+        "f",
+        "n",
+        "ḏ"
+      ],
+      "citation": "fanḏ",
+      "gloss": "nose",
+      "source": {
+        "lang": "Egyptian",
+        "word": "fnḏ",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-3",
+        "primary noun",
+        "body-inalienable"
+      ]
+    },
+    {
+      "skeleton": [
+        "m",
+        "s",
+        "ḏ",
+        "r"
+      ],
+      "citation": "masḏar",
+      "gloss": "ear",
+      "source": {
+        "lang": "Egyptian",
+        "word": "msḏr",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-3",
+        "primary noun",
+        "body-inalienable",
+        "quad root"
+      ]
+    },
+    {
+      "skeleton": [
+        "s",
+        "n",
+        "f"
+      ],
+      "citation": "sanef",
+      "gloss": "blood",
+      "source": {
+        "lang": "Egyptian",
+        "word": "snf",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-3",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "q",
+        "s"
+      ],
+      "citation": "qas",
+      "gloss": "bone",
+      "source": {
+        "lang": "Egyptian",
+        "word": "qs",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-3",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "j",
+        "s",
+        "m"
+      ],
+      "citation": "jisim",
+      "gloss": "body (whole)",
+      "source": {
+        "lang": "Arabic",
+        "word": "jism",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-3",
+        "primary noun"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḥ",
+        "r"
+      ],
+      "citation": "ḥar",
+      "gloss": "face",
+      "source": {
+        "lang": "Egyptian",
+        "word": "ḥr",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-3",
+        "primary noun",
+        "body-inalienable",
+        "casual register merges with har good — advisory accepted"
+      ]
+    },
+    {
+      "skeleton": [
+        "n",
+        "s"
+      ],
+      "citation": "nas",
+      "gloss": "tongue (also: dialect, tongue in the poetic sense)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "ns",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-3",
+        "primary noun",
+        "body-inalienable"
+      ]
+    },
+    {
+      "skeleton": [
+        "y",
+        "b",
+        "ḥ"
+      ],
+      "citation": "ibaḥ",
+      "gloss": "tooth",
+      "source": {
+        "lang": "Egyptian",
+        "word": "jbḥ",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-3",
+        "primary noun",
+        "body-inalienable"
+      ]
+    },
+    {
+      "skeleton": [
+        "y",
+        "n",
+        "m"
+      ],
+      "citation": "inam",
+      "gloss": "skin",
+      "source": {
+        "lang": "Egyptian",
+        "word": "jnm",
+        "status": "pending"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-3",
+        "primary noun",
+        "moderate attestation — verify"
+      ]
+    },
+    {
+      "skeleton": [
+        "ṯ",
+        "w"
+      ],
+      "citation": "ṯaw",
+      "gloss": "breath, air, breeze",
+      "source": {
+        "lang": "Egyptian",
+        "word": "ṯꜣw",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-3",
+        "primary noun",
+        "shared with T-9 weather (wind)"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḫ",
+        "t"
+      ],
+      "citation": "ḫat",
+      "gloss": "belly, stomach",
+      "source": {
+        "lang": "Egyptian",
+        "word": "ẖt",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-3",
+        "primary noun",
+        "skeleton freed by restoring horizon to ʾ-ḫ-t"
+      ]
+    },
+    {
+      "skeleton": [
+        "'",
+        "ḫ",
+        "t"
+      ],
+      "citation": "aḫet",
+      "gloss": "horizon; season (the Akhet)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "ꜣḫt",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-3 rider",
+        "faithful restoration of Doc B's ḪT — frees ḫ-t for belly",
+        "calendar interop"
+      ]
+    },
+    {
+      "skeleton": [
+        "p",
+        "s",
+        "ḏ"
+      ],
+      "citation": "pasḏ",
+      "gloss": "back (of the body)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "psḏ",
+        "status": "pending"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-3",
+        "primary noun",
+        "moderate attestation — verify"
+      ]
+    },
+    {
+      "skeleton": [
+        "š",
+        "n"
+      ],
+      "citation": "šan",
+      "gloss": "hair",
+      "source": {
+        "lang": "Egyptian",
+        "word": "šnj",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-3",
+        "primary noun",
+        "š never merges — always distinct from s-n sibling",
+        "hair-culture vocabulary (crown, locs, braids) flagged as cultural sub-docket"
+      ]
+    },
+    {
+      "skeleton": [
+        "r",
+        "m",
+        "n"
+      ],
+      "citation": "rimen",
+      "gloss": "arm, shoulder",
+      "source": {
+        "lang": "Egyptian",
+        "word": "rmn",
+        "status": "pending"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-3",
+        "primary noun",
+        "moderate attestation — verify"
+      ]
+    },
+    {
+      "skeleton": [
+        "š",
+        "m"
+      ],
+      "gloss": "smell (šama)",
+      "source": {
+        "lang": "Arabic",
+        "word": "šamm (degeminated)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-3",
+        "senses set",
+        "skeleton freed by SHM name → R-N"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḏ",
+        "w",
+        "q"
+      ],
+      "gloss": "taste (ḏawiqa)",
+      "source": {
+        "lang": "Arabic",
+        "word": "ḏāqa",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-3",
+        "senses set",
+        "weak w — D-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "l",
+        "m",
+        "s"
+      ],
+      "gloss": "touch (lamisa)",
+      "source": {
+        "lang": "Arabic",
+        "word": "lamasa",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-3",
+        "senses set"
+      ]
+    }
+  ]
+}

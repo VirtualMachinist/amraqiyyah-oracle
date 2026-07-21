@@ -1,0 +1,17 @@
+{
+  "version": "2.0-rc.1",
+  "note": "Function-word inventory for homophony linting. Dotless forms.",
+  "negators": ["la", "bu", "'ayn"],
+  "aspect": ["bi", "da", "dē", "don", "bin", "f'na", "gon"],
+  "cliticsAndSuffixes": ["mi", "ti", "i", "ni", "sen", "tin", "ku", "ki", "to", "ta", "nun"],
+  "articles": ["na", "napa", "al", "el", "wa", "sam"],
+  "demonstratives": ["pen", "pek", "pom", "nai", "nak", "nom"],
+  "interrogatives": ["miya", "nim", "ta", "enta", "mata", "kayf", "kam", "ramiya"],
+  "prepositions": ["en", "ʿala", "taḥt", "qudām", "ḫalf", "bayn", "ḥawl", "ben", "min", "ʿind", "het", "bi", "bilā", "ḍid", "ra", "bawt", "kama", "illa", "qabl", "baʿd"],
+  "conjunctions": ["ma", "maden", "wepen", "aw", "la", "ko", "law", "den", "sabab", "ḥatta", "kadama", "ša"],
+  "copulas": ["yit", "wi", "pe", "ne"],
+  "mood": ["ya", "met", "hal"],
+  "pronounsStrong": ["anok", "entok", "entof", "entos", "ento", "anon", "enton", "entou"],
+  "discourse": ["na'am", "aywa", "yani", "yitpen"],
+  "relative": ["ninta", "et"]
+}

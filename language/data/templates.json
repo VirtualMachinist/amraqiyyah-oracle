@@ -1,0 +1,44 @@
+{
+  "version": "2.0-rc.1",
+  "note": "Strict templates (R-010, R-015). Digits 1-4 = root consonants. No theme vowels.",
+  "tri": {
+    "verb": "1a2i3a",
+    "abstract": "1i2e3i",
+    "agent": "1e2a3u",
+    "patient": "1o2i3on",
+    "locative": "1a2e3ow",
+    "instrumental": "1a2i3et",
+    "collective": "1i2e3pa",
+    "diminutive": "1u2ay3",
+    "augmentative": "1i2e3an",
+    "adjective": "1a2ī3",
+    "stative": "1i2e3",
+    "intensive": "1ā2i3a",
+    "iterative": "1a21a2i3a",
+    "passive": "1a2wii3a",
+    "reflexive": "1a2i3twa",
+    "reciprocal": "1a2i3baa"
+  },
+  "bi": {
+    "verb": "1a2a",
+    "abstract": "1i2i",
+    "agent": "1e2u",
+    "patient": "1o2on",
+    "locative": "1a2ow",
+    "instrumental": "1a2et",
+    "adjective": "1a2āy",
+    "diminutive": "1u2ay",
+    "stative": "1i2",
+    "intensive": "1ā2a",
+    "iterative": "1a21a2a",
+    "passive": "1a2wia",
+    "perfstem": "1a2im"
+  },
+  "quad": {
+    "verb": "1a2a3i4a"
+  },
+  "causativePrefix": "sa",
+  "clitics": { "1sg": "mi", "2sg": "ti", "3sg": "i", "1pl": "ni", "2pl": ["ti", "tin"], "3pl": ["i", "sen"] },
+  "perfSuffixes": { "1sg": "ku", "2sg": "ki", "3sg": "", "1pl": "nun", "2pl": "tin", "3pl": "sen" },
+  "possessives": { "1sg": "ku", "2sg": "ki", "3sgm": "to", "3sgf": "ta", "3sgn": "to", "1pl": "nun", "2pl": "tin", "3pl": "sen" }
+}
