@@ -1739,6 +1739,396 @@
         "T-4",
         "R-030 AAVE cultural clause — the cookout is heritage"
       ]
+    },
+    {
+      "skeleton": [
+        "m",
+        "r"
+      ],
+      "gloss": "love (Egyptian stream) — mara to love, miri love, merāy beloved (adj)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "mrj",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-5",
+        "synonym pair with ḥ-b (R-029)"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḥ",
+        "b"
+      ],
+      "gloss": "love (Arabic stream) — ḥaba to love, ḥibi love, ḥebu beloved",
+      "source": {
+        "lang": "Arabic",
+        "word": "ḥubb (degeminated)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-5",
+        "synonym pair with m-r",
+        "casual ḥ→h merges with h-b send — accepted advisory"
+      ]
+    },
+    {
+      "skeleton": [
+        "f",
+        "r",
+        "ḥ"
+      ],
+      "gloss": "joy — fariḥa rejoice, firehi joy, stative fireḥ: mi·fireḥ I'm happy",
+      "source": {
+        "lang": "Arabic",
+        "word": "fariḥa",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-5"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḥ",
+        "z",
+        "n"
+      ],
+      "gloss": "grief, sadness — ḥazina grieve, ḥizeni grief, stative ḥizen: mi·ḥizen I'm sad",
+      "source": {
+        "lang": "Arabic",
+        "word": "ḥuzn",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-5"
+      ]
+    },
+    {
+      "skeleton": [
+        "b",
+        "l",
+        "z"
+      ],
+      "citation": "bluz",
+      "gloss": "the blues (the feeling and the music) — baliza to feel the blues, bilezi blueness of spirit",
+      "source": {
+        "lang": "AAVE",
+        "word": "blues",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-5",
+        "R-030 AAVE cultural clause",
+        "primary noun + root"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḫ",
+        "w",
+        "f"
+      ],
+      "gloss": "fear (plain) — ḫawifa to fear, stative ḫiwef",
+      "source": {
+        "lang": "Arabic",
+        "word": "ḫawf",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-5",
+        "weak w — D-11",
+        "split with s-n-ḏ awe"
+      ]
+    },
+    {
+      "skeleton": [
+        "s",
+        "n",
+        "ḏ"
+      ],
+      "gloss": "awe, reverent fear — saniḏa to stand in awe, sineḏi awe/reverence",
+      "source": {
+        "lang": "Egyptian",
+        "word": "snḏ",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-5",
+        "sacred register; split with ḫ-w-f plain fear; T-7 shared"
+      ]
+    },
+    {
+      "skeleton": [
+        "ġ",
+        "ḍ",
+        "b"
+      ],
+      "gloss": "anger — ġaḍiba be angry, ġiḍebi anger, stative ġiḍeb: mi·ġiḍeb I'm mad",
+      "source": {
+        "lang": "Arabic",
+        "word": "ġaḍab",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-5"
+      ]
+    },
+    {
+      "skeleton": [
+        "k",
+        "r",
+        "h"
+      ],
+      "gloss": "hate — kariha to hate, kirehi hatred",
+      "source": {
+        "lang": "Arabic",
+        "word": "kariha",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-5"
+      ]
+    },
+    {
+      "skeleton": [
+        "'",
+        "m",
+        "l"
+      ],
+      "gloss": "hope — ʾamila to hope, ʾimeli hope",
+      "source": {
+        "lang": "Arabic",
+        "word": "ʾamal",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-5"
+      ]
+    },
+    {
+      "skeleton": [
+        "k",
+        "r",
+        "m"
+      ],
+      "gloss": "dignity, honor, generosity — karima be noble/generous, kiremi dignity, karīm noble (~Al-Karīm)",
+      "source": {
+        "lang": "Arabic",
+        "word": "karāma / karīm",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-5",
+        "core value; Name-resonance at T-7"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḫ",
+        "j",
+        "l"
+      ],
+      "gloss": "shame, shyness — ḫajila be ashamed, ḫijeli shame",
+      "source": {
+        "lang": "Arabic",
+        "word": "ḫajal",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-5"
+      ]
+    },
+    {
+      "skeleton": [
+        "š",
+        "w",
+        "q"
+      ],
+      "gloss": "longing, yearning (the diaspora emotion) — šawiqa to long for, šiweqi longing",
+      "source": {
+        "lang": "Arabic",
+        "word": "šawq",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-5",
+        "weak w — D-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "š",
+        "j",
+        "ʿ"
+      ],
+      "gloss": "courage — šajiʿa be brave, šijeʿi courage, šajīʿ brave",
+      "source": {
+        "lang": "Arabic",
+        "word": "šajāʿa",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-5",
+        "adjacent homorganic š-j — accepted advisory"
+      ]
+    },
+    {
+      "skeleton": [
+        "r",
+        "m"
+      ],
+      "gloss": "weep — rama to weep, rimi weeping/tears",
+      "source": {
+        "lang": "Egyptian",
+        "word": "rmj",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-5"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḍ",
+        "ḥ",
+        "k"
+      ],
+      "gloss": "laugh — ḍaḥika to laugh, ḍiḥeki laughter",
+      "source": {
+        "lang": "Arabic",
+        "word": "ḍaḥika",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-5"
+      ]
+    },
+    {
+      "skeleton": [
+        "f",
+        "k",
+        "r"
+      ],
+      "gloss": "think — fakira to think, fikeri thought",
+      "source": {
+        "lang": "Arabic",
+        "word": "fakkara (degeminated)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-5",
+        "cognition map"
+      ]
+    },
+    {
+      "skeleton": [
+        "'",
+        "m",
+        "n"
+      ],
+      "gloss": "believe; faith — ʾamina to believe, ʾimeni belief/faith (īmān)",
+      "source": {
+        "lang": "Arabic",
+        "word": "ʾāmana / īmān",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-5",
+        "T-7 shared — faith vocabulary"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḏ",
+        "k",
+        "r"
+      ],
+      "gloss": "remember, invoke — ḏakira to remember, ḏikeri remembrance/dhikr (the Way's own practice)",
+      "source": {
+        "lang": "Arabic",
+        "word": "ḏakara / ḏikr",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-5",
+        "T-7 shared — THE dhikr word; the Oracle is an instrument of ḏikeri"
+      ]
+    },
+    {
+      "skeleton": [
+        "n",
+        "s",
+        "y"
+      ],
+      "gloss": "forget — nasiya to forget, stative nisey oblivious",
+      "source": {
+        "lang": "Arabic",
+        "word": "nasiya",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-5",
+        "weak y — D-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "ʿ",
+        "r",
+        "f"
+      ],
+      "gloss": "know, recognize — ʿarifa to know, ʿirefi knowledge/gnosis (maʿrifa)",
+      "source": {
+        "lang": "Arabic",
+        "word": "ʿarafa / maʿrifa",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-5",
+        "cognition map: HKL understand-by-hearing · ʿRF know · FKR think · ḎKY intelligent · KY plan"
+      ]
+    },
+    {
+      "skeleton": [
+        "w",
+        "s",
+        "ʿ"
+      ],
+      "gloss": "wide, vast — wasīʿ wide (~Al-Wāsiʿ); heart-idiom: ib wasīʿ = joyful heart",
+      "source": {
+        "lang": "Arabic",
+        "word": "wāsiʿ",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-5",
+        "heart-idiom system; Name-resonance at T-7",
+        "weak w — D-11"
+      ]
     }
   ]
 }
