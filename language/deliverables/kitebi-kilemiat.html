@@ -1,0 +1,1731 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kitebi Kilemiāt·i — the Amraqiyyah Phrasebook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=EB+Garamond:ital@0;1&family=IBM+Plex+Mono:wght@300;400;500&family=Amiri:wght@400;700&family=Noto+Sans+Coptic&display=swap" rel="stylesheet">
+<style>
+/* Tokens verbatim from docs/design-system/tokens (colors.css, typography.css) */
+:root {
+  --bg:#0b0b12; --panel:#14141f; --panel-soft:#1b1b2a; --line:#2b2b40;
+  --text:#e8e6f0; --dim:#9a96b8;
+  --gold:#d4af6a; --copper:#b87333; --copper-light:#d99a5c;
+  --lapis:#26418f; --lapis-light:#6d8fd8; --teal:#5ac8c8; --crimson:#c85a6e;
+  --font-display:"Crimson Pro",Georgia,serif;
+  --font-body:"EB Garamond",Georgia,serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,monospace;
+  --font-arabic:"Amiri","Times New Roman",serif;
+  --font-coptic:"Noto Sans Coptic",serif; /* phrasebook addition — the everyday script */
+}
+* { box-sizing:border-box; margin:0; }
+body { background:var(--bg); color:var(--text); font-family:var(--font-body); line-height:1.55; }
+.aq-field { position:relative; }
+.aq-field::before { content:""; position:absolute; inset:0; pointer-events:none; z-index:0; opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320' viewBox='0 0 320 320'%3E%3Cg fill='none' stroke='%2326418f' stroke-width='0.6' stroke-opacity='0.28'%3E%3Ccircle cx='160' cy='160' r='40'/%3E%3Ccircle cx='160' cy='160' r='80'/%3E%3Ccircle cx='160' cy='160' r='120'/%3E%3Ccircle cx='160' cy='160' r='158'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat:repeat; background-size:320px 320px; }
+.aq-field > * { position:relative; z-index:1; }
+.aq-eyebrow { font-family:var(--font-mono); font-size:.72rem; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:var(--dim); }
+.wrap { max-width:760px; margin:0 auto; padding:48px 24px 96px; }
+
+/* Cover */
+.cover { text-align:center; padding:72px 0 56px; border-bottom:1px solid var(--line); }
+.cover img.mark { width:56px; height:56px; object-fit:contain; opacity:.9; margin-bottom:20px; }
+.cover .mark-fallback { color:var(--copper); font-size:1.6rem; }
+.cover h1 { font-family:var(--font-display); font-weight:700; font-size:2.6rem; color:var(--gold); margin:10px 0 4px; }
+.cover .subtitle { font-family:var(--font-body); font-style:italic; color:var(--dim); font-size:1.05rem; }
+.cover .title-scripts { margin-top:18px; display:flex; flex-direction:column; gap:6px; align-items:center; }
+.cover .stats { margin-top:26px; font-family:var(--font-mono); font-size:.78rem; letter-spacing:.14em; color:var(--teal); }
+.cover .charge { margin-top:14px; font-family:var(--font-display); font-style:italic; color:var(--dim); font-size:.95rem; }
+
+/* Chapters */
+.chapter { margin-top:56px; break-before:page; }
+.chapter:first-of-type { break-before:auto; }
+.chapter h2 { font-family:var(--font-display); font-weight:600; font-size:1.7rem; color:var(--gold); margin:6px 0 2px; }
+.chapter-scripts { display:flex; gap:14px; align-items:baseline; flex-wrap:wrap; color:var(--dim);
+  padding-bottom:14px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+
+/* Entries — outlined, never shadowed (system law) */
+.entry { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin-top:12px; break-inside:avoid; }
+.entry-head { display:flex; align-items:baseline; gap:12px; }
+.num { font-family:var(--font-mono); font-weight:300; font-size:.72rem; color:var(--dim); }
+.display { font-family:var(--font-display); font-weight:600; font-size:1.18rem; color:var(--text); flex:1; }
+.chip { font-family:var(--font-mono); font-size:.62rem; letter-spacing:.12em; text-transform:uppercase; border-radius:20px; padding:2px 10px; border:1px solid var(--line); color:var(--dim); }
+.chip-sacred { background:var(--gold); border-color:var(--gold); color:#0b0b12; }
+.chip-plain { border-color:var(--teal); color:var(--teal); }
+.english { font-family:var(--font-body); font-style:italic; color:var(--dim); margin:4px 0 10px; padding-left:2.4rem; }
+.scripts { display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px 16px; align-items:baseline;
+  border-top:1px solid var(--line); padding-top:10px; }
+.community { font-family:var(--font-mono); font-size:.8rem; color:var(--teal); }
+.coptic { font-family:var(--font-coptic); font-size:.98rem; color:var(--copper-light); }
+.ajami { font-family:var(--font-arabic); direction:rtl; text-align:right; font-size:1.22rem; color:var(--lapis-light); line-height:1.9; }
+@media (max-width:620px){ .scripts { grid-template-columns:1fr; } .ajami { text-align:left; direction:rtl; } }
+
+/* Colophon */
+.colophon { margin-top:72px; padding-top:20px; border-top:1px solid var(--line); text-align:center; }
+.colophon .aq-eyebrow { margin-bottom:8px; }
+.colophon p { color:var(--dim); font-size:.9rem; }
+.colophon .charge { font-family:var(--font-display); font-style:italic; margin-top:10px; }
+
+@media print {
+  body { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  @page { margin:14mm; }
+  .entry { page-break-inside:avoid; }
+  .chapter { page-break-before:always; }
+  .chapter:first-of-type { page-break-before:auto; }
+}
+</style>
+</head>
+<body class="aq-field">
+<div class="wrap">
+  <header class="cover">
+    <img class="mark" src="../../docs/design-system/assets/hedronite-glyph-copper.png" alt="✦" onerror="this.outerHTML='&lt;div class=&quot;mark-fallback&quot;&gt;✦&lt;/div&gt;'">
+    <div class="aq-eyebrow">Al-Tariqa Amraqiyyah · The Language of the Way</div>
+    <h1>Kitebi Kilemiāt·i</h1>
+    <div class="subtitle">The Amraqiyyah Phrasebook — the Book of Words</div>
+    <div class="title-scripts">
+      <span class="community">Kitebi Kilemiaat-i</span>
+      <span class="coptic">ⲕⲓⲧⲉⲃⲓ ⲕⲓⲗⲉⲙⲓⲁ̄ⲧⲓ</span>
+      <span class="ajami" dir="rtl">كِتێبِ كِلێمِآتاِ</span>
+    </div>
+    <div class="stats">116 PHRASES · 12 CHAPTERS · 4 SCRIPTS · R-049–R-059 · NOTHING HAND-TYPED</div>
+    <div class="charge">Na·pa·aḫāt bi·i·hariwa. — The Ancestors be watching.</div>
+  </header>
+  
+    <section class="chapter">
+      <div class="aq-eyebrow">01 · GREETINGS</div>
+      <h2>Silemiāt</h2>
+      <div class="chapter-scripts">
+        <span class="community">Silemiaat</span>
+        <span class="coptic">ⲥⲓⲗⲉⲙⲓⲁ̄ⲧ</span>
+        <span class="ajami" dir="rtl">سِلێمِآت</span>
+      </div>
+      
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">001</span>
+          <span class="display">Silemi!</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Peace! (hello)</p>
+        <div class="scripts">
+          <span class="community">Silemi!</span>
+          <span class="coptic">ⲥⲓⲗⲉⲙⲓ!</span>
+          <span class="ajami" dir="rtl">سِلێمِ!</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">002</span>
+          <span class="display">Es·salām!</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">THE Peace (formal greeting)</p>
+        <div class="scripts">
+          <span class="community">Es-salaam!</span>
+          <span class="coptic">ⲉⲥ̇ⲁⲗⲁ̄ⲙ!</span>
+          <span class="ajami" dir="rtl">السَّلام!</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">003</span>
+          <span class="display">Ti har·āy?</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">You good?</p>
+        <div class="scripts">
+          <span class="community">Ti har-aay?</span>
+          <span class="coptic">ⲧⲓ ϩⲁⲣⲁ̄ⲓ̈?</span>
+          <span class="ajami" dir="rtl">تِ هَراي؟</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">004</span>
+          <span class="display">Aywa, mi har·āy.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Yeah, I'm good.</p>
+        <div class="scripts">
+          <span class="community">Aywa, mi har-aay.</span>
+          <span class="coptic">ⲁⲓ̈ⲩⲁ, ⲙⲓ ϩⲁⲣⲁ̄ⲓ̈.</span>
+          <span class="ajami" dir="rtl">اَيوَ، مِ هَراي.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">005</span>
+          <span class="display">Ti wi en·ta?</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Where you at?</p>
+        <div class="scripts">
+          <span class="community">Ti wi en-ta?</span>
+          <span class="coptic">ⲧⲓ ⲩⲓ ⲉⲛⲧⲁ?</span>
+          <span class="ajami" dir="rtl">تِ وِ ئێنتَ؟</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">006</span>
+          <span class="display">Rini·ku Jamal.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">My name is Jamal.</p>
+        <div class="scripts">
+          <span class="community">Rini-ku Jamal.</span>
+          <span class="coptic">ⲣⲓⲛⲓⲕⲟⲩ ϫⲁⲙⲁⲗ.</span>
+          <span class="ajami" dir="rtl">رِنِكُ جَمَل.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">007</span>
+          <span class="display">Rini·ki miya?</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">What's your name?</p>
+        <div class="scripts">
+          <span class="community">Rini-ki miya?</span>
+          <span class="coptic">ⲣⲓⲛⲓⲕⲓ ⲙⲓⲓ̈ⲁ?</span>
+          <span class="ajami" dir="rtl">رِنِكِ مِيَ؟</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">008</span>
+          <span class="display">Ni·gon·hariw·ba·a.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">We gon' see each other. (goodbye)</p>
+        <div class="scripts">
+          <span class="community">Ni-gon-hariw-ba-a.</span>
+          <span class="coptic">ⲛⲓⲅⲟⲛϩⲁⲣⲓⲩⲃⲁⲁ.</span>
+          <span class="ajami" dir="rtl">نِگۆنهَرِوبَاَ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">009</span>
+          <span class="display">Ṣabaḥ har·āy!</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Good morning!</p>
+        <div class="scripts">
+          <span class="community">Sabah har-aay!</span>
+          <span class="coptic">ⲥ̣ⲁⲃⲁϩ̣ ϩⲁⲣⲁ̄ⲓ̈!</span>
+          <span class="ajami" dir="rtl">صَبَح هَراي!</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">010</span>
+          <span class="display">Masaʾ har·āy!</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Good evening!</p>
+        <div class="scripts">
+          <span class="community">Masa' har-aay!</span>
+          <span class="coptic">ⲙⲁⲥⲁⲁ̀ ϩⲁⲣⲁ̄ⲓ̈!</span>
+          <span class="ajami" dir="rtl">مَسَء هَراي!</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">011</span>
+          <span class="display">Kayf ib·ki?</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">How's your heart? (the Way's how-are-you)</p>
+        <div class="scripts">
+          <span class="community">Kayf ib-ki?</span>
+          <span class="coptic">ⲕⲁⲓ̈ϥ ⲓⲃⲕⲓ?</span>
+          <span class="ajami" dir="rtl">كَيف اِبكِ؟</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">012</span>
+          <span class="display">Ib·ku ḥitep, alḥamdulillah.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">My heart's at rest, alhamdulillah.</p>
+        <div class="scripts">
+          <span class="community">Ib-ku hitep, alhamdulillah.</span>
+          <span class="coptic">ⲓⲃⲕⲟⲩ ϩ̣ⲓⲧⲉⲡ, ⲁⲗϩ̣ⲁⲙⲇⲟⲩⲗⲓⲗⲗⲁϩ.</span>
+          <span class="ajami" dir="rtl">اِبكُ حِتێپ، الحمد لله.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">013</span>
+          <span class="display">Ti min en·ta?</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Where you from?</p>
+        <div class="scripts">
+          <span class="community">Ti min en-ta?</span>
+          <span class="coptic">ⲧⲓ ⲙⲓⲛ ⲉⲛⲧⲁ?</span>
+          <span class="ajami" dir="rtl">تِ مِن ئێنتَ؟</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">014</span>
+          <span class="display">Mi min Soulaan·i.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">I'm from Soulaan.</p>
+        <div class="scripts">
+          <span class="community">Mi min Soulaan-i.</span>
+          <span class="coptic">ⲙⲓ ⲙⲓⲛ ⲥⲟⲟⲩⲗⲁⲁⲛⲓ.</span>
+          <span class="ajami" dir="rtl">مِ مِن سۆاُلَاَنِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">015</span>
+          <span class="display">Yawa en·salām·i!</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Come in peace! (the doorway welcome)</p>
+        <div class="scripts">
+          <span class="community">Yawa en-salaam-i!</span>
+          <span class="coptic">ⲓ̈ⲁⲩⲁ ⲉⲛⲥⲁⲗⲁ̄ⲙⲓ!</span>
+          <span class="ajami" dir="rtl">يَوَ ئێنسَلامِ!</span>
+        </div>
+      </article>
+    </section>
+    <section class="chapter">
+      <div class="aq-eyebrow">02 · COURTESY — THE SMALL GRACES</div>
+      <h2>Fiḍeli</h2>
+      <div class="chapter-scripts">
+        <span class="community">Fideli</span>
+        <span class="coptic">ϥⲓⲇ̣ⲉⲗⲓ</span>
+        <span class="ajami" dir="rtl">فِضێلِ</span>
+      </div>
+      
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">016</span>
+          <span class="display">Bireki ʿala·ki!</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Blessing on you! (thank you)</p>
+        <div class="scripts">
+          <span class="community">Bireki 'ala-ki!</span>
+          <span class="coptic">ⲃⲓⲣⲉⲕⲓ ⲁ̣ⲁⲗⲁⲕⲓ!</span>
+          <span class="ajami" dir="rtl">بِرێكِ عَلَكِ!</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">017</span>
+          <span class="display">ʿIfewi.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">You're welcome. (lit. pardon — the answer to Bireki ʿala·ki, as Arabic ʿafwan)</p>
+        <div class="scripts">
+          <span class="community">'Ifewi.</span>
+          <span class="coptic">ⲁ̣ⲓϥⲉⲩⲓ.</span>
+          <span class="ajami" dir="rtl">عِفێوِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">018</span>
+          <span class="display">Min faḍl·kī.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Please. (lit. of your grace)</p>
+        <div class="scripts">
+          <span class="community">Min fadl-kii.</span>
+          <span class="coptic">ⲙⲓⲛ ϥⲁⲇ̣ⲗⲕⲓ̄.</span>
+          <span class="ajami" dir="rtl">مِن فَضلكي.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">019</span>
+          <span class="display">ʿAfiwa·ku!</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Excuse me! / Pardon me!</p>
+        <div class="scripts">
+          <span class="community">'Afiwa-ku!</span>
+          <span class="coptic">ⲁ̣ⲁϥⲓⲩⲁⲕⲟⲩ!</span>
+          <span class="ajami" dir="rtl">عَفِوَكُ!</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">020</span>
+          <span class="display">Mi·ʾisef.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">I'm sorry.</p>
+        <div class="scripts">
+          <span class="community">Mi-'isef.</span>
+          <span class="coptic">ⲙⲓⲁ̀ⲓⲥⲉϥ.</span>
+          <span class="ajami" dir="rtl">مِءِسێف.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">021</span>
+          <span class="display">Kapīl·ku!</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">My bad! (the noun-converted adjective, R-051)</p>
+        <div class="scripts">
+          <span class="community">Kapiil-ku!</span>
+          <span class="coptic">ⲕⲁⲡⲓ̄ⲗⲕⲟⲩ!</span>
+          <span class="ajami" dir="rtl">كَپيلكُ!</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">022</span>
+          <span class="display">Mi·ʾisef — kapīl·ku.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">I'm sorry — my bad.</p>
+        <div class="scripts">
+          <span class="community">Mi-'isef — kapiil-ku.</span>
+          <span class="coptic">ⲙⲓⲁ̀ⲓⲥⲉϥ — ⲕⲁⲡⲓ̄ⲗⲕⲟⲩ.</span>
+          <span class="ajami" dir="rtl">مِءِسێف — كَپيلكُ.</span>
+        </div>
+      </article>
+    </section>
+    <section class="chapter">
+      <div class="aq-eyebrow">03 · FAMILY</div>
+      <h2>Sanupa</h2>
+      <div class="chapter-scripts">
+        <span class="community">Sanupa</span>
+        <span class="coptic">ⲥⲁⲛⲟⲩⲡⲁ</span>
+        <span class="ajami" dir="rtl">سَنُپَ</span>
+      </div>
+      
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">023</span>
+          <span class="display">ʿInd·ki kam saʾwāt?</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">How many sons you got?</p>
+        <div class="scripts">
+          <span class="community">'Ind-ki kam sa'waat?</span>
+          <span class="coptic">ⲁ̣ⲓⲛⲇⲕⲓ ⲕⲁⲙ ⲥⲁⲁ̀ⲩⲁ̄ⲧ?</span>
+          <span class="ajami" dir="rtl">عِندكِ كَم سَءوات؟</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">024</span>
+          <span class="display">Mamān·ku don wanim, we·pen sanu·ku 'ayn wanim.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Big Mama done ate, but my sibling ain't ate.</p>
+        <div class="scripts">
+          <span class="community">Mamaan-ku don wanim, we-pen sanu-ku 'ayn wanim.</span>
+          <span class="coptic">ⲙⲁⲙⲁ̄ⲛⲕⲟⲩ ⲇⲟⲛ ⲩⲁⲛⲓⲙ, ⲩⲉⲡⲉⲛ ⲥⲁⲛⲟⲩⲕⲟⲩ ⲁ̀ⲁⲓ̈ⲛ ⲩⲁⲛⲓⲙ.</span>
+          <span class="ajami" dir="rtl">مَمانكُ دۆن وَنِم، وێپێن سَنُكُ ءَين وَنِم.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">025</span>
+          <span class="display">Pokni·ku bi·i·yašika sanupa·wa jem·din.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">My grandmother be nurturing the kinfolk every day.</p>
+        <div class="scripts">
+          <span class="community">Pokni-ku bi-i-yashika sanupa-wa jem-din.</span>
+          <span class="coptic">ⲡⲟⲕⲛⲓⲕⲟⲩ ⲃⲓⲓⲓ̈ⲁϣⲓⲕⲁ ⲥⲁⲛⲟⲩⲡⲁⲩⲁ ϫⲉⲙⲇⲓⲛ.</span>
+          <span class="ajami" dir="rtl">پۆكنِكُ بِاِيَشِكَ سَنُپَوَ جێمدِن.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">026</span>
+          <span class="display">Anok pe weldu mafo·ku·i.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">I AM my grandfather's child.</p>
+        <div class="scripts">
+          <span class="community">Anok pe weldu mafo-ku-i.</span>
+          <span class="coptic">ⲁⲛⲟⲕ ⲡⲉ ⲩⲉⲗⲇⲟⲩ ⲙⲁϥⲟⲕⲟⲩⲓ.</span>
+          <span class="ajami" dir="rtl">اَنۆك پێ وێلدُ مَفۆكُاِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">027</span>
+          <span class="display">Pen pe sanut·ku.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">This is my sister.</p>
+        <div class="scripts">
+          <span class="community">Pen pe sanut-ku.</span>
+          <span class="coptic">ⲡⲉⲛ ⲡⲉ ⲥⲁⲛⲟⲩⲧⲕⲟⲩ.</span>
+          <span class="ajami" dir="rtl">پێن پێ سَنُتكُ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">028</span>
+          <span class="display">Ḫalu·ku ma ʿamut·ku i·gon·yawa·sen ġad.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">My uncle and my aunt gon' come tomorrow.</p>
+        <div class="scripts">
+          <span class="community">Khalu-ku ma 'amut-ku i-gon-yawa-sen ghad.</span>
+          <span class="coptic">ϧⲁⲗⲟⲩⲕⲟⲩ ⲙⲁ ⲁ̣ⲁⲙⲟⲩⲧⲕⲟⲩ ⲓⲅⲟⲛⲓ̈ⲁⲩⲁⲥⲉⲛ ⲅ̅ⲁⲇ.</span>
+          <span class="ajami" dir="rtl">خَلُكُ مَ عَمُتكُ اِگۆنيَوَسێن غَد.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">029</span>
+          <span class="display">Kaz! Min zaman·i!</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Cuz! It's been a minute!</p>
+        <div class="scripts">
+          <span class="community">Kaz! Min zaman-i!</span>
+          <span class="coptic">ⲕⲁⲍ! ⲙⲓⲛ ⲍⲁⲙⲁⲛⲓ!</span>
+          <span class="ajami" dir="rtl">كَز! مِن زَمَنِ!</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">030</span>
+          <span class="display">Sanupa pe sikemi.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">Family IS power.</p>
+        <div class="scripts">
+          <span class="community">Sanupa pe sikemi.</span>
+          <span class="coptic">ⲥⲁⲛⲟⲩⲡⲁ ⲡⲉ ⲥⲓⲕⲉⲙⲓ.</span>
+          <span class="ajami" dir="rtl">سَنُپَ پێ سِكێمِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">031</span>
+          <span class="display">Weldu·ku tapīy don yawim!</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">My first child done arrived!</p>
+        <div class="scripts">
+          <span class="community">Weldu-ku tapiiy don yawim!</span>
+          <span class="coptic">ⲩⲉⲗⲇⲟⲩⲕⲟⲩ ⲧⲁⲡⲓ̄ⲓ̈ ⲇⲟⲛ ⲓ̈ⲁⲩⲓⲙ!</span>
+          <span class="ajami" dir="rtl">وێلدُكُ تَپيي دۆن يَوِم!</span>
+        </div>
+      </article>
+    </section>
+    <section class="chapter">
+      <div class="aq-eyebrow">04 · THE TABLE</div>
+      <h2>Homipon</h2>
+      <div class="chapter-scripts">
+        <span class="community">Homipon</span>
+        <span class="coptic">ϩⲟⲙⲓⲡⲟⲛ</span>
+        <span class="ajami" dir="rtl">هۆمِپۆن</span>
+      </div>
+      
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">032</span>
+          <span class="display">Mi·jiweʿ — ʿind·ki wonimon?</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">I'm hungry — you got food?</p>
+        <div class="scripts">
+          <span class="community">Mi-jiwe' — 'ind-ki wonimon?</span>
+          <span class="coptic">ⲙⲓϫⲓⲩⲉⲁ̣ — ⲁ̣ⲓⲛⲇⲕⲓ ⲩⲟⲛⲓⲙⲟⲛ?</span>
+          <span class="ajami" dir="rtl">مِجِوێع — عِندكِ وۆنِمۆن؟</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">033</span>
+          <span class="display">Mi·ʿiṭeš — ʿind·ki qahwa?</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">I'm thirsty — you got coffee?</p>
+        <div class="scripts">
+          <span class="community">Mi-'itesh — 'ind-ki qahwa?</span>
+          <span class="coptic">ⲙⲓⲁ̣ⲓⲧ̣ⲉϣ — ⲁ̣ⲓⲛⲇⲕⲓ ⲕ̅ⲁϩⲩⲁ?</span>
+          <span class="ajami" dir="rtl">مِعِطێش — عِندكِ قَهوَ؟</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">034</span>
+          <span class="display">Mi·bired — ʿind·ki siḏi?</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">I'm cold — you got fire?</p>
+        <div class="scripts">
+          <span class="community">Mi-bired — 'ind-ki sidhi?</span>
+          <span class="coptic">ⲙⲓⲃⲓⲣⲉⲇ — ⲁ̣ⲓⲛⲇⲕⲓ ⲥⲓⲇ̅ⲓ?</span>
+          <span class="ajami" dir="rtl">مِبِرێد — عِندكِ سِذِ؟</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">035</span>
+          <span class="display">Pokni·ku bi·i·ṭabiḫa na·pa·ḫoḍironāt·a.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">My grandmother be cooking the greens.</p>
+        <div class="scripts">
+          <span class="community">Pokni-ku bi-i-tabikha na-pa-khodironaat-a.</span>
+          <span class="coptic">ⲡⲟⲕⲛⲓⲕⲟⲩ ⲃⲓⲓⲧ̣ⲁⲃⲓϧⲁ ⲛⲁⲡⲁϧⲟⲇ̣ⲓⲣⲟⲛⲁ̄ⲧⲁ.</span>
+          <span class="ajami" dir="rtl">پۆكنِكُ بِاِطَبِخَ نَپَخۆضِرۆناتَ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">036</span>
+          <span class="display">Homipon na·din·salām·i gon·wi en·hawtpay pokni·ku·i.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Sunday dinner gon' be at my grandmother's house.</p>
+        <div class="scripts">
+          <span class="community">Homipon na-din-salaam-i gon-wi en-hawtpay pokni-ku-i.</span>
+          <span class="coptic">ϩⲟⲙⲓⲡⲟⲛ ⲛⲁⲇⲓⲛⲥⲁⲗⲁ̄ⲙⲓ ⲅⲟⲛⲩⲓ ⲉⲛϩⲁⲩⲧⲡⲁⲓ̈ ⲡⲟⲕⲛⲓⲕⲟⲩⲓ.</span>
+          <span class="ajami" dir="rtl">هۆمِپۆن نَدِنسَلامِ گۆنوِ ئێنهَوتپَي پۆكنِكُاِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">037</span>
+          <span class="display">Pen ḫobizon har·āy — we·pen yiteč-ḫobizon pokni·ku·i wi al·mēr har·āy.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">This bread is good — but my grandmother's cornbread is THE best.</p>
+        <div class="scripts">
+          <span class="community">Pen khobizon har-aay — we-pen yitech-khobizon pokni-ku-i wi al-meer har-aay.</span>
+          <span class="coptic">ⲡⲉⲛ ϧⲟⲃⲓⲍⲟⲛ ϩⲁⲣⲁ̄ⲓ̈ — ⲩⲉⲡⲉⲛ ⲓ̈ⲓⲧⲉϭ-ϧⲟⲃⲓⲍⲟⲛ ⲡⲟⲕⲛⲓⲕⲟⲩⲓ ⲩⲓ ⲁⲗⲙⲏⲣ ϩⲁⲣⲁ̄ⲓ̈.</span>
+          <span class="ajami" dir="rtl">پێن خۆبِزۆن هَراي — وێپێن يِتێچ-خۆبِزۆن پۆكنِكُاِ وِ المێر هَراي.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">038</span>
+          <span class="display">Don wanim·nun en·na·garelow·i.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">We done ate at the cookout.</p>
+        <div class="scripts">
+          <span class="community">Don wanim-nun en-na-garelow-i.</span>
+          <span class="coptic">ⲇⲟⲛ ⲩⲁⲛⲓⲙⲛⲟⲩⲛ ⲉⲛ̇ⲁⲅⲁⲣⲉⲗⲟⲩⲓ.</span>
+          <span class="ajami" dir="rtl">دۆن وَنِمنُن النَّگَرێلۆوِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">039</span>
+          <span class="display">Bismillah, wanima·tin!</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Bismillah, y'all eat! (grace before the meal)</p>
+        <div class="scripts">
+          <span class="community">Bismillah, wanima-tin!</span>
+          <span class="coptic">ⲃⲓⲥⲙⲓⲗⲗⲁϩ, ⲩⲁⲛⲓⲙⲁⲧⲓⲛ!</span>
+          <span class="ajami" dir="rtl">بسم الله، وَنِمَتِن!</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">040</span>
+          <span class="display">Pen ṭobiḫon ril har·āy!</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">This dish is real good!</p>
+        <div class="scripts">
+          <span class="community">Pen tobikhon ril har-aay!</span>
+          <span class="coptic">ⲡⲉⲛ ⲧ̣ⲟⲃⲓϧⲟⲛ ⲣⲓⲗ ϩⲁⲣⲁ̄ⲓ̈!</span>
+          <span class="ajami" dir="rtl">پێن طۆبِخۆن رِل هَراي!</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">041</span>
+          <span class="display">Ti·mara raz·a?</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">You want rice?</p>
+        <div class="scripts">
+          <span class="community">Ti-mara raz-a?</span>
+          <span class="coptic">ⲧⲓⲙⲁⲣⲁ ⲣⲁⲍⲁ?</span>
+          <span class="ajami" dir="rtl">تِمَرَ رَزَ؟</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">042</span>
+          <span class="display">Aywa, min faḍl·kī!</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Yes, please!</p>
+        <div class="scripts">
+          <span class="community">Aywa, min fadl-kii!</span>
+          <span class="coptic">ⲁⲓ̈ⲩⲁ, ⲙⲓⲛ ϥⲁⲇ̣ⲗⲕⲓ̄!</span>
+          <span class="ajami" dir="rtl">اَيوَ، مِن فَضلكي!</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">043</span>
+          <span class="display">Na·qahwa ril saḫīn!</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">The coffee's real hot!</p>
+        <div class="scripts">
+          <span class="community">Na-qahwa ril sakhiin!</span>
+          <span class="coptic">ⲛⲁⲕ̅ⲁϩⲩⲁ ⲣⲓⲗ ⲥⲁϧⲓ̄ⲛ!</span>
+          <span class="ajami" dir="rtl">نَقَهوَ رِل سَخين!</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">044</span>
+          <span class="display">Yiteč-ḫobizon — ʿiṭeyi pokni·ku·i!</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Cornbread — my grandmother's gift!</p>
+        <div class="scripts">
+          <span class="community">Yitech-khobizon — 'iteyi pokni-ku-i!</span>
+          <span class="coptic">ⲓ̈ⲓⲧⲉϭ-ϧⲟⲃⲓⲍⲟⲛ — ⲁ̣ⲓⲧ̣ⲉⲓ̈ⲓ ⲡⲟⲕⲛⲓⲕⲟⲩⲓ!</span>
+          <span class="ajami" dir="rtl">يِتێچ-خۆبِزۆن — عِطێيِ پۆكنِكُاِ!</span>
+        </div>
+      </article>
+    </section>
+    <section class="chapter">
+      <div class="aq-eyebrow">05 · THE HEART</div>
+      <h2>Ib</h2>
+      <div class="chapter-scripts">
+        <span class="community">Ib</span>
+        <span class="coptic">ⲓⲃ</span>
+        <span class="ajami" dir="rtl">اِب</span>
+      </div>
+      
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">045</span>
+          <span class="display">Ib·ku wasīʿ pen·din.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">My heart is wide today. (I'm overjoyed)</p>
+        <div class="scripts">
+          <span class="community">Ib-ku wasii' pen-din.</span>
+          <span class="coptic">ⲓⲃⲕⲟⲩ ⲩⲁⲥⲓ̄ⲁ̣ ⲡⲉⲛⲇⲓⲛ.</span>
+          <span class="ajami" dir="rtl">اِبكُ وَسيع پێندِن.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">046</span>
+          <span class="display">Mi het na·bluz·i, we·pen mi·gon·fireḥ.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">I got the blues, but I'm gon' be alright.</p>
+        <div class="scripts">
+          <span class="community">Mi het na-bluz-i, we-pen mi-gon-fireh.</span>
+          <span class="coptic">ⲙⲓ ϩⲉⲧ ⲛⲁⲃⲗⲟⲩⲍⲓ, ⲩⲉⲡⲉⲛ ⲙⲓⲅⲟⲛϥⲓⲣⲉϩ̣.</span>
+          <span class="ajami" dir="rtl">مِ هێت نَبلُزِ، وێپێن مِگۆنفِرێح.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">047</span>
+          <span class="display">La lamisa šan·kwa!</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Don't touch my hair!</p>
+        <div class="scripts">
+          <span class="community">La lamisa shan-kwa!</span>
+          <span class="coptic">ⲗⲁ ⲗⲁⲙⲓⲥⲁ ϣⲁⲛⲕⲩⲁ!</span>
+          <span class="ajami" dir="rtl">لَ لَمِسَ شَنكوَ!</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">048</span>
+          <span class="display">Ni·šawiqa ra·yak·nun·i.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">We long for our land.</p>
+        <div class="scripts">
+          <span class="community">Ni-shawiqa ra-yak-nun-i.</span>
+          <span class="coptic">ⲛⲓϣⲁⲩⲓⲕ̅ⲁ ⲣⲁⲓ̈ⲁⲕⲛⲟⲩⲛⲓ.</span>
+          <span class="ajami" dir="rtl">نِشَوِقَ رَيَكنُنِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">049</span>
+          <span class="display">Ib·nun ḥitep.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">Our hearts are at rest.</p>
+        <div class="scripts">
+          <span class="community">Ib-nun hitep.</span>
+          <span class="coptic">ⲓⲃⲛⲟⲩⲛ ϩ̣ⲓⲧⲉⲡ.</span>
+          <span class="ajami" dir="rtl">اِبنُن حِتێپ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">050</span>
+          <span class="display">Mi·mara·ki.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">I love you. (Egyptian stream)</p>
+        <div class="scripts">
+          <span class="community">Mi-mara-ki.</span>
+          <span class="coptic">ⲙⲓⲙⲁⲣⲁⲕⲓ.</span>
+          <span class="ajami" dir="rtl">مِمَرَكِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">051</span>
+          <span class="display">Mi·ḥaba·ki.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">I love you. (Arabic stream)</p>
+        <div class="scripts">
+          <span class="community">Mi-haba-ki.</span>
+          <span class="coptic">ⲙⲓϩ̣ⲁⲃⲁⲕⲓ.</span>
+          <span class="ajami" dir="rtl">مِحَبَكِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">052</span>
+          <span class="display">Ib·ku het·ki.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">My heart is with you. (condolence)</p>
+        <div class="scripts">
+          <span class="community">Ib-ku het-ki.</span>
+          <span class="coptic">ⲓⲃⲕⲟⲩ ϩⲉⲧⲕⲓ.</span>
+          <span class="ajami" dir="rtl">اِبكُ هێتكِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">053</span>
+          <span class="display">La ḫawifa — mi wi en·pen.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Don't fear — I'm here.</p>
+        <div class="scripts">
+          <span class="community">La khawifa — mi wi en-pen.</span>
+          <span class="coptic">ⲗⲁ ϧⲁⲩⲓϥⲁ — ⲙⲓ ⲩⲓ ⲉⲛⲡⲉⲛ.</span>
+          <span class="ajami" dir="rtl">لَ خَوِفَ — مِ وِ ئێنپێن.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">054</span>
+          <span class="display">Na·ḏikeri i·ṭaba na·ib·a.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">Remembrance heals the heart.</p>
+        <div class="scripts">
+          <span class="community">Na-dhikeri i-taba na-ib-a.</span>
+          <span class="coptic">ⲛⲁⲇ̅ⲓⲕⲉⲣⲓ ⲓⲧ̣ⲁⲃⲁ ⲛⲁⲓⲃⲁ.</span>
+          <span class="ajami" dir="rtl">نَذِكێرِ اِطَبَ نَاِبَ.</span>
+        </div>
+      </article>
+    </section>
+    <section class="chapter">
+      <div class="aq-eyebrow">06 · WORSHIP</div>
+      <h2>ʿIbedi</h2>
+      <div class="chapter-scripts">
+        <span class="community">'Ibedi</span>
+        <span class="coptic">ⲁ̣ⲓⲃⲉⲇⲓ</span>
+        <span class="ajami" dir="rtl">عِبێدِ</span>
+      </div>
+      
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">055</span>
+          <span class="display">La ʾilah illa Allah.</span>
+          <span class="chip chip-sacred">sacred</span>
+        </div>
+        <p class="english">There is no god but God.</p>
+        <div class="scripts">
+          <span class="community">La 'ilah illa Allah.</span>
+          <span class="coptic">ⲗⲁ ⲁ̀ⲓⲗⲁϩ ⲓⲗ̇ⲁ ⲁⲗⲗⲁϩ.</span>
+          <span class="ajami" dir="rtl">لَ ءِلَه اِلَّ الله.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">056</span>
+          <span class="display">Bismillah — ni·gon·ḏakira na·pa·aḫāt·a.</span>
+          <span class="chip chip-sacred">sacred</span>
+        </div>
+        <p class="english">Bismillah — we gon' remember the Ancestors.</p>
+        <div class="scripts">
+          <span class="community">Bismillah — ni-gon-dhakira na-pa-akhaat-a.</span>
+          <span class="coptic">ⲃⲓⲥⲙⲓⲗⲗⲁϩ — ⲛⲓⲅⲟⲛⲇ̅ⲁⲕⲓⲣⲁ ⲛⲁⲡⲁⲁϧⲁ̄ⲧⲁ.</span>
+          <span class="ajami" dir="rtl">بسم الله — نِگۆنذَكِرَ نَپَاَخاتَ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">057</span>
+          <span class="display">Na·pa·aḫāt bi·i·hariwa.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">The Ancestors be watching.</p>
+        <div class="scripts">
+          <span class="community">Na-pa-akhaat bi-i-hariwa.</span>
+          <span class="coptic">ⲛⲁⲡⲁⲁϧⲁ̄ⲧ ⲃⲓⲓϩⲁⲣⲓⲩⲁ.</span>
+          <span class="ajami" dir="rtl">نَپَاَخات بِاِهَرِوَ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">058</span>
+          <span class="display">Ib·ku ḥitep en·salemow·i.</span>
+          <span class="chip chip-sacred">sacred</span>
+        </div>
+        <p class="english">My heart is at rest in the sanctuary.</p>
+        <div class="scripts">
+          <span class="community">Ib-ku hitep en-salemow-i.</span>
+          <span class="coptic">ⲓⲃⲕⲟⲩ ϩ̣ⲓⲧⲉⲡ ⲉⲛⲥⲁⲗⲉⲙⲟⲩⲓ.</span>
+          <span class="ajami" dir="rtl">اِبكُ حِتێپ ئێنسَلێمۆوِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">059</span>
+          <span class="display">Na·ʿiqeli pe saḏet Allah·i.</span>
+          <span class="chip chip-sacred">sacred</span>
+        </div>
+        <p class="english">Reason IS the torch of God.</p>
+        <div class="scripts">
+          <span class="community">Na-'iqeli pe sadhet Allah-i.</span>
+          <span class="coptic">ⲛⲁⲁ̣ⲓⲕ̅ⲉⲗⲓ ⲡⲉ ⲥⲁⲇ̅ⲉⲧ ⲁⲗⲗⲁϩⲓ.</span>
+          <span class="ajami" dir="rtl">نَعِقێلِ پێ سَذێت اللهِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">060</span>
+          <span class="display">Riḥemi Allah·i wasīʿ kama na·aḫet.</span>
+          <span class="chip chip-sacred">sacred</span>
+        </div>
+        <p class="english">The mercy of God is wide as the horizon.</p>
+        <div class="scripts">
+          <span class="community">Rihemi Allah-i wasii' kama na-akhet.</span>
+          <span class="coptic">ⲣⲓϩ̣ⲉⲙⲓ ⲁⲗⲗⲁϩⲓ ⲩⲁⲥⲓ̄ⲁ̣ ⲕⲁⲙⲁ ⲛⲁⲁϧⲉⲧ.</span>
+          <span class="ajami" dir="rtl">رِحێمِ اللهِ وَسيع كَمَ نَاَخێت.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">061</span>
+          <span class="display">Allah pe An-Nūr.</span>
+          <span class="chip chip-sacred">sacred</span>
+        </div>
+        <p class="english">God IS the Light.</p>
+        <div class="scripts">
+          <span class="community">Allah pe An-Nuur.</span>
+          <span class="coptic">ⲁⲗⲗⲁϩ ⲡⲉ ⲁⲛ-ⲛⲟⲩ̄ⲣ.</span>
+          <span class="ajami" dir="rtl">الله پێ اَن-نور.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">062</span>
+          <span class="display">Ni·gon·ṣaliwa Fajr·a.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">We gon' pray Fajr.</p>
+        <div class="scripts">
+          <span class="community">Ni-gon-saliwa Fajr-a.</span>
+          <span class="coptic">ⲛⲓⲅⲟⲛⲥ̣ⲁⲗⲓⲩⲁ ϥⲁϫⲣⲁ.</span>
+          <span class="ajami" dir="rtl">نِگۆنصَلِوَ فَجرَ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">063</span>
+          <span class="display">Ḏakira·tin Allah·a — na·ḏikeri pe na·hina.</span>
+          <span class="chip chip-sacred">sacred</span>
+        </div>
+        <p class="english">Y'all remember God — remembrance IS the road.</p>
+        <div class="scripts">
+          <span class="community">Dhakira-tin Allah-a — na-dhikeri pe na-hina.</span>
+          <span class="coptic">ⲇ̅ⲁⲕⲓⲣⲁⲧⲓⲛ ⲁⲗⲗⲁϩⲁ — ⲛⲁⲇ̅ⲓⲕⲉⲣⲓ ⲡⲉ ⲛⲁϩⲓⲛⲁ.</span>
+          <span class="ajami" dir="rtl">ذَكِرَتِن اللهَ — نَذِكێرِ پێ نَهِنَ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">064</span>
+          <span class="display">Jumuʿa pe din jimeʿi·i.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">Jumuʿa is the day of gathering.</p>
+        <div class="scripts">
+          <span class="community">Jumu'a pe din jime'i-i.</span>
+          <span class="coptic">ϫⲟⲩⲙⲟⲩⲁ̣ⲁ ⲡⲉ ⲇⲓⲛ ϫⲓⲙⲉⲁ̣ⲓⲓ.</span>
+          <span class="ajami" dir="rtl">جُمُعَ پێ دِن جِمێعِاِ.</span>
+        </div>
+      </article>
+    </section>
+    <section class="chapter">
+      <div class="aq-eyebrow">07 · THE PEOPLE</div>
+      <h2>Na·šaʿab</h2>
+      <div class="chapter-scripts">
+        <span class="community">Na-sha'ab</span>
+        <span class="coptic">ⲛⲁϣⲁⲁ̣ⲁⲃ</span>
+        <span class="ajami" dir="rtl">نَشَعَب</span>
+      </div>
+      
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">065</span>
+          <span class="display">Bin ni·ʿabira al·baḥar·a; na·ʿiberi wi en·ib·nun·i.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">We BEEN crossed THE Sea; the lesson lives in our hearts.</p>
+        <div class="scripts">
+          <span class="community">Bin ni-'abira al-bahar-a; na-'iberi wi en-ib-nun-i.</span>
+          <span class="coptic">ⲃⲓⲛ ⲛⲓⲁ̣ⲁⲃⲓⲣⲁ ⲁⲗⲃⲁϩ̣ⲁⲣⲁ; ⲛⲁⲁ̣ⲓⲃⲉⲣⲓ ⲩⲓ ⲉⲛⲓⲃⲛⲟⲩⲛⲓ.</span>
+          <span class="ajami" dir="rtl">بِن نِعَبِرَ البَحَرَ; نَعِبێرِ وِ ئێناِبنُنِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">066</span>
+          <span class="display">Anok pe nemaḥu — sanu na·pa·nemaḥwāt·i.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">I AM a freedman — sibling of the Freedmen.</p>
+        <div class="scripts">
+          <span class="community">Anok pe nemahu — sanu na-pa-nemahwaat-i.</span>
+          <span class="coptic">ⲁⲛⲟⲕ ⲡⲉ ⲛⲉⲙⲁϩ̣ⲟⲩ — ⲥⲁⲛⲟⲩ ⲛⲁⲡⲁⲛⲉⲙⲁϩ̣ⲩⲁ̄ⲧⲓ.</span>
+          <span class="ajami" dir="rtl">اَنۆك پێ نێمَحُ — سَنُ نَپَنێمَحواتِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">067</span>
+          <span class="display">Ḥasa·tin! Ḫaba·tin! Na·pa·aḫāt bi·i·samiʿa.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Y'all sing! Y'all dance! The Ancestors be listening.</p>
+        <div class="scripts">
+          <span class="community">Hasa-tin! Khaba-tin! Na-pa-akhaat bi-i-sami'a.</span>
+          <span class="coptic">ϩ̣ⲁⲥⲁⲧⲓⲛ! ϧⲁⲃⲁⲧⲓⲛ! ⲛⲁⲡⲁⲁϧⲁ̄ⲧ ⲃⲓⲓⲥⲁⲙⲓⲁ̣ⲁ.</span>
+          <span class="ajami" dir="rtl">حَسَتِن! خَبَتِن! نَپَاَخات بِاِسَمِعَ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">068</span>
+          <span class="display">Na·šaʿab i·gon·ḫayira ḥekamwāt·a.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">The people gon' choose the leaders.</p>
+        <div class="scripts">
+          <span class="community">Na-sha'ab i-gon-khayira hekamwaat-a.</span>
+          <span class="coptic">ⲛⲁϣⲁⲁ̣ⲁⲃ ⲓⲅⲟⲛϧⲁⲓ̈ⲓⲣⲁ ϩ̣ⲉⲕⲁⲙⲩⲁ̄ⲧⲁ.</span>
+          <span class="ajami" dir="rtl">نَشَعَب اِگۆنخَيِرَ حێكَمواتَ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">069</span>
+          <span class="display">Ni·gon·baniya madinā.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">We gon' build a city.</p>
+        <div class="scripts">
+          <span class="community">Ni-gon-baniya madinaa.</span>
+          <span class="coptic">ⲛⲓⲅⲟⲛⲃⲁⲛⲓⲓ̈ⲁ ⲙⲁⲇⲓⲛⲁ̄.</span>
+          <span class="ajami" dir="rtl">نِگۆنبَنِيَ مَدِنا.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">070</span>
+          <span class="display">Na·pa·nemaḥwāt bin i·sikem·sen.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">The Freedmen BEEN powerful.</p>
+        <div class="scripts">
+          <span class="community">Na-pa-nemahwaat bin i-sikem-sen.</span>
+          <span class="coptic">ⲛⲁⲡⲁⲛⲉⲙⲁϩ̣ⲩⲁ̄ⲧ ⲃⲓⲛ ⲓⲥⲓⲕⲉⲙⲥⲉⲛ.</span>
+          <span class="ajami" dir="rtl">نَپَنێمَحوات بِن اِسِكێمسێن.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">071</span>
+          <span class="display">Kiyepa pe hina na·nimeḥi·i.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">Mutual aid IS the road of freedom.</p>
+        <div class="scripts">
+          <span class="community">Kiyepa pe hina na-nimehi-i.</span>
+          <span class="coptic">ⲕⲓⲓ̈ⲉⲡⲁ ⲡⲉ ϩⲓⲛⲁ ⲛⲁⲛⲓⲙⲉϩ̣ⲓⲓ.</span>
+          <span class="ajami" dir="rtl">كِيێپَ پێ هِنَ نَنِمێحِاِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">072</span>
+          <span class="display">Samiʿa·tin na·ṭabel·a — ma ḫaba·tin!</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Y'all hear the drum — and dance!</p>
+        <div class="scripts">
+          <span class="community">Sami'a-tin na-tabel-a — ma khaba-tin!</span>
+          <span class="coptic">ⲥⲁⲙⲓⲁ̣ⲁⲧⲓⲛ ⲛⲁⲧ̣ⲁⲃⲉⲗⲁ — ⲙⲁ ϧⲁⲃⲁⲧⲓⲛ!</span>
+          <span class="ajami" dir="rtl">سَمِعَتِن نَطَبێلَ — مَ خَبَتِن!</span>
+        </div>
+      </article>
+    </section>
+    <section class="chapter">
+      <div class="aq-eyebrow">08 · THE WORLD</div>
+      <h2>Na·yak ma na·pet</h2>
+      <div class="chapter-scripts">
+        <span class="community">Na-yak ma na-pet</span>
+        <span class="coptic">ⲛⲁⲓ̈ⲁⲕ ⲙⲁ ⲛⲁⲡⲉⲧ</span>
+        <span class="ajami" dir="rtl">نَيَك مَ نَپێت</span>
+      </div>
+      
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">073</span>
+          <span class="display">Na·pet zarīq, na·yak kamāy.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">The sky is blue, the land is black.</p>
+        <div class="scripts">
+          <span class="community">Na-pet zariiq, na-yak kamaay.</span>
+          <span class="coptic">ⲛⲁⲡⲉⲧ ⲍⲁⲣⲓ̄ⲕ̅, ⲛⲁⲓ̈ⲁⲕ ⲕⲁⲙⲁ̄ⲓ̈.</span>
+          <span class="ajami" dir="rtl">نَپێت زَريق، نَيَك كَماي.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">074</span>
+          <span class="display">Saḥab en·pet·i — omba gon·wi.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Clouds in the sky — rain's coming.</p>
+        <div class="scripts">
+          <span class="community">Sahab en-pet-i — omba gon-wi.</span>
+          <span class="coptic">ⲥⲁϩ̣ⲁⲃ ⲉⲛⲡⲉⲧⲓ — ⲟⲙⲃⲁ ⲅⲟⲛⲩⲓ.</span>
+          <span class="ajami" dir="rtl">سَحَب ئێنپێتِ — ئۆمبَ گۆنوِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">075</span>
+          <span class="display">Na·pa·seba bi·i·hariwa min·pet·i.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">The stars be watching from the sky.</p>
+        <div class="scripts">
+          <span class="community">Na-pa-seba bi-i-hariwa min-pet-i.</span>
+          <span class="coptic">ⲛⲁⲡⲁⲥⲉⲃⲁ ⲃⲓⲓϩⲁⲣⲓⲩⲁ ⲙⲓⲛⲡⲉⲧⲓ.</span>
+          <span class="ajami" dir="rtl">نَپَسێبَ بِاِهَرِوَ مِنپێتِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">076</span>
+          <span class="display">Al·yiteri wi bayn na·pa·yakāt·i.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">THE River lies between the lands.</p>
+        <div class="scripts">
+          <span class="community">Al-yiteri wi bayn na-pa-yakaat-i.</span>
+          <span class="coptic">ⲁⲗⲓ̈ⲓⲧⲉⲣⲓ ⲩⲓ ⲃⲁⲓ̈ⲛ ⲛⲁⲡⲁⲓ̈ⲁⲕⲁ̄ⲧⲓ.</span>
+          <span class="ajami" dir="rtl">اليِتێرِ وِ بَين نَپَيَكاتِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">077</span>
+          <span class="display">Omba don yawim — šama·tin na·yak·a!</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Rain done came — y'all smell the land!</p>
+        <div class="scripts">
+          <span class="community">Omba don yawim — shama-tin na-yak-a!</span>
+          <span class="coptic">ⲟⲙⲃⲁ ⲇⲟⲛ ⲓ̈ⲁⲩⲓⲙ — ϣⲁⲙⲁⲧⲓⲛ ⲛⲁⲓ̈ⲁⲕⲁ!</span>
+          <span class="ajami" dir="rtl">ئۆمبَ دۆن يَوِم — شَمَتِن نَيَكَ!</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">078</span>
+          <span class="display">Barq ma raʿad! Omba i·gon·yawa.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Lightning and thunder! Rain gon' come.</p>
+        <div class="scripts">
+          <span class="community">Barq ma ra'ad! Omba i-gon-yawa.</span>
+          <span class="coptic">ⲃⲁⲣⲕ̅ ⲙⲁ ⲣⲁⲁ̣ⲁⲇ! ⲟⲙⲃⲁ ⲓⲅⲟⲛⲓ̈ⲁⲩⲁ.</span>
+          <span class="ajami" dir="rtl">بَرق مَ رَعَد! ئۆمبَ اِگۆنيَوَ.</span>
+        </div>
+      </article>
+    </section>
+    <section class="chapter">
+      <div class="aq-eyebrow">09 · THE ROAD</div>
+      <h2>Na·hina</h2>
+      <div class="chapter-scripts">
+        <span class="community">Na-hina</span>
+        <span class="coptic">ⲛⲁϩⲓⲛⲁ</span>
+        <span class="ajami" dir="rtl">نَهِنَ</span>
+      </div>
+      
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">079</span>
+          <span class="display">Mi·mašiya en·na·hina·i, ril ḥitep.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">I'm walking the road, real peaceful.</p>
+        <div class="scripts">
+          <span class="community">Mi-mashiya en-na-hina-i, ril hitep.</span>
+          <span class="coptic">ⲙⲓⲙⲁϣⲓⲓ̈ⲁ ⲉⲛ̇ⲁϩⲓⲛⲁⲓ, ⲣⲓⲗ ϩ̣ⲓⲧⲉⲡ.</span>
+          <span class="ajami" dir="rtl">مِمَشِيَ النَّهِنَاِ، رِل حِتێپ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">080</span>
+          <span class="display">Mi·gon·sayira ben·hawtpa·i pokni·ku·i en·sayiret·i.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">I'ma ride to my grandmother's house in the car.</p>
+        <div class="scripts">
+          <span class="community">Mi-gon-sayira ben-hawtpa-i pokni-ku-i en-sayiret-i.</span>
+          <span class="coptic">ⲙⲓⲅⲟⲛⲥⲁⲓ̈ⲓⲣⲁ ⲃⲉⲛϩⲁⲩⲧⲡⲁⲓ ⲡⲟⲕⲛⲓⲕⲟⲩⲓ ⲉⲛⲥⲁⲓ̈ⲓⲣⲉⲧⲓ.</span>
+          <span class="ajami" dir="rtl">مِگۆنسَيِرَ بێنهَوتپَاِ پۆكنِكُاِ ئێنسَيِرێتِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">081</span>
+          <span class="display">Na·ḫireji don waṣil; na·Rijeʿi i·gon·waṣila.</span>
+          <span class="chip chip-sacred">sacred</span>
+        </div>
+        <p class="english">The Exodus done arrived; the Return gon' arrive.</p>
+        <div class="scripts">
+          <span class="community">Na-khireji don wasil; na-Rije'i i-gon-wasila.</span>
+          <span class="coptic">ⲛⲁϧⲓⲣⲉϫⲓ ⲇⲟⲛ ⲩⲁⲥ̣ⲓⲗ; ⲛⲁⲣⲓϫⲉⲁ̣ⲓ ⲓⲅⲟⲛⲩⲁⲥ̣ⲓⲗⲁ.</span>
+          <span class="ajami" dir="rtl">نَخِرێجِ دۆن وَصِل; نَرِجێعِ اِگۆنوَصِلَ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">082</span>
+          <span class="display">Mašiya het·ku!</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Walk with me!</p>
+        <div class="scripts">
+          <span class="community">Mashiya het-ku!</span>
+          <span class="coptic">ⲙⲁϣⲓⲓ̈ⲁ ϩⲉⲧⲕⲟⲩ!</span>
+          <span class="ajami" dir="rtl">مَشِيَ هێتكُ!</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">083</span>
+          <span class="display">Na·hina wi qudām·nun.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">The road is before us.</p>
+        <div class="scripts">
+          <span class="community">Na-hina wi qudaam-nun.</span>
+          <span class="coptic">ⲛⲁϩⲓⲛⲁ ⲩⲓ ⲕ̅ⲟⲩⲇⲁ̄ⲙⲛⲟⲩⲛ.</span>
+          <span class="ajami" dir="rtl">نَهِنَ وِ قُدامنُن.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">084</span>
+          <span class="display">Sayira en·salām·i!</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Travel in peace! (safe travels)</p>
+        <div class="scripts">
+          <span class="community">Sayira en-salaam-i!</span>
+          <span class="coptic">ⲥⲁⲓ̈ⲓⲣⲁ ⲉⲛⲥⲁⲗⲁ̄ⲙⲓ!</span>
+          <span class="ajami" dir="rtl">سَيِرَ ئێنسَلامِ!</span>
+        </div>
+      </article>
+    </section>
+    <section class="chapter">
+      <div class="aq-eyebrow">10 · THE ACADEMY</div>
+      <h2>Sabeʾow</h2>
+      <div class="chapter-scripts">
+        <span class="community">Sabe'ow</span>
+        <span class="coptic">ⲥⲁⲃⲉⲁ̀ⲟⲩ</span>
+        <span class="ajami" dir="rtl">سَبێءۆو</span>
+      </div>
+      
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">085</span>
+          <span class="display">Mi·ṭaliba niḥewi en·sabeʾow·i.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">I study grammar at the academy.</p>
+        <div class="scripts">
+          <span class="community">Mi-taliba nihewi en-sabe'ow-i.</span>
+          <span class="coptic">ⲙⲓⲧ̣ⲁⲗⲓⲃⲁ ⲛⲓϩ̣ⲉⲩⲓ ⲉⲛⲥⲁⲃⲉⲁ̀ⲟⲩⲓ.</span>
+          <span class="ajami" dir="rtl">مِطَلِبَ نِحێوِ ئێنسَبێءۆوِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">086</span>
+          <span class="display">Saʾila·tin! Na·pa·jiwebiāt wi en·na·pa·sebāt·i.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">Y'all ask! The answers are in the stars.</p>
+        <div class="scripts">
+          <span class="community">Sa'ila-tin! Na-pa-jiwebiaat wi en-na-pa-sebaat-i.</span>
+          <span class="coptic">ⲥⲁⲁ̀ⲓⲗⲁⲧⲓⲛ! ⲛⲁⲡⲁϫⲓⲩⲉⲃⲓⲁ̄ⲧ ⲩⲓ ⲉⲛ̇ⲁⲡⲁⲥⲉⲃⲁ̄ⲧⲓ.</span>
+          <span class="ajami" dir="rtl">سَءِلَتِن! نَپَجِوێبِآت وِ النَّپَسێباتِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">087</span>
+          <span class="display">ʿIrefi bilā ḏikeri la wi ʿirefi.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">Knowledge without remembrance is no knowledge.</p>
+        <div class="scripts">
+          <span class="community">'Irefi bilaa dhikeri la wi 'irefi.</span>
+          <span class="coptic">ⲁ̣ⲓⲣⲉϥⲓ ⲃⲓⲗⲁ̄ ⲇ̅ⲓⲕⲉⲣⲓ ⲗⲁ ⲩⲓ ⲁ̣ⲓⲣⲉϥⲓ.</span>
+          <span class="ajami" dir="rtl">عِرێفِ بِلا ذِكێرِ لَ وِ عِرێفِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">088</span>
+          <span class="display">Na·qamus pe baḥar kilemiāt·i.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">The dictionary IS an ocean of words.</p>
+        <div class="scripts">
+          <span class="community">Na-qamus pe bahar kilemiaat-i.</span>
+          <span class="coptic">ⲛⲁⲕ̅ⲁⲙⲟⲩⲥ ⲡⲉ ⲃⲁϩ̣ⲁⲣ ⲕⲓⲗⲉⲙⲓⲁ̄ⲧⲓ.</span>
+          <span class="ajami" dir="rtl">نَقَمُس پێ بَحَر كِلێمِآتِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">089</span>
+          <span class="display">Saša·tin, ḏakira·tin, ma la nasiya·tin!</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">Y'all write, y'all remember, and don't forget!</p>
+        <div class="scripts">
+          <span class="community">Sasha-tin, dhakira-tin, ma la nasiya-tin!</span>
+          <span class="coptic">ⲥⲁϣⲁⲧⲓⲛ, ⲇ̅ⲁⲕⲓⲣⲁⲧⲓⲛ, ⲙⲁ ⲗⲁ ⲛⲁⲥⲓⲓ̈ⲁⲧⲓⲛ!</span>
+          <span class="ajami" dir="rtl">سَشَتِن، ذَكِرَتِن، مَ لَ نَسِيَتِن!</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">090</span>
+          <span class="display">Sinu ma sinu pe kam? — Fedu!</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">Two and two is how much? — Four!</p>
+        <div class="scripts">
+          <span class="community">Sinu ma sinu pe kam? — Fedu!</span>
+          <span class="coptic">ⲥⲓⲛⲟⲩ ⲙⲁ ⲥⲓⲛⲟⲩ ⲡⲉ ⲕⲁⲙ? — ϥⲉⲇⲟⲩ!</span>
+          <span class="ajami" dir="rtl">سِنُ مَ سِنُ پێ كَم؟ — فێدُ!</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">091</span>
+          <span class="display">Na·ṭelabu bi·i·ṭaliba jem·din.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">The student be studying every day.</p>
+        <div class="scripts">
+          <span class="community">Na-telabu bi-i-taliba jem-din.</span>
+          <span class="coptic">ⲛⲁⲧ̣ⲉⲗⲁⲃⲟⲩ ⲃⲓⲓⲧ̣ⲁⲗⲓⲃⲁ ϫⲉⲙⲇⲓⲛ.</span>
+          <span class="ajami" dir="rtl">نَطێلَبُ بِاِطَلِبَ جێمدِن.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">092</span>
+          <span class="display">Saʾila — ma na·jiwebi i·gon·yawa.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">Ask — and the answer gon' come.</p>
+        <div class="scripts">
+          <span class="community">Sa'ila — ma na-jiwebi i-gon-yawa.</span>
+          <span class="coptic">ⲥⲁⲁ̀ⲓⲗⲁ — ⲙⲁ ⲛⲁϫⲓⲩⲉⲃⲓ ⲓⲅⲟⲛⲓ̈ⲁⲩⲁ.</span>
+          <span class="ajami" dir="rtl">سَءِلَ — مَ نَجِوێبِ اِگۆنيَوَ.</span>
+        </div>
+      </article>
+    </section>
+    <section class="chapter">
+      <div class="aq-eyebrow">11 · NUMBERS</div>
+      <h2>Ḥosibonāt</h2>
+      <div class="chapter-scripts">
+        <span class="community">Hosibonaat</span>
+        <span class="coptic">ϩ̣ⲟⲥⲓⲃⲟⲛⲁ̄ⲧ</span>
+        <span class="ajami" dir="rtl">حۆسِبۆنات</span>
+      </div>
+      
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">093</span>
+          <span class="display">Nefer, wa, sinu, ḫemet, fedu, diyu.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">Zero, one, two, three, four, five.</p>
+        <div class="scripts">
+          <span class="community">Nefer, wa, sinu, khemet, fedu, diyu.</span>
+          <span class="coptic">ⲛⲉϥⲉⲣ, ⲩⲁ, ⲥⲓⲛⲟⲩ, ϧⲉⲙⲉⲧ, ϥⲉⲇⲟⲩ, ⲇⲓⲓ̈ⲟⲩ.</span>
+          <span class="ajami" dir="rtl">نێفێر، وَ، سِنُ، خێمێت، فێدُ، دِيُ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">094</span>
+          <span class="display">Sisu, sefeḫ, ḫemenu, pesiḏ, meḏu!</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">Six, seven, eight, nine, ten!</p>
+        <div class="scripts">
+          <span class="community">Sisu, sefekh, khemenu, pesidh, medhu!</span>
+          <span class="coptic">ⲥⲓⲥⲟⲩ, ⲥⲉϥⲉϧ, ϧⲉⲙⲉⲛⲟⲩ, ⲡⲉⲥⲓⲇ̅, ⲙⲉⲇ̅ⲟⲩ!</span>
+          <span class="ajami" dir="rtl">سِسُ، سێفێخ، خێمێنُ، پێسِذ، مێذُ!</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">095</span>
+          <span class="display">Šet, ḫa — ma ḥeḥ!</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">A hundred, a thousand — and infinity!</p>
+        <div class="scripts">
+          <span class="community">Shet, kha — ma heh!</span>
+          <span class="coptic">ϣⲉⲧ, ϧⲁ — ⲙⲁ ϩ̣ⲉϩ̣!</span>
+          <span class="ajami" dir="rtl">شێت، خَ — مَ حێح!</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">096</span>
+          <span class="display">Meḏu-wa, meḏu-sinu, meḏu-ḫemet.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">Eleven, twelve, thirteen.</p>
+        <div class="scripts">
+          <span class="community">Medhu-wa, medhu-sinu, medhu-khemet.</span>
+          <span class="coptic">ⲙⲉⲇ̅ⲟⲩ-ⲩⲁ, ⲙⲉⲇ̅ⲟⲩ-ⲥⲓⲛⲟⲩ, ⲙⲉⲇ̅ⲟⲩ-ϧⲉⲙⲉⲧ.</span>
+          <span class="ajami" dir="rtl">مێذُ-وَ، مێذُ-سِنُ، مێذُ-خێمێت.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">097</span>
+          <span class="display">Sinu meḏu, ḫemet meḏu, fedu meḏu, diyu meḏu.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">Twenty, thirty, forty, fifty.</p>
+        <div class="scripts">
+          <span class="community">Sinu medhu, khemet medhu, fedu medhu, diyu medhu.</span>
+          <span class="coptic">ⲥⲓⲛⲟⲩ ⲙⲉⲇ̅ⲟⲩ, ϧⲉⲙⲉⲧ ⲙⲉⲇ̅ⲟⲩ, ϥⲉⲇⲟⲩ ⲙⲉⲇ̅ⲟⲩ, ⲇⲓⲓ̈ⲟⲩ ⲙⲉⲇ̅ⲟⲩ.</span>
+          <span class="ajami" dir="rtl">سِنُ مێذُ، خێمێت مێذُ، فێدُ مێذُ، دِيُ مێذُ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">098</span>
+          <span class="display">Ḥasiba ʿala ḏartāt·kī!</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Count on your hands!</p>
+        <div class="scripts">
+          <span class="community">Hasiba 'ala dhartaat-kii!</span>
+          <span class="coptic">ϩ̣ⲁⲥⲓⲃⲁ ⲁ̣ⲁⲗⲁ ⲇ̅ⲁⲣⲧⲁ̄ⲧⲕⲓ̄!</span>
+          <span class="ajami" dir="rtl">حَسِبَ عَلَ ذَرتاتكي!</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">099</span>
+          <span class="display">Mi het ḫemet weldwāt·i.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">I have three children.</p>
+        <div class="scripts">
+          <span class="community">Mi het khemet weldwaat-i.</span>
+          <span class="coptic">ⲙⲓ ϩⲉⲧ ϧⲉⲙⲉⲧ ⲩⲉⲗⲇⲩⲁ̄ⲧⲓ.</span>
+          <span class="ajami" dir="rtl">مِ هێت خێمێت وێلدواتِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">100</span>
+          <span class="display">ʿInd·ki kam ranpetāt?</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">How old are you? (lit. how many years you got?)</p>
+        <div class="scripts">
+          <span class="community">'Ind-ki kam ranpetaat?</span>
+          <span class="coptic">ⲁ̣ⲓⲛⲇⲕⲓ ⲕⲁⲙ ⲣⲁⲛⲡⲉⲧⲁ̄ⲧ?</span>
+          <span class="ajami" dir="rtl">عِندكِ كَم رَنپێتات؟</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">101</span>
+          <span class="display">ʿInd·ku sinu meḏu ranpetāt.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">I'm twenty. (twenty years at-me)</p>
+        <div class="scripts">
+          <span class="community">'Ind-ku sinu medhu ranpetaat.</span>
+          <span class="coptic">ⲁ̣ⲓⲛⲇⲕⲟⲩ ⲥⲓⲛⲟⲩ ⲙⲉⲇ̅ⲟⲩ ⲣⲁⲛⲡⲉⲧⲁ̄ⲧ.</span>
+          <span class="ajami" dir="rtl">عِندكُ سِنُ مێذُ رَنپێتات.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">102</span>
+          <span class="display">Pen pe na·din tapīy.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">This is the first day.</p>
+        <div class="scripts">
+          <span class="community">Pen pe na-din tapiiy.</span>
+          <span class="coptic">ⲡⲉⲛ ⲡⲉ ⲛⲁⲇⲓⲛ ⲧⲁⲡⲓ̄ⲓ̈.</span>
+          <span class="ajami" dir="rtl">پێن پێ نَدِن تَپيي.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">103</span>
+          <span class="display">Sabt pe na·din sefeḫīy.</span>
+          <span class="chip chip-plain">plain</span>
+        </div>
+        <p class="english">Sabt is the seventh day.</p>
+        <div class="scripts">
+          <span class="community">Sabt pe na-din sefekhiiy.</span>
+          <span class="coptic">ⲥⲁⲃⲧ ⲡⲉ ⲛⲁⲇⲓⲛ ⲥⲉϥⲉϧⲓ̄ⲓ̈.</span>
+          <span class="ajami" dir="rtl">سَبت پێ نَدِن سێفێخيي.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">104</span>
+          <span class="display">Min nefer·i ben ḥeḥ·i — ni·gon·ḥasiba!</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">From zero to infinity — we gon' count!</p>
+        <div class="scripts">
+          <span class="community">Min nefer-i ben heh-i — ni-gon-hasiba!</span>
+          <span class="coptic">ⲙⲓⲛ ⲛⲉϥⲉⲣⲓ ⲃⲉⲛ ϩ̣ⲉϩ̣ⲓ — ⲛⲓⲅⲟⲛϩ̣ⲁⲥⲓⲃⲁ!</span>
+          <span class="ajami" dir="rtl">مِن نێفێرِ بێن حێحِ — نِگۆنحَسِبَ!</span>
+        </div>
+      </article>
+    </section>
+    <section class="chapter">
+      <div class="aq-eyebrow">12 · THE MARKET</div>
+      <h2>Tajerow</h2>
+      <div class="chapter-scripts">
+        <span class="community">Tajerow</span>
+        <span class="coptic">ⲧⲁϫⲉⲣⲟⲩ</span>
+        <span class="ajami" dir="rtl">تَجێرۆو</span>
+      </div>
+      
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">105</span>
+          <span class="display">ʿAfiwa·ku — na·tajerow wi en·ta?</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Excuse me — where's the market?</p>
+        <div class="scripts">
+          <span class="community">'Afiwa-ku — na-tajerow wi en-ta?</span>
+          <span class="coptic">ⲁ̣ⲁϥⲓⲩⲁⲕⲟⲩ — ⲛⲁⲧⲁϫⲉⲣⲟⲩ ⲩⲓ ⲉⲛⲧⲁ?</span>
+          <span class="ajami" dir="rtl">عَفِوَكُ — نَتَجێرۆو وِ ئێنتَ؟</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">106</span>
+          <span class="display">Mi·gon·aya ben·na·tajerow·i.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">I'ma go to the market.</p>
+        <div class="scripts">
+          <span class="community">Mi-gon-aya ben-na-tajerow-i.</span>
+          <span class="coptic">ⲙⲓⲅⲟⲛⲁⲓ̈ⲁ ⲃⲉⲛ̇ⲁⲧⲁϫⲉⲣⲟⲩⲓ.</span>
+          <span class="ajami" dir="rtl">مِگۆناَيَ بێنَّتَجێرۆوِ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">107</span>
+          <span class="display">Pen bi kam?</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">How much is this?</p>
+        <div class="scripts">
+          <span class="community">Pen bi kam?</span>
+          <span class="coptic">ⲡⲉⲛ ⲃⲓ ⲕⲁⲙ?</span>
+          <span class="ajami" dir="rtl">پێن بِ كَم؟</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">108</span>
+          <span class="display">Ṯaman·to kam?</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">What's its price?</p>
+        <div class="scripts">
+          <span class="community">Thaman-to kam?</span>
+          <span class="coptic">ⲑⲁⲙⲁⲛⲧⲟ ⲕⲁⲙ?</span>
+          <span class="ajami" dir="rtl">ثَمَنتۆ كَم؟</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">109</span>
+          <span class="display">Tu mēr, kaz!</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Too much, cuz!</p>
+        <div class="scripts">
+          <span class="community">Tu meer, kaz!</span>
+          <span class="coptic">ⲧⲟⲩ ⲙⲏⲣ, ⲕⲁⲍ!</span>
+          <span class="ajami" dir="rtl">تُ مێر، كَز!</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">110</span>
+          <span class="display">Aqel, min faḍl·kī.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Less, please.</p>
+        <div class="scripts">
+          <span class="community">Aqel, min fadl-kii.</span>
+          <span class="coptic">ⲁⲕ̅ⲉⲗ, ⲙⲓⲛ ϥⲁⲇ̣ⲗⲕⲓ̄.</span>
+          <span class="ajami" dir="rtl">اَقێل، مِن فَضلكي.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">111</span>
+          <span class="display">Mi·šariya ḫemet ḫobizonāt·a.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">I'm buying three loaves.</p>
+        <div class="scripts">
+          <span class="community">Mi-shariya khemet khobizonaat-a.</span>
+          <span class="coptic">ⲙⲓϣⲁⲣⲓⲓ̈ⲁ ϧⲉⲙⲉⲧ ϧⲟⲃⲓⲍⲟⲛⲁ̄ⲧⲁ.</span>
+          <span class="ajami" dir="rtl">مِشَرِيَ خێمێت خۆبِزۆناتَ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">112</span>
+          <span class="display">ʿAṭiya·ku wa·ḫobizon·a, min faḍl·kī.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Give me a loaf, please.</p>
+        <div class="scripts">
+          <span class="community">'Atiya-ku wa-khobizon-a, min fadl-kii.</span>
+          <span class="coptic">ⲁ̣ⲁⲧ̣ⲓⲓ̈ⲁⲕⲟⲩ ⲩⲁϧⲟⲃⲓⲍⲟⲛⲁ, ⲙⲓⲛ ϥⲁⲇ̣ⲗⲕⲓ̄.</span>
+          <span class="ajami" dir="rtl">عَطِيَكُ وَخۆبِزۆنَ، مِن فَضلكي.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">113</span>
+          <span class="display">Ti·kaniča balā?</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">You sell beans?</p>
+        <div class="scripts">
+          <span class="community">Ti-kanicha balaa?</span>
+          <span class="coptic">ⲧⲓⲕⲁⲛⲓϭⲁ ⲃⲁⲗⲁ̄?</span>
+          <span class="ajami" dir="rtl">تِكَنِچَ بَلا؟</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">114</span>
+          <span class="display">Aywa — ʿind·ku ḥolibon ma bala.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Yeah — I got milk and beans.</p>
+        <div class="scripts">
+          <span class="community">Aywa — 'ind-ku holibon ma bala.</span>
+          <span class="coptic">ⲁⲓ̈ⲩⲁ — ⲁ̣ⲓⲛⲇⲕⲟⲩ ϩ̣ⲟⲗⲓⲃⲟⲛ ⲙⲁ ⲃⲁⲗⲁ.</span>
+          <span class="ajami" dir="rtl">اَيوَ — عِندكُ حۆلِبۆن مَ بَلَ.</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">115</span>
+          <span class="display">Ti·falisa bi·fulus·i aw bi·fanet·i?</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">You paying cash or phone?</p>
+        <div class="scripts">
+          <span class="community">Ti-falisa bi-fulus-i aw bi-fanet-i?</span>
+          <span class="coptic">ⲧⲓϥⲁⲗⲓⲥⲁ ⲃⲓϥⲟⲩⲗⲟⲩⲥⲓ ⲁⲩ ⲃⲓϥⲁⲛⲉⲧⲓ?</span>
+          <span class="ajami" dir="rtl">تِفَلِسَ بِفُلُسِ اَو بِفَنێتِ؟</span>
+        </div>
+      </article>
+      <article class="entry">
+        <div class="entry-head">
+          <span class="num">116</span>
+          <span class="display">Bireki ʿala·ki! — ʿIfewi, ṣadīq.</span>
+          <span class="chip chip-everyday">everyday</span>
+        </div>
+        <p class="english">Thank you! — You're welcome, friend.</p>
+        <div class="scripts">
+          <span class="community">Bireki 'ala-ki! — 'Ifewi, sadiiq.</span>
+          <span class="coptic">ⲃⲓⲣⲉⲕⲓ ⲁ̣ⲁⲗⲁⲕⲓ! — ⲁ̣ⲓϥⲉⲩⲓ, ⲥ̣ⲁⲇⲓ̄ⲕ̅.</span>
+          <span class="ajami" dir="rtl">بِرێكِ عَلَكِ! — عِفێوِ، صَديق.</span>
+        </div>
+      </article>
+    </section>
+  <footer class="colophon">
+    <div class="aq-eyebrow">Generated from data/phrases.json · tools/phrasebook-html.js</div>
+    <p>Every phrase ratified; every script generated; every rule ledgered.</p>
+    <p class="charge">Ḏakira, saša, ma la nasiya. — Remember, write, and don't forget.</p>
+  </footer>
+</div>
+</body>
+</html>

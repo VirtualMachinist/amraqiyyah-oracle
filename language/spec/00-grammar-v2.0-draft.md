@@ -153,7 +153,7 @@ The freeze is **broad** (R-022): the **99 divine Names enter wholesale** as froz
 
 ### 3.4 Primary nouns & rootless lexemes (R-034)
 
-Not every noun is template-derived. **Primary nouns** carry a lexical citation form with a root anchor for derivation (*din* day; *iška* mother, root Y-Š-K → *yašika* "to nurture"; *pokni*, *mafo*, *ala*, *kaz*, *banut*). **Rootless lexemes** have no consonantal root at all — nursery words (*mama*, *dadi*), which every natural language holds outside its template system. Both classes take the full nominal machinery: articles, plural -āt (*iškāt*, *pokniyāt*), possessive suffixes, case with sandhi, and derivational suffixes (*mamān* "Big Mama" = mama + augmentative -an).
+Not every noun is template-derived. **Primary nouns** carry a lexical citation form with a root anchor for derivation (*din* day; *iška* mother, root Y-Š-K → *yašika* "to nurture"; *pokni*, *mafo*, *ala*, *kaz*, *banut*). **Rootless lexemes** have no consonantal root at all — nursery words (*mama*, *dadi*), which every natural language holds outside its template system. Both classes take the full nominal machinery: articles, plural -āt (*iškāt*, *pokniāt* — R-060), possessive suffixes, case with sandhi, and derivational suffixes (*mamān* "Big Mama" = mama + augmentative -an).
 
 ### 3.4a Kinship — the Inalienability Rule (R-033) and the kin -t convention
 
@@ -245,7 +245,7 @@ Grammar is genderless: no gendered articles, no agreement, no productive feminin
 
 ### 5.2 Number (R-015)
 
-Plural **-āt**, universal (Arabic sound-plural stream): *šey·āt* "things," *din·āt* "days," *fek·wāt* "cultivators" (u+ā → wā by sandhi), *ʿanak·wāt* "people." This replaces Egyptian -w, which was inaudible after u-stems and collided with case sandhi; the Egyptian stream keeps its claim on number through the plural article **na·pa** (itself Late Egyptian nꜣ). Plurals decline regularly: *fek·wāt·u / fek·wāt·a / fek·wāt·i*. Collective **-pa** = group-as-unit (*hik·el·pa* "the understanding-community"). Dual: deferred (Doc B ruling stands).
+Plural **-āt**, universal (Arabic sound-plural stream): *šey·āt* "things," *din·āt* "days," *fek·wāt* "cultivators" (u+ā → wā by sandhi), *ʿanak·wāt* "people." **Vowel-junction law (R-060):** u+āt → **wāt** (*saʾwāt*, *weldwāt*); a+āt → **āt** (a+ā merges: *iškāt*, *sebāt*); i+āt → **iāt written plain** (*kilemiāt*, *jiwebiāt*, *pokniāt* — the glide is spoken /ijāt/ but unwritten, keeping the stem visible). This replaces Egyptian -w, which was inaudible after u-stems and collided with case sandhi; the Egyptian stream keeps its claim on number through the plural article **na·pa** (itself Late Egyptian nꜣ). Plurals decline regularly: *fek·wāt·u / fek·wāt·a / fek·wāt·i*. Collective **-pa** = group-as-unit (*hik·el·pa* "the understanding-community"). Dual: deferred (Doc B ruling stands).
 
 ### 5.3 The Two Definites (R-012)
 

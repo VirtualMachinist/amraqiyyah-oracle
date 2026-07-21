@@ -139,7 +139,7 @@ Orthographic policies in this render (proposed R-057): lived scripts attach proc
 | # | Amraqiyyah | English | Community | Coptic | Ajami |
 |---|---|---|---|---|---|
 | 85 | **Mi·ṭaliba niḥewi en·sabeʾow·i.** | I study grammar at the academy. *(plain)* | Mi-taliba nihewi en-sabe'ow-i. | ⲙⲓⲧ̣ⲁⲗⲓⲃⲁ ⲛⲓϩ̣ⲉⲩⲓ ⲉⲛⲥⲁⲃⲉⲁ̀ⲟⲩⲓ. | <div dir="rtl">مِطَلِبَ نِحێوِ ئێنسَبێءۆوِ.</div> |
-| 86 | **Saʾila·tin! Na·pa·jiwebiāt wi en·na·pa·seba·āt·i.** | Y'all ask! The answers are in the stars. *(plain)* | Sa'ila-tin! Na-pa-jiwebiaat wi en-na-pa-seba-aat-i. | ⲥⲁⲁ̀ⲓⲗⲁⲧⲓⲛ! ⲛⲁⲡⲁϫⲓⲩⲉⲃⲓⲁ̄ⲧ ⲩⲓ ⲉⲛ̇ⲁⲡⲁⲥⲉⲃⲁⲁ̄ⲧⲓ. | <div dir="rtl">سَءِلَتِن! نَپَجِوێبِآت وِ النَّپَسێبَآتِ.</div> |
+| 86 | **Saʾila·tin! Na·pa·jiwebiāt wi en·na·pa·sebāt·i.** | Y'all ask! The answers are in the stars. *(plain)* | Sa'ila-tin! Na-pa-jiwebiaat wi en-na-pa-sebaat-i. | ⲥⲁⲁ̀ⲓⲗⲁⲧⲓⲛ! ⲛⲁⲡⲁϫⲓⲩⲉⲃⲓⲁ̄ⲧ ⲩⲓ ⲉⲛ̇ⲁⲡⲁⲥⲉⲃⲁ̄ⲧⲓ. | <div dir="rtl">سَءِلَتِن! نَپَجِوێبِآت وِ النَّپَسێباتِ.</div> |
 | 87 | **ʿIrefi bilā ḏikeri la wi ʿirefi.** | Knowledge without remembrance is no knowledge. *(plain)* | 'Irefi bilaa dhikeri la wi 'irefi. | ⲁ̣ⲓⲣⲉϥⲓ ⲃⲓⲗⲁ̄ ⲇ̅ⲓⲕⲉⲣⲓ ⲗⲁ ⲩⲓ ⲁ̣ⲓⲣⲉϥⲓ. | <div dir="rtl">عِرێفِ بِلا ذِكێرِ لَ وِ عِرێفِ.</div> |
 | 88 | **Na·qamus pe baḥar kilemiāt·i.** | The dictionary IS an ocean of words. *(plain)* | Na-qamus pe bahar kilemiaat-i. | ⲛⲁⲕ̅ⲁⲙⲟⲩⲥ ⲡⲉ ⲃⲁϩ̣ⲁⲣ ⲕⲓⲗⲉⲙⲓⲁ̄ⲧⲓ. | <div dir="rtl">نَقَمُس پێ بَحَر كِلێمِآتِ.</div> |
 | 89 | **Saša·tin, ḏakira·tin, ma la nasiya·tin!** | Y'all write, y'all remember, and don't forget! *(plain)* | Sasha-tin, dhakira-tin, ma la nasiya-tin! | ⲥⲁϣⲁⲧⲓⲛ, ⲇ̅ⲁⲕⲓⲣⲁⲧⲓⲛ, ⲙⲁ ⲗⲁ ⲛⲁⲥⲓⲓ̈ⲁⲧⲓⲛ! | <div dir="rtl">سَشَتِن، ذَكِرَتِن، مَ لَ نَسِيَتِن!</div> |

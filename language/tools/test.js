@@ -74,7 +74,11 @@ eq(M.attachCase(M.possess('šey', '1sg'), 'u'), 'šeykū', 'šey·kū my-thing.N
 eq(M.pluralize('feku'), 'fekwāt', 'plural u-stem');
 eq(M.pluralize('šey'), 'šeyāt', 'plural after glide');
 eq(M.pluralize('din'), 'dināt', 'plural after consonant');
-eq(M.pluralize('fiki'), 'fikyāt', 'plural i-stem');
+eq(M.pluralize('fiki'), 'fikiāt', 'plural i-stem written plain (R-060)');
+eq(M.pluralize('kilemi'), 'kilemiāt', 'R-060: the phrasebook name pluralizes as sealed');
+eq(M.pluralize('iška'), 'iškāt', 'R-060: a+ā merges');
+eq(M.pluralize('seba'), 'sebāt', 'R-060: sebāt (corpus erratum sealed)');
+eq(M.pluralize('pokni'), 'pokniāt', 'R-060: pokniāt (spec erratum sealed)');
 
 // R-017 showcase family: Ḥ-S-B
 eq(M.derive(HSB, 'verb'), 'ḥasiba', 'Ḥ-S-B compute (= Arabic ḥasiba!)');

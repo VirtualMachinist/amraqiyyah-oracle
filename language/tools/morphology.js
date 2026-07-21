@@ -85,7 +85,7 @@ function attachCase(form, c) {
 function pluralize(form) {
   const last = form.slice(-1);
   if (last === 'u') return form.slice(0, -1) + 'wāt';
-  if (last === 'i') return form.slice(0, -1) + 'yāt';
+  if (last === 'i') return form + 'āt'; // R-060: i+āt written plain (kilemiāt, jiwebiāt)
   if (last === 'a') return form.slice(0, -1) + 'āt';
   return form + 'āt';
 }
