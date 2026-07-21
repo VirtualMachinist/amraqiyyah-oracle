@@ -2990,6 +2990,139 @@
         "Doc B's lost root recovered",
         "theological framing flag — Ali reviews the gloss"
       ]
+    },
+    {
+      "skeleton": [
+        "m",
+        "k",
+        "n"
+      ],
+      "citation": "makina",
+      "gloss": "machine, device, mechanism",
+      "source": {
+        "lang": "Greek (universal)",
+        "word": "mēchanē",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-8",
+        "primary noun",
+        "AI = makina ḏakīy (intelligent machine) — compound pending D-15"
+      ]
+    },
+    {
+      "skeleton": [
+        "s",
+        "y",
+        "r"
+      ],
+      "gloss": "travel, ride, journey — sayira to travel, siyeri journey, sayiret VEHICLE/CAR (travel-instrument, exactly as Arabic built sayyāra)",
+      "source": {
+        "lang": "Arabic",
+        "word": "sāra / sayyāra",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-8",
+        "feeds motion set D-13",
+        "weak y — D-11"
+      ]
+    },
+    {
+      "skeleton": [
+        "k",
+        "t",
+        "b"
+      ],
+      "gloss": "compose, author — katiba to compose, kitebi BOOK, ketabu author, katebow LIBRARY, kotibon manuscript",
+      "source": {
+        "lang": "Arabic",
+        "word": "kataba / kitāb",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-8",
+        "register split with s-š: scribe (Eg.) vs author (Ar.)",
+        "the deliverables will be kitebiāt"
+      ]
+    },
+    {
+      "skeleton": [
+        "f",
+        "l",
+        "s"
+      ],
+      "citation": "fulus",
+      "gloss": "money; falisa to pay out",
+      "source": {
+        "lang": "Arabic (pan-African)",
+        "word": "fulūs (Swahili fulusi, Hausa kuɗi-adjacent)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-8",
+        "primary noun + root"
+      ]
+    },
+    {
+      "skeleton": [
+        "l",
+        "k",
+        "t",
+        "r"
+      ],
+      "citation": "lektri",
+      "gloss": "electricity",
+      "source": {
+        "lang": "Greek",
+        "word": "ēlektron",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-8",
+        "primary noun",
+        "Doc B's LKTR naturalized",
+        "quad root"
+      ]
+    },
+    {
+      "skeleton": [
+        "f",
+        "n"
+      ],
+      "gloss": "call, sound — fana to call/phone, fini call/sound (n.), fanet PHONE (the device)",
+      "source": {
+        "lang": "Greek",
+        "word": "phōnē",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-8",
+        "Doc B's FN completed with the instrumental"
+      ]
+    },
+    {
+      "skeleton": [
+        "w",
+        "ḍ"
+      ],
+      "gloss": "decree, command; CODE — waḍa to command/program, woḍon a decree / a program, weḍu commander/programmer (code as sacred command-language: the Mdw Ntr resonance)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "wḏ",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "T-8",
+        "Doc B's WḌ kept and extended — closes the K-D code docket with zero new roots"
+      ]
     }
   ]
 }
