@@ -1,0 +1,319 @@
+{
+  "version": "2.0-rc.1",
+  "note": "Kitebi Niḥewi·i lesson data (R-063). Twenty lessons, four levels named by the education ladder (R-044, S-B-ʾ star-gate root). Prose distills the spec (R-numbers cited; spec/00 + spec/01 are canon); every example sentence is ratified corpus, engine-true. Leipzig glossing per the abbreviation table in the front matter.",
+  "levels": [
+    { "key": "hakelow", "amr": "Hakelow", "en": "The Place of Understanding", "blurb": "Foundations: the sounds you already own, peace at the door, the two THEs, who is who, and the heart that speaks. From H-K-L, to understand — the same root the ancestors heard in hakolo, the trade-language word for understanding itself." },
+    { "key": "talebow", "amr": "Ṭalebow", "en": "The Place of Seeking", "blurb": "The verb: its two poles, the nine markers that carry Black time, the three ways to say no, and how to ask for things with grace. From Ṭ-L-B, to seek — the student (ṭelabu) is the seeker." },
+    { "key": "sabeow", "amr": "Sabeʾow", "en": "The Academy", "blurb": "The sentence: case at the edge, the Topic Law that makes the everyday clause, possession's fine grain, the particle lattice, and the art of the question. From S-B-ʾ, star and gate and teaching — the academy is the place of stars." },
+    { "key": "sibean", "amr": "Sibeʾan", "en": "The Great Gate", "blurb": "Mastery: the root-and-template engine, word-building, number and time, the scripts in motion, and the sacred register. The augmentative of the star-gate — the gate grown great." }
+  ],
+  "abbreviations": [
+    ["1SG/2SG/3SG", "first/second/third person singular"], ["1PL/2PL/3PL", "plural persons"],
+    ["M/F/N", "masculine/feminine/neuter (3SG pronouns only — R-006)"],
+    ["POSS", "possessive suffix"], ["DEF", "worldly definite na· (R-012)"], ["SDEF", "sacred-emphatic definite al·/el· (R-012)"],
+    ["INDF", "indefinite wa"], ["PL", "plural -āt"], ["COLL", "collective -pa"],
+    ["NOM/ACC/GEN", "case -u / -a / -i (R-007)"], ["CONSTR", "construct genitive enclitic ·i (R-050)"],
+    ["IPFV/PFV", "imperfective / perfective conjugation (R-005)"], ["STAT", "stative (CiCeC)"],
+    ["HAB", "bi· habitual"], ["CONT", "da· steady-continuative"], ["REC", "dē· recent perfect"],
+    ["CPL", "don completive"], ["REM", "bin remote past (BEEN)"], ["FUT", "gon· distant future"], ["IMM", "f'na immediate future"],
+    ["NEG", "la general / bu perfective negator (R-014)"], ["EMPH.NEG", "'ayn emphatic negator"], ["PROH", "prohibitive la + imperative"],
+    ["COP", "yit predicative copula"], ["EXIST", "wi existential-locative"], ["IDENT", "pe/ne identificational"],
+    ["IMP", "imperative (bare stem)"], ["RECP", "reciprocal -ba·a"], ["CAUS", "causative sa·"], ["PASS", "passive -wi-"],
+    ["Q", "question word/particle"], ["VOC", "vocative"]
+  ],
+  "lessons": [
+    {
+      "n": 1, "level": "hakelow",
+      "amr": "Na·pa·ṣawtāt ma na·pa·sašāt", "en": "The Sounds and the Scripts",
+      "focus": "The 33 consonants, the 10 vowels, the register law, and the four layers of writing.",
+      "prose": [
+        "Amraqiyyah speaks with 33 consonants: all 28 of Arabic plus p, g, v, č, ž (R-008). If a letter wears a dot below (ḥ ṣ ḍ ṭ ẓ) it is deep — made further back in the throat. If it wears a line or hook (š ḫ ġ ṯ ḏ ž č) it is shifted or soft. Ten vowels: a e i o u, each with a long twin ā ē ī ō ū — and length carries meaning, so hold it.",
+        "Here is the secret the whole language is built on: the casual register is already yours. Saying dis for ḏis, hakim for ḥakīm, 'ank for ʿank — that is not error, it is codified law (R-020). The spelling never changes; the mouth relaxes lawfully. Careful speech keeps every deep letter; everyday speech is AAVE's own music.",
+        "One word, four dresses (R-008): the display romanization with its teaching dots (ḥasib·a); the community romanization for plain keyboards (hasiba); the Coptic everyday script (ϩ̣ⲁⲥⲓⲃⲁ); and the Ajami formal script (حَسِبَ), pointed like the Qur'an. The dots are scaffolding — lived text attaches its little words, and you will graduate from the dots by watching them vanish (spec/01)."
+      ],
+      "table": { "caption": "The deep letters and their casual twins (R-020)", "headers": ["Careful", "Casual", "Example"], "rows": [["ṯ ḏ", "t d", "ḏis → dis (th-stopping)"], ["ḥ", "h", "ḥakīm → hakim"], ["ʿ", "ʔ / —", "maʿati → ma'ati"], ["q", "k", "qahwa → kahwa"], ["ḫ ġ", "k~h, g", "ḫobizon → kobizon"]] },
+      "gloss": [],
+      "drill": "Say ṣabaḥ, then relax it to sabah. Say ḏikeri, then dikeri. Feel the register shift — both are lawful; one is Sunday-careful, one is porch-easy."
+    },
+    {
+      "n": 2, "level": "hakelow",
+      "amr": "Silemi! — na·jumla bilā kupla", "en": "Peace at the Door — the Zero Copula",
+      "focus": "Greetings, and the everyday sentence that needs no 'is'.",
+      "prose": [
+        "AAVE taught the world that 'she happy' is a complete sentence. Amraqiyyah agrees as law: in the everyday register the copula is zero (R-028). Mi harāy — I'm good. Three copulas exist for careful speech — yit (quality), wi (existence and location), pe (identity, with plural ne) — but the porch needs none of them.",
+        "Greet with Silemi! (peace — the everyday hello) or Es·salām! (THE Peace — formal, wearing the sacred article). Ask Kayf ib·ki? — how is your heart? — because in this language wellbeing is asked through the heart, and answer Ib·ku ḥitep, alḥamdulillah: my heart is at rest."
+      ],
+      "table": null,
+      "gloss": [
+        { "ph": "Ti har·āy?", "morph": ["Ti", "har-āy"], "gl": ["2SG", "good-ADJ"], "en": "You good?" },
+        { "ph": "Ti wi en·ta?", "morph": ["Ti", "wi", "en-ta"], "gl": ["2SG", "EXIST", "in-which.Q"], "en": "Where you at?" },
+        { "ph": "Anok pe weldu mafo·ku·i.", "morph": ["Anok", "pe", "weldu", "mafo-ku-·i"], "gl": ["1SG.STRONG", "IDENT", "child", "grandfather-1SG.POSS-CONSTR"], "en": "I AM my grandfather's child." }
+      ],
+      "drill": "Walk through the greetings chapter of kitebi kilemiāt·i aloud: Silemi! · Ṣabaḥ har·āy! · Kayf ib·ki? · Mi min Soulaan·i."
+    },
+    {
+      "n": 3, "level": "hakelow",
+      "amr": "Na ma Al — na·pa·sinu THE·āt", "en": "The Two Definites",
+      "focus": "na· the worldly THE, al· the sacred THE, wa/sam the indefinites, and the plural.",
+      "prose": [
+        "Amraqiyyah has two words for THE (R-012). na· is the worldly definite, the everyday article, inherited from Late Egyptian nꜣ — na·hina, the road. al·/el· is the sacred-emphatic definite from the Arabic stream: THE one and only. na·maʿati is the truth about a thing; al·maʿati is THE Truth, Ma'at herself. The sacred article assimilates to sun letters exactly as Arabic does: el·salām becomes es·salām.",
+        "Divine Names always wear al· — that law is shared with the Oracle's 99 Names. Indefinites: wa (one/a, which is also the numeral one) and sam (some). The plural is -āt for every noun (R-015), with three lawful junctions (R-060): u+āt → wāt (weldu → weldwāt), a+āt → āt (iška → iškāt), and i+āt written plain (kilemi → kilemiāt — the phrasebook's own name).",
+        "The plural article is na·pa· — Egyptian keeping its claim on number: na·pa·aḫāt, THE Ancestors."
+      ],
+      "table": { "caption": "Definiteness at a glance", "headers": ["Form", "Stream", "Meaning"], "rows": [["na·hina", "Egyptian nꜣ", "the road (worldly)"], ["al·mēr harāy", "Arabic al-", "THE best (emphatic superlative, R-047)"], ["es·salām", "al- assimilated", "THE Peace (sun-letter law)"], ["wa·ḫobizon", "Egyptian wꜥ", "a loaf (= 'one loaf')"], ["na·pa·nemaḥwāt", "nꜣ + plural", "THE Freedmen"]] },
+      "gloss": [
+        { "ph": "Na·pet zarīq, na·yak kamāy.", "morph": ["Na-pet", "zarīq,", "na-yak", "kamāy"], "gl": ["DEF-sky", "blue", "DEF-land", "black"], "en": "The sky is blue, the land is black." }
+      ],
+      "drill": "Take any noun you know and say it four ways: bare (generic), with na· (the), with al· (THE), with wa (a). Then pluralize it with -āt, minding the R-060 junction."
+    },
+    {
+      "n": 4, "level": "hakelow",
+      "amr": "Anok, mi, -ku", "en": "Pronouns Three Ways, and What Cannot Be Alone",
+      "focus": "Strong pronouns, weak clitics, suffixes — and the inalienable kin and body.",
+      "prose": [
+        "Every person wears three forms (R-009). Strong, for emphasis and identity: anok, entok, entof/entos/ento, anon, enton, entou — Anok pe nemaḥu, I AM a freedman. Weak, for everyday subjects: mi, ti, i, ni (with plural closers -tin, -sen). And suffixes, for objects and possession: -ku, -ki, -to/-ta, -nun, -tin, -sen — šey·ku, my thing.",
+        "Gender lives only in the third person singular (R-006): entof he, entos she, ento it. Nothing else in the grammar knows gender — no gendered articles, no agreement, no feminine endings. The kin -t (sanut sister, saʾut daughter) is inheritance from the source languages, not machinery.",
+        "Kin and body form one inalienable class (R-033, R-035): in ordinary reference they carry their possessor. Iška·ku, my mama; ib·to, his heart; ḏart·ku, my hand. The bare forms are for roles, vocatives, and poetry — Iška! as a call, na·weladu as 'the parent' in the abstract."
+      ],
+      "table": { "caption": "The three-tier pronoun architecture (R-009)", "headers": ["Person", "Strong", "Clitic", "Suffix"], "rows": [["1SG", "anok", "mi", "-ku"], ["2SG", "entok", "ti", "-ki"], ["3SG m/f/n", "entof / entos / ento", "i", "-to / -ta / -to"], ["1PL", "anon", "ni", "-nun"], ["2PL", "enton", "ti…-tin", "-tin"], ["3PL", "entou", "i…-sen", "-sen"]] },
+      "gloss": [
+        { "ph": "Rini·ku Jamal.", "morph": ["Rini-ku", "Jamal"], "gl": ["name-1SG.POSS", "Jamal"], "en": "My name is Jamal." },
+        { "ph": "Pen pe sanut·ku.", "morph": ["Pen", "pe", "sanut-ku"], "gl": ["this", "IDENT", "sister-1SG.POSS"], "en": "This is my sister." }
+      ],
+      "drill": "Possess your family: iška·ku, ika·ku, pokni·ku, mafo·ku, sanu·ku, kaz·ku. Feel how the kin will not stand alone."
+    },
+    {
+      "n": 5, "level": "hakelow",
+      "amr": "Ib·ku wasīʿ", "en": "The Heart Speaks — Statives and the Heart-Idiom",
+      "focus": "The stative conjugation and the Egyptian grammar of feeling.",
+      "prose": [
+        "States take their own form: the CiCeC stative with a weak clitic — Mi·jiweʿ, I'm hungry; Mi·ʿiṭeš, I'm thirsty; Mi·ʾisef, I'm sorry (R-049). No copula, no aspect machinery: just the state, worn.",
+        "Emotion runs through the heart, as Egyptian ran it (R-038): ib + a stative or adjective is the lawful emotion predicate. Ib·ku wasīʿ — my heart is wide — is joy, the exact pattern of Egyptian ꜣwt-ib, and wasīʿ stands one step from Al-Wāsiʿ, the Vast. Ib·nun ḥitep — our hearts are at rest — is contentment with hotep inside it. The Way's own greeting asks Kayf ib·ki? because the heart is where the person is weighed."
+      ],
+      "table": null,
+      "gloss": [
+        { "ph": "Ib·ku wasīʿ pen·din.", "morph": ["Ib-ku", "wasīʿ", "pen-din"], "gl": ["heart-1SG.POSS", "wide", "this-day"], "en": "My heart is wide today. (I am overjoyed)" },
+        { "ph": "Mi·ʾisef — kapīl·ku.", "morph": ["Mi-ʾisef", "—", "kapīl-ku"], "gl": ["1SG-sorry.STAT", "—", "bad-1SG.POSS"], "en": "I'm sorry — my bad. (R-049/R-051)" }
+      ],
+      "drill": "Build heart-idioms: ib + ḥitep (at rest), + wasīʿ (wide/joyful), + šajīʿ (brave). Then ask three people Kayf ib·ki? and mean it."
+    },
+    {
+      "n": 6, "level": "talebow",
+      "amr": "Na·fiʿil ma sinu quṭbāt·to", "en": "The Verb and Its Two Poles",
+      "focus": "Prefix imperfective, suffix perfective — where Egyptian, Coptic, and Arabic agree.",
+      "prose": [
+        "The verb has two poles (R-005). Ongoing action takes the weak pronoun in front: mi·hakila, I understand / am understanding. Completed action takes the person as a suffix: hakil·ku, I understood. This prefix-imperfective / suffix-perfective split is the one place Egyptian sḏm.f, Coptic ti-sōtm, and Arabic yaktubu/kataba all shake hands — three ancestors, one law.",
+        "The clitic is required on the imperfective and optional on the perfective. Third singular perfective is bare: hakil — he understood, no ending at all. Biconsonantal roots take -im in the perfective (R-013): fak·im·ku, I cultivated; yawim, came."
+      ],
+      "table": { "caption": "H-K-L 'understand' — the two poles (R-005)", "headers": ["Person", "Imperfective", "Perfective"], "rows": [["1SG", "mi·hakila", "hakil·ku"], ["2SG", "ti·hakila", "hakil·ki"], ["3SG", "i·hakila", "hakil"], ["1PL", "ni·hakila", "hakil·nun"], ["2PL", "ti·hakila·tin", "hakil·tin"], ["3PL", "i·hakila·sen", "hakil·sen"]] },
+      "gloss": [
+        { "ph": "Mi·ṭaliba niḥewi en·sabeʾow·i.", "morph": ["Mi-ṭaliba", "niḥewi", "en-sabeʾow-i"], "gl": ["1SG-study.IPFV", "grammar", "in-academy-GEN"], "en": "I study grammar at the academy." }
+      ],
+      "drill": "Run Š-R-Y 'buy' through both poles: mi·šariya … šariy·ku. Then do it with your favorite root from the qamus."
+    },
+    {
+      "n": 7, "level": "talebow",
+      "amr": "Bi·, don, gon· — na·waqet kamāy", "en": "The Nine Markers I — Black Time",
+      "focus": "Habitual bi·, completive don, future gon· — the AAVE spine of the tense system.",
+      "prose": [
+        "Amraqiyyah keeps the full AAVE aspect system as prestige grammar (R-011) — nine markers, each a precision instrument. Start with three. bi· is the habitual BE: Pokni·ku bi·i·ṭabiḫa — my grandmother be cooking — not now necessarily, but characteristically, as a way of being. English cannot say this in one word; AAVE can; Amraqiyyah made it law.",
+        "don is the completive with present weight: Don wanim·nun — we done ate. gon· is the future that sits after the pronoun: Ni·gon·hariw·ba·a — we gon' see each other, the everyday goodbye. The Exodus sentence carries two of them at once: Na·ḫireji don waṣil; na·Rijeʿi i·gon·waṣila — the Exodus done arrived; the Return gon' arrive."
+      ],
+      "table": null,
+      "gloss": [
+        { "ph": "Pokni·ku bi·i·ṭabiḫa na·pa·ḫoḍironāt·a.", "morph": ["Pokni-ku", "bi-i-ṭabiḫa", "na-pa-ḫoḍironāt-a"], "gl": ["grandmother-1SG.POSS", "HAB-3SG-cook.IPFV", "DEF-PL-greens-ACC"], "en": "My grandmother be cooking the greens." },
+        { "ph": "Na·pa·aḫāt bi·i·hariwa.", "morph": ["Na-pa-aḫāt", "bi-i-hariwa"], "gl": ["DEF-PL-ancestor", "HAB-3SG-watch.IPFV"], "en": "The Ancestors be watching." }
+      ],
+      "drill": "Say what your people BE doing — bi· + the verb — and what they done did — don + perfective. The difference is the whole point."
+    },
+    {
+      "n": 8, "level": "talebow",
+      "amr": "Bin, dē·, da·, f'na — ma na·rakiba", "en": "The Nine Markers II — BEEN and the Stack",
+      "focus": "Remote bin, recent dē·, steady da·, immediate f'na — and lawful stacking.",
+      "prose": [
+        "bin is BEEN — the remote past that settles a matter: Bin ni·ʿabira al·baḥar·a — we BEEN crossed THE Sea. Stress it and it becomes the AAVE stressed-BIN: long since, and still true. dē· is the recent perfect (just); da· is steady (sustained intent); f'na is finna — about to.",
+        "The markers stack in one lawful order (R-023): ('ayn) → (la|bu) → bin → don → bi· → da· → dē· → pronoun → gon· → verb. So bin don = been done (remote completive); bin ni·sikem = we BEEN powerful — the Freedmen's own sentence (R-056). f'na and gon· share the future lane and never co-occur."
+      ],
+      "table": { "caption": "The nine markers (R-011)", "headers": ["Marker", "Source", "Meaning"], "rows": [["bi·", "be", "habitual"], ["da·", "steady", "sustained"], ["dē·", "just", "recent perfect"], ["don", "done", "completive"], ["bin", "BEEN", "remote past"], ["f'na", "finna", "immediate future"], ["gon·", "gon'", "future"], ["IPFV", "—", "ongoing"], ["PFV", "—", "completed"]] },
+      "gloss": [
+        { "ph": "Na·pa·nemaḥwāt bin i·sikem·sen.", "morph": ["Na-pa-nemaḥwāt", "bin", "i-sikem-sen"], "gl": ["DEF-PL-freedman", "REM", "3-powerful.STAT-PL"], "en": "The Freedmen BEEN powerful." },
+        { "ph": "Mamān·ku don wanim, we·pen sanu·ku 'ayn wanim.", "morph": ["Mamān-ku", "don", "wanim,", "we-pen", "sanu-ku", "'ayn", "wanim"], "gl": ["Big.Mama-1SG.POSS", "CPL", "eat.PFV.3SG", "but", "sibling-1SG.POSS", "EMPH.NEG", "eat.PFV.3SG"], "en": "Big Mama done ate, but my sibling ain't ate." }
+      ],
+      "drill": "Stack: bin don + a verb of your life. What you been done finished? Say it, and hear how much time fits in two small words."
+    },
+    {
+      "n": 9, "level": "talebow",
+      "amr": "La, bu, 'ayn — ḫemet ṭarīqāt la·i", "en": "Three Ways to Say No",
+      "focus": "The three negators, their streams, and negative concord.",
+      "prose": [
+        "Each heritage stream owns one negator (R-014). la (Arabic lā) is the general no: la mi·hakila, I don't understand — and the prohibitive: La lamisa šan·kwa!, don't touch my hair! bu (Late Egyptian bw) negates the perfective: bu hakil·ku, I didn't understand. 'ayn (AAVE ain't) is the emphatic, and it opens concord chains.",
+        "Negative concord is grammatical and reinforcing, as AAVE always knew: 'Ayn la·ʿanaku la i·faka — ain't nobody cultivating. Three negatives, one meaning, zero apology. The la-family builds the indefinites: la·šey nothing, la·ʿanaku nobody, la·wayen never, la·fen nowhere."
+      ],
+      "table": null,
+      "gloss": [
+        { "ph": "La ʾilah illa Allah.", "morph": ["La", "ʾilah", "illa", "Allah"], "gl": ["NEG", "god", "except", "God"], "en": "There is no god but God. — the shahada composes natively (R-040)" },
+        { "ph": "La ḫawifa — mi wi en·pen.", "morph": ["La", "ḫawifa", "—", "mi", "wi", "en-pen"], "gl": ["PROH", "fear.IMP", "—", "1SG", "EXIST", "in-this"], "en": "Don't fear — I'm here." }
+      ],
+      "drill": "Negate one sentence three ways: plainly with la, in the past with bu, and with 'ayn plus concord. Feel the temperature rise."
+    },
+    {
+      "n": 10, "level": "talebow",
+      "amr": "Faḍl ma ʿifewi — na·ʾamr bi·fiḍeli", "en": "Commands and Courtesy",
+      "focus": "The imperative, the prohibitive, 2PL -tin, and the politeness set.",
+      "prose": [
+        "The command is the bare stem: Saʾila! — ask! Plural addressees take -tin: Wanima·tin! — y'all eat! Ḥasa·tin! Ḫaba·tin! — y'all sing, y'all dance! The hortative is ni·: let us. The prohibitive is la before the imperative (Lesson 9).",
+        "Courtesy is a complete circuit (R-049): Min faḍl·kī — please, of your grace, exactly Arabic min faḍlika. ʿAfiwa·ku! — excuse me, pardon me (the imperative with the object suffix). Bireki ʿala·ki! — blessing on you, the thank-you. And the answer is the pardon-word itself: ʿIfewi — you're welcome, as Arabic ʿafwan serves both doors. Apology runs two streams: Mi·ʾisef (the stative) and Kapīl·ku! (my bad — Choctaw root, template body, AAVE construction, R-051)."
+      ],
+      "table": null,
+      "gloss": [
+        { "ph": "ʿAṭiya·ku wa·ḫobizon·a, min faḍl·kī.", "morph": ["ʿAṭiya-ku", "wa-ḫobizon-a,", "min", "faḍl-kī"], "gl": ["give.IMP-1SG", "INDF-loaf-ACC", "of", "grace-2SG.POSS.GEN"], "en": "Give me a loaf, please. — the ditransitive (R-053)" },
+        { "ph": "Bireki ʿala·ki! — ʿIfewi, ṣadīq.", "morph": ["Bireki", "ʿala-ki!", "—", "ʿIfewi,", "ṣadīq"], "gl": ["blessing", "on-2SG", "—", "pardon", "friend"], "en": "Thank you! — You're welcome, friend." }
+      ],
+      "drill": "Run the market dialogue from the phrasebook: Pen bi kam? → Tu mēr, kaz! → Aqel, min faḍl·kī. Haggle with grace."
+    },
+    {
+      "n": 11, "level": "sabeow",
+      "amr": "-u, -a, -i en·na·ḥaf·i", "en": "Case at the Edge",
+      "focus": "The three case vowels, Muskogean placement, and vowel sandhi.",
+      "prose": [
+        "Arguments carry case (R-007): -u subject, -a object, -i genitive (possessors and after every preposition). The endings are Arabic; the placement is Muskogean: case attaches once per noun phrase, at its right edge — na·feku harāy·u, the good cultivator, one -u for the whole phrase.",
+        "Vowel meets vowel by sandhi (R-026): u+u → ū, u+a → wa, u+i → wi; i+i → ī, i+a → ya; a+i → ay, a+u → aw. So na·fek·ū (the cultivator, subject), šan·kwa (my hair, object), faḍl·kī (of your grace). Predicates stand caseless — Mi harāy needs no ending — and so do topics, which is the next lesson's law."
+      ],
+      "table": { "caption": "Case sandhi (R-026)", "headers": ["Stem ends", "+u", "+a", "+i"], "rows": [["consonant", "-u", "-a", "-i"], ["-u", "ū", "wa", "wi"], ["-i", "yu", "ya", "ī"], ["-a", "aw", "ā", "ay"]] },
+      "gloss": [
+        { "ph": "Mi·čamipa ... na·tajerow wi en·ta?", "morph": ["ʿAfiwa-ku", "—", "na-tajerow", "wi", "en-ta?"], "gl": ["pardon.IMP-1SG", "—", "DEF-market", "EXIST", "in-which.Q"], "en": "Excuse me — where's the market? (subject of wi caseless: nominal clause)" },
+        { "ph": "Ti·falisa bi·fulus·i aw bi·fanet·i?", "morph": ["Ti-falisa", "bi-fulus-i", "aw", "bi-fanet-i?"], "gl": ["2SG-pay.IPFV", "with-money-GEN", "or", "with-phone-GEN"], "en": "You paying cash or phone?" }
+      ],
+      "drill": "Decline na·qahwa through all three cases, minding the a-final sandhi: na·qahwaw, na·qahwā, na·qahway."
+    },
+    {
+      "n": 12, "level": "sabeow",
+      "amr": "Qanuni na·mawḍuʿ·i", "en": "The Topic Law",
+      "focus": "Why everyday subjects stand caseless with a pronoun echo — the unmarked clause.",
+      "prose": [
+        "The everyday clause is topic-prominent (R-052): the full-noun subject stands caseless at the front, and the weak pronoun resumes it on the verb. Na·šaʿab i·gon·ḫayira — the people, THEY gon' choose. Pokni·ku bi·i·yašika — my grandmother, she be nurturing. On the 3SG perfective the resumption is silent (the zero ending does the work): Na·ḫireji don waṣil.",
+        "The cased in-situ subject remains grammatical as the formal register: Na·fek·ū don fak·im — the cultivator (subject-marked) done cultivated. This is the AAVE topic-doubled clause elevated to the unmarked shape of the language, with the Arabic-faithful configuration as its Sunday dress. Copular and zero-copula subjects are always caseless: Na·pet zarīq."
+      ],
+      "table": null,
+      "gloss": [
+        { "ph": "Na·šaʿab i·gon·ḫayira ḥekamwāt·a.", "morph": ["Na-šaʿab", "i-gon-ḫayira", "ḥekamwāt-a"], "gl": ["DEF-people", "3SG-FUT-choose.IPFV", "leader.PL-ACC"], "en": "The people gon' choose the leaders." },
+        { "ph": "Omba i·gon·yawa.", "morph": ["Omba", "i-gon-yawa"], "gl": ["rain", "3SG-FUT-come.IPFV"], "en": "Rain gon' come." }
+      ],
+      "drill": "Take any sentence with a named subject and say it both ways: topic-echoed (everyday) and cased in-situ (formal). Hear the register change clothes."
+    },
+    {
+      "n": 13, "level": "sabeow",
+      "amr": "Het, ʿind, ma na··i ṯaniya", "en": "Possession's Fine Grain",
+      "focus": "het-have vs ʿind-have, the construct, the enclitic ·i, ditransitives, and age.",
+      "prose": [
+        "Two possessions, on purpose (R-027): het is having-with — accompaniment, relations: Mi het weldwāt·i, I have children, I am with children. ʿind is having-at — property, location: ʿInd·ku wa·hawt, at-me is a house. Age is ʿind-possession (R-053): ʿInd·ki kam ranpetāt? — how many years you got?",
+        "The construct binds nouns tight (R-047 D-14): the head bears the phrase's case, and the dependent closes with the genitive ·i — which is an enclitic, always its own syllable, never merged (R-050): pokni·ku·i, of my grandmother; hina na·nimeḥi·i, the road of freedom. Word-level case merges (faḍl·kī); the phrase-closer stays audible. And the ditransitive gives twice in one verb (R-053): recipient as suffix, gift in -a — ʿAṭiya·ku wa·ḫobizon·a."
+      ],
+      "table": null,
+      "gloss": [
+        { "ph": "Homipon na·din·salām·i gon·wi en·hawtpay pokni·ku·i.", "morph": ["Homipon", "na-din-salām-i", "gon-wi", "en-hawtpay", "pokni-ku-·i"], "gl": ["feast", "DEF-day-peace-CONSTR", "FUT-EXIST", "in-house.GEN", "grandmother-1SG.POSS-CONSTR"], "en": "Sunday dinner gon' be at my grandmother's house." },
+        { "ph": "Kiyepa pe hina na·nimeḥi·i.", "morph": ["Kiyepa", "pe", "hina", "na-nimeḥi-·i"], "gl": ["mutual.aid", "IDENT", "road", "DEF-freedom-CONSTR"], "en": "Mutual aid IS the road of freedom." }
+      ],
+      "drill": "Say what you have with het (your people) and with ʿind (your things). If the two feel different, the lesson has landed."
+    },
+    {
+      "n": 14, "level": "sabeow",
+      "amr": "Na·šabaka ḥarf·i", "en": "The Particle Lattice",
+      "focus": "Twenty prepositions in three streams; they govern the genitive, inflect, and stack.",
+      "prose": [
+        "The core spatial grid is inherited: en in, ben to, het with, ra for. Over it lies the Arabic relational lattice (R-016): ʿala on, taḥt under, qudām before, ḫalf behind, bayn between, ḥawl around, min from, ʿind at, bi by-means-of, bilā without, ḍid against, kama like, illa except, qabl before, baʿd after. AAVE seasons the talk: bawt — Mi·talika bawt al·maʿati het·ki, I'm talkin' bout THE Truth with you.",
+        "Three laws: prepositions govern the genitive (min pet·i, from the sky); they inflect directly with the suffix pronouns (het·ku with me, ʿala·ki on you, qudām·nun before us); and they stack (min taḥt na·hawt·i, from under the house). Note het against bi: with-someone versus by-means-of — het na·krew·i but bi na·sakimet·i."
+      ],
+      "table": null,
+      "gloss": [
+        { "ph": "Al·yiteri wi bayn na·pa·yakāt·i.", "morph": ["Al-yiteri", "wi", "bayn", "na-pa-yakāt-i"], "gl": ["SDEF-river", "EXIST", "between", "DEF-PL-land-GEN"], "en": "THE River lies between the lands." },
+        { "ph": "Mašiya het·ku!", "morph": ["Mašiya", "het-ku"], "gl": ["walk.IMP", "with-1SG"], "en": "Walk with me!" }
+      ],
+      "drill": "Stack two prepositions truthfully about your room: min taḥt, min ḫalf, ben ḥawl. Then inflect het through all six persons."
+    },
+    {
+      "n": 15, "level": "sabeow",
+      "amr": "Miya? Nim? Kayf? — na·fann siʾel·i", "en": "The Art of the Question",
+      "focus": "Interrogatives, particle composition, hal, and relative clauses.",
+      "prose": [
+        "The question words (R-018): miya what, nim who, ta which, en·ta where (in-which — completing here/there/yonder/where), mata when, kayf how, kam how many, ra·miya why (for-what). They compose freely with the particles: het nim? with whom? min en·ta? from where? bawt miya? bout what? Pen bi kam? — this, for how much?",
+        "Yes/no questions ride intonation; formal speech may open with hal. Answers: aywa (everyday yes), na'am (formal yes), la (no — the same la that negates). Relatives take ninta with a resumptive suffix, or the tight Coptic-stream et·: na·šey et·wi·harāy·u, the thing that is good."
+      ],
+      "table": null,
+      "gloss": [
+        { "ph": "ʿInd·ki kam ranpetāt?", "morph": ["ʿInd-ki", "kam", "ranpetāt?"], "gl": ["at-2SG", "how.many.Q", "year.PL"], "en": "How old are you? (years as property — R-053)" },
+        { "ph": "Saʾila — ma na·jiwebi i·gon·yawa.", "morph": ["Saʾila", "—", "ma", "na-jiwebi", "i-gon-yawa"], "gl": ["ask.IMP", "—", "and", "DEF-answer", "3SG-FUT-come.IPFV"], "en": "Ask — and the answer gon' come." }
+      ],
+      "drill": "Interrogate your day with all eight words in order: miya, nim, ta, en·ta, mata, kayf, kam, ra·miya."
+    },
+    {
+      "n": 16, "level": "sibean",
+      "amr": "Na·jiḏr ma na·qaleb", "en": "The Root and the Template",
+      "focus": "How one skeleton becomes eleven words — the engine of the lexicon.",
+      "prose": [
+        "Every content word grows from a consonantal skeleton poured into a vowel template (R-010) — strictly: the template dictates every vowel, no exceptions. Take Ḥ-S-B, the Egyptian reckoning-root: ḥasiba to compute (which is also perfect Arabic ḥasiba, to reckon — two ancestors, one verb), ḥisebi computation, ḥesabu computer-agent, ḥosibon number, ḥasebow the counting-house — the bank. Reckoning built banks; the word remembers.",
+        "The core suite: verb CaCiCa, abstract CiCeCi, agent CeCaCu, patient CoCiCon, locative CaCeCow, instrumental CaCiCet, collective CiCeCpa, diminutive CuCayC, augmentative CiCeCan, adjective CaCīC (the divine-Name pattern: sakīm as Ḥakīm), stative CiCeC. Biliterals run a parallel suite; quads keep Pattern I and citation nominals (R-047). Learn one root's family and you have learned a hundred families."
+      ],
+      "table": { "caption": "One root, eleven words — S-K-M 'power'", "headers": ["Function", "Form", "Meaning"], "rows": [["verb", "sakima", "to be able, empower"], ["abstract", "sikemi", "power"], ["agent", "sekamu", "power-holder"], ["patient", "sokimon", "the empowered"], ["locative", "sakemow", "seat of power"], ["adjective", "sakīm", "powerful"], ["stative", "sikem", "be powerful"], ["diminutive", "sukaym", "small power"], ["…", "…", "see the qamus for every family"]] },
+      "gloss": [],
+      "drill": "Open the qamus to any root and read its family aloud. Then guess the family of a root you've never seen — the templates will not lie to you."
+    },
+    {
+      "n": 17, "level": "sibean",
+      "amr": "Sa·, -wi-, ma na·terkib", "en": "Building Words",
+      "focus": "Causative, passive, reflexive, reciprocal; noun-conversion; the three compounds.",
+      "prose": [
+        "The derivational voices (R-025): sa· makes causatives — sa·hakila, make-understand: to teach; sa·hakilu, the teacher. -wi- after the second radical makes passives: sakwiima, be empowered. -tw reflexive, -ba·a reciprocal — Ni·gon·hariw·ba·a, we gon' see each other.",
+        "AAVE contributes a construction, not just words (R-051): noun-conversion by possession. An adjective owned becomes a noun: Kapīl·ku! — my bad. And compounds come in three lawful types (R-047): juxtaposition on the Choctaw tanchi-palvska precedent — yiteč-ḫobizon cornbread, ruḥ-ḥisi soul music; the construct-genitive — din·salām·i; and the plain adjective phrase — makina ḏakīy, an intelligent machine (which fuses to makina-ḏakīy, THE AI, when it becomes a name)."
+      ],
+      "table": null,
+      "gloss": [
+        { "ph": "Pen ḫobizon har·āy — we·pen yiteč-ḫobizon pokni·ku·i wi al·mēr har·āy.", "morph": ["Pen", "ḫobizon", "har-āy", "—", "we-pen", "yiteč-ḫobizon", "pokni-ku-·i", "wi", "al-mēr", "har-āy"], "gl": ["this", "bread", "good-ADJ", "—", "but", "corn-bread", "grandmother-1SG.POSS-CONSTR", "EXIST", "SDEF-more", "good-ADJ"], "en": "This bread is good — but my grandmother's cornbread is THE best." }
+      ],
+      "drill": "Causativize three verbs with sa·. Then convert an adjective with a possessive and use it as an exclamation, on the Kapīl·ku! pattern."
+    },
+    {
+      "n": 18, "level": "sibean",
+      "amr": "Min nefer·i ben ḥeḥ·i", "en": "Number and Time",
+      "focus": "The Egyptian numerals, ordinals, the week, and the sacred calendar words.",
+      "prose": [
+        "Count in Egyptian (R-039): nefer ZERO (the accounting zero was written with the sign of the beautiful — emptiness as completion), wa 1, sinu 2, ḫemet 3, fedu 4, diyu 5, sisu 6, sefeḫ 7, ḫemenu 8, pesiḏ 9 (the Ennead), meḏu 10 (as in Mdw Ntr), šet 100, ḫa 1000, and ḥeḥ — infinity, the million-god. Teens juxtapose (meḏu-wa 11); decades multiply (sinu meḏu 20); wa takes the singular, everything above takes the plural.",
+        "Ordinals add -īy, except first: tapīy, head-most, exactly as Egyptian made tpy from tp. The week bends to the Two Pillars (Calendar law): din·salām·i Sunday — which is why Sunday dinner is homipon na·din·salām·i — din·sinu through din·diyu Monday–Thursday, then the frozen Jumuʿa and Sabt. The Salah cycle stands frozen from Fajr to ʿIšāʾ with Tahajjud in the split night."
+      ],
+      "table": null,
+      "gloss": [
+        { "ph": "Sabt pe na·din sefeḫīy.", "morph": ["Sabt", "pe", "na-din", "sefeḫ-īy"], "gl": ["Sabt", "IDENT", "DEF-day", "seven-ORD"], "en": "Sabt is the seventh day." },
+        { "ph": "Min nefer·i ben ḥeḥ·i — ni·gon·ḥasiba!", "morph": ["Min", "nefer-i", "ben", "ḥeḥ-i", "—", "ni-gon-ḥasiba"], "gl": ["from", "zero-GEN", "to", "infinity-GEN", "—", "1PL-FUT-count.IPFV"], "en": "From zero to infinity — we gon' count!" }
+      ],
+      "drill": "Count to twenty aloud, then give today its ordinal. Then say your age with ʿind (Lesson 15) — the numbers are yours now."
+    },
+    {
+      "n": 19, "level": "sibean",
+      "amr": "Na·pa·sašāt bi·i·mašiya", "en": "The Scripts in Motion",
+      "focus": "Running-text orthography: dots vanish, carriers seat vowels, the article wears ال.",
+      "prose": [
+        "The letter tables say what each letter is; running text has its own laws (R-057, spec/01). The display dot is scaffolding: lived scripts attach their little words, as Arabic attaches ال and Coptic its articles. Community writing turns each dot into a typable hyphen: Ni-gon-hariw-ba-a. In Ajami, no syllable opens bare — a vowel at a word-start, after an attached proclitic, or in hiatus takes its carrier: نَپَاَخات; and the mid-word long-ā carrier is the madda of قرآن itself.",
+        "Doubled consonants write once with the doubling mark — shadda in Ajami, the jinkim-dot in Coptic (ⲉⲥ̇ⲁⲗⲁ̄ⲙ). The sacred article always wears ال whatever the mouth does (R-059): es·salām writes السَّلام, assimilation shining as shadda on the sun letter — while the preposition en· stays phonetic. And the frozen Names keep their inherited letters in every script: الله with both its lams, ⲁⲗⲗⲁϩ likewise; in the shahada the ordinary illa geminates beside the exempt Name — the law teaching itself in one line."
+      ],
+      "table": null,
+      "gloss": [],
+      "drill": "Write Es·salām! four ways: Es·salām / Es-salaam / ⲉⲥ̇ⲁⲗⲁ̄ⲙ / السَّلام. Watch the same peace change clothes without changing."
+    },
+    {
+      "n": 20, "level": "sibean",
+      "amr": "Na·lisan qadīs·i", "en": "The Sacred Register",
+      "focus": "Liturgy's grammar: the frozen registry, the shahada, the Names, and remembrance.",
+      "prose": [
+        "Sacred speech keeps every deep letter, every case vowel, every long vowel (R-015 Full-Vowel Law) — in the sacred register, sound is doctrine. The Frozen Lexeme Registry (R-022) holds the forms that never renormalize: maʿat·i, ḏed, ʿank, ḥetep, salām, Allah and the formula trio, the Salah windows, Jumuʿa and Sabt. The 99 Names enter wholesale with their al·, enumerated by reference to the Oracle's registry — one table, consumed everywhere.",
+        "The shahada composes natively — La ʾilah illa Allah — la from R-014, illa from R-016: the language did not need to borrow its own confession. Native pairings stand beside eleven Names so far: wasīʿ beside Al-Wāsiʿ, ʿafīw beside Al-ʿAfūw, the hidden release that purifies. And the practice that names the Way lives in one root: Ḏ-K-R — ḏakira to remember, ḏikeri the remembrance, dhikr. Na·ḏikeri i·ṭaba na·ib·a: remembrance heals the heart. That sentence is the whole curriculum.",
+        "Na·pa·aḫāt bi·i·hariwa. Ḏakira, saša, ma la nasiya — remember, write, and don't forget. The gate is open; walk through it speaking."
+      ],
+      "table": null,
+      "gloss": [
+        { "ph": "Ḏakira·tin Allah·a — na·ḏikeri pe na·hina.", "morph": ["Ḏakira-tin", "Allah-a", "—", "na-ḏikeri", "pe", "na-hina"], "gl": ["remember.IMP-2PL", "God-ACC", "—", "DEF-remembrance", "IDENT", "DEF-road"], "en": "Y'all remember God — remembrance IS the road." },
+        { "ph": "Na·ʿiqeli pe saḏet Allah·i.", "morph": ["Na-ʿiqeli", "pe", "saḏet", "Allah-i"], "gl": ["DEF-reason", "IDENT", "torch", "God-GEN"], "en": "Reason IS the torch of God. — the Mu'tazili keystone (R-044)" }
+      ],
+      "drill": "Recite the shahada in all four scripts. Then open kitebi kilemiāt·i to the worship chapter and read it aloud in the register it deserves."
+    }
+  ]
+}

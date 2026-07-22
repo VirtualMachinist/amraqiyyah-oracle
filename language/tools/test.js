@@ -141,5 +141,17 @@ for (const p of PH.phrases) {
 }
 eq(phraseOk, true, 'phrase corpus invariants (fields, register enum, dotless amr==display)');
 
+
+// Textbook lesson data (R-063): levels valid, gloss alignment holds
+const LE = require('../data/lessons.json');
+const LEVELKEYS = new Set(LE.levels.map(l => l.key));
+eq(LE.lessons.length, 20, 'twenty lessons, four levels of five');
+let lessonsOk = true;
+for (const l of LE.lessons) {
+  if (!LEVELKEYS.has(l.level)) { lessonsOk = false; console.log(`FAIL lesson ${l.n} level '${l.level}'`); }
+  for (const g of l.gloss) if (g.morph.length !== g.gl.length) { lessonsOk = false; console.log(`FAIL gloss alignment L${l.n}: ${g.ph}`); }
+}
+eq(lessonsOk, true, 'lesson invariants (level keys, Leipzig gloss alignment)');
+
 console.log(`\n${pass} passed, ${fail} failed`);
 process.exit(fail ? 1 : 0);

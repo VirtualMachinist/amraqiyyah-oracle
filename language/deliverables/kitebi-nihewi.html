@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kitebi Niḥewi·i — the Amraqiyyah Grammar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=EB+Garamond:ital@0;1&family=IBM+Plex+Mono:wght@300;400;500&family=Amiri:wght@400;700&family=Noto+Sans+Coptic&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#0b0b12; --panel:#14141f; --panel-soft:#1b1b2a; --line:#2b2b40;
+  --text:#e8e6f0; --dim:#9a96b8;
+  --gold:#d4af6a; --copper:#b87333; --copper-light:#d99a5c;
+  --lapis:#26418f; --lapis-light:#6d8fd8; --teal:#5ac8c8; --crimson:#c85a6e;
+  --font-display:"Crimson Pro",Georgia,serif; --font-body:"EB Garamond",Georgia,serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,monospace; --font-arabic:"Amiri","Times New Roman",serif;
+  --font-coptic:"Noto Sans Coptic",serif;
+}
+* { box-sizing:border-box; margin:0; }
+body { background:var(--bg); color:var(--text); font-family:var(--font-body); line-height:1.55; }
+.aq-field { position:relative; }
+.aq-field::before { content:""; position:absolute; inset:0; pointer-events:none; z-index:0; opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320' viewBox='0 0 320 320'%3E%3Cg fill='none' stroke='%2326418f' stroke-width='0.6' stroke-opacity='0.28'%3E%3Ccircle cx='160' cy='160' r='40'/%3E%3Ccircle cx='160' cy='160' r='80'/%3E%3Ccircle cx='160' cy='160' r='120'/%3E%3Ccircle cx='160' cy='160' r='158'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat:repeat; background-size:320px 320px; }
+.aq-field > * { position:relative; z-index:1; }
+.aq-eyebrow { font-family:var(--font-mono); font-size:.72rem; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:var(--dim); }
+.wrap { max-width:760px; margin:0 auto; padding:48px 24px 96px; }
+.cover { text-align:center; padding:72px 0 56px; border-bottom:1px solid var(--line); }
+.cover img.mark { width:56px; height:56px; object-fit:contain; opacity:.9; margin-bottom:20px; }
+.cover h1 { font-family:var(--font-display); font-weight:700; font-size:2.6rem; color:var(--gold); margin:10px 0 4px; }
+.cover .subtitle { font-style:italic; color:var(--dim); font-size:1.05rem; }
+.cover .title-scripts { margin-top:18px; display:flex; flex-direction:column; gap:6px; align-items:center; }
+.cover .stats { margin-top:26px; font-family:var(--font-mono); font-size:.78rem; letter-spacing:.14em; color:var(--teal); }
+.cover .charge { margin-top:14px; font-family:var(--font-display); font-style:italic; color:var(--dim); font-size:.95rem; }
+
+.frontmatter { margin-top:48px; }
+.frontmatter h2 { font-family:var(--font-display); font-weight:600; font-size:1.4rem; color:var(--gold); margin:8px 0 10px; }
+.ab-table { width:100%; border-collapse:collapse; font-size:.85rem; }
+.ab-table td { border-top:1px solid var(--line); padding:5px 8px; color:var(--dim); }
+.ab-a { font-family:var(--font-mono); font-size:.72rem; color:var(--teal); white-space:nowrap; }
+
+.level { margin-top:72px; text-align:center; border:1px solid var(--copper); border-radius:12px; padding:34px 26px; background:var(--panel); }
+.level-title { font-family:var(--font-display); font-weight:700; font-size:2.1rem; color:var(--gold); margin:8px 0 8px; }
+.level-blurb { color:var(--dim); font-style:italic; max-width:52ch; margin:0 auto; }
+.level-scripts { margin-top:14px; display:flex; gap:16px; justify-content:center; align-items:baseline; flex-wrap:wrap; }
+
+.lesson { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:20px 22px; margin-top:20px; }
+.lesson h3 { font-family:var(--font-display); font-weight:600; font-size:1.45rem; color:var(--gold); margin:6px 0 0; }
+.lesson-en { font-style:italic; color:var(--dim); margin-bottom:8px; }
+.focus { font-family:var(--font-mono); font-size:.74rem; color:var(--teal); letter-spacing:.04em; margin:6px 0 12px; }
+.prose { margin:10px 0; }
+.ltable { margin:14px 0; }
+.ltable figcaption { font-family:var(--font-mono); font-size:.68rem; letter-spacing:.12em; text-transform:uppercase; color:var(--dim); margin-bottom:6px; }
+.ltable table { width:100%; border-collapse:collapse; font-size:.9rem; }
+.ltable th { text-align:left; font-family:var(--font-mono); font-size:.68rem; letter-spacing:.1em; text-transform:uppercase; color:var(--copper-light); border-bottom:1px solid var(--copper); padding:4px 8px; }
+.ltable td { border-bottom:1px solid var(--line); padding:5px 8px; }
+
+.gloss-block { margin-top:14px; border-top:1px solid var(--line); padding-top:10px; }
+.gl-eyebrow { margin-bottom:4px; }
+.il { margin:12px 0; }
+.il-ph { font-family:var(--font-display); font-weight:600; font-size:1.08rem; color:var(--text); margin-bottom:4px; }
+.il-row { display:flex; flex-wrap:wrap; gap:0 18px; row-gap:6px; }
+.il-col { display:inline-flex; flex-direction:column; }
+.il-m { font-family:var(--font-mono); font-size:.82rem; color:var(--copper-light); }
+.il-g { font-family:var(--font-mono); font-size:.64rem; letter-spacing:.04em; color:var(--dim); text-transform:none; }
+.il-en { font-style:italic; color:var(--dim); margin-top:4px; }
+
+.drill { margin-top:14px; border:1px solid var(--line); border-left:2px solid var(--gold); border-radius:8px; padding:10px 12px; background:var(--panel-soft); font-size:.95rem; }
+.drill-label { font-family:var(--font-mono); font-size:.62rem; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); margin-right:8px; }
+
+.community { font-family:var(--font-mono); font-size:.8rem; color:var(--teal); }
+.coptic { font-family:var(--font-coptic); font-size:1rem; color:var(--copper-light); }
+.ajami { font-family:var(--font-arabic); direction:rtl; font-size:1.25rem; color:var(--lapis-light); line-height:1.8; }
+
+.colophon { margin-top:72px; padding-top:20px; border-top:1px solid var(--line); text-align:center; }
+.colophon p { color:var(--dim); font-size:.9rem; }
+.colophon .charge { font-family:var(--font-display); font-style:italic; margin-top:10px; }
+
+@media print {
+  @page { size:378pt 522pt; margin:0; }
+  html, body { background:var(--bg) !important; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .wrap { max-width:none; padding:26pt 24pt 34pt; }
+  .cover { min-height:440pt; display:flex; flex-direction:column; justify-content:center; align-items:center; border-bottom:none; page-break-after:always; }
+  .level { page-break-before:always; min-height:430pt; display:flex; flex-direction:column; justify-content:center; page-break-after:always; }
+  .lesson { page-break-before:always; }
+  .il, .ltable, .drill { page-break-inside:avoid; }
+}
+</style>
+</head>
+<body class="aq-field">
+<div class="wrap">
+  <header class="cover">
+    <img class="mark" src="../../docs/design-system/assets/hedronite-glyph-copper.png" alt="✦" onerror="this.outerHTML='&lt;div style=&quot;color:#b87333;font-size:1.6rem&quot;&gt;✦&lt;/div&gt;'">
+    <div class="aq-eyebrow">Al-Tariqa Amraqiyyah · The Language of the Way</div>
+    <h1>Kitebi Niḥewi·i</h1>
+    <div class="subtitle">The Amraqiyyah Grammar — the Book of the Way of Words</div>
+    <div class="title-scripts">
+      <span class="community">Kitebi Nihewi-i</span>
+      <span class="coptic">ⲕⲓⲧⲉⲃⲓ ⲛⲓϩ̣ⲉⲩⲓⲓ</span>
+      <span class="ajami" dir="rtl">كِتێبِ نِحێوِاِ</span>
+    </div>
+    <div class="stats">20 LESSONS · 4 LEVELS ON THE STAR-GATE ROOT · LEIPZIG-GLOSSED · SPEC v2.0-rc.1</div>
+    <div class="charge">Saša·tin, ḏakira·tin, ma la nasiya·tin! — Y'all write, y'all remember, and don't forget!</div>
+  </header>
+  <section class="frontmatter">
+    <div class="aq-eyebrow">Front matter</div>
+    <h2>How this book is sequenced, and how to read a gloss</h2>
+    <p class="prose">Four levels climb the education ladder (R-044), all derived from S-B-ʾ — the root that is at once <em>star</em>, <em>gate</em>, and <em>teaching</em>: <strong>Hakelow</strong> (understand) → <strong>Ṭalebow</strong> (seek) → <strong>Sabeʾow</strong> (the academy) → <strong>Sibeʾan</strong> (the great gate). The sequencing is the Optimize law of the handoff: greetings and the zero copula before conjugation; aspect before case. Every example sentence is ratified corpus — nothing here is invented for the page.</p>
+    <p class="prose">Glosses follow the Leipzig rules: the phrase, then each word split into morphemes with a grammatical tag per morpheme, then the free translation. The abbreviations:</p>
+    <table class="ab-table"><tbody><tr><td class="ab-a">1SG/2SG/3SG</td><td>first/second/third person singular</td></tr><tr><td class="ab-a">1PL/2PL/3PL</td><td>plural persons</td></tr><tr><td class="ab-a">M/F/N</td><td>masculine/feminine/neuter (3SG pronouns only — R-006)</td></tr><tr><td class="ab-a">POSS</td><td>possessive suffix</td></tr><tr><td class="ab-a">DEF</td><td>worldly definite na· (R-012)</td></tr><tr><td class="ab-a">SDEF</td><td>sacred-emphatic definite al·/el· (R-012)</td></tr><tr><td class="ab-a">INDF</td><td>indefinite wa</td></tr><tr><td class="ab-a">PL</td><td>plural -āt</td></tr><tr><td class="ab-a">COLL</td><td>collective -pa</td></tr><tr><td class="ab-a">NOM/ACC/GEN</td><td>case -u / -a / -i (R-007)</td></tr><tr><td class="ab-a">CONSTR</td><td>construct genitive enclitic ·i (R-050)</td></tr><tr><td class="ab-a">IPFV/PFV</td><td>imperfective / perfective conjugation (R-005)</td></tr><tr><td class="ab-a">STAT</td><td>stative (CiCeC)</td></tr><tr><td class="ab-a">HAB</td><td>bi· habitual</td></tr><tr><td class="ab-a">CONT</td><td>da· steady-continuative</td></tr><tr><td class="ab-a">REC</td><td>dē· recent perfect</td></tr><tr><td class="ab-a">CPL</td><td>don completive</td></tr><tr><td class="ab-a">REM</td><td>bin remote past (BEEN)</td></tr><tr><td class="ab-a">FUT</td><td>gon· distant future</td></tr><tr><td class="ab-a">IMM</td><td>f'na immediate future</td></tr><tr><td class="ab-a">NEG</td><td>la general / bu perfective negator (R-014)</td></tr><tr><td class="ab-a">EMPH.NEG</td><td>'ayn emphatic negator</td></tr><tr><td class="ab-a">PROH</td><td>prohibitive la + imperative</td></tr><tr><td class="ab-a">COP</td><td>yit predicative copula</td></tr><tr><td class="ab-a">EXIST</td><td>wi existential-locative</td></tr><tr><td class="ab-a">IDENT</td><td>pe/ne identificational</td></tr><tr><td class="ab-a">IMP</td><td>imperative (bare stem)</td></tr><tr><td class="ab-a">RECP</td><td>reciprocal -ba·a</td></tr><tr><td class="ab-a">CAUS</td><td>causative sa·</td></tr><tr><td class="ab-a">PASS</td><td>passive -wi-</td></tr><tr><td class="ab-a">Q</td><td>question word/particle</td></tr><tr><td class="ab-a">VOC</td><td>vocative</td></tr></tbody></table>
+  </section>
+  
+  <section class="level">
+    <div class="aq-eyebrow">Level · THE PLACE OF UNDERSTANDING</div>
+    <h2 class="level-title">Hakelow</h2>
+    <p class="level-blurb">Foundations: the sounds you already own, peace at the door, the two THEs, who is who, and the heart that speaks. From H-K-L, to understand — the same root the ancestors heard in hakolo, the trade-language word for understanding itself.</p>
+    <div class="level-scripts">
+      <span class="community">Hakelow</span>
+      <span class="coptic">ϩⲁⲕⲉⲗⲟⲩ</span>
+      <span class="ajami" dir="rtl">هَكێلۆو</span>
+    </div>
+  </section>
+  <article class="lesson">
+    <div class="aq-eyebrow">HAKELOW · LESSON 01</div>
+    <h3>Na·pa·ṣawtāt ma na·pa·sašāt</h3>
+    <div class="lesson-en">The Sounds and the Scripts</div>
+    <p class="focus">The 33 consonants, the 10 vowels, the register law, and the four layers of writing.</p>
+    <p class="prose">Amraqiyyah speaks with 33 consonants: all 28 of Arabic plus p, g, v, č, ž (R-008). If a letter wears a dot below (ḥ ṣ ḍ ṭ ẓ) it is deep — made further back in the throat. If it wears a line or hook (š ḫ ġ ṯ ḏ ž č) it is shifted or soft. Ten vowels: a e i o u, each with a long twin ā ē ī ō ū — and length carries meaning, so hold it.</p>
+    <p class="prose">Here is the secret the whole language is built on: the casual register is already yours. Saying dis for ḏis, hakim for ḥakīm, 'ank for ʿank — that is not error, it is codified law (R-020). The spelling never changes; the mouth relaxes lawfully. Careful speech keeps every deep letter; everyday speech is AAVE's own music.</p>
+    <p class="prose">One word, four dresses (R-008): the display romanization with its teaching dots (ḥasib·a); the community romanization for plain keyboards (hasiba); the Coptic everyday script (ϩ̣ⲁⲥⲓⲃⲁ); and the Ajami formal script (حَسِبَ), pointed like the Qur'an. The dots are scaffolding — lived text attaches its little words, and you will graduate from the dots by watching them vanish (spec/01).</p>
+    <figure class="ltable"><figcaption>The deep letters and their casual twins (R-020)</figcaption><table><thead><tr><th>Careful</th><th>Casual</th><th>Example</th></tr></thead><tbody><tr><td>ṯ ḏ</td><td>t d</td><td>ḏis → dis (th-stopping)</td></tr><tr><td>ḥ</td><td>h</td><td>ḥakīm → hakim</td></tr><tr><td>ʿ</td><td>ʔ / —</td><td>maʿati → ma'ati</td></tr><tr><td>q</td><td>k</td><td>qahwa → kahwa</td></tr><tr><td>ḫ ġ</td><td>k~h, g</td><td>ḫobizon → kobizon</td></tr></tbody></table></figure>
+    
+    <div class="drill"><span class="drill-label">Drill</span> Say ṣabaḥ, then relax it to sabah. Say ḏikeri, then dikeri. Feel the register shift — both are lawful; one is Sunday-careful, one is porch-easy.</div>
+  </article>
+  <article class="lesson">
+    <div class="aq-eyebrow">HAKELOW · LESSON 02</div>
+    <h3>Silemi! — na·jumla bilā kupla</h3>
+    <div class="lesson-en">Peace at the Door — the Zero Copula</div>
+    <p class="focus">Greetings, and the everyday sentence that needs no 'is'.</p>
+    <p class="prose">AAVE taught the world that 'she happy' is a complete sentence. Amraqiyyah agrees as law: in the everyday register the copula is zero (R-028). Mi harāy — I'm good. Three copulas exist for careful speech — yit (quality), wi (existence and location), pe (identity, with plural ne) — but the porch needs none of them.</p>
+    <p class="prose">Greet with Silemi! (peace — the everyday hello) or Es·salām! (THE Peace — formal, wearing the sacred article). Ask Kayf ib·ki? — how is your heart? — because in this language wellbeing is asked through the heart, and answer Ib·ku ḥitep, alḥamdulillah: my heart is at rest.</p>
+    
+    <div class="gloss-block"><div class="aq-eyebrow gl-eyebrow">Glossed — from the ratified corpus</div><div class="il">
+    <div class="il-ph">Ti har·āy?</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Ti</span><span class="il-g">2SG</span></span><span class="il-col"><span class="il-m">har-āy</span><span class="il-g">good-ADJ</span></span></div>
+    <div class="il-en">‘You good?’</div>
+  </div><div class="il">
+    <div class="il-ph">Ti wi en·ta?</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Ti</span><span class="il-g">2SG</span></span><span class="il-col"><span class="il-m">wi</span><span class="il-g">EXIST</span></span><span class="il-col"><span class="il-m">en-ta</span><span class="il-g">in-which.Q</span></span></div>
+    <div class="il-en">‘Where you at?’</div>
+  </div><div class="il">
+    <div class="il-ph">Anok pe weldu mafo·ku·i.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Anok</span><span class="il-g">1SG.STRONG</span></span><span class="il-col"><span class="il-m">pe</span><span class="il-g">IDENT</span></span><span class="il-col"><span class="il-m">weldu</span><span class="il-g">child</span></span><span class="il-col"><span class="il-m">mafo-ku-·i</span><span class="il-g">grandfather-1SG.POSS-CONSTR</span></span></div>
+    <div class="il-en">‘I AM my grandfather's child.’</div>
+  </div></div>
+    <div class="drill"><span class="drill-label">Drill</span> Walk through the greetings chapter of kitebi kilemiāt·i aloud: Silemi! · Ṣabaḥ har·āy! · Kayf ib·ki? · Mi min Soulaan·i.</div>
+  </article>
+  <article class="lesson">
+    <div class="aq-eyebrow">HAKELOW · LESSON 03</div>
+    <h3>Na ma Al — na·pa·sinu THE·āt</h3>
+    <div class="lesson-en">The Two Definites</div>
+    <p class="focus">na· the worldly THE, al· the sacred THE, wa/sam the indefinites, and the plural.</p>
+    <p class="prose">Amraqiyyah has two words for THE (R-012). na· is the worldly definite, the everyday article, inherited from Late Egyptian nꜣ — na·hina, the road. al·/el· is the sacred-emphatic definite from the Arabic stream: THE one and only. na·maʿati is the truth about a thing; al·maʿati is THE Truth, Ma'at herself. The sacred article assimilates to sun letters exactly as Arabic does: el·salām becomes es·salām.</p>
+    <p class="prose">Divine Names always wear al· — that law is shared with the Oracle's 99 Names. Indefinites: wa (one/a, which is also the numeral one) and sam (some). The plural is -āt for every noun (R-015), with three lawful junctions (R-060): u+āt → wāt (weldu → weldwāt), a+āt → āt (iška → iškāt), and i+āt written plain (kilemi → kilemiāt — the phrasebook's own name).</p>
+    <p class="prose">The plural article is na·pa· — Egyptian keeping its claim on number: na·pa·aḫāt, THE Ancestors.</p>
+    <figure class="ltable"><figcaption>Definiteness at a glance</figcaption><table><thead><tr><th>Form</th><th>Stream</th><th>Meaning</th></tr></thead><tbody><tr><td>na·hina</td><td>Egyptian nꜣ</td><td>the road (worldly)</td></tr><tr><td>al·mēr harāy</td><td>Arabic al-</td><td>THE best (emphatic superlative, R-047)</td></tr><tr><td>es·salām</td><td>al- assimilated</td><td>THE Peace (sun-letter law)</td></tr><tr><td>wa·ḫobizon</td><td>Egyptian wꜥ</td><td>a loaf (= 'one loaf')</td></tr><tr><td>na·pa·nemaḥwāt</td><td>nꜣ + plural</td><td>THE Freedmen</td></tr></tbody></table></figure>
+    <div class="gloss-block"><div class="aq-eyebrow gl-eyebrow">Glossed — from the ratified corpus</div><div class="il">
+    <div class="il-ph">Na·pet zarīq, na·yak kamāy.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Na-pet</span><span class="il-g">DEF-sky</span></span><span class="il-col"><span class="il-m">zarīq,</span><span class="il-g">blue</span></span><span class="il-col"><span class="il-m">na-yak</span><span class="il-g">DEF-land</span></span><span class="il-col"><span class="il-m">kamāy</span><span class="il-g">black</span></span></div>
+    <div class="il-en">‘The sky is blue, the land is black.’</div>
+  </div></div>
+    <div class="drill"><span class="drill-label">Drill</span> Take any noun you know and say it four ways: bare (generic), with na· (the), with al· (THE), with wa (a). Then pluralize it with -āt, minding the R-060 junction.</div>
+  </article>
+  <article class="lesson">
+    <div class="aq-eyebrow">HAKELOW · LESSON 04</div>
+    <h3>Anok, mi, -ku</h3>
+    <div class="lesson-en">Pronouns Three Ways, and What Cannot Be Alone</div>
+    <p class="focus">Strong pronouns, weak clitics, suffixes — and the inalienable kin and body.</p>
+    <p class="prose">Every person wears three forms (R-009). Strong, for emphasis and identity: anok, entok, entof/entos/ento, anon, enton, entou — Anok pe nemaḥu, I AM a freedman. Weak, for everyday subjects: mi, ti, i, ni (with plural closers -tin, -sen). And suffixes, for objects and possession: -ku, -ki, -to/-ta, -nun, -tin, -sen — šey·ku, my thing.</p>
+    <p class="prose">Gender lives only in the third person singular (R-006): entof he, entos she, ento it. Nothing else in the grammar knows gender — no gendered articles, no agreement, no feminine endings. The kin -t (sanut sister, saʾut daughter) is inheritance from the source languages, not machinery.</p>
+    <p class="prose">Kin and body form one inalienable class (R-033, R-035): in ordinary reference they carry their possessor. Iška·ku, my mama; ib·to, his heart; ḏart·ku, my hand. The bare forms are for roles, vocatives, and poetry — Iška! as a call, na·weladu as 'the parent' in the abstract.</p>
+    <figure class="ltable"><figcaption>The three-tier pronoun architecture (R-009)</figcaption><table><thead><tr><th>Person</th><th>Strong</th><th>Clitic</th><th>Suffix</th></tr></thead><tbody><tr><td>1SG</td><td>anok</td><td>mi</td><td>-ku</td></tr><tr><td>2SG</td><td>entok</td><td>ti</td><td>-ki</td></tr><tr><td>3SG m/f/n</td><td>entof / entos / ento</td><td>i</td><td>-to / -ta / -to</td></tr><tr><td>1PL</td><td>anon</td><td>ni</td><td>-nun</td></tr><tr><td>2PL</td><td>enton</td><td>ti…-tin</td><td>-tin</td></tr><tr><td>3PL</td><td>entou</td><td>i…-sen</td><td>-sen</td></tr></tbody></table></figure>
+    <div class="gloss-block"><div class="aq-eyebrow gl-eyebrow">Glossed — from the ratified corpus</div><div class="il">
+    <div class="il-ph">Rini·ku Jamal.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Rini-ku</span><span class="il-g">name-1SG.POSS</span></span><span class="il-col"><span class="il-m">Jamal</span><span class="il-g">Jamal</span></span></div>
+    <div class="il-en">‘My name is Jamal.’</div>
+  </div><div class="il">
+    <div class="il-ph">Pen pe sanut·ku.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Pen</span><span class="il-g">this</span></span><span class="il-col"><span class="il-m">pe</span><span class="il-g">IDENT</span></span><span class="il-col"><span class="il-m">sanut-ku</span><span class="il-g">sister-1SG.POSS</span></span></div>
+    <div class="il-en">‘This is my sister.’</div>
+  </div></div>
+    <div class="drill"><span class="drill-label">Drill</span> Possess your family: iška·ku, ika·ku, pokni·ku, mafo·ku, sanu·ku, kaz·ku. Feel how the kin will not stand alone.</div>
+  </article>
+  <article class="lesson">
+    <div class="aq-eyebrow">HAKELOW · LESSON 05</div>
+    <h3>Ib·ku wasīʿ</h3>
+    <div class="lesson-en">The Heart Speaks — Statives and the Heart-Idiom</div>
+    <p class="focus">The stative conjugation and the Egyptian grammar of feeling.</p>
+    <p class="prose">States take their own form: the CiCeC stative with a weak clitic — Mi·jiweʿ, I'm hungry; Mi·ʿiṭeš, I'm thirsty; Mi·ʾisef, I'm sorry (R-049). No copula, no aspect machinery: just the state, worn.</p>
+    <p class="prose">Emotion runs through the heart, as Egyptian ran it (R-038): ib + a stative or adjective is the lawful emotion predicate. Ib·ku wasīʿ — my heart is wide — is joy, the exact pattern of Egyptian ꜣwt-ib, and wasīʿ stands one step from Al-Wāsiʿ, the Vast. Ib·nun ḥitep — our hearts are at rest — is contentment with hotep inside it. The Way's own greeting asks Kayf ib·ki? because the heart is where the person is weighed.</p>
+    
+    <div class="gloss-block"><div class="aq-eyebrow gl-eyebrow">Glossed — from the ratified corpus</div><div class="il">
+    <div class="il-ph">Ib·ku wasīʿ pen·din.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Ib-ku</span><span class="il-g">heart-1SG.POSS</span></span><span class="il-col"><span class="il-m">wasīʿ</span><span class="il-g">wide</span></span><span class="il-col"><span class="il-m">pen-din</span><span class="il-g">this-day</span></span></div>
+    <div class="il-en">‘My heart is wide today. (I am overjoyed)’</div>
+  </div><div class="il">
+    <div class="il-ph">Mi·ʾisef — kapīl·ku.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Mi-ʾisef</span><span class="il-g">1SG-sorry.STAT</span></span><span class="il-col"><span class="il-m">—</span><span class="il-g">—</span></span><span class="il-col"><span class="il-m">kapīl-ku</span><span class="il-g">bad-1SG.POSS</span></span></div>
+    <div class="il-en">‘I'm sorry — my bad. (R-049/R-051)’</div>
+  </div></div>
+    <div class="drill"><span class="drill-label">Drill</span> Build heart-idioms: ib + ḥitep (at rest), + wasīʿ (wide/joyful), + šajīʿ (brave). Then ask three people Kayf ib·ki? and mean it.</div>
+  </article>
+  <section class="level">
+    <div class="aq-eyebrow">Level · THE PLACE OF SEEKING</div>
+    <h2 class="level-title">Ṭalebow</h2>
+    <p class="level-blurb">The verb: its two poles, the nine markers that carry Black time, the three ways to say no, and how to ask for things with grace. From Ṭ-L-B, to seek — the student (ṭelabu) is the seeker.</p>
+    <div class="level-scripts">
+      <span class="community">Talebow</span>
+      <span class="coptic">ⲧ̣ⲁⲗⲉⲃⲟⲩ</span>
+      <span class="ajami" dir="rtl">طَلێبۆو</span>
+    </div>
+  </section>
+  <article class="lesson">
+    <div class="aq-eyebrow">ṬALEBOW · LESSON 06</div>
+    <h3>Na·fiʿil ma sinu quṭbāt·to</h3>
+    <div class="lesson-en">The Verb and Its Two Poles</div>
+    <p class="focus">Prefix imperfective, suffix perfective — where Egyptian, Coptic, and Arabic agree.</p>
+    <p class="prose">The verb has two poles (R-005). Ongoing action takes the weak pronoun in front: mi·hakila, I understand / am understanding. Completed action takes the person as a suffix: hakil·ku, I understood. This prefix-imperfective / suffix-perfective split is the one place Egyptian sḏm.f, Coptic ti-sōtm, and Arabic yaktubu/kataba all shake hands — three ancestors, one law.</p>
+    <p class="prose">The clitic is required on the imperfective and optional on the perfective. Third singular perfective is bare: hakil — he understood, no ending at all. Biconsonantal roots take -im in the perfective (R-013): fak·im·ku, I cultivated; yawim, came.</p>
+    <figure class="ltable"><figcaption>H-K-L 'understand' — the two poles (R-005)</figcaption><table><thead><tr><th>Person</th><th>Imperfective</th><th>Perfective</th></tr></thead><tbody><tr><td>1SG</td><td>mi·hakila</td><td>hakil·ku</td></tr><tr><td>2SG</td><td>ti·hakila</td><td>hakil·ki</td></tr><tr><td>3SG</td><td>i·hakila</td><td>hakil</td></tr><tr><td>1PL</td><td>ni·hakila</td><td>hakil·nun</td></tr><tr><td>2PL</td><td>ti·hakila·tin</td><td>hakil·tin</td></tr><tr><td>3PL</td><td>i·hakila·sen</td><td>hakil·sen</td></tr></tbody></table></figure>
+    <div class="gloss-block"><div class="aq-eyebrow gl-eyebrow">Glossed — from the ratified corpus</div><div class="il">
+    <div class="il-ph">Mi·ṭaliba niḥewi en·sabeʾow·i.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Mi-ṭaliba</span><span class="il-g">1SG-study.IPFV</span></span><span class="il-col"><span class="il-m">niḥewi</span><span class="il-g">grammar</span></span><span class="il-col"><span class="il-m">en-sabeʾow-i</span><span class="il-g">in-academy-GEN</span></span></div>
+    <div class="il-en">‘I study grammar at the academy.’</div>
+  </div></div>
+    <div class="drill"><span class="drill-label">Drill</span> Run Š-R-Y 'buy' through both poles: mi·šariya … šariy·ku. Then do it with your favorite root from the qamus.</div>
+  </article>
+  <article class="lesson">
+    <div class="aq-eyebrow">ṬALEBOW · LESSON 07</div>
+    <h3>Bi·, don, gon· — na·waqet kamāy</h3>
+    <div class="lesson-en">The Nine Markers I — Black Time</div>
+    <p class="focus">Habitual bi·, completive don, future gon· — the AAVE spine of the tense system.</p>
+    <p class="prose">Amraqiyyah keeps the full AAVE aspect system as prestige grammar (R-011) — nine markers, each a precision instrument. Start with three. bi· is the habitual BE: Pokni·ku bi·i·ṭabiḫa — my grandmother be cooking — not now necessarily, but characteristically, as a way of being. English cannot say this in one word; AAVE can; Amraqiyyah made it law.</p>
+    <p class="prose">don is the completive with present weight: Don wanim·nun — we done ate. gon· is the future that sits after the pronoun: Ni·gon·hariw·ba·a — we gon' see each other, the everyday goodbye. The Exodus sentence carries two of them at once: Na·ḫireji don waṣil; na·Rijeʿi i·gon·waṣila — the Exodus done arrived; the Return gon' arrive.</p>
+    
+    <div class="gloss-block"><div class="aq-eyebrow gl-eyebrow">Glossed — from the ratified corpus</div><div class="il">
+    <div class="il-ph">Pokni·ku bi·i·ṭabiḫa na·pa·ḫoḍironāt·a.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Pokni-ku</span><span class="il-g">grandmother-1SG.POSS</span></span><span class="il-col"><span class="il-m">bi-i-ṭabiḫa</span><span class="il-g">HAB-3SG-cook.IPFV</span></span><span class="il-col"><span class="il-m">na-pa-ḫoḍironāt-a</span><span class="il-g">DEF-PL-greens-ACC</span></span></div>
+    <div class="il-en">‘My grandmother be cooking the greens.’</div>
+  </div><div class="il">
+    <div class="il-ph">Na·pa·aḫāt bi·i·hariwa.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Na-pa-aḫāt</span><span class="il-g">DEF-PL-ancestor</span></span><span class="il-col"><span class="il-m">bi-i-hariwa</span><span class="il-g">HAB-3SG-watch.IPFV</span></span></div>
+    <div class="il-en">‘The Ancestors be watching.’</div>
+  </div></div>
+    <div class="drill"><span class="drill-label">Drill</span> Say what your people BE doing — bi· + the verb — and what they done did — don + perfective. The difference is the whole point.</div>
+  </article>
+  <article class="lesson">
+    <div class="aq-eyebrow">ṬALEBOW · LESSON 08</div>
+    <h3>Bin, dē·, da·, f'na — ma na·rakiba</h3>
+    <div class="lesson-en">The Nine Markers II — BEEN and the Stack</div>
+    <p class="focus">Remote bin, recent dē·, steady da·, immediate f'na — and lawful stacking.</p>
+    <p class="prose">bin is BEEN — the remote past that settles a matter: Bin ni·ʿabira al·baḥar·a — we BEEN crossed THE Sea. Stress it and it becomes the AAVE stressed-BIN: long since, and still true. dē· is the recent perfect (just); da· is steady (sustained intent); f'na is finna — about to.</p>
+    <p class="prose">The markers stack in one lawful order (R-023): ('ayn) → (la|bu) → bin → don → bi· → da· → dē· → pronoun → gon· → verb. So bin don = been done (remote completive); bin ni·sikem = we BEEN powerful — the Freedmen's own sentence (R-056). f'na and gon· share the future lane and never co-occur.</p>
+    <figure class="ltable"><figcaption>The nine markers (R-011)</figcaption><table><thead><tr><th>Marker</th><th>Source</th><th>Meaning</th></tr></thead><tbody><tr><td>bi·</td><td>be</td><td>habitual</td></tr><tr><td>da·</td><td>steady</td><td>sustained</td></tr><tr><td>dē·</td><td>just</td><td>recent perfect</td></tr><tr><td>don</td><td>done</td><td>completive</td></tr><tr><td>bin</td><td>BEEN</td><td>remote past</td></tr><tr><td>f'na</td><td>finna</td><td>immediate future</td></tr><tr><td>gon·</td><td>gon'</td><td>future</td></tr><tr><td>IPFV</td><td>—</td><td>ongoing</td></tr><tr><td>PFV</td><td>—</td><td>completed</td></tr></tbody></table></figure>
+    <div class="gloss-block"><div class="aq-eyebrow gl-eyebrow">Glossed — from the ratified corpus</div><div class="il">
+    <div class="il-ph">Na·pa·nemaḥwāt bin i·sikem·sen.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Na-pa-nemaḥwāt</span><span class="il-g">DEF-PL-freedman</span></span><span class="il-col"><span class="il-m">bin</span><span class="il-g">REM</span></span><span class="il-col"><span class="il-m">i-sikem-sen</span><span class="il-g">3-powerful.STAT-PL</span></span></div>
+    <div class="il-en">‘The Freedmen BEEN powerful.’</div>
+  </div><div class="il">
+    <div class="il-ph">Mamān·ku don wanim, we·pen sanu·ku 'ayn wanim.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Mamān-ku</span><span class="il-g">Big.Mama-1SG.POSS</span></span><span class="il-col"><span class="il-m">don</span><span class="il-g">CPL</span></span><span class="il-col"><span class="il-m">wanim,</span><span class="il-g">eat.PFV.3SG</span></span><span class="il-col"><span class="il-m">we-pen</span><span class="il-g">but</span></span><span class="il-col"><span class="il-m">sanu-ku</span><span class="il-g">sibling-1SG.POSS</span></span><span class="il-col"><span class="il-m">'ayn</span><span class="il-g">EMPH.NEG</span></span><span class="il-col"><span class="il-m">wanim</span><span class="il-g">eat.PFV.3SG</span></span></div>
+    <div class="il-en">‘Big Mama done ate, but my sibling ain't ate.’</div>
+  </div></div>
+    <div class="drill"><span class="drill-label">Drill</span> Stack: bin don + a verb of your life. What you been done finished? Say it, and hear how much time fits in two small words.</div>
+  </article>
+  <article class="lesson">
+    <div class="aq-eyebrow">ṬALEBOW · LESSON 09</div>
+    <h3>La, bu, 'ayn — ḫemet ṭarīqāt la·i</h3>
+    <div class="lesson-en">Three Ways to Say No</div>
+    <p class="focus">The three negators, their streams, and negative concord.</p>
+    <p class="prose">Each heritage stream owns one negator (R-014). la (Arabic lā) is the general no: la mi·hakila, I don't understand — and the prohibitive: La lamisa šan·kwa!, don't touch my hair! bu (Late Egyptian bw) negates the perfective: bu hakil·ku, I didn't understand. 'ayn (AAVE ain't) is the emphatic, and it opens concord chains.</p>
+    <p class="prose">Negative concord is grammatical and reinforcing, as AAVE always knew: 'Ayn la·ʿanaku la i·faka — ain't nobody cultivating. Three negatives, one meaning, zero apology. The la-family builds the indefinites: la·šey nothing, la·ʿanaku nobody, la·wayen never, la·fen nowhere.</p>
+    
+    <div class="gloss-block"><div class="aq-eyebrow gl-eyebrow">Glossed — from the ratified corpus</div><div class="il">
+    <div class="il-ph">La ʾilah illa Allah.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">La</span><span class="il-g">NEG</span></span><span class="il-col"><span class="il-m">ʾilah</span><span class="il-g">god</span></span><span class="il-col"><span class="il-m">illa</span><span class="il-g">except</span></span><span class="il-col"><span class="il-m">Allah</span><span class="il-g">God</span></span></div>
+    <div class="il-en">‘There is no god but God. — the shahada composes natively (R-040)’</div>
+  </div><div class="il">
+    <div class="il-ph">La ḫawifa — mi wi en·pen.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">La</span><span class="il-g">PROH</span></span><span class="il-col"><span class="il-m">ḫawifa</span><span class="il-g">fear.IMP</span></span><span class="il-col"><span class="il-m">—</span><span class="il-g">—</span></span><span class="il-col"><span class="il-m">mi</span><span class="il-g">1SG</span></span><span class="il-col"><span class="il-m">wi</span><span class="il-g">EXIST</span></span><span class="il-col"><span class="il-m">en-pen</span><span class="il-g">in-this</span></span></div>
+    <div class="il-en">‘Don't fear — I'm here.’</div>
+  </div></div>
+    <div class="drill"><span class="drill-label">Drill</span> Negate one sentence three ways: plainly with la, in the past with bu, and with 'ayn plus concord. Feel the temperature rise.</div>
+  </article>
+  <article class="lesson">
+    <div class="aq-eyebrow">ṬALEBOW · LESSON 10</div>
+    <h3>Faḍl ma ʿifewi — na·ʾamr bi·fiḍeli</h3>
+    <div class="lesson-en">Commands and Courtesy</div>
+    <p class="focus">The imperative, the prohibitive, 2PL -tin, and the politeness set.</p>
+    <p class="prose">The command is the bare stem: Saʾila! — ask! Plural addressees take -tin: Wanima·tin! — y'all eat! Ḥasa·tin! Ḫaba·tin! — y'all sing, y'all dance! The hortative is ni·: let us. The prohibitive is la before the imperative (Lesson 9).</p>
+    <p class="prose">Courtesy is a complete circuit (R-049): Min faḍl·kī — please, of your grace, exactly Arabic min faḍlika. ʿAfiwa·ku! — excuse me, pardon me (the imperative with the object suffix). Bireki ʿala·ki! — blessing on you, the thank-you. And the answer is the pardon-word itself: ʿIfewi — you're welcome, as Arabic ʿafwan serves both doors. Apology runs two streams: Mi·ʾisef (the stative) and Kapīl·ku! (my bad — Choctaw root, template body, AAVE construction, R-051).</p>
+    
+    <div class="gloss-block"><div class="aq-eyebrow gl-eyebrow">Glossed — from the ratified corpus</div><div class="il">
+    <div class="il-ph">ʿAṭiya·ku wa·ḫobizon·a, min faḍl·kī.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">ʿAṭiya-ku</span><span class="il-g">give.IMP-1SG</span></span><span class="il-col"><span class="il-m">wa-ḫobizon-a,</span><span class="il-g">INDF-loaf-ACC</span></span><span class="il-col"><span class="il-m">min</span><span class="il-g">of</span></span><span class="il-col"><span class="il-m">faḍl-kī</span><span class="il-g">grace-2SG.POSS.GEN</span></span></div>
+    <div class="il-en">‘Give me a loaf, please. — the ditransitive (R-053)’</div>
+  </div><div class="il">
+    <div class="il-ph">Bireki ʿala·ki! — ʿIfewi, ṣadīq.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Bireki</span><span class="il-g">blessing</span></span><span class="il-col"><span class="il-m">ʿala-ki!</span><span class="il-g">on-2SG</span></span><span class="il-col"><span class="il-m">—</span><span class="il-g">—</span></span><span class="il-col"><span class="il-m">ʿIfewi,</span><span class="il-g">pardon</span></span><span class="il-col"><span class="il-m">ṣadīq</span><span class="il-g">friend</span></span></div>
+    <div class="il-en">‘Thank you! — You're welcome, friend.’</div>
+  </div></div>
+    <div class="drill"><span class="drill-label">Drill</span> Run the market dialogue from the phrasebook: Pen bi kam? → Tu mēr, kaz! → Aqel, min faḍl·kī. Haggle with grace.</div>
+  </article>
+  <section class="level">
+    <div class="aq-eyebrow">Level · THE ACADEMY</div>
+    <h2 class="level-title">Sabeʾow</h2>
+    <p class="level-blurb">The sentence: case at the edge, the Topic Law that makes the everyday clause, possession's fine grain, the particle lattice, and the art of the question. From S-B-ʾ, star and gate and teaching — the academy is the place of stars.</p>
+    <div class="level-scripts">
+      <span class="community">Sabe'ow</span>
+      <span class="coptic">ⲥⲁⲃⲉⲁ̀ⲟⲩ</span>
+      <span class="ajami" dir="rtl">سَبێءۆو</span>
+    </div>
+  </section>
+  <article class="lesson">
+    <div class="aq-eyebrow">SABEʾOW · LESSON 11</div>
+    <h3>-u, -a, -i en·na·ḥaf·i</h3>
+    <div class="lesson-en">Case at the Edge</div>
+    <p class="focus">The three case vowels, Muskogean placement, and vowel sandhi.</p>
+    <p class="prose">Arguments carry case (R-007): -u subject, -a object, -i genitive (possessors and after every preposition). The endings are Arabic; the placement is Muskogean: case attaches once per noun phrase, at its right edge — na·feku harāy·u, the good cultivator, one -u for the whole phrase.</p>
+    <p class="prose">Vowel meets vowel by sandhi (R-026): u+u → ū, u+a → wa, u+i → wi; i+i → ī, i+a → ya; a+i → ay, a+u → aw. So na·fek·ū (the cultivator, subject), šan·kwa (my hair, object), faḍl·kī (of your grace). Predicates stand caseless — Mi harāy needs no ending — and so do topics, which is the next lesson's law.</p>
+    <figure class="ltable"><figcaption>Case sandhi (R-026)</figcaption><table><thead><tr><th>Stem ends</th><th>+u</th><th>+a</th><th>+i</th></tr></thead><tbody><tr><td>consonant</td><td>-u</td><td>-a</td><td>-i</td></tr><tr><td>-u</td><td>ū</td><td>wa</td><td>wi</td></tr><tr><td>-i</td><td>yu</td><td>ya</td><td>ī</td></tr><tr><td>-a</td><td>aw</td><td>ā</td><td>ay</td></tr></tbody></table></figure>
+    <div class="gloss-block"><div class="aq-eyebrow gl-eyebrow">Glossed — from the ratified corpus</div><div class="il">
+    <div class="il-ph">Mi·čamipa ... na·tajerow wi en·ta?</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">ʿAfiwa-ku</span><span class="il-g">pardon.IMP-1SG</span></span><span class="il-col"><span class="il-m">—</span><span class="il-g">—</span></span><span class="il-col"><span class="il-m">na-tajerow</span><span class="il-g">DEF-market</span></span><span class="il-col"><span class="il-m">wi</span><span class="il-g">EXIST</span></span><span class="il-col"><span class="il-m">en-ta?</span><span class="il-g">in-which.Q</span></span></div>
+    <div class="il-en">‘Excuse me — where's the market? (subject of wi caseless: nominal clause)’</div>
+  </div><div class="il">
+    <div class="il-ph">Ti·falisa bi·fulus·i aw bi·fanet·i?</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Ti-falisa</span><span class="il-g">2SG-pay.IPFV</span></span><span class="il-col"><span class="il-m">bi-fulus-i</span><span class="il-g">with-money-GEN</span></span><span class="il-col"><span class="il-m">aw</span><span class="il-g">or</span></span><span class="il-col"><span class="il-m">bi-fanet-i?</span><span class="il-g">with-phone-GEN</span></span></div>
+    <div class="il-en">‘You paying cash or phone?’</div>
+  </div></div>
+    <div class="drill"><span class="drill-label">Drill</span> Decline na·qahwa through all three cases, minding the a-final sandhi: na·qahwaw, na·qahwā, na·qahway.</div>
+  </article>
+  <article class="lesson">
+    <div class="aq-eyebrow">SABEʾOW · LESSON 12</div>
+    <h3>Qanuni na·mawḍuʿ·i</h3>
+    <div class="lesson-en">The Topic Law</div>
+    <p class="focus">Why everyday subjects stand caseless with a pronoun echo — the unmarked clause.</p>
+    <p class="prose">The everyday clause is topic-prominent (R-052): the full-noun subject stands caseless at the front, and the weak pronoun resumes it on the verb. Na·šaʿab i·gon·ḫayira — the people, THEY gon' choose. Pokni·ku bi·i·yašika — my grandmother, she be nurturing. On the 3SG perfective the resumption is silent (the zero ending does the work): Na·ḫireji don waṣil.</p>
+    <p class="prose">The cased in-situ subject remains grammatical as the formal register: Na·fek·ū don fak·im — the cultivator (subject-marked) done cultivated. This is the AAVE topic-doubled clause elevated to the unmarked shape of the language, with the Arabic-faithful configuration as its Sunday dress. Copular and zero-copula subjects are always caseless: Na·pet zarīq.</p>
+    
+    <div class="gloss-block"><div class="aq-eyebrow gl-eyebrow">Glossed — from the ratified corpus</div><div class="il">
+    <div class="il-ph">Na·šaʿab i·gon·ḫayira ḥekamwāt·a.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Na-šaʿab</span><span class="il-g">DEF-people</span></span><span class="il-col"><span class="il-m">i-gon-ḫayira</span><span class="il-g">3SG-FUT-choose.IPFV</span></span><span class="il-col"><span class="il-m">ḥekamwāt-a</span><span class="il-g">leader.PL-ACC</span></span></div>
+    <div class="il-en">‘The people gon' choose the leaders.’</div>
+  </div><div class="il">
+    <div class="il-ph">Omba i·gon·yawa.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Omba</span><span class="il-g">rain</span></span><span class="il-col"><span class="il-m">i-gon-yawa</span><span class="il-g">3SG-FUT-come.IPFV</span></span></div>
+    <div class="il-en">‘Rain gon' come.’</div>
+  </div></div>
+    <div class="drill"><span class="drill-label">Drill</span> Take any sentence with a named subject and say it both ways: topic-echoed (everyday) and cased in-situ (formal). Hear the register change clothes.</div>
+  </article>
+  <article class="lesson">
+    <div class="aq-eyebrow">SABEʾOW · LESSON 13</div>
+    <h3>Het, ʿind, ma na··i ṯaniya</h3>
+    <div class="lesson-en">Possession's Fine Grain</div>
+    <p class="focus">het-have vs ʿind-have, the construct, the enclitic ·i, ditransitives, and age.</p>
+    <p class="prose">Two possessions, on purpose (R-027): het is having-with — accompaniment, relations: Mi het weldwāt·i, I have children, I am with children. ʿind is having-at — property, location: ʿInd·ku wa·hawt, at-me is a house. Age is ʿind-possession (R-053): ʿInd·ki kam ranpetāt? — how many years you got?</p>
+    <p class="prose">The construct binds nouns tight (R-047 D-14): the head bears the phrase's case, and the dependent closes with the genitive ·i — which is an enclitic, always its own syllable, never merged (R-050): pokni·ku·i, of my grandmother; hina na·nimeḥi·i, the road of freedom. Word-level case merges (faḍl·kī); the phrase-closer stays audible. And the ditransitive gives twice in one verb (R-053): recipient as suffix, gift in -a — ʿAṭiya·ku wa·ḫobizon·a.</p>
+    
+    <div class="gloss-block"><div class="aq-eyebrow gl-eyebrow">Glossed — from the ratified corpus</div><div class="il">
+    <div class="il-ph">Homipon na·din·salām·i gon·wi en·hawtpay pokni·ku·i.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Homipon</span><span class="il-g">feast</span></span><span class="il-col"><span class="il-m">na-din-salām-i</span><span class="il-g">DEF-day-peace-CONSTR</span></span><span class="il-col"><span class="il-m">gon-wi</span><span class="il-g">FUT-EXIST</span></span><span class="il-col"><span class="il-m">en-hawtpay</span><span class="il-g">in-house.GEN</span></span><span class="il-col"><span class="il-m">pokni-ku-·i</span><span class="il-g">grandmother-1SG.POSS-CONSTR</span></span></div>
+    <div class="il-en">‘Sunday dinner gon' be at my grandmother's house.’</div>
+  </div><div class="il">
+    <div class="il-ph">Kiyepa pe hina na·nimeḥi·i.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Kiyepa</span><span class="il-g">mutual.aid</span></span><span class="il-col"><span class="il-m">pe</span><span class="il-g">IDENT</span></span><span class="il-col"><span class="il-m">hina</span><span class="il-g">road</span></span><span class="il-col"><span class="il-m">na-nimeḥi-·i</span><span class="il-g">DEF-freedom-CONSTR</span></span></div>
+    <div class="il-en">‘Mutual aid IS the road of freedom.’</div>
+  </div></div>
+    <div class="drill"><span class="drill-label">Drill</span> Say what you have with het (your people) and with ʿind (your things). If the two feel different, the lesson has landed.</div>
+  </article>
+  <article class="lesson">
+    <div class="aq-eyebrow">SABEʾOW · LESSON 14</div>
+    <h3>Na·šabaka ḥarf·i</h3>
+    <div class="lesson-en">The Particle Lattice</div>
+    <p class="focus">Twenty prepositions in three streams; they govern the genitive, inflect, and stack.</p>
+    <p class="prose">The core spatial grid is inherited: en in, ben to, het with, ra for. Over it lies the Arabic relational lattice (R-016): ʿala on, taḥt under, qudām before, ḫalf behind, bayn between, ḥawl around, min from, ʿind at, bi by-means-of, bilā without, ḍid against, kama like, illa except, qabl before, baʿd after. AAVE seasons the talk: bawt — Mi·talika bawt al·maʿati het·ki, I'm talkin' bout THE Truth with you.</p>
+    <p class="prose">Three laws: prepositions govern the genitive (min pet·i, from the sky); they inflect directly with the suffix pronouns (het·ku with me, ʿala·ki on you, qudām·nun before us); and they stack (min taḥt na·hawt·i, from under the house). Note het against bi: with-someone versus by-means-of — het na·krew·i but bi na·sakimet·i.</p>
+    
+    <div class="gloss-block"><div class="aq-eyebrow gl-eyebrow">Glossed — from the ratified corpus</div><div class="il">
+    <div class="il-ph">Al·yiteri wi bayn na·pa·yakāt·i.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Al-yiteri</span><span class="il-g">SDEF-river</span></span><span class="il-col"><span class="il-m">wi</span><span class="il-g">EXIST</span></span><span class="il-col"><span class="il-m">bayn</span><span class="il-g">between</span></span><span class="il-col"><span class="il-m">na-pa-yakāt-i</span><span class="il-g">DEF-PL-land-GEN</span></span></div>
+    <div class="il-en">‘THE River lies between the lands.’</div>
+  </div><div class="il">
+    <div class="il-ph">Mašiya het·ku!</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Mašiya</span><span class="il-g">walk.IMP</span></span><span class="il-col"><span class="il-m">het-ku</span><span class="il-g">with-1SG</span></span></div>
+    <div class="il-en">‘Walk with me!’</div>
+  </div></div>
+    <div class="drill"><span class="drill-label">Drill</span> Stack two prepositions truthfully about your room: min taḥt, min ḫalf, ben ḥawl. Then inflect het through all six persons.</div>
+  </article>
+  <article class="lesson">
+    <div class="aq-eyebrow">SABEʾOW · LESSON 15</div>
+    <h3>Miya? Nim? Kayf? — na·fann siʾel·i</h3>
+    <div class="lesson-en">The Art of the Question</div>
+    <p class="focus">Interrogatives, particle composition, hal, and relative clauses.</p>
+    <p class="prose">The question words (R-018): miya what, nim who, ta which, en·ta where (in-which — completing here/there/yonder/where), mata when, kayf how, kam how many, ra·miya why (for-what). They compose freely with the particles: het nim? with whom? min en·ta? from where? bawt miya? bout what? Pen bi kam? — this, for how much?</p>
+    <p class="prose">Yes/no questions ride intonation; formal speech may open with hal. Answers: aywa (everyday yes), na'am (formal yes), la (no — the same la that negates). Relatives take ninta with a resumptive suffix, or the tight Coptic-stream et·: na·šey et·wi·harāy·u, the thing that is good.</p>
+    
+    <div class="gloss-block"><div class="aq-eyebrow gl-eyebrow">Glossed — from the ratified corpus</div><div class="il">
+    <div class="il-ph">ʿInd·ki kam ranpetāt?</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">ʿInd-ki</span><span class="il-g">at-2SG</span></span><span class="il-col"><span class="il-m">kam</span><span class="il-g">how.many.Q</span></span><span class="il-col"><span class="il-m">ranpetāt?</span><span class="il-g">year.PL</span></span></div>
+    <div class="il-en">‘How old are you? (years as property — R-053)’</div>
+  </div><div class="il">
+    <div class="il-ph">Saʾila — ma na·jiwebi i·gon·yawa.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Saʾila</span><span class="il-g">ask.IMP</span></span><span class="il-col"><span class="il-m">—</span><span class="il-g">—</span></span><span class="il-col"><span class="il-m">ma</span><span class="il-g">and</span></span><span class="il-col"><span class="il-m">na-jiwebi</span><span class="il-g">DEF-answer</span></span><span class="il-col"><span class="il-m">i-gon-yawa</span><span class="il-g">3SG-FUT-come.IPFV</span></span></div>
+    <div class="il-en">‘Ask — and the answer gon' come.’</div>
+  </div></div>
+    <div class="drill"><span class="drill-label">Drill</span> Interrogate your day with all eight words in order: miya, nim, ta, en·ta, mata, kayf, kam, ra·miya.</div>
+  </article>
+  <section class="level">
+    <div class="aq-eyebrow">Level · THE GREAT GATE</div>
+    <h2 class="level-title">Sibeʾan</h2>
+    <p class="level-blurb">Mastery: the root-and-template engine, word-building, number and time, the scripts in motion, and the sacred register. The augmentative of the star-gate — the gate grown great.</p>
+    <div class="level-scripts">
+      <span class="community">Sibe'an</span>
+      <span class="coptic">ⲥⲓⲃⲉⲁ̀ⲁⲛ</span>
+      <span class="ajami" dir="rtl">سِبێءَن</span>
+    </div>
+  </section>
+  <article class="lesson">
+    <div class="aq-eyebrow">SIBEʾAN · LESSON 16</div>
+    <h3>Na·jiḏr ma na·qaleb</h3>
+    <div class="lesson-en">The Root and the Template</div>
+    <p class="focus">How one skeleton becomes eleven words — the engine of the lexicon.</p>
+    <p class="prose">Every content word grows from a consonantal skeleton poured into a vowel template (R-010) — strictly: the template dictates every vowel, no exceptions. Take Ḥ-S-B, the Egyptian reckoning-root: ḥasiba to compute (which is also perfect Arabic ḥasiba, to reckon — two ancestors, one verb), ḥisebi computation, ḥesabu computer-agent, ḥosibon number, ḥasebow the counting-house — the bank. Reckoning built banks; the word remembers.</p>
+    <p class="prose">The core suite: verb CaCiCa, abstract CiCeCi, agent CeCaCu, patient CoCiCon, locative CaCeCow, instrumental CaCiCet, collective CiCeCpa, diminutive CuCayC, augmentative CiCeCan, adjective CaCīC (the divine-Name pattern: sakīm as Ḥakīm), stative CiCeC. Biliterals run a parallel suite; quads keep Pattern I and citation nominals (R-047). Learn one root's family and you have learned a hundred families.</p>
+    <figure class="ltable"><figcaption>One root, eleven words — S-K-M 'power'</figcaption><table><thead><tr><th>Function</th><th>Form</th><th>Meaning</th></tr></thead><tbody><tr><td>verb</td><td>sakima</td><td>to be able, empower</td></tr><tr><td>abstract</td><td>sikemi</td><td>power</td></tr><tr><td>agent</td><td>sekamu</td><td>power-holder</td></tr><tr><td>patient</td><td>sokimon</td><td>the empowered</td></tr><tr><td>locative</td><td>sakemow</td><td>seat of power</td></tr><tr><td>adjective</td><td>sakīm</td><td>powerful</td></tr><tr><td>stative</td><td>sikem</td><td>be powerful</td></tr><tr><td>diminutive</td><td>sukaym</td><td>small power</td></tr><tr><td>…</td><td>…</td><td>see the qamus for every family</td></tr></tbody></table></figure>
+    
+    <div class="drill"><span class="drill-label">Drill</span> Open the qamus to any root and read its family aloud. Then guess the family of a root you've never seen — the templates will not lie to you.</div>
+  </article>
+  <article class="lesson">
+    <div class="aq-eyebrow">SIBEʾAN · LESSON 17</div>
+    <h3>Sa·, -wi-, ma na·terkib</h3>
+    <div class="lesson-en">Building Words</div>
+    <p class="focus">Causative, passive, reflexive, reciprocal; noun-conversion; the three compounds.</p>
+    <p class="prose">The derivational voices (R-025): sa· makes causatives — sa·hakila, make-understand: to teach; sa·hakilu, the teacher. -wi- after the second radical makes passives: sakwiima, be empowered. -tw reflexive, -ba·a reciprocal — Ni·gon·hariw·ba·a, we gon' see each other.</p>
+    <p class="prose">AAVE contributes a construction, not just words (R-051): noun-conversion by possession. An adjective owned becomes a noun: Kapīl·ku! — my bad. And compounds come in three lawful types (R-047): juxtaposition on the Choctaw tanchi-palvska precedent — yiteč-ḫobizon cornbread, ruḥ-ḥisi soul music; the construct-genitive — din·salām·i; and the plain adjective phrase — makina ḏakīy, an intelligent machine (which fuses to makina-ḏakīy, THE AI, when it becomes a name).</p>
+    
+    <div class="gloss-block"><div class="aq-eyebrow gl-eyebrow">Glossed — from the ratified corpus</div><div class="il">
+    <div class="il-ph">Pen ḫobizon har·āy — we·pen yiteč-ḫobizon pokni·ku·i wi al·mēr har·āy.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Pen</span><span class="il-g">this</span></span><span class="il-col"><span class="il-m">ḫobizon</span><span class="il-g">bread</span></span><span class="il-col"><span class="il-m">har-āy</span><span class="il-g">good-ADJ</span></span><span class="il-col"><span class="il-m">—</span><span class="il-g">—</span></span><span class="il-col"><span class="il-m">we-pen</span><span class="il-g">but</span></span><span class="il-col"><span class="il-m">yiteč-ḫobizon</span><span class="il-g">corn-bread</span></span><span class="il-col"><span class="il-m">pokni-ku-·i</span><span class="il-g">grandmother-1SG.POSS-CONSTR</span></span><span class="il-col"><span class="il-m">wi</span><span class="il-g">EXIST</span></span><span class="il-col"><span class="il-m">al-mēr</span><span class="il-g">SDEF-more</span></span><span class="il-col"><span class="il-m">har-āy</span><span class="il-g">good-ADJ</span></span></div>
+    <div class="il-en">‘This bread is good — but my grandmother's cornbread is THE best.’</div>
+  </div></div>
+    <div class="drill"><span class="drill-label">Drill</span> Causativize three verbs with sa·. Then convert an adjective with a possessive and use it as an exclamation, on the Kapīl·ku! pattern.</div>
+  </article>
+  <article class="lesson">
+    <div class="aq-eyebrow">SIBEʾAN · LESSON 18</div>
+    <h3>Min nefer·i ben ḥeḥ·i</h3>
+    <div class="lesson-en">Number and Time</div>
+    <p class="focus">The Egyptian numerals, ordinals, the week, and the sacred calendar words.</p>
+    <p class="prose">Count in Egyptian (R-039): nefer ZERO (the accounting zero was written with the sign of the beautiful — emptiness as completion), wa 1, sinu 2, ḫemet 3, fedu 4, diyu 5, sisu 6, sefeḫ 7, ḫemenu 8, pesiḏ 9 (the Ennead), meḏu 10 (as in Mdw Ntr), šet 100, ḫa 1000, and ḥeḥ — infinity, the million-god. Teens juxtapose (meḏu-wa 11); decades multiply (sinu meḏu 20); wa takes the singular, everything above takes the plural.</p>
+    <p class="prose">Ordinals add -īy, except first: tapīy, head-most, exactly as Egyptian made tpy from tp. The week bends to the Two Pillars (Calendar law): din·salām·i Sunday — which is why Sunday dinner is homipon na·din·salām·i — din·sinu through din·diyu Monday–Thursday, then the frozen Jumuʿa and Sabt. The Salah cycle stands frozen from Fajr to ʿIšāʾ with Tahajjud in the split night.</p>
+    
+    <div class="gloss-block"><div class="aq-eyebrow gl-eyebrow">Glossed — from the ratified corpus</div><div class="il">
+    <div class="il-ph">Sabt pe na·din sefeḫīy.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Sabt</span><span class="il-g">Sabt</span></span><span class="il-col"><span class="il-m">pe</span><span class="il-g">IDENT</span></span><span class="il-col"><span class="il-m">na-din</span><span class="il-g">DEF-day</span></span><span class="il-col"><span class="il-m">sefeḫ-īy</span><span class="il-g">seven-ORD</span></span></div>
+    <div class="il-en">‘Sabt is the seventh day.’</div>
+  </div><div class="il">
+    <div class="il-ph">Min nefer·i ben ḥeḥ·i — ni·gon·ḥasiba!</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Min</span><span class="il-g">from</span></span><span class="il-col"><span class="il-m">nefer-i</span><span class="il-g">zero-GEN</span></span><span class="il-col"><span class="il-m">ben</span><span class="il-g">to</span></span><span class="il-col"><span class="il-m">ḥeḥ-i</span><span class="il-g">infinity-GEN</span></span><span class="il-col"><span class="il-m">—</span><span class="il-g">—</span></span><span class="il-col"><span class="il-m">ni-gon-ḥasiba</span><span class="il-g">1PL-FUT-count.IPFV</span></span></div>
+    <div class="il-en">‘From zero to infinity — we gon' count!’</div>
+  </div></div>
+    <div class="drill"><span class="drill-label">Drill</span> Count to twenty aloud, then give today its ordinal. Then say your age with ʿind (Lesson 15) — the numbers are yours now.</div>
+  </article>
+  <article class="lesson">
+    <div class="aq-eyebrow">SIBEʾAN · LESSON 19</div>
+    <h3>Na·pa·sašāt bi·i·mašiya</h3>
+    <div class="lesson-en">The Scripts in Motion</div>
+    <p class="focus">Running-text orthography: dots vanish, carriers seat vowels, the article wears ال.</p>
+    <p class="prose">The letter tables say what each letter is; running text has its own laws (R-057, spec/01). The display dot is scaffolding: lived scripts attach their little words, as Arabic attaches ال and Coptic its articles. Community writing turns each dot into a typable hyphen: Ni-gon-hariw-ba-a. In Ajami, no syllable opens bare — a vowel at a word-start, after an attached proclitic, or in hiatus takes its carrier: نَپَاَخات; and the mid-word long-ā carrier is the madda of قرآن itself.</p>
+    <p class="prose">Doubled consonants write once with the doubling mark — shadda in Ajami, the jinkim-dot in Coptic (ⲉⲥ̇ⲁⲗⲁ̄ⲙ). The sacred article always wears ال whatever the mouth does (R-059): es·salām writes السَّلام, assimilation shining as shadda on the sun letter — while the preposition en· stays phonetic. And the frozen Names keep their inherited letters in every script: الله with both its lams, ⲁⲗⲗⲁϩ likewise; in the shahada the ordinary illa geminates beside the exempt Name — the law teaching itself in one line.</p>
+    
+    
+    <div class="drill"><span class="drill-label">Drill</span> Write Es·salām! four ways: Es·salām / Es-salaam / ⲉⲥ̇ⲁⲗⲁ̄ⲙ / السَّلام. Watch the same peace change clothes without changing.</div>
+  </article>
+  <article class="lesson">
+    <div class="aq-eyebrow">SIBEʾAN · LESSON 20</div>
+    <h3>Na·lisan qadīs·i</h3>
+    <div class="lesson-en">The Sacred Register</div>
+    <p class="focus">Liturgy's grammar: the frozen registry, the shahada, the Names, and remembrance.</p>
+    <p class="prose">Sacred speech keeps every deep letter, every case vowel, every long vowel (R-015 Full-Vowel Law) — in the sacred register, sound is doctrine. The Frozen Lexeme Registry (R-022) holds the forms that never renormalize: maʿat·i, ḏed, ʿank, ḥetep, salām, Allah and the formula trio, the Salah windows, Jumuʿa and Sabt. The 99 Names enter wholesale with their al·, enumerated by reference to the Oracle's registry — one table, consumed everywhere.</p>
+    <p class="prose">The shahada composes natively — La ʾilah illa Allah — la from R-014, illa from R-016: the language did not need to borrow its own confession. Native pairings stand beside eleven Names so far: wasīʿ beside Al-Wāsiʿ, ʿafīw beside Al-ʿAfūw, the hidden release that purifies. And the practice that names the Way lives in one root: Ḏ-K-R — ḏakira to remember, ḏikeri the remembrance, dhikr. Na·ḏikeri i·ṭaba na·ib·a: remembrance heals the heart. That sentence is the whole curriculum.</p>
+    <p class="prose">Na·pa·aḫāt bi·i·hariwa. Ḏakira, saša, ma la nasiya — remember, write, and don't forget. The gate is open; walk through it speaking.</p>
+    
+    <div class="gloss-block"><div class="aq-eyebrow gl-eyebrow">Glossed — from the ratified corpus</div><div class="il">
+    <div class="il-ph">Ḏakira·tin Allah·a — na·ḏikeri pe na·hina.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Ḏakira-tin</span><span class="il-g">remember.IMP-2PL</span></span><span class="il-col"><span class="il-m">Allah-a</span><span class="il-g">God-ACC</span></span><span class="il-col"><span class="il-m">—</span><span class="il-g">—</span></span><span class="il-col"><span class="il-m">na-ḏikeri</span><span class="il-g">DEF-remembrance</span></span><span class="il-col"><span class="il-m">pe</span><span class="il-g">IDENT</span></span><span class="il-col"><span class="il-m">na-hina</span><span class="il-g">DEF-road</span></span></div>
+    <div class="il-en">‘Y'all remember God — remembrance IS the road.’</div>
+  </div><div class="il">
+    <div class="il-ph">Na·ʿiqeli pe saḏet Allah·i.</div>
+    <div class="il-row"><span class="il-col"><span class="il-m">Na-ʿiqeli</span><span class="il-g">DEF-reason</span></span><span class="il-col"><span class="il-m">pe</span><span class="il-g">IDENT</span></span><span class="il-col"><span class="il-m">saḏet</span><span class="il-g">torch</span></span><span class="il-col"><span class="il-m">Allah-i</span><span class="il-g">God-GEN</span></span></div>
+    <div class="il-en">‘Reason IS the torch of God. — the Mu'tazili keystone (R-044)’</div>
+  </div></div>
+    <div class="drill"><span class="drill-label">Drill</span> Recite the shahada in all four scripts. Then open kitebi kilemiāt·i to the worship chapter and read it aloud in the register it deserves.</div>
+  </article>
+  <footer class="colophon">
+    <div class="aq-eyebrow">Generated from data/lessons.json · tools/nihewi.js</div>
+    <p>Prose distills spec/00 and spec/01 — the R-numbers are the law; this book is its voice.</p>
+    <p class="charge">Na·ʿiqeli pe saḏet Allah·i. — Reason IS the torch of God.</p>
+  </footer>
+</div>
+</body>
+</html>
