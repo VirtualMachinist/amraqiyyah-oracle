@@ -371,12 +371,12 @@ Names for the three registers: to be coined from the lexicon itself (DOCKET).
 | D-2 | **CLOSED by R-048** — 33-consonant Coptic table (underdot deep / overline soft) + four-script converter live (tools/script.js, data/scripts.json, 10 golden conversions green) |
 | D-3 | **CLOSED by R-032** — Doublet Doctrine: S-K-M/S-Ḫ-M and ʿ-N-K/ʿ-N-Ḫ split semantics; Q-D-R and Q-M-R proceed as clean restorations (no entrenched k-forms) |
 | D-4 | **CLOSED by R-047** — quads: Pattern I + citation nominals; uniform passive law (-wi- after C₂ in every class) |
-| D-5 | **IN PROGRESS** — Tranche 1 dispositions at `afro/02-root-merge.md` (four ALI blocks pending; tranches T-2…T-10 scheduled) |
+| D-5 | **CLOSED** — all eleven tranches ratified (R-034…R-044) + verification passes (R-045/R-046) + session tranches through R-061; lexicon 251 |
 | D-6 | **CLOSED by R-018** — interrogative paradigm ratified (miya, nim, ta, en·ta, mata, kayf, kam, ra·miya + particle composition) |
 | D-7 | **CLOSED by R-026** — sandhi ratified; predicates caseless |
-| D-8 | Numbers 1–10 rebuild + weekday system (AX-38; Saturday/Sunday values ruling) |
+| D-8 | **CLOSED by R-039** — Egyptian numerals nefer→ḥeḥ; week aligned with the Calendar's Two Pillars |
 | D-9 | **CLOSED by R-022** — broad freeze ratified; enumeration lands at D-5 |
-| D-10 | **Engine live** — `tools/morphology.js` + `tools/lint.js` + 58 golden tests green + `tools/cli.js` explorer; data single-source at `data/*.json`; sentence-level golden corpus still to seed |
+| D-10 | **CLOSED** — engine + orthography layer + generators live; 89 golden tests incl. the sentence corpus and lesson invariants; deliverables trilogy generated from data |
 | D-11 | **CLOSED by R-047** — no weak-verb morphophonology: w/y are ordinary consonants in templates (ḏawiqa, qayisa, nasiya) |
 | D-12 | **CLOSED by R-047** — mēr more / al·mēr most (the sacred article builds the superlative) / aqel less / min than (Arabic-faithful) / kama as / ril very (AAVE) / tu too |
 | D-13 | **CLOSED by R-047** — aya go · yawa come · mašiya walk · sayira travel · ʿabira cross · waṣila arrive · daḫila enter · ṣaʿida ascend · nazila descend · **rajiʿa return (na·Rijeʿi THE RETURN)** · **ḫarija exit (ḫireji THE EXODUS)** |

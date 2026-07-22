@@ -94,10 +94,8 @@ both docs are quarries of components for a rebuild.
 
 | Phase | Artifact | Status |
 |---|---|---|
-| **A — Audit** | [`afro/01-audit-ledger.md`](afro/01-audit-ledger.md) — 44 axes + stable core + annexes | ✅ Drafted, awaiting rulings |
-| **F — Facet** | Rulings R-001–R-028 (cascade + D-1 walk) — **grammar fully ruled** (spec v2.0-rc.1); root-merge table (`afro/02-root-merge.md`) is the remaining Facet work | 🔄 Lexicon next |
-| **R — Refine** | `spec/` v2.0-rc.1 + `data/*.json` (phonology, templates, particles, frozen, roots) + `tools/` (morphology engine, linter, 58 golden tests, CLI explorer: `node language/tools/cli.js ḥ-s-b`) | 🔄 Engine live; lexicon tranches running |
-| **O — Optimize** | Learnability sequencing, euphony pass, ambiguity budget | — |
-| Deliverables | Dictionary · Phrasebook · Grammar textbook (generated from `data/` + `spec/`) | — |
-
-Not yet committed to git — Ali decides placement and commit timing.
+| **A — Audit** | [`afro/01-audit-ledger.md`](afro/01-audit-ledger.md) — 44 axes + stable core + annexes | ✅ Complete |
+| **F — Facet** | Rulings R-001–R-063 — grammar fully ruled (spec v2.0-rc.1 + spec/01 orthography); eleven tranches + verification passes | ✅ Complete |
+| **R — Refine** | `data/*.json` (8 files, single-source) + `tools/` (morphology · lint · script · orthography · generators · print; **89 golden tests**; `node language/tools/cli.js ḥ-s-b`) | ✅ Engine live |
+| **O — Optimize** | Euphony read-aloud pass · lint allowlist tool (717 accepted advisories) · corpus growth · deferred orthographic refinements | 🔄 **Current phase** (HANDOFF §4) |
+| **Deliverables** | **SHIPPED** (`deliverables/`): kitebi kilemiāt·i (phrasebook) · na·qamus (dictionary) · kitebi niḥewi·i (grammar) — each styled HTML + booklet PDF per the Design System, all generated from `data/` + `spec/` | ✅ **The trilogy exists** |
