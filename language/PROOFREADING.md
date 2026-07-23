@@ -43,15 +43,22 @@ The source travels with the verse (Canon rule 5) precisely so this audit stays p
   If ruled overt-for-identification: line 7 → *ne sinu* (plural identificational), line 9 →
   *pe na·seba…*. The Dokkodo draft's lines 16/19 (zero-copula adjective predicates) hang on
   the same ruling.
-- **Q2 — The modal 可.** Lines 1–2 render 道可道 as "the Way that one speaks," compressing
-  可 "can." Q-D-R stands ready (*nin·ta i·qadira…*) if Ali wants the potential restored;
-  most translators compress here too. Interpretive, not error — but it was never *decided*.
+- **Q2 — RESOLVED (R-072, Ali).** 可 restored: *nin·ta i·qadira jata·to* — the **ability
+  auxiliary**: qadira carries the clitic/conjugation, the content verb stands as bare stem
+  (the imperative's stem), the resumptive rides the content verb. AAVE-shaped ("can speak");
+  the Arabic-faithful alternative (*i·qadira ya·jata·to*, yaqdiru ʾan) stands noted if the
+  subjunctive lane is ever preferred. Bonus find while verifying: **Mawangdui reads 恆
+  'enduring' where the received text reads 常** (Emperor Wen's naming taboo) — Laozi's own
+  word vindicates dahīr.
 - **Q3 — Demonstrative order.** Line 7 opens *Na·sinu nai* (postposed); the corpus preposes
   (*Pen ḫobizon harāy*). Deliberate Arabic-style flourish (*al-kitābu hāḏā*) or slip?
 - **Q4 — The chapter title.** *Na·Hina, Na·Tap·i* — as apposition the construct ·i dangles
   ("the beginning" alone is *na·tap*); as construct the comma is wrong. One must give.
-- **Q5 — Corpus infection.** The ratified proverb *ʿIrefi bilā ḏikeri la wi ʿirefi* carries
-  the E1 shape (*bilā ḏikerī*). Sealed corpus — R-060-style minimal erratum on Ali's word.
+- **Q5 — RESOLVED (R-072, Ali: "cases should be consistent").** Full-corpus E1 sweep run:
+  two instances found and fixed — the proverb (*bilā ḏikerī*) and the mercy-line
+  (*kama na·aḫet·i* — kama governs GEN like every other particle in the R-016 table).
+  All other prep-phrases in the 116 audited clean. Frozen forms exempt as always
+  (*La ʾilah illa Allah* stands untouched); interrogatives take no case (*Pen bi kam?*).
 
 ## 3. The proof checklist (run per line, fresh context, before sealing)
 

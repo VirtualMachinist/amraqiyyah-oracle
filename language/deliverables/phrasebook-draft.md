@@ -93,7 +93,7 @@ Orthographic policies in this render (proposed R-057): lived scripts attach proc
 | 57 | **Na·pa·aḫāt bi·i·hariwa.** | The Ancestors be watching. *(plain)* | Na-pa-akhaat bi-i-hariwa. | ⲛⲁⲡⲁⲁϧⲁ̄ⲧ ⲃⲓⲓϩⲁⲣⲓⲩⲁ. | <div dir="rtl">نَپَاَخات بِاِهَرِوَ.</div> |
 | 58 | **Ib·ku ḥitep en·salemow·i.** | My heart is at rest in the sanctuary. *(sacred)* | Ib-ku hitep en-salemow-i. | ⲓⲃⲕⲟⲩ ϩ̣ⲓⲧⲉⲡ ⲉⲛⲥⲁⲗⲉⲙⲟⲩⲓ. | <div dir="rtl">اِبكُ حِتێپ ئێنسَلێمۆوِ.</div> |
 | 59 | **Na·ʿiqeli pe saḏet Allah·i.** | Reason IS the torch of God. *(sacred)* | Na-'iqeli pe sadhet Allah-i. | ⲛⲁⲁ̣ⲓⲕ̅ⲉⲗⲓ ⲡⲉ ⲥⲁⲇ̅ⲉⲧ ⲁⲗⲗⲁϩⲓ. | <div dir="rtl">نَعِقێلِ پێ سَذێت اللهِ.</div> |
-| 60 | **Riḥemi Allah·i wasīʿ kama na·aḫet.** | The mercy of God is wide as the horizon. *(sacred)* | Rihemi Allah-i wasii' kama na-akhet. | ⲣⲓϩ̣ⲉⲙⲓ ⲁⲗⲗⲁϩⲓ ⲩⲁⲥⲓ̄ⲁ̣ ⲕⲁⲙⲁ ⲛⲁⲁϧⲉⲧ. | <div dir="rtl">رِحێمِ اللهِ وَسيع كَمَ نَاَخێت.</div> |
+| 60 | **Riḥemi Allah·i wasīʿ kama na·aḫet·i.** | The mercy of God is wide as the horizon. *(sacred)* | Rihemi Allah-i wasii' kama na-akhet-i. | ⲣⲓϩ̣ⲉⲙⲓ ⲁⲗⲗⲁϩⲓ ⲩⲁⲥⲓ̄ⲁ̣ ⲕⲁⲙⲁ ⲛⲁⲁϧⲉⲧⲓ. | <div dir="rtl">رِحێمِ اللهِ وَسيع كَمَ نَاَخێتِ.</div> |
 | 61 | **Allah pe An-Nūr.** | God IS the Light. *(sacred)* | Allah pe An-Nuur. | ⲁⲗⲗⲁϩ ⲡⲉ ⲁⲛ-ⲛⲟⲩ̄ⲣ. | <div dir="rtl">الله پێ اَن-نور.</div> |
 | 62 | **Ni·gon·ṣaliwa Fajr·a.** | We gon' pray Fajr. | Ni-gon-saliwa Fajr-a. | ⲛⲓⲅⲟⲛⲥ̣ⲁⲗⲓⲩⲁ ϥⲁϫⲣⲁ. | <div dir="rtl">نِگۆنصَلِوَ فَجرَ.</div> |
 | 63 | **Ḏakira·tin Allah·a — na·ḏikeri pe na·hina.** | Y'all remember God — remembrance IS the road. *(sacred)* | Dhakira-tin Allah-a — na-dhikeri pe na-hina. | ⲇ̅ⲁⲕⲓⲣⲁⲧⲓⲛ ⲁⲗⲗⲁϩⲁ — ⲛⲁⲇ̅ⲓⲕⲉⲣⲓ ⲡⲉ ⲛⲁϩⲓⲛⲁ. | <div dir="rtl">ذَكِرَتِن اللهَ — نَذِكێرِ پێ نَهِنَ.</div> |
@@ -140,7 +140,7 @@ Orthographic policies in this render (proposed R-057): lived scripts attach proc
 |---|---|---|---|---|---|
 | 85 | **Mi·ṭaliba niḥewi en·sabeʾow·i.** | I study grammar at the academy. *(plain)* | Mi-taliba nihewi en-sabe'ow-i. | ⲙⲓⲧ̣ⲁⲗⲓⲃⲁ ⲛⲓϩ̣ⲉⲩⲓ ⲉⲛⲥⲁⲃⲉⲁ̀ⲟⲩⲓ. | <div dir="rtl">مِطَلِبَ نِحێوِ ئێنسَبێءۆوِ.</div> |
 | 86 | **Saʾila·tin! Na·pa·jiwebiāt wi en·na·pa·sebāt·i.** | Y'all ask! The answers are in the stars. *(plain)* | Sa'ila-tin! Na-pa-jiwebiaat wi en-na-pa-sebaat-i. | ⲥⲁⲁ̀ⲓⲗⲁⲧⲓⲛ! ⲛⲁⲡⲁϫⲓⲩⲉⲃⲓⲁ̄ⲧ ⲩⲓ ⲉⲛ̇ⲁⲡⲁⲥⲉⲃⲁ̄ⲧⲓ. | <div dir="rtl">سَءِلَتِن! نَپَجِوێبِآت وِ النَّپَسێباتِ.</div> |
-| 87 | **ʿIrefi bilā ḏikeri la wi ʿirefi.** | Knowledge without remembrance is no knowledge. *(plain)* | 'Irefi bilaa dhikeri la wi 'irefi. | ⲁ̣ⲓⲣⲉϥⲓ ⲃⲓⲗⲁ̄ ⲇ̅ⲓⲕⲉⲣⲓ ⲗⲁ ⲩⲓ ⲁ̣ⲓⲣⲉϥⲓ. | <div dir="rtl">عِرێفِ بِلا ذِكێرِ لَ وِ عِرێفِ.</div> |
+| 87 | **ʿIrefi bilā ḏikerī la wi ʿirefi.** | Knowledge without remembrance is no knowledge. *(plain)* | 'Irefi bilaa dhikerii la wi 'irefi. | ⲁ̣ⲓⲣⲉϥⲓ ⲃⲓⲗⲁ̄ ⲇ̅ⲓⲕⲉⲣⲓ̄ ⲗⲁ ⲩⲓ ⲁ̣ⲓⲣⲉϥⲓ. | <div dir="rtl">عِرێفِ بِلا ذِكێري لَ وِ عِرێفِ.</div> |
 | 88 | **Na·qamus pe baḥar kilemiāt·i.** | The dictionary IS an ocean of words. *(plain)* | Na-qamus pe bahar kilemiaat-i. | ⲛⲁⲕ̅ⲁⲙⲟⲩⲥ ⲡⲉ ⲃⲁϩ̣ⲁⲣ ⲕⲓⲗⲉⲙⲓⲁ̄ⲧⲓ. | <div dir="rtl">نَقَمُس پێ بَحَر كِلێمِآتِ.</div> |
 | 89 | **Saša·tin, ḏakira·tin, ma la nasiya·tin!** | Y'all write, y'all remember, and don't forget! *(plain)* | Sasha-tin, dhakira-tin, ma la nasiya-tin! | ⲥⲁϣⲁⲧⲓⲛ, ⲇ̅ⲁⲕⲓⲣⲁⲧⲓⲛ, ⲙⲁ ⲗⲁ ⲛⲁⲥⲓⲓ̈ⲁⲧⲓⲛ! | <div dir="rtl">سَشَتِن، ذَكِرَتِن، مَ لَ نَسِيَتِن!</div> |
 | 90 | **Sinu ma sinu pe kam? — Fedu!** | Two and two is how much? — Four! *(plain)* | Sinu ma sinu pe kam? — Fedu! | ⲥⲓⲛⲟⲩ ⲙⲁ ⲥⲓⲛⲟⲩ ⲡⲉ ⲕⲁⲙ? — ϥⲉⲇⲟⲩ! | <div dir="rtl">سِنُ مَ سِنُ پێ كَم؟ — فێدُ!</div> |
