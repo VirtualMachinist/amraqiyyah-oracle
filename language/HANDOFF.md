@@ -30,7 +30,9 @@
 
 ## 4. YOUR TASK: the Dokkodo, then the Canon road
 
-**Musashi's Dokkodo (Tier II-F, queued by Ali)** — 21 renunciations. Expect it to force: the self/attachment field (nafs-vocabulary; regret already exists as ʾ-S-F), "follow/depend," "possessions" beyond het/ʿind, and heavy prohibitive+negator work (*la* + imperative across 21 lines). The TAM lattice and *dahr* are ready for it. Method proven on ch. 1: scan the lexicon per line → coin by field (multiple streams) → engine-verify every form → present verse-by-verse with the source line → **Ali ratifies** → seal into `data/translations.json` → regenerate canon + qamus + PDFs → bless any new advisories consciously.
+**STATUS 2026-07-23: the Dokkodo is DRAFTED and awaits Ali's ratification** — all 21 precepts in `deliverables/dokkodo-draft.md` (R-070 proposed in the README ledger; staged translation JSON mirrors it). The predicted fields opened as foreseen: 16 verified roots landed (lexicon 273 — W-Ḥ-D, N-ʿ-M, W-K-L, N-Ḏ-S, ʿ-M-Q, D-N-Y, Ḥ-S-D, ʾ-Ḫ-R, F-R-Q, Ḥ-Q-D, Š-K-W, Ṭ-Y-R, Ḫ-P-Š, M-W-T, Q-D-M, H-J-R), Name-pairings #14–16 (Al-Wāḥid, Al-Wakīl, Al-Āḫir — Q 57:3 now three-quarters native), 62 form-checks green, advisories blessed at 427, 93/93 tests. **Six questions are reserved for Ali** (listed at the foot of the draft). On his word: seal into `data/translations.json`, regenerate canon + qamus + both PDFs, finalize R-070.
+
+**Original method note (proven on ch. 1, reusable for the next text):** scan the lexicon per line → coin by field (multiple streams) → engine-verify every form → present verse-by-verse with the source line → **Ali ratifies** → seal into `data/translations.json` → regenerate canon + qamus + PDFs → bless any new advisories consciously.
 
 Then as Ali steers through the Secondary Canon. The **jinās registry is SHELVED until more translations exist** (Ali) — homonyms are a feature, the registry is their poets' concordance, and it needs material.
 

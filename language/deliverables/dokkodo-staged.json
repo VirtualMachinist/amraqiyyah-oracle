@@ -1,0 +1,177 @@
+{
+  "id": "dokkodo",
+  "canon": "Tier II-F — The Bushido Foundation (Futuwwa)",
+  "title": "Dokkōdō — The Path of Walking Alone",
+  "titleAmr": "Na·Hina Mišeyi Waḥīd·i",
+  "sourceLang": "Classical Japanese (Kumamoto Prefectural Museum of Art autograph, 1645; ja.wikisource kana-normalized text). Colophon: Shōhō 2, 5th month, 12th day — Shinmen Musashi Genshin (kaō), to Terao Magonojō-dono.",
+  "lines": [
+    {
+      "n": 1,
+      "src": "一 世々の道をそむく事なし",
+      "amr": "La ʿadiwa hinā na·pa·zamanāti.",
+      "display": "La ʿadiwa hinā na·pa·zamanāt·i.",
+      "en": "Oppose not the road of the ages.",
+      "note": "世々 yoyo, age upon age — zaman (R-039) pluralized; そむく 'turn against' → ʿadiwa, the enmity-root's verb; Musashi opens with acceptance, and the Dokkodo opens where it will close: on a road"
+    },
+    {
+      "n": 2,
+      "src": "一 身にたのしみをたくまず",
+      "amr": "La ṭaliba niʿemya ra na·jisimi.",
+      "display": "La ṭaliba niʿem·ya ra na·jisim·i.",
+      "en": "Seek no pleasure for the body.",
+      "note": "niʿemi — the pleasure-word (N-ʿ-M, Ar. naʿima/naʿīm); たくむ 'scheme after' → ṭaliba, the ṭālib's own verb turned renunciant; 身 here is the flesh — jisim"
+    },
+    {
+      "n": 3,
+      "src": "一 よろずに依怙の心なし",
+      "amr": "En na·pa·šeyāti, la wi ib wikeli·i.",
+      "display": "En na·pa·šeyāt·i, la wi ib wikeli·i.",
+      "en": "In the myriad things, there is no heart of leaning.",
+      "note": "よろず myriad = na·pa·šeyāt — the Tao's own 萬物 (R-068); 依怙 eko, partial reliance → wikeli (W-K-L, the tawakkul-root): reliance on the partial is renounced; the trust has one Trustee (~Al-Wakīl, pairing #15)"
+    },
+    {
+      "n": 4,
+      "src": "一 身をあさく思ひ世をふかく思ふ",
+      "amr": "Ḥasiba na·nefesa naḏīs, ma ḥasiba na·dunyā ʿamīq.",
+      "display": "Ḥasiba na·nefes·a naḏīs, ma ḥasiba na·dunyā ʿamīq.",
+      "en": "Reckon the self shallow, and reckon the world deep.",
+      "note": "ḥasiba — the compute-root weighs values; naḏīs (N-Ḏ-S, Eg. nḏs 'small, lowly, commoner' — Wb 2:384, Faulkner 145) one sound from nefes: the lowly and the lower soul are kin; ʿamīq deep (ʿ-M-Q); dunyā (D-N-Y, ad-dunyā) — predicate adjectives caseless (R-026)"
+    },
+    {
+      "n": 5,
+      "src": "一 一生の間よくしん思はず",
+      "amr": "En na·ʿineki jamīʿi, la fakira šiweqya.",
+      "display": "En na·ʿineki jamīʿ·i, la fakira šiweq·ya.",
+      "en": "In the whole of life, think no craving-thought.",
+      "note": "ʿineki life and jamīʿ all — both free from the engine (ʿ-N-K abstract; J-M-ʿ adjective, exactly Arabic jamīʿ), zero coins; šiweqi — the same longing that served the Tao's 欲 (R-068): one desire-word across both Canon texts"
+    },
+    {
+      "n": 6,
+      "src": "一 我事におゐて後悔をせず",
+      "amr": "Bawt kiyiātkī, la ʾasifa.",
+      "display": "Bawt kiyiāt·kī, la ʾasifa.",
+      "en": "Over your own deeds, have no regret.",
+      "note": "我事 my own affairs → kiyi deed (K-Y work-root abstract), plural by R-060's i+āt law; ʾ-S-F (R-049) was waiting for this line — Mi·ʾisef lives in the corpus, and the precept releases it"
+    },
+    {
+      "n": 7,
+      "src": "一 善悪に他をねたむ心なし",
+      "amr": "En harāy aw kapīli, la wi ib et·ḥasida na·ʾeḫarwa.",
+      "display": "En harāy aw kapīl·i, la wi ib et·ḥasida na·ʾeḫar·wa.",
+      "en": "In good or in ill, no heart that envies the other.",
+      "note": "ḥasida envy (Ḥ-S-D — Q 113:5's ḥāsid, the envier the dawn-surah takes refuge from); ʾeḫaru the other (ʾ-Ḫ-R) — and ʾaḫīr 'the last': Al-Āḫir joins Az-Zāhir and Al-Bāṭin, three of Q 57:3's four Names now spoken natively across two Canon texts (pairing #16)"
+    },
+    {
+      "n": 8,
+      "src": "一 いづれの道にもわかれをかなしまず",
+      "amr": "En na·pa·hināt jamīʿi, la ḥazina fireqya.",
+      "display": "En na·pa·hināt jamīʿ·i, la ḥazina fireq·ya.",
+      "en": "On all the roads, grieve not the parting.",
+      "note": "fireqi parting (F-R-Q — Ar. firāq, Q 75:28 'it is the parting'); every road includes the Way's own: Musashi grieves no farewell on any of them — precept 21 will pick this root back up"
+    },
+    {
+      "n": 9,
+      "src": "一 自他共にうらみかこつ心なし",
+      "amr": "Ra nefes ma ʾeḫarwi en·wa, la wi ib ḥiqedi·i la šikewi·i.",
+      "display": "Ra nefes ma ʾeḫar·wi en·wa, la wi ib ḥiqedi·i la šikewi·i.",
+      "en": "Toward self and other as one, no heart of grudge nor complaint.",
+      "note": "共に carried by en·wa, the together-adverb (R-069) in its second Canon text; ḥiqedi grudge (Ḥ-Q-D, Ar. ḥiqd) and šikewi complaint (Š-K-W — Yaʿqūb's ʾaškū, Q 12:86: the Way complains only to Allah); la … la — the nor-coordination (R-014)"
+    },
+    {
+      "n": 10,
+      "src": "一 れんぼの道思ひよるこゝろなし",
+      "amr": "La wi ib et·mašiya ben hina miri·i.",
+      "display": "La wi ib et·mašiya ben hina miri·i.",
+      "en": "No heart that walks toward the road of love-longing.",
+      "note": "れんぼ renbo (恋慕, love-attachment) → miri (M-R): mrj unified love and desire in Egyptian as in Amraqiyyah — the root carries the middle precepts' renunciations from here through 13; 思ひよる 'incline toward' → the walking heart, et·mašiya ben"
+    },
+    {
+      "n": 11,
+      "src": "一 物毎にすきこのむ事なし",
+      "amr": "En šey ma šeyi, la wi miri la kirehi.",
+      "display": "En šey ma šey·i, la wi miri la kirehi.",
+      "en": "In thing after thing, no liking nor loathing.",
+      "note": "物毎 'each single thing' — thing-and-thing, the distributive by coordination; the preference-pair rendered as love-nor-hate: to prefer nothing is to hold neither"
+    },
+    {
+      "n": 12,
+      "src": "一 私宅におゐてのぞむ心なし",
+      "amr": "Bawt hawti, la wi ib et·mara.",
+      "display": "Bawt hawt·i, la wi ib et·mara.",
+      "en": "Concerning a dwelling, no heart that desires.",
+      "note": "私宅 the private house — hawt (T-1); Musashi gave away his possessions at Reigandō in the week these lines were written; mara — the want-verb of the same mrj root"
+    },
+    {
+      "n": 13,
+      "src": "一 身ひとつに美食をこのまず",
+      "amr": "Ra jisim waḥīdi, la mara wonimon jamīla.",
+      "display": "Ra jisim waḥīd·i, la mara wonimon jamīl·a.",
+      "en": "For the single body, crave no fine food.",
+      "note": "身ひとつ 'the body being but one' → jisim waḥīd — the alone-word the title walks on (W-Ḥ-D, pairing #14 ~Al-Wāḥid); 美食 calqued exactly: wonimon food (W-N-M patient, already in the corpus) + jamīl beautiful (J-M-L)"
+    },
+    {
+      "n": 14,
+      "src": "一 末々代物なる古き道具を所持せず",
+      "amr": "La wi ʿindki sakimet qadīm ṯamīn.",
+      "display": "La wi ʿind·ki sakimet qadīm ṯamīn.",
+      "en": "Keep no old and treasured implement.",
+      "note": "ʿind-possession negated existentially (R-014 × R-027): 'let there not be, at you, …'; sakimet — the instrument-noun of S-K-M power: a tool is a power-thing, and Musashi keeps none but one; qadīm old (Q-D-M), ṯamīn precious (R-053)"
+    },
+    {
+      "n": 15,
+      "src": "一 わが身にいたり物いみする事なし",
+      "amr": "Ra nefeskī, la ʿabida ṭiyerya.",
+      "display": "Ra nefes·kī, la ʿabida ṭiyer·ya.",
+      "en": "For your own self, serve no omen.",
+      "note": "物忌み monoimi — taboo-observance, omen-avoidance → ṭiyeri (Ṭ-Y-R, Ar. ṭiyara: the ḥadīṯ's lā ṭiyara — Musashi's anti-superstition precept and the Sunnah use one word); ʿabida 'serve/worship' makes the renunciation theological: a superstition served is a god taken"
+    },
+    {
+      "n": 16,
+      "src": "一 兵具は各別よの道具たしなまず",
+      "amr": "Na·ḫepeš waḥīd — la mara sakimet ʾaḫīra.",
+      "display": "Na·ḫepeš waḥīd — la mara sakimet ʾaḫīr·a.",
+      "en": "The sword stands alone — crave no other implement.",
+      "note": "ḫepeš (Ḫ-P-Š — Eg. ḫpš: the khopesh-blade, the strong arm, strength itself; Wb 3:268, Allen): the sword-saint's 兵具 lands on Kemet's own sword; 各別 'set apart' → waḥīd again — the blade shares the walker's aloneness"
+    },
+    {
+      "n": 17,
+      "src": "一 道におゐてハ死をいとはず思ふ",
+      "amr": "En al·hinay, fakira na·mawta bilā kirehī.",
+      "display": "En al·hinay, fakira na·mawt·a bilā kirehī.",
+      "en": "On THE Way, think on death without loathing.",
+      "note": "mawt (M-W-T) — the mortality field opens at last; with nefes and ḏawiqa standing, Q 3:185 can now be spoken: every nafs shall taste death; al·hina wears the sacred article as the Tao's Way does (R-069) — for Musashi, 道 here is not one road among many; いとはず → bilā kirehī, without loathing"
+    },
+    {
+      "n": 18,
+      "src": "一 老身に財宝所領もちゆる心なし",
+      "amr": "Ra na·simesī, la wi ib et·jamiʿa fulusa ma yakāta.",
+      "display": "Ra na·simesī, la wi ib et·jamiʿa fulus·a ma yakāt·a.",
+      "en": "For old age, no heart that gathers money and lands.",
+      "note": "simesi — old age, the abstract the elder-root S-M-S held in reserve (derived, not coined); 財宝所領 wealth-and-fiefs → fulus (T-8) and yakāt (R-056); jamiʿa — the gather-verb whose adjective jamīʿ walks through this text as 'all': gathering renounced, wholeness kept"
+    },
+    {
+      "n": 19,
+      "src": "一 佛神は貴し佛神をたのまず",
+      "amr": "Na·pa·ʾilahāt karīm — we·pen la wakila ʿala na·pa·ʾilahāti.",
+      "display": "Na·pa·ʾilahāt karīm — we·pen la wakila ʿala na·pa·ʾilahāt·i.",
+      "en": "The gods are noble — yet lean not upon the gods.",
+      "note": "佛神 the buddhas-and-kami → na·pa·ʾilahāt, the generic deity-word that exists to be negated in the shahada (R-040); wakila (W-K-L, precept 3's root; tawakkala ʿalā takes ʿala in Arabic as here): Musashi's line is shahada-shaped — honor what is noble, entrust nothing to it; in the Way's mouth the precept completes itself: reliance belongs to Al-Wakīl alone. ALTERNATIVE for Ali: na·pa·qadīsāt 'the holy ones' if ʾilahāt reads too strong"
+    },
+    {
+      "n": 20,
+      "src": "一 身を捨ても名利はすてず",
+      "amr": "Hajira na·jisima — we·pen la hajira na·rinya.",
+      "display": "Hajira na·jisim·a — we·pen la hajira na·rin·ya.",
+      "en": "Forsake the body — yet forsake not the name.",
+      "note": "hajira forsake (H-J-R — the hijra-root: departure as devotion, Q 73:10's 'beautiful forsaking'); 名利 meiri — fame-and-gain in the letter, honor in the received reading → rini, the REN (R-040): 'to speak a name is to keep a soul alive' — Musashi's most Egyptian line: the body dies, the ren endures. kiremi (honor) stands as alternative"
+    },
+    {
+      "n": 21,
+      "src": "一 常に兵法の道をはなれず",
+      "amr": "La·wayen la fariqa min al·hina ḫepeši.",
+      "display": "La·wayen la fariqa min al·hina ḫepeš·i.",
+      "en": "Never part from THE road of the sword.",
+      "note": "兵法の道 the way of heihō → al·hina ḫepeš·i, the Road of the Sword (Ḫ-P-Š closing what precept 16 opened); la·wayen + la — negative concord sealing the vow (R-014); 常 was dahīr in the Tao's first line, and an alternate reading stands: En dahr, la fariqa… 'in the aeon, part not'; the last precept answers the first — the road not opposed is the road never left"
+    }
+  ]
+}

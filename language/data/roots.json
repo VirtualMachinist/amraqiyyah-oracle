@@ -4675,6 +4675,299 @@
         "advisories accepted: š-h-r month, d-š-r red, ẓ-h-r manifest (the busy -h-r row)",
         "Greek aiōn noted as future kin (Timaeus, Tier II-A: 'time is the moving image of eternity')"
       ]
+    },
+    {
+      "skeleton": [
+        "w",
+        "ḥ",
+        "d"
+      ],
+      "gloss": "one, alone, sole — waḥida to be one/alone, wiḥedi oneness/aloneness/solitude, waḥīd alone/sole/single (~AL-WĀḤID, AL-AḤAD by reference); the walker's word: na·hina mišeyi waḥīd·i, the Road of the Lone Walking",
+      "source": {
+        "lang": "Arabic",
+        "word": "w-ḥ-d — wāḥid 'one', waḥda 'aloneness', waḥīd 'sole, solitary' (Lane; Q 112:1 Aḥad, Q 13:16 al-Wāḥid)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "Dokkodo tranche (R-070 proposed) — steward-coined under R-058; the title-word of the second Canon translation",
+        "native Name-pairing #14: waḥīd ~ AL-WĀḤID (and Al-Aḥad by reference)",
+        "advisories accepted: one apart from w-l-d birth and w-ḥ-y revelation — the One, the born, and the revealed are neighbors in the lexicon as in the world"
+      ]
+    },
+    {
+      "skeleton": [
+        "n",
+        "ʿ",
+        "m"
+      ],
+      "gloss": "pleasure, delight, ease — naʿima to delight/live in ease, niʿemi pleasure/comfort/bliss, naʿīm blissful, noʿimon a comfort/luxury",
+      "source": {
+        "lang": "Arabic",
+        "word": "naʿima نعم 'to live in ease'; niʿma 'grace, favor'; naʿīm 'bliss' (jannāt an-naʿīm, Q 5:65)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "Dokkodo tranche (R-070 proposed) — precept 2's たのしみ: the pleasure Musashi will not scheme after"
+      ]
+    },
+    {
+      "skeleton": [
+        "w",
+        "k",
+        "l"
+      ],
+      "gloss": "rely, entrust, lean upon — wakila to rely/entrust (wakila ʿala X: lean on X), wikeli reliance/trust (the tawakkul-concept), wakīl trustee (~AL-WAKĪL); what precepts 3 and 19 renounce toward the partial, the Way reserves for Allah",
+      "source": {
+        "lang": "Arabic",
+        "word": "wakala وكل 'to entrust'; tawakkala ʿalā 'to rely upon'; wakīl 'trustee' (Q 3:173 ḥasbunā llāhu wa-niʿma l-wakīl)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "Dokkodo tranche (R-070 proposed) — 依怙 (precept 3) and たのむ (precept 19) share this root: partiality and false reliance are one renunciation",
+        "native Name-pairing #15: wakīl ~ AL-WAKĪL",
+        "advisories accepted: one apart from h-k-l understand and w-ṣ-l arrive"
+      ]
+    },
+    {
+      "skeleton": [
+        "n",
+        "ḏ",
+        "s"
+      ],
+      "gloss": "small, lowly, shallow-of-rank — naḏisa to be(come) small/lesser, niḏesi lowliness/humility, naḏīs small/lowly/slight; the commoner's word: to think the self naḏīs is Musashi's precept 4 and the Way's adab",
+      "source": {
+        "lang": "Egyptian",
+        "word": "nḏs 'be small, little; lesser in rank; commoner, poor man' (Wb 2, 384.8–385.13; Faulkner CDME 145)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "Dokkodo tranche (R-070 proposed) — precept 4's あさく: reckon the self shallow",
+        "advisories accepted: adjacent dentals n-ḏ, ḏ-s (avoided-not-forbidden class); one apart from n-f-s nafs — the lowly and the lower soul are kin by sound as by doctrine"
+      ]
+    },
+    {
+      "skeleton": [
+        "ʿ",
+        "m",
+        "q"
+      ],
+      "gloss": "deep — ʿamiqa to be deep, ʿimeqi depth, ʿamīq deep/profound; the world thought ʿamīq while the self is thought naḏīs (precept 4)",
+      "source": {
+        "lang": "Arabic",
+        "word": "ʿumq عمق 'depth'; ʿamīq 'deep' (Q 22:27 min kulli fajjin ʿamīq 'from every deep ravine')",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "Dokkodo tranche (R-070 proposed) — precept 4's ふかく; opens the depth-measure field opposite naḏīs"
+      ]
+    },
+    {
+      "skeleton": [
+        "d",
+        "n",
+        "y"
+      ],
+      "citation": "dunyā",
+      "gloss": "the world-below, this world — dunyā (citation: THE world as lived-in, ad-dunyā), daniya to be near/low, dineyi this-worldliness; na·dunyā the world (vs na·pa·yakāt the lands, na·pet ma na·yak heaven-and-earth)",
+      "source": {
+        "lang": "Arabic",
+        "word": "dunyā دنيا 'the nearer/lower [world]', from danā 'be near, low' (al-ḥayāt ad-dunyā, Q 2:85 and passim)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "Dokkodo tranche (R-070 proposed) — precept 4's 世: the world reckoned deep",
+        "ā-final citation noun: declines by the R-067 ā-row like dujā",
+        "advisories accepted: adjacent dentals d-n; one apart from b-n-y build — the world below is the built thing"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḥ",
+        "s",
+        "d"
+      ],
+      "gloss": "envy — ḥasida to envy, ḥisedi envy/grudging-desire, ḥasīd envious; the dawn-surah's evil (precept 7 renounces it in others' good and ill alike)",
+      "source": {
+        "lang": "Arabic",
+        "word": "ḥasada حسد 'to envy'; ḥasad 'envy' (Q 113:5 wa-min šarri ḥāsidin ʾiḏā ḥasad)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "Dokkodo tranche (R-070 proposed) — precept 7's ねたむ",
+        "advisories accepted: adjacent dentals s-d; one apart from ḥ-s-b reckon — envy is a false reckoning"
+      ]
+    },
+    {
+      "skeleton": [
+        "'",
+        "ḫ",
+        "r"
+      ],
+      "gloss": "other, after, last — ʾaḫira to come after/remain behind, ʾiḫeri otherness/the end, ʾeḫaru the other (person), ʾaḫīr other/last (~AL-ĀḪIR); with the Tao's Az-Zāhir~ẓahīr and Al-Bāṭin~baṭīn, the Dokkodo adds the third Name of Q 57:3 — Al-Awwal awaits",
+      "source": {
+        "lang": "Arabic",
+        "word": "ʾ-ḫ-r — ʾāḫar 'other', ʾāḫir 'last' (Q 57:3 huwa l-ʾawwalu wa-l-ʾāḫiru wa-ẓ-ẓāhiru wa-l-bāṭin)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "Dokkodo tranche (R-070 proposed) — precepts 7, 9, 16: the other envied not, resented not; the other implements craved not",
+        "native Name-pairing #16: ʾaḫīr ~ AL-ĀḪIR — Q 57:3 now three-quarters spoken natively across two Canon texts",
+        "advisories accepted: one apart from '-ḫ-t horizon — the last thing and the horizon share a border"
+      ]
+    },
+    {
+      "skeleton": [
+        "f",
+        "r",
+        "q"
+      ],
+      "gloss": "part, separate — fariqa to part/separate from, fireqi parting/separation, farīq separate/apart; the parting not grieved (precept 8), the Road never parted from (precept 21)",
+      "source": {
+        "lang": "Arabic",
+        "word": "faraqa فرق 'to separate'; firāq 'parting' (Q 75:28 wa-ẓanna ʾannahu l-firāq); furqān 'the Criterion' — the same root that separates truth from falsehood",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "Dokkodo tranche (R-070 proposed) — precepts 8 and 21 close on one root: grieve no parting, and never part",
+        "advisories accepted: one apart from f-r-ḥ joy, b-r-q lightning, z-r-q blue"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḥ",
+        "q",
+        "d"
+      ],
+      "gloss": "grudge, rancor — ḥaqida to hold a grudge, ḥiqedi grudge/rancor/resentment; precept 9's うらみ, renounced toward self and other as one",
+      "source": {
+        "lang": "Arabic",
+        "word": "ḥiqd حقد 'rancor, grudge held in the heart' (Lane); ḥaqida ʿalā 'to bear rancor against'",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "Dokkodo tranche (R-070 proposed) — precept 9; joins kirehi hate and ġiḍebi anger in the dark-heart field, each subtly apart (R-066)"
+      ]
+    },
+    {
+      "skeleton": [
+        "š",
+        "k",
+        "w"
+      ],
+      "gloss": "complain, lament — šakiwa to complain, šikewi complaint/lament, šekawu complainer; precept 9's かこつ — and Yaʿqūb's word: the Way complains only to Allah",
+      "source": {
+        "lang": "Arabic",
+        "word": "šakā شكا 'to complain'; šakwā 'complaint' (Q 12:86 ʾinnamā ʾaškū baṯṯī wa-ḥuznī ʾilā llāh)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "Dokkodo tranche (R-070 proposed) — precept 9",
+        "advisories accepted: one apart from š-k-r sugar — the complaint and the sweet are opposite mouths"
+      ]
+    },
+    {
+      "skeleton": [
+        "ṭ",
+        "y",
+        "r"
+      ],
+      "gloss": "omen-superstition, taboo-observance — ṭayira to take omens/practice superstition, ṭiyeri omen-superstition (the ṭiyara); STRICTLY superstition, never bird (foswa keeps the bird); precept 15's 物忌み and the ḥadīṯ's lā ṭiyara agree",
+      "source": {
+        "lang": "Arabic",
+        "word": "ṭiyara طيرة 'evil augury from birds', from ṭ-y-r 'fly' (ḥadīṯ: lā ʿadwā wa-lā ṭiyara — Bukhārī 5757, Muslim 2220)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "Dokkodo tranche (R-070 proposed) — precept 15: Musashi's anti-superstition precept lands on the Sunnah's own word for it",
+        "advisories accepted: one apart from s-y-r travel and ḫ-y-r choose — the omen mimics guidance; the lexicon keeps them one letter apart and the doctrine keeps them worlds apart"
+      ]
+    },
+    {
+      "skeleton": [
+        "ḫ",
+        "p",
+        "š"
+      ],
+      "citation": "ḫepeš",
+      "gloss": "sword; the strong arm, strength — ḫepeš (citation: the sword, the khopesh-blade), ḫapiša to wield/strong-arm, ḫipeši swordsmanship/prowess; na·hina ḫepeš·i, the Road of the Sword (heihō in the Way's mouth)",
+      "source": {
+        "lang": "Egyptian",
+        "word": "ḫpš 'foreleg; strong arm; strength; scimitar (the khopesh)' (Wb 3, 268–270; Allen, Middle Egyptian 2010; the strength-sense attested from Kagemni)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "Dokkodo tranche (R-070 proposed) — precepts 16 and 21: the sword-saint's 兵具 lands on Kemet's own blade",
+        "citation ḫepeš is a CeCeC primary noun on the nefes pattern"
+      ]
+    },
+    {
+      "skeleton": [
+        "m",
+        "w",
+        "t"
+      ],
+      "citation": "mawt",
+      "gloss": "death — mawt (citation: death), mawita to die, miweti dying/mortality, mawīt dead; thought on without loathing upon THE Way (precept 17); with nefes and ḏawiqa standing, Q 3:185 can now be spoken: every nafs shall taste death",
+      "source": {
+        "lang": "Arabic",
+        "word": "māta مات 'to die'; mawt 'death' (Q 3:185 kullu nafsin ḏāʾiqatu l-mawt)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "Dokkodo tranche (R-070 proposed) — precept 17 forced the mortality field open at last",
+        "citation mawt is a CaCC primary noun on the ḥarb/ṣawt pattern",
+        "advisories accepted: one apart from h-w-t house, m-ʿ-t truth, š-w-t shadow, ṣ-w-t voice, and m-w homorganic — death borders the house, the truth, the shadow, and the voice; the lexicon knows where it lives"
+      ]
+    },
+    {
+      "skeleton": [
+        "q",
+        "d",
+        "m"
+      ],
+      "gloss": "precede, be old/ancient — qadima to precede/be of old, qidemi antiquity/precedence, qadīm old/ancient; the old treasured implement not kept (precept 14)",
+      "source": {
+        "lang": "Arabic",
+        "word": "qadima قدم 'to precede'; qadīm 'old, ancient'; qidam 'antiquity' (Lane; al-Muqaddim among the 99 by reference)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "Dokkodo tranche (R-070 proposed) — precept 14",
+        "advisories accepted: one apart from q-d-r able and q-d-s holy — the ancient, the able, and the holy share a corner, as qudām 'in front of' (R-016) shares the Arabic root-field"
+      ]
+    },
+    {
+      "skeleton": [
+        "h",
+        "j",
+        "r"
+      ],
+      "gloss": "forsake, leave for something higher — hajira to forsake/abandon, hijeri forsaking (the hijra-concept: departure as devotion), hejaru emigrant (the muhājir); the body forsaken, the name never (precept 20)",
+      "source": {
+        "lang": "Arabic",
+        "word": "hajara هجر 'to forsake, emigrate'; hijra 'the Migration' (Q 73:10 wa-hjurhum hajran jamīlan 'forsake them with a beautiful forsaking')",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "Dokkodo tranche (R-070 proposed) — precept 20: to forsake the body is a hijra; the ren is not luggage, it is the traveler",
+        "advisories accepted: one apart from t-j-r trade — the merchant keeps, the muhājir leaves"
+      ]
     }
   ]
 }
