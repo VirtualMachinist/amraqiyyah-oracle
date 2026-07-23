@@ -1042,7 +1042,7 @@
         "p"
       ],
       "citation": "tap",
-      "gloss": "head",
+      "gloss": "head; also BEGINNING, origin (Eg. tp: head = first = source — na·tap na·pet ma na·yak·i, the origin of heaven and earth)",
       "source": {
         "lang": "Egyptian",
         "word": "tp",
@@ -1052,7 +1052,8 @@
       "flags": [
         "T-3",
         "primary noun",
-        "body-inalienable"
+        "body-inalienable",
+        "R-068 gloss extension: head → origin (the Egyptian semantics restored)"
       ]
     },
     {
@@ -2681,7 +2682,7 @@
         "t"
       ],
       "citation": "šut",
-      "gloss": "shadow (soul-part; also plain shadow)",
+      "gloss": "shadow — šut (citation: the shadow, soul-part AND plain cast shadow), šawita to shade/shadow, šiweti shade/shadow-cast (the dark an object makes); one root for the tree's shadow and the soul's, as Egyptian šwt was both",
       "source": {
         "lang": "Egyptian",
         "word": "šwt",
@@ -2692,7 +2693,8 @@
         "T-7",
         "soul-complex",
         "dual duty with T-9",
-        "weak w — D-11"
+        "weak w — D-11",
+        "R-067 darkness field — the cast-shadow seat (family awakened: šawita, šiweti)"
       ]
     },
     {
@@ -3503,7 +3505,8 @@
       "flags": [
         "T-9",
         "THE color: Black from Kemet itself",
-        "homophony advisories vs kama like / kam how-many — adjective form kamāy stays distinct"
+        "homophony advisories vs kama like / kam how-many — adjective form kamāy stays distinct",
+        "R-067: kamāy is COLOR only — black ≠ dark; the darkness field (yimeči/dujā/ribesi/šiweti) owns the condition"
       ]
     },
     {
@@ -4552,6 +4555,102 @@
         "primary noun (iška/Y-Š-K pattern)",
         "advisory: near y-k father (ika) — surface forms never collide",
         "future compound noted: Soulaan-yak on the chahta-yakni pattern"
+      ]
+    },
+    {
+      "skeleton": [
+        "ẓ",
+        "h",
+        "r"
+      ],
+      "gloss": "manifest, appear, outward — ẓahira to appear/manifest, ẓiheri manifestation/the manifest, ẓahīr manifest (adj, ~AZ-ZĀHIR, Threshold Name); the zahir of every batin",
+      "source": {
+        "lang": "Arabic",
+        "word": "ẓahara / ẓāhir 'outward, manifest' — the Name Az-Zāhir (Q 57:3)",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "R-068 Tao ch.1 tranche",
+        "Threshold-Name native pairing #12 (Az-Zāhir ~ ẓahīr; Oracle registry Hex 33)",
+        "advisory: near š-h-r month — accepted"
+      ]
+    },
+    {
+      "skeleton": [
+        "b",
+        "ṭ",
+        "n"
+      ],
+      "gloss": "hidden, inner, esoteric — baṭina to be hidden/inward, biṭeni hiddenness/mystery/the hidden, baṭīn hidden (adj, ~AL-BĀTIN, Threshold Name); the batin under every zahir",
+      "source": {
+        "lang": "Arabic",
+        "word": "baṭana / bāṭin 'inward, hidden' — the Name Al-Bāṭin (Q 57:3); baṭn belly-interior",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "R-068 Tao ch.1 tranche",
+        "Threshold-Name native pairing #13 (Al-Bāṭin ~ baṭīn; Oracle registry Hex 26)",
+        "advisory: ṭ-n homorganic — accepted"
+      ]
+    },
+    {
+      "skeleton": [
+        "y",
+        "m",
+        "č"
+      ],
+      "gloss": "dark (literal — the absence of light): yamiča to be/grow dark, yimeči darkness (physical), yamīč dark/dim (adj); the lived dark of night woods and unlit rooms",
+      "source": {
+        "lang": "Muskogean",
+        "word": "Mvskoke yomockē 'dark' — Mvskoke Nation language materials (Hofune Yomucke 'the Long Dark, late at night'); Martin & Mauldin dictionary anchor",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "R-067 darkness field — the literal seat",
+        "lint-clean (zero advisories)"
+      ]
+    },
+    {
+      "skeleton": [
+        "d",
+        "j",
+        "w"
+      ],
+      "citation": "dujā",
+      "gloss": "the poetic dark of night — dujā (citation: the night-dark, as beloved and prayed-in), dajiwa to darken (of evening), dijewi darkness (aesthetic/experienced), dajīw dark (poetic adj); STRICTLY darkness-as-condition, never color (kamāy keeps color, R-067)",
+      "source": {
+        "lang": "Arabic",
+        "word": "dujā دجى 'darkness of night' (Lane: laylatun dayjūj 'a deeply dark night'); classical-poetic register",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "R-067 darkness field — the poetic seat",
+        "first ā-final citation noun: declines by the R-067 ā-row (dujāy, dujāw)",
+        "advisories accepted: one apart from diʿewi supplication (the dark night prayer lives in) and diyu five (the fifth prayer is the night's)"
+      ]
+    },
+    {
+      "skeleton": [
+        "r",
+        "b",
+        "s"
+      ],
+      "gloss": "the PRIMORDIAL dark — rabisa to be primordially dark (pre-creation), ribesi the primordial darkness (the cosmogonic deep; the 玄 of the Tao), rabīs primordial-dark (adj); Ali's own extraction",
+      "source": {
+        "lang": "Greek",
+        "word": "érebos Ἔρεβος — the primordial darkness born of Chaos (Hesiod, Theogony 123); long connected in scholarship to Semitic ʿ-r-b 'evening/west' (Heb. ʿerev, Akk. erēbu 'sunset'), though Beekes prefers Pre-Greek — the convergence itself is the inheritance",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "R-067 darkness field — the primordial seat",
+        "R-066 founding coin: first Greek root outside the technical register (the seats are leads, not fences)",
+        "lint-clean (zero advisories)",
+        "carries what Keku could not: Egyptian kkw (the Ogdoad's primal dark) is OCP-exiled (k-k-w), so the Greek cousin bears the meaning"
       ]
     }
   ]

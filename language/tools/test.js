@@ -69,6 +69,10 @@ eq(M.attachCase('sikempa', 'u'), 'sikempaw', 'NOM a+u→aw');
 
 // Possession then case (R-027 order STEM-POSS-CASE)
 eq(M.attachCase(M.possess('šey', '1sg'), 'u'), 'šeykū', 'šey·kū my-thing.NOM');
+eq(M.attachCase('dujā', 'i'), 'dujāy', 'R-067 ā-row: ā+i→āy (the dark declines)');
+eq(M.attachCase('dujā', 'a'), 'dujā', 'R-067 ā-row: ā absorbs ACC');
+eq(M.attachCase('dujā', 'u'), 'dujāw', 'R-067 ā-row: ā+u→āw');
+
 
 // Plural -āt (R-015)
 eq(M.pluralize('feku'), 'fekwāt', 'plural u-stem');

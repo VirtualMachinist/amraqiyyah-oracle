@@ -70,6 +70,11 @@ const LONG = { a: 'ā', i: 'ī', u: 'ū' };
 // Case attachment with sandhi (R-007, R-026). c ∈ 'u' | 'a' | 'i'. Arguments only — never predicates.
 function attachCase(form, c) {
   const last = form.slice(-1);
+  if (last === 'ā') { // R-067: the ā-row — parallel to short a, length kept (dujā-class citations)
+    if (c === 'u') return form + 'w';
+    if (c === 'a') return form;
+    if (c === 'i') return form + 'y';
+  }
   if (last === 'u' || last === 'i' || last === 'a') {
     if (last === c) return form.slice(0, -1) + LONG[c];
     if (last === 'u') return form.slice(0, -1) + 'w' + c;
