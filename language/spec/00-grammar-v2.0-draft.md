@@ -13,9 +13,9 @@
 |---|---|
 | 1 Identity & scripts | R-001, R-008 |
 | 2 Phonology | R-008, R-015, R-019 (phonotactics), R-020 (register mergers), R-021 (stress, diphthongs) |
-| 3 Roots & templates | R-010, R-013, R-015, R-017 (sourcing doctrine), R-022 (broad frozen registry) |
+| 3 Roots & templates | R-010, R-013, R-015, R-017 (sourcing doctrine), R-022 (broad frozen registry), R-064 (Mobilian/Yama stream), R-066 (leads-not-fences; abundance) |
 | 4 Verb system | R-005, R-011, R-013, R-014, R-023 (aspect order), R-024 (mood), R-025 (voice, sa·), R-065 (TAM lattice) |
-| 5 Nominal system | R-006, R-007, R-012, R-015, R-016, R-026 (sandhi; caseless predicates), R-027 (demonstratives, possession, stative), R-050 (construct ·i enclitic), R-051 (noun-conversion by possession) |
+| 5 Nominal system | R-006, R-007, R-012, R-015, R-016, R-026 (sandhi; caseless predicates), R-027 (demonstratives, possession, stative), R-050 (construct ·i enclitic), R-051 (noun-conversion by possession), R-067 (ā-row sandhi) |
 | 6 Pronouns | R-005, R-006, R-009 |
 | 7 Core syntax | R-018 (interrogatives), R-028 (full bundle), R-052 (Topic Law), R-053 (ditransitive, ʿind-age) |
 | 8 Registers | R-020, R-028 |
