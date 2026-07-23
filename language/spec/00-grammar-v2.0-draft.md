@@ -14,7 +14,7 @@
 | 1 Identity & scripts | R-001, R-008 |
 | 2 Phonology | R-008, R-015, R-019 (phonotactics), R-020 (register mergers), R-021 (stress, diphthongs) |
 | 3 Roots & templates | R-010, R-013, R-015, R-017 (sourcing doctrine), R-022 (broad frozen registry) |
-| 4 Verb system | R-005, R-011, R-013, R-014, R-023 (aspect order), R-024 (mood), R-025 (voice, sa·) |
+| 4 Verb system | R-005, R-011, R-013, R-014, R-023 (aspect order), R-024 (mood), R-025 (voice, sa·), R-065 (TAM lattice) |
 | 5 Nominal system | R-006, R-007, R-012, R-015, R-016, R-026 (sandhi; caseless predicates), R-027 (demonstratives, possession, stative), R-050 (construct ·i enclitic), R-051 (noun-conversion by possession) |
 | 6 Pronouns | R-005, R-006, R-009 |
 | 7 Core syntax | R-018 (interrogatives), R-028 (full bundle), R-052 (Topic Law), R-053 (ditransitive, ʿind-age) |
@@ -209,6 +209,21 @@ Biconsonantal perfective: fak·im·ku … fak·im (3SG) … fak·im·sen.
 `('ayn) → (la | bu) → bin → don → bi· → da· → dē· → [SUBJ-clitic] → gon· → STEM`
 
 with f'na occupying the particle slot alternatively to gon· (they do not co-occur). Derived meanings are compositional: *bin don* = "been done" (remote completive), *bi·da·* = "be steady V-ing," *bin ni·sik·em* = "we BEEN powerful."
+
+**The TAM lattice (R-065):** the markers compose with **both conjugations**, and the product is compositional tense-aspect — the **conjugation sets anteriority** (perfective = completed/anterior, imperfective = ongoing), the **marker sets the temporal frame**, and the two multiply. The perfective's suffix already carries person, so a marker in the clitic zone simply anchors before it (*mi·gon·hakil·ku* — the clitic present as the marker's anchor). No new morphemes; the grid was always latent where R-011's markers meet R-005's two poles.
+
+| Marker × conjugation | Reading | Example |
+|---|---|---|
+| **gon· + PFV** | **future perfect — will have V-ed** | ***Mi·gon·hakil·ku*** "I will have understood" |
+| bin + PFV | remote pluperfect — had V-ed, long since | *Bin ni·ʿabira al·baḥar·a* "we BEEN crossed THE Sea" |
+| don + PFV | present perfect / completive — have V-ed | *Don wanim·nun* "we done ate" |
+| dē· + PFV | recent perfect — just V-ed | *dē·hakil·ku* "I just understood" |
+| bin don + PFV | remote completive — had finished | *bin don hakil·ku* |
+| gon· + IPFV | simple future — will V | *Na·šaʿab i·gon·ḫayira* "the people gon' choose" |
+| bi· + IPFV | habitual — be V-ing | *Pokni·ku bi·i·ṭabiḫa* "grandma be cooking" |
+| da· + IPFV | steady continuative — steady V-ing | *da·i·kaya* "steady workin'" |
+
+The founding citation is Ali's own: **gon· + perfective = future perfect** — *Mi·gon·hakil·ku*, the future looking back on a thing already done.
 
 ### 4.3 Mood (R-024)
 

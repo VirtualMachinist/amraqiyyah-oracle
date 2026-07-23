@@ -132,12 +132,14 @@
       "focus": "Remote bin, recent dē·, steady da·, immediate f'na — and lawful stacking.",
       "prose": [
         "bin is BEEN — the remote past that settles a matter: Bin ni·ʿabira al·baḥar·a — we BEEN crossed THE Sea. Stress it and it becomes the AAVE stressed-BIN: long since, and still true. dē· is the recent perfect (just); da· is steady (sustained intent); f'na is finna — about to.",
-        "The markers stack in one lawful order (R-023): ('ayn) → (la|bu) → bin → don → bi· → da· → dē· → pronoun → gon· → verb. So bin don = been done (remote completive); bin ni·sikem = we BEEN powerful — the Freedmen's own sentence (R-056). f'na and gon· share the future lane and never co-occur."
+        "The markers stack in one lawful order (R-023): ('ayn) → (la|bu) → bin → don → bi· → da· → dē· → pronoun → gon· → verb. So bin don = been done (remote completive); bin ni·sikem = we BEEN powerful — the Freedmen's own sentence (R-056). f'na and gon· share the future lane and never co-occur.",
+        "And a marker meeting the verb's two poles makes a full tense-aspect grid (R-065). The conjugation sets whether the deed is done: perfective is completed, imperfective is ongoing. The marker sets when you stand to view it. Multiply them and English's whole tense wall falls out with no new words: gon· over the perfective is the future perfect — Mi·gon·hakil·ku, 'I will have understood,' the future looking back on a thing already finished; bin over the perfective is the remote pluperfect, 'had understood, long since'; don over the perfective is the present perfect, 'have understood.' The grid was always waiting where Black time met the two poles."
       ],
       "table": { "caption": "The nine markers (R-011)", "headers": ["Marker", "Source", "Meaning"], "rows": [["bi·", "be", "habitual"], ["da·", "steady", "sustained"], ["dē·", "just", "recent perfect"], ["don", "done", "completive"], ["bin", "BEEN", "remote past"], ["f'na", "finna", "immediate future"], ["gon·", "gon'", "future"], ["IPFV", "—", "ongoing"], ["PFV", "—", "completed"]] },
       "gloss": [
         { "ph": "Na·pa·nemaḥwāt bin i·sikem·sen.", "morph": ["Na-pa-nemaḥwāt", "bin", "i-sikem-sen"], "gl": ["DEF-PL-freedman", "REM", "3-powerful.STAT-PL"], "en": "The Freedmen BEEN powerful." },
-        { "ph": "Mamān·ku don wanim, we·pen sanu·ku 'ayn wanim.", "morph": ["Mamān-ku", "don", "wanim,", "we-pen", "sanu-ku", "'ayn", "wanim"], "gl": ["Big.Mama-1SG.POSS", "CPL", "eat.PFV.3SG", "but", "sibling-1SG.POSS", "EMPH.NEG", "eat.PFV.3SG"], "en": "Big Mama done ate, but my sibling ain't ate." }
+        { "ph": "Mamān·ku don wanim, we·pen sanu·ku 'ayn wanim.", "morph": ["Mamān-ku", "don", "wanim,", "we-pen", "sanu-ku", "'ayn", "wanim"], "gl": ["Big.Mama-1SG.POSS", "CPL", "eat.PFV.3SG", "but", "sibling-1SG.POSS", "EMPH.NEG", "eat.PFV.3SG"], "en": "Big Mama done ate, but my sibling ain't ate." },
+        { "ph": "Mi·gon·hakil·ku.", "morph": ["Mi-gon-hakil-ku"], "gl": ["1SG-FUT-understand.PFV-1SG"], "en": "I will have understood. (future perfect — gon· over the perfective, R-065)" }
       ],
       "drill": "Stack: bin don + a verb of your life. What you been done finished? Say it, and hear how much time fits in two small words."
     },
