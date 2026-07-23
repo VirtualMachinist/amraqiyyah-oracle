@@ -1,7 +1,7 @@
 # AMRAQIYYAH LANGUAGE — HANDOFF PROMPT
 
 **For the successor steward** · 2026-07-21 (night) · from the session that shipped the trilogy, opened the Optimize pass, and began translating the Canon
-**Read this, then `README.md` (the rulings record, R-001–R-069), then `spec/00-grammar-v2.0-draft.md` + `spec/01-orthography-running-text.md`. The `afro/` documents (01–24) are the narrative history; afro/15–24 are this session's arc.**
+**Read this, then `README.md` (the rulings record), then `PROOFREADING.md` (the error ledger — run its checklist before sealing ANYTHING; draft hot, proof cold), then `spec/00-grammar-v2.0-draft.md` + `spec/01-orthography-running-text.md`. The `afro/` documents (01–24) are the narrative history; afro/15–24 are this session's arc.**
 
 ---
 

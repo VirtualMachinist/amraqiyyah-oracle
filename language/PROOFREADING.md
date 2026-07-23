@@ -1,0 +1,85 @@
+# PROOFREADING & EDITORS' NOTES — the error ledger
+
+**Purpose:** future sessions inherit not just the work but the *mistakes* of past sessions.
+Before sealing ANY Canon text or corpus batch, run the checklist in §3 against every line —
+in a **fresh context**. The R-071 errata all cluster at the end of a marathon session: the
+bloated-context window is itself the leading cause of error in this project. **The rule that
+follows: nothing seals in the same session that drafted it. Draft hot, proof cold.**
+
+---
+
+## 1. Confirmed error classes (each caught at least once — check for them every time)
+
+### E1 — Preposition drops its genitive
+Preps govern GEN at the NP edge (R-016/R-007). Tao ch.1 lines 5–6 shipped *bilā šiweqi* /
+*het šiweqi* for **bilā šiweqī / het šiweqī** — while line 9 of the same text did it right
+(*en·ribesī*). Fixed R-071.
+**Check:** every en/ʿala/taḥt/ben/min/ʿind/het/bi/bilā/ḍid/ra/bawt/kama/illa/qabl/baʿd/qudām/ḫalf/bayn/ḥawl
+→ does the NP's final word carry -i (with sandhi: i+i→ī, a+i→ay, u+i→wi, ā+i→āy)?
+
+### E2 — Possessive suffix disagrees with its antecedent
+Tao ch.1 line 7 shipped *riniāt·to* ("its names") for **riniāt·sen** ("their names") — while
+the same line's verb conjugated the plural correctly (*i·ḫarija·sen*). Fixed R-071.
+**Check:** every -ku/-ki/-to/-ta/-nun/-tin/-sen → find its antecedent, match person AND number.
+
+### E3 — Absolute entities missing their article
+Tao ch.1 lines 3–4 shipped bare *Bilā-rini* / *Het-rini* for **Al·bilā-rini / Al·het-rini** —
+the Nameless and the Named are absolutes, and absolutes wear the sacred THE (R-012). **Ali's
+own catch.** Fixed R-071.
+**Check:** every NP naming a unique/cosmological/sacred entity → deliberate article decision
+(al· / na· / bare-as-role per R-033), recorded in the verse note if bare.
+
+### E4 — Source word silently dropped
+Tao ch.1 lines 5–6 lost 常 ("ever") — the very word lines 1–2 fought the dahr ruling for.
+Restored R-071 as *en dahr*.
+**Check:** account for EVERY word of the source line — translated, or note says why not.
+The source travels with the verse (Canon rule 5) precisely so this audit stays possible.
+
+## 2. Open questions surfaced by the R-071 proof pass (Ali rules)
+
+- **Q1 — Sacred-register copulas.** Spec §8 says the sacred register uses overt copulas; Tao
+  lines 1–4 use *pe*, but 7 (*riniāt·sen [Ø] sinu*), 8, and 9 are zero-copula — and the ratified
+  corpus is itself mixed (*Allah pe An-Nūr* overt; *Riḥemi Allahi wasīʿ kama na·aḫet* zero).
+  If ruled overt-for-identification: line 7 → *ne sinu* (plural identificational), line 9 →
+  *pe na·seba…*. The Dokkodo draft's lines 16/19 (zero-copula adjective predicates) hang on
+  the same ruling.
+- **Q2 — The modal 可.** Lines 1–2 render 道可道 as "the Way that one speaks," compressing
+  可 "can." Q-D-R stands ready (*nin·ta i·qadira…*) if Ali wants the potential restored;
+  most translators compress here too. Interpretive, not error — but it was never *decided*.
+- **Q3 — Demonstrative order.** Line 7 opens *Na·sinu nai* (postposed); the corpus preposes
+  (*Pen ḫobizon harāy*). Deliberate Arabic-style flourish (*al-kitābu hāḏā*) or slip?
+- **Q4 — The chapter title.** *Na·Hina, Na·Tap·i* — as apposition the construct ·i dangles
+  ("the beginning" alone is *na·tap*); as construct the comma is wrong. One must give.
+- **Q5 — Corpus infection.** The ratified proverb *ʿIrefi bilā ḏikeri la wi ʿirefi* carries
+  the E1 shape (*bilā ḏikerī*). Sealed corpus — R-060-style minimal erratum on Ali's word.
+
+## 3. The proof checklist (run per line, fresh context, before sealing)
+
+1. **E1 sweep** — every preposition's NP ends in genitive (sandhi applied).
+2. **E2 sweep** — every pronominal suffix matched to antecedent person/number.
+3. **E3 sweep** — every entity's article decision deliberate and, where bare, noted.
+4. **E4 sweep** — every source word accounted for.
+5. **Copula decision** per predicate (pe/ne/yit/wi/zero) consistent with the register ruling.
+6. **Engine pass** — run every derived form and case-merge through `tools/morphology`
+   (`deriveAll`, `attachCase`, `pluralize`) — the Dokkodo session's `verify-*.js` pattern:
+   62 mechanical checks caught zero errors precisely because the checks ran BEFORE presentation.
+7. **Sun-letter pass** — al· assimilation on t ṯ d ḏ r z s š ṣ ḍ ṭ ẓ l n (es·salām, ar·ribesi);
+   moon letters keep al· (al·bilā-rini, al·het-rini).
+8. **amr/display convention** — proclitic dots in amr; morpheme dots in display; pure-length
+   merges written solid (ribesī, hinā, hawtpay), separable glide-clusters keep the dot
+   (·ya/·wa/·wi/·kwa/·kī).
+9. **Read the note aloud** — if a verse note can't say why each choice was made, the choice
+   wasn't made; it happened.
+
+## 4. Session hygiene (the meta-lesson)
+
+The R-071 errors were not ignorance — every rule broken was applied correctly elsewhere in
+the same text. They were *fatigue*: end-of-session, deep-context drafting. Therefore:
+
+- **Draft hot, proof cold:** the sealing pass happens in a fresh session (or at minimum a
+  fresh read of only spec + text, no drafting history in mind).
+- **Never trust "it looked right when I wrote it"** — trust the checklist and the engine.
+- When proofing, read the text as a hostile grammarian, not as its author; the author's
+  context window is precisely what's bloated.
+- Log every new error CLASS here with its instance; a class caught twice becomes a lint rule
+  (docket: mechanize E1/E2 as a corpus-linter pass over phrases + translations).

@@ -28,42 +28,42 @@
         {
           "n": 3,
           "src": "無名天地之始；",
-          "amr": "Bilā-rini pe na·tap na·pet ma na·yaki.",
-          "display": "Bilā-rini pe na·tap na·pet ma na·yak·i.",
-          "en": "The Nameless is the origin of heaven and earth.",
-          "note": "bilā-compound (R-068): bilā-rini 'the Without-Name'; tap = head→origin, the Egyptian semantics of tp restored"
+          "amr": "Al·bilā-rini pe na·tap na·pet ma na·yaki.",
+          "display": "Al·bilā-rini pe na·tap na·pet ma na·yak·i.",
+          "en": "THE Nameless is the origin of heaven and earth.",
+          "note": "bilā-compound (R-068): bilā-rini 'the Without-Name'; tap = head→origin, the Egyptian semantics of tp restored. ERRATUM R-071 (Ali's catch): the article was missing — the Nameless is an absolute, and absolutes wear the sacred THE (b is a moon letter: al· unassimilated)"
         },
         {
           "n": 4,
           "src": "有名萬物之母。",
-          "amr": "Het-rini pe iška na·pa·šeyāti.",
-          "display": "Het-rini pe iška na·pa·šeyāt·i.",
-          "en": "The Named is the mother of the myriad things.",
-          "note": "het-rini 'the With-Name'; 萬物 as na·pa·šeyāt, the myriad things; iška — the mother-word, inalienable everywhere else, standing bare here as pure role (R-033's citation use)"
+          "amr": "Al·het-rini pe iška na·pa·šeyāti.",
+          "display": "Al·het-rini pe iška na·pa·šeyāt·i.",
+          "en": "THE Named is the mother of the myriad things.",
+          "note": "het-rini 'the With-Name'; 萬物 as na·pa·šeyāt, the myriad things; iška — the mother-word, inalienable everywhere else, standing bare here as pure role (R-033's citation use). ERRATUM R-071: al· added in parallel with line 3 — the Named is the same absolute seen from the manifest side (h is a moon letter: al· unassimilated)"
         },
         {
           "n": 5,
           "src": "故常無欲，以觀其妙；",
-          "amr": "Ra·pen: bilā šiweqi, i·hariwa na·biṭenya.",
-          "display": "Ra·pen: bilā šiweqi, i·hariwa na·biṭenya.",
-          "en": "Therefore: without desire, one beholds the hidden.",
-          "note": "šiweqi — the diaspora longing serving for 欲; biṭeni = the batin (~Al-Bāṭin, Threshold Name, Hex 26)"
+          "amr": "Ra·pen: en dahr bilā šiweqī, i·hariwa na·biṭenya.",
+          "display": "Ra·pen: en dahr bilā šiweqī, i·hariwa na·biṭenya.",
+          "en": "Therefore: ever without desire, one beholds the hidden.",
+          "note": "šiweqi — the diaspora longing serving for 欲; biṭeni = the batin (~Al-Bāṭin, Threshold Name, Hex 26). ERRATA R-071: bilā governs the genitive (šiweqī, i+i→ī — as line 9's en·ribesī always knew), and the dropped 常 returns as en dahr 'in the aeon, ever' (R-069's own root)"
         },
         {
           "n": 6,
           "src": "常有欲，以觀其徼。",
-          "amr": "Het šiweqi, i·hariwa na·ẓiherya.",
-          "display": "Het šiweqi, i·hariwa na·ẓiherya.",
-          "en": "With desire, one beholds the manifest.",
-          "note": "ẓiheri = the zahir (~Az-Zāhir, Hex 33) — Laozi's hidden-and-manifest IS the Way's own Threshold pair"
+          "amr": "En dahr het šiweqī, i·hariwa na·ẓiherya.",
+          "display": "En dahr het šiweqī, i·hariwa na·ẓiherya.",
+          "en": "Ever with desire, one beholds the manifest.",
+          "note": "ẓiheri = the zahir (~Az-Zāhir, Hex 33) — Laozi's hidden-and-manifest IS the Way's own Threshold pair. ERRATA R-071: het governs the genitive (šiweqī); 常 restored as en dahr, parallel to line 5"
         },
         {
           "n": 7,
           "src": "此兩者，同出而異名，",
-          "amr": "Na·sinu nai — en·sinu i·ḫarijasen, we·pen riniātto sinu.",
-          "display": "Na·sinu nai — en·sinu i·ḫarija·sen, we·pen rini·āt·to sinu.",
+          "amr": "Na·sinu nai — en·sinu i·ḫarijasen, we·pen riniātsen sinu.",
+          "display": "Na·sinu nai — en·sinu i·ḫarija·sen, we·pen rini·āt·sen sinu.",
           "en": "These two — together-as-pair they emerge, but their names are two.",
-          "note": "en·sinu 'in-two, as a pair' — the together-adverbs (R-069): en·wa as-one, en·sinu as-a-pair; 同出 restored to a true 'together' instead of the earlier dissolve"
+          "note": "en·sinu 'in-two, as a pair' — the together-adverbs (R-069): en·wa as-one, en·sinu as-a-pair; 同出 restored to a true 'together' instead of the earlier dissolve. ERRATUM R-071: riniāt·to (3SG 'its names') corrected to riniāt·sen — the two own their names in the plural, as the verb i·ḫarija·sen already conjugated"
         },
         {
           "n": 8,
