@@ -6,7 +6,7 @@
       "id": "ttc-1",
       "canon": "Tier II-B — the Confucian-Taoist Foundation",
       "title": "Tao Te Ching — Chapter 1",
-      "titleAmr": "Na·Hina, Na·Tap·i",
+      "titleAmr": "Jasima al·Hinā na·Tap·i",
       "sourceLang": "Classical Chinese (received Wang Bi text)",
       "lines": [
         {
@@ -60,10 +60,10 @@
         {
           "n": 7,
           "src": "此兩者，同出而異名，",
-          "amr": "Na·sinu nai — en·sinu i·ḫarijasen, we·pen riniātsen sinu.",
-          "display": "Na·sinu nai — en·sinu i·ḫarija·sen, we·pen rini·āt·sen sinu.",
+          "amr": "Na·sinu nai — en·sinu i·ḫarijasen, we·pen riniātsen ne sinu.",
+          "display": "Na·sinu nai — en·sinu i·ḫarija·sen, we·pen rini·āt·sen ne sinu.",
           "en": "These two — together-as-pair they emerge, but their names are two.",
-          "note": "en·sinu 'in-two, as a pair' — the together-adverbs (R-069): en·wa as-one, en·sinu as-a-pair; 同出 restored to a true 'together' instead of the earlier dissolve. ERRATUM R-071: riniāt·to (3SG 'its names') corrected to riniāt·sen — the two own their names in the plural, as the verb i·ḫarija·sen already conjugated"
+          "note": "en·sinu 'in-two, as a pair' — the together-adverbs (R-069): en·wa as-one, en·sinu as-a-pair; 同出 restored to a true 'together' instead of the earlier dissolve. ERRATUM R-071: riniāt·to (3SG 'its names') corrected to riniāt·sen — the two own their names in the plural, as the verb i·ḫarija·sen already conjugated. R-073: ne added (the plural identificational copula's first attestation — the copula doctrine: pe/ne obligatory for nominal equations in the sacred register); Na·sinu nai stands RATIFIED as the solemn postposed demonstrative — Middle Egyptian zj pn syntax surfacing in the register that reaches for antiquity (preposed pen remains the default everywhere)"
         },
         {
           "n": 8,
@@ -76,10 +76,10 @@
         {
           "n": 9,
           "src": "玄之又玄，衆妙之門。",
-          "amr": "Ar·ribesi en·ribesī — na·seba na·pa·biṭeniāti.",
-          "display": "Ar·ribesi en·ribesī — na·seba na·pa·biṭeniāt·i.",
+          "amr": "Ar·ribesi en·ribesī — pe na·seba na·pa·biṭeniāti.",
+          "display": "Ar·ribesi en·ribesī — pe na·seba na·pa·biṭeniāt·i.",
           "en": "Dark within primordial dark — the gate of all mysteries.",
-          "note": "seba — star, gate, and teaching in one root (S-B-ʾ): the Tao closes on the door the education ladder climbs; biṭeniāt pluralizes by R-060's own law"
+          "note": "seba — star, gate, and teaching in one root (S-B-ʾ): the Tao closes on the door the education ladder climbs; biṭeniāt pluralizes by R-060's own law. R-073: pe added — dark-within-dark IS the gate: a nominal equation, and the copula doctrine makes the equals sign obligatory in the sacred register"
         }
       ]
     }

@@ -37,12 +37,11 @@ The source travels with the verse (Canon rule 5) precisely so this audit stays p
 
 ## 2. Open questions surfaced by the R-071 proof pass (Ali rules)
 
-- **Q1 — Sacred-register copulas.** Spec §8 says the sacred register uses overt copulas; Tao
-  lines 1–4 use *pe*, but 7 (*riniāt·sen [Ø] sinu*), 8, and 9 are zero-copula — and the ratified
-  corpus is itself mixed (*Allah pe An-Nūr* overt; *Riḥemi Allahi wasīʿ kama na·aḫet* zero).
-  If ruled overt-for-identification: line 7 → *ne sinu* (plural identificational), line 9 →
-  *pe na·seba…*. The Dokkodo draft's lines 16/19 (zero-copula adjective predicates) hang on
-  the same ruling.
+- **Q1 — RESOLVED (R-073, Ali).** The copula doctrine: **overt pe/ne obligatory for nominal
+  equations in sacred/plain** (the equation is the theology); **zero lawful for adjective/stative
+  predicates in every register** (Arabic + AAVE outvote Coptic two streams to one). Applied:
+  Tao 1:7 → *ne sinu* (the plural copula's first attestation), 1:9 → *pe na·seba*. Line 8's
+  colon-naming stands (quotative apposition, exempt). Dokkodo 16/19 stand as lawful zeros.
 - **Q2 — RESOLVED (R-072, Ali).** 可 restored: *nin·ta i·qadira jata·to* — the **ability
   auxiliary**: qadira carries the clitic/conjugation, the content verb stands as bare stem
   (the imperative's stem), the resumptive rides the content verb. AAVE-shaped ("can speak");
@@ -50,10 +49,14 @@ The source travels with the verse (Canon rule 5) precisely so this audit stays p
   subjunctive lane is ever preferred. Bonus find while verifying: **Mawangdui reads 恆
   'enduring' where the received text reads 常** (Emperor Wen's naming taboo) — Laozi's own
   word vindicates dahīr.
-- **Q3 — Demonstrative order.** Line 7 opens *Na·sinu nai* (postposed); the corpus preposes
-  (*Pen ḫobizon harāy*). Deliberate Arabic-style flourish (*al-kitābu hāḏā*) or slip?
-- **Q4 — The chapter title.** *Na·Hina, Na·Tap·i* — as apposition the construct ·i dangles
-  ("the beginning" alone is *na·tap*); as construct the comma is wrong. One must give.
+- **Q3 — RESOLVED (R-073, Ali: "ratify the split").** Preposed = default everywhere (Late
+  Egyptian → Coptic stream); **postposed = solemn-archaic configuration lawful in the sacred
+  register** — Middle Egyptian *zj pn* syntax surfacing where the language reaches for
+  antiquity. *Na·sinu nai* stands as the first attestation, an intentional archaism.
+- **Q4 — RESOLVED (R-073, Ali).** Title ruled: **Jasima al·Hinā na·Tap·i** — "Embodying the
+  Road of the Origin" — Heshang Gong's 體道 fused with the construct the draft was reaching
+  for; *jasima* "to embody" is the body-root's free Pattern I, head al·hina bears the phrase's
+  accusative (→ hinā), na·tap closes with the construct genitive. Ali's own composition.
 - **Q5 — RESOLVED (R-072, Ali: "cases should be consistent").** Full-corpus E1 sweep run:
   two instances found and fixed — the proverb (*bilā ḏikerī*) and the mercy-line
   (*kama na·aḫet·i* — kama governs GEN like every other particle in the R-016 table).

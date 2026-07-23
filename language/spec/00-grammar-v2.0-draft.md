@@ -285,9 +285,11 @@ na· and al· never stack; al· substitutes for na· where sanctity/emphasis war
 
 Pronouns decline suppletively (clitic vs suffix series); case endings do not attach to pronouns.
 
-### 5.5 Demonstratives (R-027)
+### 5.5 Demonstratives (R-027; order split R-073)
 
 Three-way distance, genderless: **pen / pek / pom** (this / that / yonder), plurals **nai / nak / nom**. Locative adverbs: **en·pen / en·pek / en·pom** (here / there / yonder).
+
+**Order (R-073):** preposed is the default in every register (*Pen ḫobizon harāy* — the Late Egyptian → Coptic order, corpus law). **Postposed is the marked solemn-archaic configuration, lawful in the sacred register** (*Na·sinu nai* "the two, these" — Tao ch.1:7): it reproduces Middle Egyptian syntax (*zj pn* "man this"), the older stratum of the demonstrative's own ancestor, and Arabic permits the same shape with definite nouns (*ar-rajulu hāḏā*). Abundance over either/or: the register split honors both stages of the stream.
 
 ### 5.6 Possession & genitive (R-027)
 
@@ -348,7 +350,8 @@ Strong pronouns: emphasis, isolation, clefts (*Anok pe …* "I AM …"). Weak cl
 - **Order:** SVO; VSO for emphasis/questions; topicalization with resumptive suffix (*Na·šey·a, mi hak·il·a·to* "the thing, I understand it").
 - **The Topic Law (R-052):** full-NP subjects default to **topic position — caseless, resumed by the clitic** (visible on imperfective/stative: *Na·šaʿab i·gon·ḫayira*; Ø-agreement on 3SG perfective: *Na·ḫireji don waṣil*). In-situ **cased** subjects (*Na·fek·ū don fak·im*) remain grammatical as the formal/contrastive configuration — plain/sacred register flavor, Arabic-faithful. Copular and zero-copula subjects are caseless (*Na·pet zarīq*). This upgrades R-005's topic-doubling from "may" to the everyday default: the AAVE topic-prominent clause is the unmarked shape of the language.
 - **Ditransitive (R-053):** recipient as object suffix on the verb, theme NP in -a: *ʿAṭiya·ku wa·ḫobizon·a, min faḍl·kī* "give me a loaf, please" (exactly Arabic *aʿṭi-nī l-ḫubz-a*).
-- **Copulas (AX-21):** **yit** predicative (quality/class) · **wi** existential/locative · **pe** (sg) / **ne** (pl) identificational, genderless · zero copula in casual register (*Mi har·āy* "I'm good").
+- **Copulas (AX-21; doctrine R-073):** **yit** predicative (quality/class) · **wi** existential/locative · **pe** (sg) / **ne** (pl) identificational, genderless · zero copula in casual register (*Mi har·āy* "I'm good").
+  **The copula doctrine (R-073):** the streams disagree — Coptic demands ⲡⲉ, Arabic's jumla ismiyya is zero (*Allāhu akbar*), AAVE is zero — so the law follows the majority per predicate type: **identification of two nominals takes overt pe/ne in the sacred and plain registers** (*Na·ḏikeri pe na·hina*; *rini·āt·sen ne sinu* — the equation is the theology, the copula is the equals sign); **adjective/stative predicates may stand zero in every register** (*Riḥemi Allah·i wasīʿ* — Arabic and AAVE agree, two streams to one). Naming formulas with the colon (Tao 1:8) are quotative apposition, exempt. **The ability auxiliary (R-072):** *qadira* carries the conjugation, the content verb stands as bare stem, resumptives ride the content verb — *nin·ta i·qadira jata·to* "that one can speak."
 - **Existential:** *Wi sam·fek·u·w …* "there are cultivators…"; frozen presentational **yit·pen** ("it's…" — AAVE existential *it's*).
 - **Heart-idiom predicates (R-038):** **ib + stative/adjective** forms an emotion predicate, grammaticalizing the Egyptian pattern (*ꜣwt-ib* "wideness of heart" = joy): *Ib·ku wasīʿ* "my heart is wide = I'm overjoyed" · *Ib·nun ḥitep* "our hearts are at rest = we are content" · *ib šajīʿ* "a brave heart." The idiom inventory grows in the phrasebook; the pattern is law.
 - **Questions:** rising intonation (default); optional formal particle **hal** (Arabic); tags **ma** / **yani**; wh in-situ or fronted.
@@ -370,7 +373,7 @@ Strong pronouns: emphasis, isolation, clefts (*Anok pe …* "I AM …"). Weak cl
 
 | Register | Script | Phonology | Grammar signature |
 |---|---|---|---|
-| **Sacred/liturgical** | Ajami, fully pointed | Full 33-consonant realization | al· with divine Names; overt copulas; full case sandhi careful; Egyptian/Arabic vocabulary stratum |
+| **Sacred/liturgical** | Ajami, fully pointed | Full 33-consonant realization | al· with divine Names; overt pe/ne on nominal equations, zero lawful on adjectival predicates (R-073); postposed demonstratives lawful as solemn archaism (R-073); full case sandhi careful; Egyptian/Arabic vocabulary stratum |
 | **Plain/formal** | Ajami or Coptic | Prestige realization | na·; overt or zero copula; complete aspect marking |
 | **Everyday** | Coptic | Casual mergers (th-stopping law, q→k, ʿ→ʔ) | zero copula; aspect-rich AAVE signature; topic-doubling; concord |
 
