@@ -153,5 +153,9 @@ for (const l of LE.lessons) {
 }
 eq(lessonsOk, true, 'lesson invariants (level keys, Leipzig gloss alignment)');
 
+
+// Allowlist tripwire (Optimize): a sealed lexicon carries zero unblessed advisories
+eq(require('./lint').newAdvisories().length, 0, 'no unblessed lint advisories (allowlist current)');
+
 console.log(`\n${pass} passed, ${fail} failed`);
 process.exit(fail ? 1 : 0);

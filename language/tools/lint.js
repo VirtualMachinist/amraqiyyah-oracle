@@ -83,15 +83,69 @@ function lintLexicon() {
   return report;
 }
 
-module.exports = { lintRoot, checkCollisions, checkHomophony, lintLexicon };
+// ── Allowlist layer (Optimize pass, R-064 era) ──
+// Every advisory maps to a STABLE KEY; data/allowlist.json holds the consciously-accepted set.
+// `node lint.js` reports only NEW advisories; `node lint.js --bless` accepts the current state.
+// Near-collision keys are pair-sorted so each pair blesses once, whichever side reports it.
+const ALLOWLIST_PATH = path.join(__dirname, '..', 'data', 'allowlist.json');
+
+function keyFor(rootKey, w) {
+  let m;
+  if ((m = w.match(/^near-collision with ([^\s"]+) /))) {
+    const pair = [rootKey, m[1]].sort();
+    return `near:${pair[0]}|${pair[1]}`;
+  }
+  if ((m = w.match(/^adjacent homorganic consonants (\S+)-(\S+) /))) return `hom:${rootKey}:${m[1]}-${m[2]}`;
+  if (w.startsWith('two pharyngeals')) return `phar:${rootKey}`;
+  if (w.startsWith('two emphatics')) return `emph:${rootKey}`;
+  if ((m = w.match(/^derived \S+ '([^']+)' is homophonous/))) return `homophone:${rootKey}:${m[1]}`;
+  return `other:${rootKey}:${w}`;
+}
+
+function loadAllowlist() {
+  try { return new Set(JSON.parse(fs.readFileSync(ALLOWLIST_PATH, 'utf8')).accepted); }
+  catch { return new Set(); }
+}
+
+// All current advisory keys, deduped (pair keys appear from both sides).
+function currentAdvisoryKeys() {
+  const keys = new Set();
+  for (const r of lintLexicon()) for (const w of r.warnings) keys.add(keyFor(r.root, w));
+  return keys;
+}
+
+// Advisories not yet consciously accepted — the tripwire. Empty on a blessed lexicon.
+function newAdvisories() {
+  const allow = loadAllowlist();
+  const out = [];
+  for (const r of lintLexicon()) for (const w of r.warnings) {
+    const k = keyFor(r.root, w);
+    if (!allow.has(k)) out.push({ key: k, root: r.root, gloss: r.gloss, warning: w });
+  }
+  return out;
+}
+
+module.exports = { lintRoot, checkCollisions, checkHomophony, lintLexicon, keyFor, newAdvisories, currentAdvisoryKeys };
 
 if (require.main === module) {
   const report = lintLexicon();
-  if (!report.length) { console.log('lexicon clean: no errors, no warnings'); process.exit(0); }
   let errCount = 0;
-  for (const r of report) {
-    for (const e of r.errors) { console.log(`ERROR  ${r.root} (${r.gloss}): ${e}`); errCount++; }
-    for (const w of r.warnings) console.log(`warn   ${r.root} (${r.gloss}): ${w}`);
+  for (const r of report) for (const e of r.errors) { console.log(`ERROR  ${r.root} (${r.gloss}): ${e}`); errCount++; }
+
+  if (process.argv.includes('--bless')) {
+    const keys = [...currentAdvisoryKeys()].sort();
+    fs.writeFileSync(ALLOWLIST_PATH, JSON.stringify({
+      version: '2.0-rc.1',
+      note: 'Consciously-accepted lint advisories (Optimize pass). Keys: near:<pair> | hom:<root>:<cc> | phar:/emph:<root> | homophone:<root>:<form>. Regenerate with node tools/lint.js --bless AFTER new advisories are reviewed and accepted — never bless blind.',
+      accepted: keys
+    }, null, 2) + '\n');
+    console.log(`blessed ${keys.length} advisories into data/allowlist.json`);
+    process.exit(errCount ? 1 : 0);
   }
-  process.exit(errCount ? 1 : 0);
+
+  const fresh = newAdvisories();
+  const accepted = currentAdvisoryKeys().size - new Set(fresh.map(f => f.key)).size;
+  for (const f of fresh) console.log(`NEW    ${f.root} (${f.gloss}): ${f.warning}`);
+  console.log(`${errCount} errors · ${accepted} accepted advisories (allowlisted) · ${fresh.length} new`);
+  process.exit(errCount || fresh.length ? 1 : 0);
 }
