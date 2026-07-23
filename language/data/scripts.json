@@ -1,6 +1,7 @@
 {
   "version": "2.0-rc.1",
   "note": "D-2 script mappings (R-048). Coptic design: underdot = deep letters (pharyngeal/emphatic), overline = soft letters (shifted/fricated), redeeming Doc A's ⲁ̀ glottal. Unused Greek-row letters (ⲫ ⲭ ⲝ ⲯ) reserved — candidates for Coptic-style numerals later.",
+  "reservedFifthScript": "A purpose-built DERIVED SCRIPT for Amraqiyyah is in digitization by @Ethnic_Tutnese (X/Twitter; a friend of Ali's, credited by handle — real name not compiled, per privacy). Ajami-derived cursive with full pointing and its own numeral glyphs; a complete manuscript-page sample seen 2026-07-21 (values not yet known — no glyph read/coined until the key lands: no false ancestors). When values arrive it slots in here as a fifth layer (map + converter in tools/script.js + orthography law) — the crown of the R-008 script ecology: a script drawn FOR the language by one of its people. Attribution stands in every rendering.",
   "coptic": {
     "'": "ⲁ̀", "ʾ": "ⲁ̀", "ʿ": "ⲁ̣",
     "b": "ⲃ", "t": "ⲧ", "ṯ": "ⲑ", "j": "ϫ", "ḥ": "ϩ̣", "ḫ": "ϧ",
