@@ -23,9 +23,11 @@ Atrium/Atrium/
   Amraqiyyah/                      ← the wing
     repo/                          ← git clone of the Amraqiyyah repo (obsidian-git manages pulls;
     │                                 the repo remains THE canon — R-002. Read-only from vault side.)
-    lattice/
-    │  lattice.db                  ← ed·diketi (SQLite; gitignored, rebuilt from source)
-    │  embeddings.db               ← vector sidecar (sqlite-vec), rebuilt from source
+    │                                 (no database here — ed·diketi lives INSIDE the existing
+    │                                  Atrium Lattice Tier 2 db: projects/atrium-lattice/data/
+    │                                  lattice.db, as additive tables. Surveyed 2026-07-23:
+    │                                  documents 1,282 · chunks 52,444 · chunks_fts · vec_chunks
+    │                                  FLOAT[768] nomic-embed · drift_events · query_log.)
     ├─ language/                   ← GENERATED notes (one per entity; banner + `generated: true`)
     │    roots/   rulings/   phrases/   canon/
     ├─ oracle/
@@ -60,8 +62,17 @@ Body = the entity rendered for humans (gloss, etymology, template family, flags)
 
 ## §3 — ed·diketi: the SQLite schema
 
+**Discovery (2026-07-23, live over `castle`):** the Praetor's `lattice.db` already covers the
+*document* plane — chunked FTS + 768-dim sqlite-vec + drift tracking over every vault note.
+Generated Amraqiyyah notes will be swept into that plane automatically once emitted. What the
+document plane lacks is the *entity* plane: typed nodes, typed edges, trees. **ed·diketi is
+therefore additive tables in the SAME lattice.db** — no second database, no duplicate FTS, no
+duplicate vectors. The join key between planes: `nodes.path = documents.path` (one generated
+note per entity makes the join exact). Semantic recall reuses `vec_chunks`; lexical reuses
+`chunks_fts`; ed·diketi contributes graph and tree:
+
 ```sql
--- nodes: every entity in every system
+-- nodes: every entity in every system (entity plane; joins documents by path)
 CREATE TABLE nodes (
   id        TEXT PRIMARY KEY,          -- 'root.w-ḥ-d', 'name.al-wahid', 'hex.52', 'mansion.9'
   type      TEXT NOT NULL,
@@ -95,16 +106,12 @@ CREATE TABLE tree (
   PRIMARY KEY (ancestor, descendant)
 );
 
--- lexical recall: FTS5 over every skin of every word
-CREATE VIRTUAL TABLE nodes_fts USING fts5(
-  id UNINDEXED, title, aliases, body, tokenize='unicode61 remove_diacritics 0'
-);  -- diacritics KEPT: ḫ ≠ h is phonemic law (R-008)
-
--- semantic recall: sqlite-vec sidecar, nomic-embed-text vectors (the Atrium Lattice
--- Tier 2 stack — same embedder, same mesh; chunked by note section)
-CREATE VIRTUAL TABLE vec_chunks USING vec0(
-  node_id TEXT, chunk_ix INTEGER, embedding FLOAT[768]
-);
+-- lexical + semantic recall: REUSED from the existing document plane —
+--   chunks_fts (FTS5) and vec_chunks (vec0 FLOAT[768], nomic-embed) already index
+--   every vault note; generated entity notes join them on emission. One caveat to
+--   verify at P3: diacritic handling in chunks_fts tokenization — ḫ ≠ h is phonemic
+--   law (R-008), so entity aliases must survive tokenization or gain a small
+--   supplementary alias index (nodes_aliases_fts) scoped to the entity plane only.
 ```
 
 **The three retrieval modes, as queries:**
@@ -149,7 +156,7 @@ WHERE t.ancestor='text.tier-2f' ORDER BY t.depth;
 |---|---|---|
 | **P1** | `tools/atrium.js` + language wing (roots · rulings · phrases · canon verses) + hubs; nodes/edges/tree/FTS live | notes render in Obsidian; graph view shows the pairing edges |
 | **P2** | Oracle + Calendar wings parsed from docs; **shared/ unification + divergence guard** | the 99 Names exist exactly once; golden vector walkable as a path |
-| **P3** | sqlite-vec + nomic-embed sidecar; hybrid recall CLI (`atrium recall "<query>"`) | the three example queries return true answers |
+| **P3** | wire the entity plane into the EXISTING vec/FTS document plane (join on path; verify diacritic survival; alias index if needed); hybrid recall CLI (`atrium recall "<query>"`) | the three example queries return true answers against the live lattice.db |
 | **P4** | Recall surface for steward sessions (MCP or CLI) + PROOFREADING standing queries | a fresh session answers "what do we know about X?" without reading the repo |
 
 *Ali ratifies the wing's name, the placement, and each phase gate. The repo stays canon; the vault stays mirror; the lattice stays rebuildable from zero — na·katebow can burn and be reprinted, ed·diketi can be dropped and re-woven, and nothing is lost, because the truth lives in the ledgered repo. Deterministic, transparent, worthy of ratification.*
