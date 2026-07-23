@@ -37,3 +37,22 @@ What the first chapter gave the language:
 **Queued next: Musashi's Dokkodo** (Tier II-F, per Ali). Lexicon **256** · pairings 13/99 · advisories 397 blessed · **93 tests green**.
 
 *Na·hina nin·ta i·jata·to, la pe al·hina ḏatāy.*
+
+---
+
+## R-069 · The eternity-infinity field & the together-adverbs (same-day addendum)
+
+Ali's second field-examination, and the abundance method turned on time itself: *"ḏet should be for infinity — linear, numerical or geometric… also a cyclical eternity, and a type that is pre-existent — the substrate in which time exists."*
+
+| Seat | Word | Nature |
+|---|---|---|
+| Numerical infinity | **ḥeḥ** (stands, clarified) | counts without end — the million-god |
+| Geometric infinity | **ḏet** (re-ruled) | extends without end — the unending line |
+| Cyclical eternity | **neḥeḥ** (stands) | returns without end — the Great Year's time |
+| **Substrate-eternity** | **dahr** (D-H-R, new) | **the aeon in which time itself exists** — Q 76; "do not curse ad-dahr, for God is ad-dahr"; the Avicennan container of time. Greek *aiōn* noted as future kin for the Timaeus (Tier II-A: "time is the moving image of eternity") |
+
+And the **together-adverbs**: **en·wa** "as one" · **en·sinu** "as a pair" — Ali's own compositions, because a language must say *together* without saying "the two." Both entered the particle inventory.
+
+**Tao ch.1 amended accordingly**: *al·hina* (the sacred THE — this Way is never merely worldly), 常 as **dahīr** (the substrate-eternal Way), 同出 as *en·sinu i·ḫarija·sen* (together-as-pair they emerge), 同謂 as *en·wa i·ranwia·sen* (named as one — the ren-root's passive arriving free from R-025's engine). The fourth book regenerated and reprinted. Lexicon **257** · advisories **400** blessed · **93 tests green**.
+
+*Al·hina nin·ta i·jata·to, la pe al·hina dahīr.*

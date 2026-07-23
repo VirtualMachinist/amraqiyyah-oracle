@@ -2602,7 +2602,7 @@
     {
       "skeleton": null,
       "citation": "ḥeḥ",
-      "gloss": "INFINITY, the countless (Heh, the million-god)",
+      "gloss": "INFINITY (numerical) — the countless, multitude without end (Heh, the million-god); the counting-infinity beside ḏet's geometric line",
       "source": {
         "lang": "Egyptian",
         "word": "ḥḥ",
@@ -2614,7 +2614,8 @@
         "numeral",
         "sacred rootless lexeme (OCP-exempt)",
         "also in frozen registry",
-        "eternity pair neḥeḥ (cyclical) / ḏet (linear) flagged for T-7"
+        "eternity pair neḥeḥ (cyclical) / ḏet (linear) flagged for T-7",
+        "R-069 field — the numerical seat"
       ]
     },
     {
@@ -2703,7 +2704,7 @@
         "t"
       ],
       "citation": "ḏet",
-      "gloss": "eternity (linear — the enduring forever: stone, the unchanging)",
+      "gloss": "INFINITY (linear/geometric) — the unending line, extension without bound; ḏatāy infinite (adj). Re-ruled R-069 from 'linear eternity': ḥeḥ counts without end, ḏet EXTENDS without end, neḥeḥ returns without end, dahr is the ground under all three",
       "source": {
         "lang": "Egyptian",
         "word": "ḏt",
@@ -2712,7 +2713,8 @@
       "status": "ratified",
       "flags": [
         "T-7",
-        "eternity pair with neḥeḥ"
+        "eternity pair with neḥeḥ",
+        "R-069 eternity-infinity field — the geometric seat (was: linear eternity)"
       ]
     },
     {
@@ -2729,7 +2731,8 @@
         "T-7",
         "rootless sacred lexeme (OCP-exempt; kin to ḥeḥ infinity)",
         "eternity pair with ḏet",
-        "Calendar interop: the Great Year runs in neḥeḥ"
+        "Calendar interop: the Great Year runs in neḥeḥ",
+        "R-069 field — the cyclical seat (the returning forever; the Great Year runs in it)"
       ]
     },
     {
@@ -4651,6 +4654,26 @@
         "R-066 founding coin: first Greek root outside the technical register (the seats are leads, not fences)",
         "lint-clean (zero advisories)",
         "carries what Keku could not: Egyptian kkw (the Ogdoad's primal dark) is OCP-exiled (k-k-w), so the Greek cousin bears the meaning"
+      ]
+    },
+    {
+      "skeleton": [
+        "d",
+        "h",
+        "r"
+      ],
+      "citation": "dahr",
+      "gloss": "the SUBSTRATE-ETERNITY — the aeon, meta-time, the duration in which time itself exists (Ali's spec verbatim); dahira to perdure beyond time, diheri perdurance/the aeon, dahīr substrate-eternal (adj — the Tao's 常)",
+      "source": {
+        "lang": "Arabic",
+        "word": "dahr دهر — Q 76 (Sūrat ad-Dahr); the ḥadīth qudsī 'do not curse ad-dahr, for God is ad-dahr'; Avicennan triad zamān < dahr < sarmad: dahr the container of time",
+        "status": "verified"
+      },
+      "status": "ratified",
+      "flags": [
+        "R-069 eternity-infinity field — the substrate seat",
+        "advisories accepted: š-h-r month, d-š-r red, ẓ-h-r manifest (the busy -h-r row)",
+        "Greek aiōn noted as future kin (Timaeus, Tier II-A: 'time is the moving image of eternity')"
       ]
     }
   ]

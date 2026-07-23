@@ -9,17 +9,83 @@
       "titleAmr": "Na·Hina, Na·Tap·i",
       "sourceLang": "Classical Chinese (received Wang Bi text)",
       "lines": [
-        { "n": 1, "src": "道可道，非常道。", "amr": "Na·hina nin·ta i·jatato, la pe al·hina ḏatāy.", "display": "Na·hina nin·ta i·jata·to, la pe al·hina ḏatāy.", "en": "The Way that one speaks is not THE eternal Way.", "note": "hina — the Way's own Muskogean name (R-046); ḏatāy, the adjective of ḏet, the linear unchanging eternity (常 as constancy; neḥeḥ the cyclical considered and reserved for the Tao's returning movements)" },
-        { "n": 2, "src": "名可名，非常名。", "amr": "Na·rini nin·ta i·ranato, la pe al·rini ḏatāy.", "display": "Na·rini nin·ta i·rana·to, la pe al·rini ḏatāy.", "en": "The name that one names is not THE eternal name.", "note": "rana — the ren-root speaking as a verb: to name is to make a soul-part (R-040)" },
-        { "n": 3, "src": "無名天地之始；", "amr": "Bilā-rini pe na·tap na·pet ma na·yaki.", "display": "Bilā-rini pe na·tap na·pet ma na·yak·i.", "en": "The Nameless is the origin of heaven and earth.", "note": "bilā-compound (R-068): bilā-rini 'the Without-Name'; tap = head→origin, the Egyptian semantics of tp restored" },
-        { "n": 4, "src": "有名萬物之母。", "amr": "Het-rini pe iška na·pa·šeyāti.", "display": "Het-rini pe iška na·pa·šeyāt·i.", "en": "The Named is the mother of the myriad things.", "note": "het-rini 'the With-Name'; 萬物 as na·pa·šeyāt, the myriad things; iška — the mother-word, inalienable everywhere else, standing bare here as pure role (R-033's citation use)" },
-        { "n": 5, "src": "故常無欲，以觀其妙；", "amr": "Ra·pen: bilā šiweqi, i·hariwa na·biṭenya.", "display": "Ra·pen: bilā šiweqi, i·hariwa na·biṭenya.", "en": "Therefore: without desire, one beholds the hidden.", "note": "šiweqi — the diaspora longing serving for 欲; biṭeni = the batin (~Al-Bāṭin, Threshold Name, Hex 26)" },
-        { "n": 6, "src": "常有欲，以觀其徼。", "amr": "Het šiweqi, i·hariwa na·ẓiherya.", "display": "Het šiweqi, i·hariwa na·ẓiherya.", "en": "With desire, one beholds the manifest.", "note": "ẓiheri = the zahir (~Az-Zāhir, Hex 33) — Laozi's hidden-and-manifest IS the Way's own Threshold pair" },
-        { "n": 7, "src": "此兩者，同出而異名，", "amr": "Na·sinu nai — wa pe tapto, sinu pe riniātto.", "display": "Na·sinu nai — wa pe tap·to, sinu pe rini·āt·to.", "en": "These two — one is their origin, two are their names.", "note": "the same/differ dissolved into the one/two contrast; rini·āt·to doubles its t across the boundary (the Ajami writes shadda)" },
-        { "n": 8, "src": "同謂之玄。", "amr": "Na·sinu pe ar·ribesi.", "display": "Na·sinu pe ar·ribesi.", "en": "Together they are THE primordial Dark.", "note": "ribesi — érebos naturalized (R-067), the cosmogonic dark; sun-letter al+r → ar·ribesi; NOT kamāy: black is a color, dark is a condition (Ali's ruling)" },
-        { "n": 9, "src": "玄之又玄，衆妙之門。", "amr": "Ar·ribesi en·ribesī — na·seba na·pa·biṭeniāti.", "display": "Ar·ribesi en·ribesī — na·seba na·pa·biṭeniāt·i.", "en": "Dark within primordial dark — the gate of all mysteries.", "note": "seba — star, gate, and teaching in one root (S-B-ʾ): the Tao closes on the door the education ladder climbs; biṭeniāt pluralizes by R-060's own law" }
+        {
+          "n": 1,
+          "src": "道可道，非常道。",
+          "amr": "Al·hina nin·ta i·jatato, la pe al·hina dahīr.",
+          "display": "Al·hina nin·ta i·jata·to, la pe al·hina dahīr.",
+          "en": "The Way that one speaks is not THE substrate-eternal Way.",
+          "note": "al· — the sacred THE for the Way itself (Ali's correction: this Way is never merely worldly); dahīr — 常 as the substrate-eternity (R-069): the Tao that contains time, as Laozi's ch.25 'standing alone, unchanging' demands; ḏet re-ruled to geometric infinity and withdrawn here"
+        },
+        {
+          "n": 2,
+          "src": "名可名，非常名。",
+          "amr": "Al·rini nin·ta i·ranato, la pe al·rini dahīr.",
+          "display": "Al·rini nin·ta i·rana·to, la pe al·rini dahīr.",
+          "en": "The name that one names is not THE substrate-eternal name.",
+          "note": "al·rini in parallel — the eternal Name wears the sacred article as the Way does"
+        },
+        {
+          "n": 3,
+          "src": "無名天地之始；",
+          "amr": "Bilā-rini pe na·tap na·pet ma na·yaki.",
+          "display": "Bilā-rini pe na·tap na·pet ma na·yak·i.",
+          "en": "The Nameless is the origin of heaven and earth.",
+          "note": "bilā-compound (R-068): bilā-rini 'the Without-Name'; tap = head→origin, the Egyptian semantics of tp restored"
+        },
+        {
+          "n": 4,
+          "src": "有名萬物之母。",
+          "amr": "Het-rini pe iška na·pa·šeyāti.",
+          "display": "Het-rini pe iška na·pa·šeyāt·i.",
+          "en": "The Named is the mother of the myriad things.",
+          "note": "het-rini 'the With-Name'; 萬物 as na·pa·šeyāt, the myriad things; iška — the mother-word, inalienable everywhere else, standing bare here as pure role (R-033's citation use)"
+        },
+        {
+          "n": 5,
+          "src": "故常無欲，以觀其妙；",
+          "amr": "Ra·pen: bilā šiweqi, i·hariwa na·biṭenya.",
+          "display": "Ra·pen: bilā šiweqi, i·hariwa na·biṭenya.",
+          "en": "Therefore: without desire, one beholds the hidden.",
+          "note": "šiweqi — the diaspora longing serving for 欲; biṭeni = the batin (~Al-Bāṭin, Threshold Name, Hex 26)"
+        },
+        {
+          "n": 6,
+          "src": "常有欲，以觀其徼。",
+          "amr": "Het šiweqi, i·hariwa na·ẓiherya.",
+          "display": "Het šiweqi, i·hariwa na·ẓiherya.",
+          "en": "With desire, one beholds the manifest.",
+          "note": "ẓiheri = the zahir (~Az-Zāhir, Hex 33) — Laozi's hidden-and-manifest IS the Way's own Threshold pair"
+        },
+        {
+          "n": 7,
+          "src": "此兩者，同出而異名，",
+          "amr": "Na·sinu nai — en·sinu i·ḫarijasen, we·pen riniātto sinu.",
+          "display": "Na·sinu nai — en·sinu i·ḫarija·sen, we·pen rini·āt·to sinu.",
+          "en": "These two — together-as-pair they emerge, but their names are two.",
+          "note": "en·sinu 'in-two, as a pair' — the together-adverbs (R-069): en·wa as-one, en·sinu as-a-pair; 同出 restored to a true 'together' instead of the earlier dissolve"
+        },
+        {
+          "n": 8,
+          "src": "同謂之玄。",
+          "amr": "En·wa i·ranwiasen: ar·ribesi.",
+          "display": "En·wa i·ranwia·sen: ar·ribesi.",
+          "en": "Named as one: THE primordial Dark.",
+          "note": "en·wa 'in-one, as one' for 同謂 — named-as-one; ranwia, the passive of the ren-root, arrives free from the engine (R-025 -wi-)"
+        },
+        {
+          "n": 9,
+          "src": "玄之又玄，衆妙之門。",
+          "amr": "Ar·ribesi en·ribesī — na·seba na·pa·biṭeniāti.",
+          "display": "Ar·ribesi en·ribesī — na·seba na·pa·biṭeniāt·i.",
+          "en": "Dark within primordial dark — the gate of all mysteries.",
+          "note": "seba — star, gate, and teaching in one root (S-B-ʾ): the Tao closes on the door the education ladder climbs; biṭeniāt pluralizes by R-060's own law"
+        }
       ]
     }
   ],
-  "queue": ["Musashi — Dokkodo (Tier II-F, next per Ali)", "then as Ali steers through the Secondary Canon"]
+  "queue": [
+    "Musashi — Dokkodo (Tier II-F, next per Ali)",
+    "then as Ali steers through the Secondary Canon"
+  ]
 }
